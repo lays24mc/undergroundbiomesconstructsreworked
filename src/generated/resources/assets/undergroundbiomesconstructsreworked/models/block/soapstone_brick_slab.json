@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/soapstone_brick_block",
+    "side": "undergroundbiomesconstructsreworked:block/soapstone_brick_block",
+    "top": "undergroundbiomesconstructsreworked:block/soapstone_brick_block"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "undergroundbiomesconstructsreworked:soapstone_cobble_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "undergroundbiomesconstructsreworked:blocks/soapstone_cobble_block"
+}

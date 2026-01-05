@@ -27,12 +27,12 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-//        generator.addProvider(event.includeServer(), new MWCDatapackProvider(packOutput, lookupProvider));
-//        generator.addProvider(event.includeServer(), new MWCRecipeBuilder(packOutput, lookupProvider));
-//
-//        BlockTagsProvider blockTagsProvider = new MWCBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
-//        generator.addProvider(event.includeServer(), blockTagsProvider);
-//        generator.addProvider(event.includeServer(), new MWCItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
-//        generator.addProvider(event.includeClient(), new MWCBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeServer(), new UBCDatapackProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new UBCRecipeBuilder(packOutput, lookupProvider));
+
+        BlockTagsProvider blockTagsProvider = new UBCBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
+        generator.addProvider(event.includeServer(), blockTagsProvider);
+        generator.addProvider(event.includeServer(), new UBCItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeClient(), new UBCBlockStateProvider(packOutput, existingFileHelper));
     }
 }

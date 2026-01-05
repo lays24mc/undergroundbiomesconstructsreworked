@@ -1,5 +1,6 @@
 package com.lays24mc.undergroundbiomesconstructsreworked;
 
+import com.lays24mc.undergroundbiomesconstructsreworked.block.RhyoliteBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.SoapstoneBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.item.UBCItems;
 import com.mojang.logging.LogUtils;
@@ -44,6 +45,7 @@ public class UndergroundBiomesConstructsReworked {
         UBCItems.register(modEventBus);
 
         SoapstoneBlocks.register(modEventBus);
+        RhyoliteBlocks.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
 

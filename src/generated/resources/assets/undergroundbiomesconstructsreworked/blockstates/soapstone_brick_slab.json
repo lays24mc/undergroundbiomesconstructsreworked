@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "undergroundbiomesconstructsreworked:block/soapstone_brick_slab"
+    },
+    "type=double": {
+      "model": "undergroundbiomesconstructsreworked:block/soapstone_brick_block"
+    },
+    "type=top": {
+      "model": "undergroundbiomesconstructsreworked:block/soapstone_brick_slab_top"
+    }
+  }
+}

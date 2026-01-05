@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "undergroundbiomesconstructsreworked:block/rhyolite_cobble_block"
+  }
+}

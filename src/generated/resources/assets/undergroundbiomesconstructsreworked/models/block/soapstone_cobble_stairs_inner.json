@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/soapstone_cobble_block",
+    "side": "undergroundbiomesconstructsreworked:block/soapstone_cobble_block",
+    "top": "undergroundbiomesconstructsreworked:block/soapstone_cobble_block"
+  }
+}

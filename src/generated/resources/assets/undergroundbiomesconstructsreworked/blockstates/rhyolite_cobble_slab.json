@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "undergroundbiomesconstructsreworked:block/rhyolite_cobble_slab"
+    },
+    "type=double": {
+      "model": "undergroundbiomesconstructsreworked:block/rhyolite_cobble_block"
+    },
+    "type=top": {
+      "model": "undergroundbiomesconstructsreworked:block/rhyolite_cobble_slab_top"
+    }
+  }
+}
