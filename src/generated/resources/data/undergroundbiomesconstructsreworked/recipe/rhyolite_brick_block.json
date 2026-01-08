@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "undergroundbiomesconstructsreworked:rhyolite_block"
+    }
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "undergroundbiomesconstructsreworked:rhyolite_brick_block"
+  }
+}

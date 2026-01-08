@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "undergroundbiomesconstructsreworked:block/red_granite_block"
+  }
+}

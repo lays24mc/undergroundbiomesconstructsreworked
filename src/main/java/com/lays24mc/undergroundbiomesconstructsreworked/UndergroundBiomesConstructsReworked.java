@@ -1,5 +1,7 @@
 package com.lays24mc.undergroundbiomesconstructsreworked;
 
+import com.lays24mc.undergroundbiomesconstructsreworked.block.QuartziteBlocks;
+import com.lays24mc.undergroundbiomesconstructsreworked.block.RedGraniteBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.RhyoliteBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.SoapstoneBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.item.UBCItems;
@@ -46,6 +48,8 @@ public class UndergroundBiomesConstructsReworked {
 
         SoapstoneBlocks.register(modEventBus);
         RhyoliteBlocks.register(modEventBus);
+        RedGraniteBlocks.register(modEventBus);
+        QuartziteBlocks.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
 

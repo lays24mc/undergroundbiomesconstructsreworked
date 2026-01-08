@@ -2,6 +2,15 @@
   "values": [
     "undergroundbiomesconstructsreworked:soapstone_block_wall",
     "undergroundbiomesconstructsreworked:soapstone_cobble_wall",
-    "undergroundbiomesconstructsreworked:soapstone_brick_wall"
+    "undergroundbiomesconstructsreworked:soapstone_brick_wall",
+    "undergroundbiomesconstructsreworked:rhyolite_block_wall",
+    "undergroundbiomesconstructsreworked:rhyolite_cobble_wall",
+    "undergroundbiomesconstructsreworked:rhyolite_brick_wall",
+    "undergroundbiomesconstructsreworked:red_granite_block_wall",
+    "undergroundbiomesconstructsreworked:red_granite_cobble_wall",
+    "undergroundbiomesconstructsreworked:red_granite_brick_wall",
+    "undergroundbiomesconstructsreworked:quartzite_block_wall",
+    "undergroundbiomesconstructsreworked:quartzite_cobble_wall",
+    "undergroundbiomesconstructsreworked:quartzite_brick_wall"
   ]
 }

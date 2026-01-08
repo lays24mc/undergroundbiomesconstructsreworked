@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "red_granite",
+  "key": {
+    "#": {
+      "item": "undergroundbiomesconstructsreworked:red_granite_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "undergroundbiomesconstructsreworked:red_granite_stairs"
+  }
+}

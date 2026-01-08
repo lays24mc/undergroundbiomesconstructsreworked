@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "undergroundbiomesconstructsreworked:block/red_granite_block_slab"
+    },
+    "type=double": {
+      "model": "undergroundbiomesconstructsreworked:block/red_granite_block"
+    },
+    "type=top": {
+      "model": "undergroundbiomesconstructsreworked:block/red_granite_block_slab_top"
+    }
+  }
+}

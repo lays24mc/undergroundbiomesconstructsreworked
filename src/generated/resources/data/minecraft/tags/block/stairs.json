@@ -2,6 +2,15 @@
   "values": [
     "undergroundbiomesconstructsreworked:soapstone_stairs",
     "undergroundbiomesconstructsreworked:soapstone_brick_stairs",
-    "undergroundbiomesconstructsreworked:soapstone_cobble_stairs"
+    "undergroundbiomesconstructsreworked:soapstone_cobble_stairs",
+    "undergroundbiomesconstructsreworked:rhyolite_stairs",
+    "undergroundbiomesconstructsreworked:rhyolite_brick_stairs",
+    "undergroundbiomesconstructsreworked:rhyolite_cobble_stairs",
+    "undergroundbiomesconstructsreworked:red_granite_stairs",
+    "undergroundbiomesconstructsreworked:red_granite_brick_stairs",
+    "undergroundbiomesconstructsreworked:red_granite_cobble_stairs",
+    "undergroundbiomesconstructsreworked:quartzite_stairs",
+    "undergroundbiomesconstructsreworked:quartzite_brick_stairs",
+    "undergroundbiomesconstructsreworked:quartzite_cobble_stairs"
   ]
 }

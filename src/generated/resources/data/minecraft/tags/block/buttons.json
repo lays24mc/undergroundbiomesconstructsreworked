@@ -1,5 +1,8 @@
 {
   "values": [
-    "undergroundbiomesconstructsreworked:soapstone_stone_button"
+    "undergroundbiomesconstructsreworked:soapstone_stone_button",
+    "undergroundbiomesconstructsreworked:rhyolite_block_slab",
+    "undergroundbiomesconstructsreworked:red_granite_stone_button",
+    "undergroundbiomesconstructsreworked:quartzite_stone_button"
   ]
 }

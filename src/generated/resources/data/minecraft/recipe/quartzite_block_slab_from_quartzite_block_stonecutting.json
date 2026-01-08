@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "undergroundbiomesconstructsreworked:quartzite_block"
+  },
+  "result": {
+    "count": 2,
+    "id": "undergroundbiomesconstructsreworked:quartzite_block_slab"
+  }
+}

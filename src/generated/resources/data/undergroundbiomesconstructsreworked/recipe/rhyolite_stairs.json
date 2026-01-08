@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rhyolite",
+  "key": {
+    "#": {
+      "item": "undergroundbiomesconstructsreworked:rhyolite_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "undergroundbiomesconstructsreworked:rhyolite_stairs"
+  }
+}

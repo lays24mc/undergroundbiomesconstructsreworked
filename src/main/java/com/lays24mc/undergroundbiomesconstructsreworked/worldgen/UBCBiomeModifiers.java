@@ -15,7 +15,10 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_BLOCK = registerKey("add_soapstone_block");
+    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_COAL_ORE = registerKey("add_soapstone_coal_ore");
     public static final ResourceKey<BiomeModifier> ADD_RHYOLITE_BLOCK = registerKey("add_rhyolite_block");
+    public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_BLOCK = registerKey("add_red_granite_block");
+    public static final ResourceKey<BiomeModifier> ADD_QUARTZITE_BLOCK = registerKey("add_quartzite_block");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         // CF -> PF -> BM
@@ -40,10 +43,30 @@ public class UBCBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_BLOCK_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
+        //soapstone coal ore
+        context.register(ADD_SOAPSTONE_COAL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_COAL_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
         //rhyolite
         context.register(ADD_RHYOLITE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.RHYOLITE_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES
+        ));
+
+        //red granite
+        context.register(ADD_RED_GRANITE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.RED_GRANITE_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES
+        ));
+
+        //quartzite
+        context.register(ADD_QUARTZITE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.QUARTZITE_BLOCK_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
 

@@ -33,6 +33,10 @@ public class SoapstoneBlocks {
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
 
+    public static DeferredBlock<Block> SOAPSTONE_COAL_ORE = registerBlock("soapstone_coal_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+    );
+
     // Stairs
     public static final DeferredBlock<Block> SOAPSTONE_STAIRS = registerBlock("soapstone_stairs",
             () -> new UBCStairsBlocks(SOAPSTONE_BLOCK, MapColor.TERRACOTTA_WHITE)

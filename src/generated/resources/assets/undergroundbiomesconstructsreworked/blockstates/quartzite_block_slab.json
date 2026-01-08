@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "undergroundbiomesconstructsreworked:block/quartzite_block_slab"
+    },
+    "type=double": {
+      "model": "undergroundbiomesconstructsreworked:block/quartzite_block"
+    },
+    "type=top": {
+      "model": "undergroundbiomesconstructsreworked:block/quartzite_block_slab_top"
+    }
+  }
+}

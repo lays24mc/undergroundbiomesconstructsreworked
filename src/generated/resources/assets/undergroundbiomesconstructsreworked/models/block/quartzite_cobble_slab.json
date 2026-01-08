@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/quartzite_cobble_block",
+    "side": "undergroundbiomesconstructsreworked:block/quartzite_cobble_block",
+    "top": "undergroundbiomesconstructsreworked:block/quartzite_cobble_block"
+  }
+}

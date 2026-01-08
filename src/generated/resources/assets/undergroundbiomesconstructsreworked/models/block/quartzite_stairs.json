@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/quartzite_block",
+    "side": "undergroundbiomesconstructsreworked:block/quartzite_block",
+    "top": "undergroundbiomesconstructsreworked:block/quartzite_block"
+  }
+}

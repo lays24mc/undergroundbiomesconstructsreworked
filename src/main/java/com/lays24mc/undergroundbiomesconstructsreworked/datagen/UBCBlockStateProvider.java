@@ -1,6 +1,8 @@
 package com.lays24mc.undergroundbiomesconstructsreworked.datagen;
 
 import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
+import com.lays24mc.undergroundbiomesconstructsreworked.block.QuartziteBlocks;
+import com.lays24mc.undergroundbiomesconstructsreworked.block.RedGraniteBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.RhyoliteBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.SoapstoneBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.custom.UBCButtonsBlocks;
@@ -49,17 +51,27 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(SoapstoneBlocks.SOAPSTONE_BLOCK);
         blockWithItem(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK);
         blockWithItem(SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK);
+        blockWithItem(SoapstoneBlocks.SOAPSTONE_COAL_ORE);
 
         blockWithItem(RhyoliteBlocks.RHYOLITE_BLOCK);
         blockWithItem(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK);
         blockWithItem(RhyoliteBlocks.RHYOLITE_BRICK_BLOCK);
 
+        blockWithItem(RedGraniteBlocks.RED_GRANITE_BLOCK);
+        blockWithItem(RedGraniteBlocks.RED_GRANITE_COBBLE_BLOCK);
+        blockWithItem(RedGraniteBlocks.RED_GRANITE_BRICK_BLOCK);
+
+        blockWithItem(QuartziteBlocks.QUARTZITE_BLOCK);
+        blockWithItem(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK);
+        blockWithItem(QuartziteBlocks.QUARTZITE_BRICK_BLOCK);
+
         // --------------------------
         // Register buttons
         // --------------------------
         buttonWithItem((UBCButtonsBlocks) SoapstoneBlocks.SOAPSTONE_STONE_BUTTON.get(), "soapstone_stone_button", "soapstone_block");
-
         buttonWithItem((UBCButtonsBlocks) RhyoliteBlocks.RHYOLITE_STONE_BUTTON.get(), "rhyolite_stone_button", "rhyolite_block");
+        buttonWithItem((UBCButtonsBlocks) RedGraniteBlocks.RED_GRANITE_STONE_BUTTON.get(), "red_granite_stone_button", "red_granite_block");
+        buttonWithItem((UBCButtonsBlocks) QuartziteBlocks.QUARTZITE_STONE_BUTTON.get(), "quartzite_stone_button", "quartzite_block");
 
         // --------------------------
         // Register stairs, slabs, and walls, blocks multiple
@@ -80,6 +92,22 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockItem(RhyoliteBlocks.RHYOLITE_COBBLE_STAIRS);
         blockItem(RhyoliteBlocks.RHYOLITE_BRICK_STAIRS);
 
+        blockItem(RedGraniteBlocks.RED_GRANITE_BLOCK_SLAB);
+        blockItem(RedGraniteBlocks.RED_GRANITE_COBBLE_SLAB);
+        blockItem(RedGraniteBlocks.RED_GRANITE_BRICK_SLAB);
+
+        blockItem(RedGraniteBlocks.RED_GRANITE_STAIRS);
+        blockItem(RedGraniteBlocks.RED_GRANITE_COBBLE_STAIRS);
+        blockItem(RedGraniteBlocks.RED_GRANITE_BRICK_STAIRS);
+
+        blockItem(QuartziteBlocks.QUARTZITE_BLOCK_SLAB);
+        blockItem(QuartziteBlocks.QUARTZITE_COBBLE_SLAB);
+        blockItem(QuartziteBlocks.QUARTZITE_BRICK_SLAB);
+
+        blockItem(QuartziteBlocks.QUARTZITE_STAIRS);
+        blockItem(QuartziteBlocks.QUARTZITE_COBBLE_STAIRS);
+        blockItem(QuartziteBlocks.QUARTZITE_BRICK_STAIRS);
+
         wallItem(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL, SoapstoneBlocks.SOAPSTONE_BLOCK.get());
         wallItem(SoapstoneBlocks.SOAPSTONE_COBBLE_WALL, SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get());
         wallItem(SoapstoneBlocks.SOAPSTONE_BRICK_WALL, SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK.get());
@@ -87,6 +115,15 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallItem(RhyoliteBlocks.RHYOLITE_BLOCK_WALL, RhyoliteBlocks.RHYOLITE_BLOCK.get());
         wallItem(RhyoliteBlocks.RHYOLITE_COBBLE_WALL, RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK.get());
         wallItem(RhyoliteBlocks.RHYOLITE_BRICK_WALL, RhyoliteBlocks.RHYOLITE_BRICK_BLOCK.get());
+
+        wallItem(RedGraniteBlocks.RED_GRANITE_BLOCK_WALL, RedGraniteBlocks.RED_GRANITE_BLOCK.get());
+        wallItem(RedGraniteBlocks.RED_GRANITE_COBBLE_WALL, RedGraniteBlocks.RED_GRANITE_COBBLE_BLOCK.get());
+        wallItem(RedGraniteBlocks.RED_GRANITE_BRICK_WALL, RedGraniteBlocks.RED_GRANITE_BRICK_BLOCK.get());
+
+        wallItem(QuartziteBlocks.QUARTZITE_BLOCK_WALL, QuartziteBlocks.QUARTZITE_BLOCK.get());
+        wallItem(QuartziteBlocks.QUARTZITE_COBBLE_WALL, QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get());
+        wallItem(QuartziteBlocks.QUARTZITE_BRICK_WALL, QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get());
+
         // Stairs
         stairsBlock((UBCStairsBlocks) SoapstoneBlocks.SOAPSTONE_STAIRS.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
         stairsBlock((UBCStairsBlocks) SoapstoneBlocks.SOAPSTONE_COBBLE_STAIRS.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()));
@@ -95,6 +132,14 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         stairsBlock((UBCStairsBlocks) RhyoliteBlocks.RHYOLITE_STAIRS.get(), blockTexture(RhyoliteBlocks.RHYOLITE_BLOCK.get()));
         stairsBlock((UBCStairsBlocks) RhyoliteBlocks.RHYOLITE_COBBLE_STAIRS.get(), blockTexture(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK.get()));
         stairsBlock((UBCStairsBlocks) RhyoliteBlocks.RHYOLITE_BRICK_STAIRS.get(), blockTexture(RhyoliteBlocks.RHYOLITE_BRICK_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) RedGraniteBlocks.RED_GRANITE_STAIRS.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) RedGraniteBlocks.RED_GRANITE_COBBLE_STAIRS.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) RedGraniteBlocks.RED_GRANITE_BRICK_STAIRS.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_BRICK_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) QuartziteBlocks.QUARTZITE_STAIRS.get(), blockTexture(QuartziteBlocks.QUARTZITE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) QuartziteBlocks.QUARTZITE_COBBLE_STAIRS.get(), blockTexture(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) QuartziteBlocks.QUARTZITE_BRICK_STAIRS.get(), blockTexture(QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get()));
 
         // Slabs
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
@@ -106,6 +151,13 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         slabBlock((UBCSlabBlocks) RhyoliteBlocks.RHYOLITE_COBBLE_SLAB.get(), blockTexture(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK.get()), blockTexture(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) RhyoliteBlocks.RHYOLITE_BRICK_SLAB.get(), blockTexture(RhyoliteBlocks.RHYOLITE_BRICK_BLOCK.get()), blockTexture(RhyoliteBlocks.RHYOLITE_BRICK_BLOCK.get()));
 
+        slabBlock((UBCSlabBlocks) RedGraniteBlocks.RED_GRANITE_BLOCK_SLAB.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_BLOCK.get()), blockTexture(RedGraniteBlocks.RED_GRANITE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) RedGraniteBlocks.RED_GRANITE_COBBLE_SLAB.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_COBBLE_BLOCK.get()), blockTexture(RedGraniteBlocks.RED_GRANITE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) RedGraniteBlocks.RED_GRANITE_BRICK_SLAB.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_BRICK_BLOCK.get()), blockTexture(RedGraniteBlocks.RED_GRANITE_BRICK_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) QuartziteBlocks.QUARTZITE_BLOCK_SLAB.get(), blockTexture(QuartziteBlocks.QUARTZITE_BLOCK.get()), blockTexture(QuartziteBlocks.QUARTZITE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) QuartziteBlocks.QUARTZITE_COBBLE_SLAB.get(), blockTexture(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get()), blockTexture(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) QuartziteBlocks.QUARTZITE_BRICK_SLAB.get(), blockTexture(QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get()), blockTexture(QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get()));
 
         // Walls
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
@@ -116,6 +168,14 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallBlock((UBCWallBlocks) RhyoliteBlocks.RHYOLITE_BLOCK_WALL.get(), blockTexture(RhyoliteBlocks.RHYOLITE_BLOCK.get()));
         wallBlock((UBCWallBlocks) RhyoliteBlocks.RHYOLITE_COBBLE_WALL.get(), blockTexture(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK.get()));
         wallBlock((UBCWallBlocks) RhyoliteBlocks.RHYOLITE_BRICK_WALL.get(), blockTexture(RhyoliteBlocks.RHYOLITE_BRICK_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) RedGraniteBlocks.RED_GRANITE_BLOCK_WALL.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) RedGraniteBlocks.RED_GRANITE_COBBLE_WALL.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_COBBLE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) RedGraniteBlocks.RED_GRANITE_BRICK_WALL.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_BRICK_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) QuartziteBlocks.QUARTZITE_BLOCK_WALL.get(), blockTexture(QuartziteBlocks.QUARTZITE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) QuartziteBlocks.QUARTZITE_COBBLE_WALL.get(), blockTexture(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) QuartziteBlocks.QUARTZITE_BRICK_WALL.get(), blockTexture(QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get()));
 
     }
 

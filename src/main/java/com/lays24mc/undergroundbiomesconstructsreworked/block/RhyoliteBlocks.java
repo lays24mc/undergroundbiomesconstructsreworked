@@ -32,13 +32,6 @@ public class RhyoliteBlocks {
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
 
-    public static  DeferredBlock<Block> RHYOLITE_MOSSY_COBBLESTONE_BLOCK = registerBlock("rhyolite_mossy_cobble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static  DeferredBlock<Block> RHYOLITE_MOSSY_BRICK_BLOCK = registerBlock("rhyolite_mossy_brick_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-
     // Stairs
     public static final DeferredBlock<Block> RHYOLITE_STAIRS = registerBlock("rhyolite_stairs",
             () -> new UBCStairsBlocks(RHYOLITE_BLOCK, MapColor.TERRACOTTA_WHITE)

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "undergroundbiomesconstructsreworked:quartzite_block"
+    }
+  },
+  "pattern": [
+    "A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "undergroundbiomesconstructsreworked:quartzite_stone_button"
+  }
+}
