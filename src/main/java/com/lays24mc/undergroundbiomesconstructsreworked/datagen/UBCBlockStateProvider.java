@@ -52,6 +52,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK);
         blockWithItem(SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK);
         blockWithItem(SoapstoneBlocks.SOAPSTONE_COAL_ORE);
+        blockWithItem(SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK);
 
         blockWithItem(RhyoliteBlocks.RHYOLITE_BLOCK);
         blockWithItem(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK);

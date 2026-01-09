@@ -12,12 +12,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
-import net.neoforged.neoforge.common.Tags;
 
 import java.util.List;
 
@@ -41,9 +40,18 @@ public class UBCConfiguredFeatures {
 
         //Soapstone
         List<OreConfiguration.TargetBlockState> overworldSoapstoneBlock = List.of(
-                OreConfiguration.target(stoneReplaceables, SoapstoneBlocks.SOAPSTONE_BLOCK.get().defaultBlockState()));
+                OreConfiguration.target(stoneReplaceables, SoapstoneBlocks.SOAPSTONE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(SoapstoneBlocks.SOAPSTONE_BLOCK.get()),
+                        SoapstoneBlocks.SOAPSTONE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> soapstoneCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(SoapstoneBlocks.SOAPSTONE_BLOCK.get()),
+                        SoapstoneBlocks.SOAPSTONE_COAL_ORE.get().defaultBlockState())
+        );
 
         register(context, OVERWORLD_SOAPSTONE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldSoapstoneBlock, 64));
+        register(context,OVERWORLD_SOAPSTONE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(soapstoneCoalTargets, 17));
+
 
         //Rhyolite
         List<OreConfiguration.TargetBlockState> overworldRhyoliteBlock = List.of(
