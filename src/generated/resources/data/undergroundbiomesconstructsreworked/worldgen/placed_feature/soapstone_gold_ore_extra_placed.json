@@ -1,9 +1,9 @@
 {
-  "feature": "undergroundbiomesconstructsreworked:soapstone_block",
+  "feature": "undergroundbiomesconstructsreworked:soapstone_gold_ore_extra",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 2
+      "count": 50
     },
     {
       "type": "minecraft:in_square"
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 384
+          "absolute": 256
         },
         "min_inclusive": {
-          "absolute": -17
+          "absolute": 32
         }
       }
     },

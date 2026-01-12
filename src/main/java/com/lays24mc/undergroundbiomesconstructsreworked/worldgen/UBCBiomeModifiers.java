@@ -21,6 +21,8 @@ public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_IRON_ORE_UPPER = registerKey("add_soapstone_iron_ore_upper");
     public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_IRON_ORE_MIDDLE = registerKey("add_soapstone_iron_ore_middle");
     public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_IRON_ORE_SMALL = registerKey("add_soapstone_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_GOLD_ORE = registerKey("add_soapstone_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_GOLD_ORE_EXTRA = registerKey("add_soapstone_gold_ore_extra");
 
     public static final ResourceKey<BiomeModifier> ADD_RHYOLITE_BLOCK = registerKey("add_rhyolite_block");
     public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_BLOCK = registerKey("add_red_granite_block");
@@ -77,6 +79,16 @@ public class UBCBiomeModifiers {
         context.register(ADD_SOAPSTONE_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SOAPSTONE_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_GOLD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SOAPSTONE_GOLD_ORE_EXTRA, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_GOLD_ORE_EXTRA_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
 

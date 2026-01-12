@@ -18,6 +18,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTes
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
+import java.sql.ResultSet;
 import java.util.List;
 
 public class UBCConfiguredFeatures {
@@ -29,6 +30,8 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SOAPSTONE_COPPER_ORE_LARGE_KEY = registerKey("soapstone_copper_ore_large");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SOAPSTONE_IRON_ORE_KEY = registerKey("soapstone_iron_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SOAPSTONE_IRON_ORE_SMALL_KEY = registerKey("soapstone_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SOAPSTONE_GOLD_ORE_KEY = registerKey("soapstone_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SOAPSTONE_GOLD_ORE_EXTRA_KEY = registerKey("soapstone_gold_ore_extra");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RHYOLITE_BLOCK_KEY = registerKey("rhyolite_block");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_BLOCK_KEY = registerKey("red_granite_block");
@@ -61,12 +64,18 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(SoapstoneBlocks.SOAPSTONE_BLOCK.get()),
                         SoapstoneBlocks.SOAPSTONE_IRON_ORE.get().defaultBlockState()));
 
+        List<OreConfiguration.TargetBlockState> soapstoneGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(SoapstoneBlocks.SOAPSTONE_BLOCK.get()),
+                        SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get().defaultBlockState()));
+
         register(context, OVERWORLD_SOAPSTONE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldSoapstoneBlock, 64));
         register(context, OVERWORLD_SOAPSTONE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(soapstoneCoalTargets, 17));
         register(context, OVERWORLD_SOAPSTONE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(soapstoneCopperTargets, 10));
         register(context, OVERWORLD_SOAPSTONE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(soapstoneCopperTargets, 20));
         register(context, OVERWORLD_SOAPSTONE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(soapstoneIronTargets, 9));
         register(context, OVERWORLD_SOAPSTONE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(soapstoneIronTargets, 4));
+        register(context, OVERWORLD_SOAPSTONE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(soapstoneGoldTargets, 9));
+        register(context, OVERWORLD_SOAPSTONE_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(soapstoneGoldTargets, 4, 0.5f));
 
 
         //Rhyolite

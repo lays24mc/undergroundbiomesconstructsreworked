@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "undergroundbiomesconstructsreworked:soapstone_copper_ore"
+              "name": "undergroundbiomesconstructsreworked:soapstone_gold_ore"
             },
             {
               "type": "minecraft:item",
@@ -40,7 +40,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:raw_copper"
+              "name": "minecraft:raw_gold"
             }
           ]
         }
@@ -48,5 +48,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "undergroundbiomesconstructsreworked:blocks/soapstone_copper_ore"
+  "random_sequence": "undergroundbiomesconstructsreworked:blocks/soapstone_gold_ore"
 }
