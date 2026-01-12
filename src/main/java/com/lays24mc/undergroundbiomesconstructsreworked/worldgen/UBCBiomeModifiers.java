@@ -16,7 +16,12 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_BLOCK = registerKey("add_soapstone_block");
     public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_COAL_ORE = registerKey("add_soapstone_coal_ore");
-    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_COPPER_ORE = registerKey("add_soapstone_copper_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_COPPER_SMALL_ORE = registerKey("add_soapstone_copper_small_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_COPPER_ORE_LARGE = registerKey("add_soapstone_copper_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_IRON_ORE_UPPER = registerKey("add_soapstone_iron_ore_upper");
+    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_IRON_ORE_MIDDLE = registerKey("add_soapstone_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_IRON_ORE_SMALL = registerKey("add_soapstone_iron_ore_small");
+
     public static final ResourceKey<BiomeModifier> ADD_RHYOLITE_BLOCK = registerKey("add_rhyolite_block");
     public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_BLOCK = registerKey("add_red_granite_block");
     public static final ResourceKey<BiomeModifier> ADD_QUARTZITE_BLOCK = registerKey("add_quartzite_block");
@@ -44,11 +49,36 @@ public class UBCBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_BLOCK_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        //soapstone coal ore
         context.register(ADD_SOAPSTONE_COAL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_COAL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SOAPSTONE_COPPER_SMALL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_COPPER_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SOAPSTONE_COPPER_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_COPPER_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SOAPSTONE_IRON_ORE_UPPER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_IRON_ORE_UPPER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SOAPSTONE_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_IRON_ORE_MIDDLE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SOAPSTONE_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
 
         //rhyolite
         context.register(ADD_RHYOLITE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(

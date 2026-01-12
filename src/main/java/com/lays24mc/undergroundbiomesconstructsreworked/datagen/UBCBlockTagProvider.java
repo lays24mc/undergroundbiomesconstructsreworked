@@ -34,6 +34,12 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COAL_ORE.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_DIAMOND_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_EMERALD_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_LAPIS_ORE.get())
 
                 .add(RhyoliteBlocks.RHYOLITE_BLOCK.get())
                 .add(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK.get())
