@@ -61,7 +61,7 @@ public class UBCBiomeModifiers {
 
         context.register(ADD_SOAPSTONE_COPPER_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_COPPER_ORE_SMALL_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_COPPER_ORE_LARGE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_SOAPSTONE_IRON_ORE_UPPER, new BiomeModifiers.AddFeaturesBiomeModifier(

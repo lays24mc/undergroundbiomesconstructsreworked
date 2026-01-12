@@ -1,9 +1,9 @@
 {
-  "feature": "undergroundbiomesconstructsreworked:soapstone_block",
+  "feature": "undergroundbiomesconstructsreworked:soapstone_iron_ore_small",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 2
+      "count": 10
     },
     {
       "type": "minecraft:in_square"
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 192
+          "absolute": 72
         },
         "min_inclusive": {
-          "absolute": 0
+          "above_bottom": 0
         }
       }
     },
