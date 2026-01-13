@@ -380,8 +380,8 @@ public class UBCPlacedFeatures {
                 commonOrePlacement(
                         2,
                         HeightRangePlacement.uniform(
-                                VerticalAnchor.absolute(0),
-                                VerticalAnchor.absolute(128)
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
                         )
                 )
         );
@@ -392,8 +392,8 @@ public class UBCPlacedFeatures {
                 commonOrePlacement(
                         10,
                         HeightRangePlacement.triangle(
-                                VerticalAnchor.absolute(0),
-                                VerticalAnchor.absolute(-24)
+                                VerticalAnchor.absolute(-24),
+                                VerticalAnchor.absolute(0)
                         )
                 )
         );
@@ -416,8 +416,8 @@ public class UBCPlacedFeatures {
                 commonOrePlacement(
                         4,
                         HeightRangePlacement.triangle(
-                                VerticalAnchor.absolute(-1),
-                                VerticalAnchor.absolute(-64)
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
                         )
                 )
         );
@@ -440,7 +440,7 @@ public class UBCPlacedFeatures {
                 commonOrePlacement(
                         8,
                         HeightRangePlacement.triangle(
-                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(-32),
                                 VerticalAnchor.aboveBottom(0)
                         )
                 )
