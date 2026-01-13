@@ -46,6 +46,12 @@ public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_GOLD_ORE_LOWER = registerKey("add_red_granite_gold_ore_lower");
     public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_REDSTONE_ORE_LOWER = registerKey("add_red_granite_redstone_ore_lower");
     public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_LAPIS_ORE = registerKey("add_red_granite_lapis_ore");
+    public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_DIAMOND_ORE_SMALL = registerKey("add_red_granite_diamond_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_DIAMOND_ORE_LARGE = registerKey("add_red_granite_diamond_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_DIAMOND_ORE_BURIED = registerKey("add_red_granite_diamond_ore_buried");
+    public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_DIAMOND_ORE_MEDIUM = registerKey("add_red_granite_diamond_ore_medium");
+    public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_EMERALD_ORE = registerKey("add_red_granite_emerald_ore");
+
 
     public static final ResourceKey<BiomeModifier> ADD_QUARTZITE_BLOCK = registerKey("add_quartzite_block");
 
@@ -224,6 +230,31 @@ public class UBCBiomeModifiers {
         context.register(ADD_RED_GRANITE_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.RED_GRANITE_LAPIS_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_RED_GRANITE_DIAMOND_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.RED_GRANITE_DIAMOND_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_RED_GRANITE_DIAMOND_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.RED_GRANITE_DIAMOND_ORE_LARGE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_RED_GRANITE_DIAMOND_ORE_BURIED, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.RED_GRANITE_DIAMOND_ORE_BURIED_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_RED_GRANITE_DIAMOND_ORE_MEDIUM, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.RED_GRANITE_DIAMOND_ORE_MEDIUM_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_RED_GRANITE_EMERALD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.RED_GRANITE_EMERALD_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //quartzite

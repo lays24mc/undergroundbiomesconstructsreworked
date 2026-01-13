@@ -18,6 +18,7 @@ import net.minecraft.world.level.levelgen.placement.*;
 import java.util.List;
 
 import static com.lays24mc.undergroundbiomesconstructsreworked.worldgen.UBCOrePlacements.commonOrePlacement;
+import static com.lays24mc.undergroundbiomesconstructsreworked.worldgen.UBCOrePlacements.rareOrePlacement;
 
 /**
  * Registers all PlacedFeatures for Underground Biomes Constructs Reworked.
@@ -62,6 +63,11 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> RED_GRANITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("red_granite_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> RED_GRANITE_LAPIS_ORE_PLACED_KEY = registerKey("red_granite_lapis_ore_placed");
     public static final ResourceKey<PlacedFeature> RED_GRANITE_LAPIS_ORE_BURIED_PLACED_KEY = registerKey("red_granite_lapis_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> RED_GRANITE_DIAMOND_ORE_SMALL_PLACED_KEY = registerKey("red_granite_diamond_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> RED_GRANITE_DIAMOND_ORE_LARGE_PLACED_KEY = registerKey("red_granite_diamond_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> RED_GRANITE_DIAMOND_ORE_BURIED_PLACED_KEY = registerKey("red_granite_diamond_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> RED_GRANITE_DIAMOND_ORE_MEDIUM_PLACED_KEY = registerKey("red_granite_diamond_ore_medium_placed");
+    public static final ResourceKey<PlacedFeature> RED_GRANITE_EMERALD_ORE_PLACED_KEY = registerKey("red_granite_ermerald_ore_placed");
 
     public static final ResourceKey<PlacedFeature> QUARTZITE_BLOCK_PLACED_KEY = registerKey("quartzite_block_placed");
 
@@ -466,6 +472,66 @@ public class UBCPlacedFeatures {
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.bottom(),
                                 VerticalAnchor.absolute(64)
+                        )
+                )
+        );
+
+        // Diamond ore small
+        register(context, RED_GRANITE_DIAMOND_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_DIAMOND_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        7,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Diamond ore large
+        register(context, RED_GRANITE_DIAMOND_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_DIAMOND_ORE_LARGE_KEY),
+                rareOrePlacement(
+                        9,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Diamond ore buried
+        register(context, RED_GRANITE_DIAMOND_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_DIAMOND_ORE_BURIED_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Diamond ore medium
+        register(context, RED_GRANITE_DIAMOND_ORE_MEDIUM_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_DIAMOND_ORE_MEDIUM_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-4)
+                        )
+                )
+        );
+
+        // Emerald ore
+        register(context, RED_GRANITE_EMERALD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_EMERALD_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(0)
                         )
                 )
         );

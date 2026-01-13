@@ -43,6 +43,12 @@ public class RedGraniteBlocks {
     public static DeferredBlock<Block> RED_GRANITE_LAPIS_ORE = registerBlock("red_granite_lapis_ore",
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
+    public static DeferredBlock<Block> RED_GRANITE_DIAMOND_ORE = registerBlock("red_granite_diamond_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+    );
+    public static DeferredBlock<Block> RED_GRANITE_EMERALD_ORE = registerBlock("red_granite_emerald_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+    );
 
     // Stairs
     public static final DeferredBlock<Block> RED_GRANITE_STAIRS = registerBlock("red_granite_stairs",

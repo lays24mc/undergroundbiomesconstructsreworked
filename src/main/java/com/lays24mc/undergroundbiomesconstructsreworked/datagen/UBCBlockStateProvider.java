@@ -20,6 +20,7 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter;
 
 /**
  * BlockState and model provider for UndergroundBiomesConstructsReworked mod.
@@ -33,9 +34,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        // ================================
-        // SOAPSTONE
-        // ================================
+
         buildAllModels();
 
     }
@@ -76,6 +75,8 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(RedGraniteBlocks.RED_GRANITE_GOLD_ORE);
         blockWithItem(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE);
         blockWithItem(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE);
+        blockItem(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE);
+        blockItem(RedGraniteBlocks.RED_GRANITE_EMERALD_ORE);
 
         blockWithItem(QuartziteBlocks.QUARTZITE_BLOCK);
         blockWithItem(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK);

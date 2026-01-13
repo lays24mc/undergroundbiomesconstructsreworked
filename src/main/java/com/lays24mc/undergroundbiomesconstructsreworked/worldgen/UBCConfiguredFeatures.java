@@ -58,6 +58,14 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_REDSTONE_ORE_LOWER_KEY = registerKey("red_granite_redstone_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_LAPIS_ORE_KEY = registerKey("red_granite_lapis_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_LAPIS_ORE_BURIED_KEY = registerKey("red_granite_lapis_ore_buried");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_DIAMOND_ORE_SMALL_KEY = registerKey("red_granite_diamond_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_DIAMOND_ORE_LARGE_KEY = registerKey("red_granite_diamond_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_DIAMOND_ORE_BURIED_KEY = registerKey("red_granite_diamond_ore_buried");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_DIAMOND_ORE_MEDIUM_KEY = registerKey("red_granite_diamond_ore_medium");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_EMERALD_ORE_KEY = registerKey("red_granite_emerald_ore");
+
+
+
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_BLOCK_KEY = registerKey("quartzite_block");
 
@@ -179,6 +187,15 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(SoapstoneBlocks.SOAPSTONE_BLOCK.get()),
                         SoapstoneBlocks.SOAPSTONE_LAPIS_ORE.get().defaultBlockState()));
 
+        List<OreConfiguration.TargetBlockState> redgraniteDiamondTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(RedGraniteBlocks.RED_GRANITE_BLOCK.get()),
+                        RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> redgraniteEmeraldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(RedGraniteBlocks.RED_GRANITE_BLOCK.get()),
+                        RedGraniteBlocks.RED_GRANITE_EMERALD_ORE.get().defaultBlockState()));
+
+
 
         register(context, OVERWORLD_RED_GRANITE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(redgraniteIronTargets, 9));
         register(context, OVERWORLD_RED_GRANITE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(redgraniteIronTargets, 4));
@@ -187,6 +204,11 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_RED_GRANITE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(redgraniteRedstoneTargets, 8));
         register(context, OVERWORLD_RED_GRANITE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(redgraniteLapisTargets, 7));
         register(context, OVERWORLD_RED_GRANITE_LAPIS_ORE_BURIED_KEY, Feature.ORE, new OreConfiguration(redgraniteLapisTargets, 7, 1.0F));
+        register(context, OVERWORLD_RED_GRANITE_DIAMOND_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(redgraniteDiamondTargets, 4, 0.5F));
+        register(context, OVERWORLD_RED_GRANITE_DIAMOND_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(redgraniteDiamondTargets, 12, 0.7F));
+        register(context, OVERWORLD_RED_GRANITE_DIAMOND_ORE_BURIED_KEY, Feature.ORE, new OreConfiguration(redgraniteDiamondTargets, 8, 1.0F));
+        register(context, OVERWORLD_RED_GRANITE_DIAMOND_ORE_MEDIUM_KEY, Feature.ORE, new OreConfiguration(redgraniteDiamondTargets, 8, 0.5F));
+        register(context, OVERWORLD_RED_GRANITE_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(redgraniteEmeraldTargets, 3));
 
         //Quartzite
         List<OreConfiguration.TargetBlockState> overworldQuartziteBlock = List.of(

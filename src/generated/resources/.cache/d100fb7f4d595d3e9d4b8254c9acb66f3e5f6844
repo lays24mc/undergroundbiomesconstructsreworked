@@ -1,7 +1,7 @@
-// 1.21.1	2026-01-13T15:31:29.2424448	Tags for minecraft:block mod id undergroundbiomesconstructsreworked
+// 1.21.1	2026-01-13T20:00:13.976622477	Tags for minecraft:block mod id undergroundbiomesconstructsreworked
 b4e96329129195070f498f02c8991f3bbf3c25f9 data/minecraft/tags/block/base_stone_overworld.json
 f34cb7fe90c17e1d0be021e7661b7385875a62ed data/minecraft/tags/block/buttons.json
-950355eee11194c479bf312aca27548a1965367a data/minecraft/tags/block/mineable/pickaxe.json
+911e32effc5662762e68c6cfdef50b6ae1f4d1d8 data/minecraft/tags/block/mineable/pickaxe.json
 5aa3c9a0210b29a43866d9370f0e7353c5f5e775 data/minecraft/tags/block/slabs.json
 b4c12e9eb9ae472ce1763e0bac1fff4afe8044ce data/minecraft/tags/block/stairs.json
 8175edb7a473e4330eaa840b3148ffb73a0d07e6 data/minecraft/tags/block/walls.json

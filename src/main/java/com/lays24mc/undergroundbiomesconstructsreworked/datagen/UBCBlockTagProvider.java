@@ -57,6 +57,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_EMERALD_ORE.get())
 
                 .add(QuartziteBlocks.QUARTZITE_BLOCK.get())
                 .add(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get())
