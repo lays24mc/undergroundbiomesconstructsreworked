@@ -24,6 +24,8 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SOAPSTONE_IRON_ORE_SMALL_PLACED_KEY = registerKey("soapstone_iron_small_placed");
     public static final ResourceKey<PlacedFeature> SOAPSTONE_GOLD_ORE_PLACED_KEY = registerKey("soapstone_gold_ore_placed");
     public static final ResourceKey<PlacedFeature> SOAPSTONE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("soapstone_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> SOAPSTONE_REDSTONE_ORE_PLACED_KEY = registerKey("soapstone_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> SOAPSTONE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("soapstone_redstone_ore_lower_placed");
 
     public static final ResourceKey<PlacedFeature> RHYOLITE_BLOCK_PLACED_KEY = registerKey("rhyolite_block_placed");
     public static final ResourceKey<PlacedFeature> RED_GRANITE_BLOCK_PLACED_KEY = registerKey("red_granite_placed");
@@ -61,6 +63,12 @@ public class UBCPlacedFeatures {
                 UBCOrePlacements.commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(-16), VerticalAnchor.absolute(32))));
         register(context, SOAPSTONE_GOLD_ORE_EXTRA_PLACED_KEY, configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_GOLD_ORE_EXTRA_KEY),
                 UBCOrePlacements.commonOrePlacement(50, HeightRangePlacement.uniform(VerticalAnchor.absolute(32), VerticalAnchor.absolute(256))));
+
+        //Soapstone Redstone Ore
+        register(context, SOAPSTONE_REDSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_REDSTONE_ORE_KEY),
+                UBCOrePlacements.commonOrePlacement(4, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(15))));
+        register(context, SOAPSTONE_REDSTONE_ORE_LOWER_PLACED_KEY, configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_GOLD_ORE_EXTRA_KEY),
+                UBCOrePlacements.commonOrePlacement(8, HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-16), VerticalAnchor.aboveBottom(32))));
 
 
         //Rhyolite

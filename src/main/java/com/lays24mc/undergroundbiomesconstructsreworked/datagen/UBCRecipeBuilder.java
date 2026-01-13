@@ -62,7 +62,7 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         List<ItemLike> SOAPSTONE_COPPER_SMELTABLES = List.of(SoapstoneBlocks.SOAPSTONE_COPPER_ORE);
         List<ItemLike> SOAPSTONE_IRON_SMELTABLES = List.of(SoapstoneBlocks.SOAPSTONE_IRON_ORE);
         List<ItemLike> SOAPSTONE_GOLD_SMELTABLES = List.of(SoapstoneBlocks.SOAPSTONE_GOLD_ORE);
-        List<ItemLike> SOAPSTONE_DIAMOND_SMELTABLES = List.of(SoapstoneBlocks.SOAPSTONE_DIAMOND_ORE);
+//        List<ItemLike> SOAPSTONE_DIAMOND_SMELTABLES = List.of(SoapstoneBlocks.SOAPSTONE_DIAMOND_ORE);
         List<ItemLike> SOAPSTONE_EMERALD_SMELTABLES = List.of(SoapstoneBlocks.SOAPSTONE_EMERALD_ORE);
         List<ItemLike> SOAPSTONE_REDSTONE_SMELTABLES = List.of(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE);
         List<ItemLike> SOAPSTONE_LAPIS_SMELTABLES = List.of(SoapstoneBlocks.SOAPSTONE_LAPIS_ORE);
@@ -79,7 +79,7 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         oreSmelting(recipeOutput, SOAPSTONE_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "soapstone");
         oreSmelting(recipeOutput, SOAPSTONE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "soapstone");
         oreSmelting(recipeOutput, SOAPSTONE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "soapstone");
-        oreSmelting(recipeOutput, SOAPSTONE_DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "soapstone");
+//        oreSmelting(recipeOutput, SOAPSTONE_DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "soapstone");
         oreSmelting(recipeOutput, SOAPSTONE_EMERALD_SMELTABLES, RecipeCategory.MISC, Items.EMERALD, 0.25f, 200, "soapstone");
         oreSmelting(recipeOutput, SOAPSTONE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "soapstone");
         oreSmelting(recipeOutput, SOAPSTONE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "soapstone");

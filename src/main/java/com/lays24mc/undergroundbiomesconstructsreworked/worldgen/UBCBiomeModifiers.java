@@ -7,7 +7,6 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
-import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.neoforged.neoforge.common.world.BiomeModifier;
 import net.neoforged.neoforge.common.world.BiomeModifiers;
@@ -23,6 +22,8 @@ public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_IRON_ORE_SMALL = registerKey("add_soapstone_iron_ore_small");
     public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_GOLD_ORE = registerKey("add_soapstone_gold_ore");
     public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_GOLD_ORE_EXTRA = registerKey("add_soapstone_gold_ore_extra");
+    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_REDSTONE_ORE = registerKey("add_soapstone_redstone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SOAPSTONE_REDSTONE_ORE_LOWER = registerKey("add_soapstone_redstone_ore_lower");
 
     public static final ResourceKey<BiomeModifier> ADD_RHYOLITE_BLOCK = registerKey("add_rhyolite_block");
     public static final ResourceKey<BiomeModifier> ADD_RED_GRANITE_BLOCK = registerKey("add_red_granite_block");
@@ -89,6 +90,16 @@ public class UBCBiomeModifiers {
         context.register(ADD_SOAPSTONE_GOLD_ORE_EXTRA, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_GOLD_ORE_EXTRA_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SOAPSTONE_REDSTONE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_REDSTONE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SOAPSTONE_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SOAPSTONE_REDSTONE_ORE_LOWER_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
 

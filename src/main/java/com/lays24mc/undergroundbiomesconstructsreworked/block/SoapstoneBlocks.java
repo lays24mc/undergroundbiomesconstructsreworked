@@ -49,9 +49,9 @@ public class SoapstoneBlocks {
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
 
-    public static DeferredBlock<Block> SOAPSTONE_DIAMOND_ORE = registerBlock("soapstone_diamond_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
+//    public static DeferredBlock<Block> SOAPSTONE_DIAMOND_ORE = registerBlock("soapstone_diamond_ore",
+//            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+//    );
 
     public static DeferredBlock<Block> SOAPSTONE_EMERALD_ORE = registerBlock("soapstone_emerald_ore",
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
