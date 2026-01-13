@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "undergroundbiomesconstructsreworked:block/red_granite_lapis_ore"
+  }
+}

@@ -32,31 +32,18 @@ public class SoapstoneBlocks {
     public static  DeferredBlock<Block> SOAPSTONE_BRICK_BLOCK = registerBlock("soapstone_brick_block",
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
-
     public static DeferredBlock<Block> SOAPSTONE_COAL_ORE = registerBlock("soapstone_coal_ore",
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
-
     public static DeferredBlock<Block> SOAPSTONE_COPPER_ORE = registerBlock("soapstone_copper_ore",
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
-
     public static DeferredBlock<Block> SOAPSTONE_IRON_ORE = registerBlock("soapstone_iron_ore",
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
-
     public static DeferredBlock<Block> SOAPSTONE_GOLD_ORE = registerBlock("soapstone_gold_ore",
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
-
-//    public static DeferredBlock<Block> SOAPSTONE_DIAMOND_ORE = registerBlock("soapstone_diamond_ore",
-//            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-//    );
-
-    public static DeferredBlock<Block> SOAPSTONE_EMERALD_ORE = registerBlock("soapstone_emerald_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-
     public static DeferredBlock<Block> SOAPSTONE_REDSTONE_ORE = registerBlock("soapstone_redstone_ore",
             () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );

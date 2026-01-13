@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "rhyolite",
+  "ingredient": {
+    "item": "undergroundbiomesconstructsreworked:rhyolite_copper_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:raw_copper"
+  }
+}

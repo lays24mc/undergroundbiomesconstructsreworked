@@ -55,18 +55,27 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(SoapstoneBlocks.SOAPSTONE_COPPER_ORE);
         blockWithItem(SoapstoneBlocks.SOAPSTONE_IRON_ORE);
         blockWithItem(SoapstoneBlocks.SOAPSTONE_GOLD_ORE);
-//        blockWithItem(SoapstoneBlocks.SOAPSTONE_DIAMOND_ORE);
-        blockWithItem(SoapstoneBlocks.SOAPSTONE_EMERALD_ORE);
         blockWithItem(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE);
         blockWithItem(SoapstoneBlocks.SOAPSTONE_LAPIS_ORE);
+
 
         blockWithItem(RhyoliteBlocks.RHYOLITE_BLOCK);
         blockWithItem(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK);
         blockWithItem(RhyoliteBlocks.RHYOLITE_BRICK_BLOCK);
+        blockWithItem(RhyoliteBlocks.RHYOLITE_COAL_ORE);
+        blockWithItem(RhyoliteBlocks.RHYOLITE_COPPER_ORE);
+        blockWithItem(RhyoliteBlocks.RHYOLITE_IRON_ORE);
+        blockWithItem(RhyoliteBlocks.RHYOLITE_GOLD_ORE);
+        blockWithItem(RhyoliteBlocks.RHYOLITE_REDSTONE_ORE);
+        blockWithItem(RhyoliteBlocks.RHYOLITE_LAPIS_ORE);
 
         blockWithItem(RedGraniteBlocks.RED_GRANITE_BLOCK);
         blockWithItem(RedGraniteBlocks.RED_GRANITE_COBBLE_BLOCK);
         blockWithItem(RedGraniteBlocks.RED_GRANITE_BRICK_BLOCK);
+        blockWithItem(RedGraniteBlocks.RED_GRANITE_IRON_ORE);
+        blockWithItem(RedGraniteBlocks.RED_GRANITE_GOLD_ORE);
+        blockWithItem(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE);
+        blockWithItem(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE);
 
         blockWithItem(QuartziteBlocks.QUARTZITE_BLOCK);
         blockWithItem(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK);
