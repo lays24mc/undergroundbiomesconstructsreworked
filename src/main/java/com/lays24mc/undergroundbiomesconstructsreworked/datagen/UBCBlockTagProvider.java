@@ -1,10 +1,7 @@
 package com.lays24mc.undergroundbiomesconstructsreworked.datagen;
 
 import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.QuartziteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.RedGraniteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.RhyoliteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.SoapstoneBlocks;
+import com.lays24mc.undergroundbiomesconstructsreworked.block.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -63,6 +60,22 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(QuartziteBlocks.QUARTZITE_BLOCK.get())
                 .add(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get())
                 .add(QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get())
+                .add(QuartziteBlocks.QUARTZITE_IRON_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_LAPIS_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_EMERALD_ORE.get())
+
+                .add(MigmatiteBlocks.MIGMATITE_BLOCK.get())
+                .add(MigmatiteBlocks.MIGMATITE_COBBLE_BLOCK.get())
+                .add(MigmatiteBlocks.MIGMATITE_BRICK_BLOCK.get())
+                .add(MigmatiteBlocks.MIGMATITE_IRON_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_LAPIS_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_EMERALD_ORE.get())
 
                 // Slabs
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get())

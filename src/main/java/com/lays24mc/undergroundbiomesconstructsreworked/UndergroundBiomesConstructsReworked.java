@@ -1,9 +1,6 @@
 package com.lays24mc.undergroundbiomesconstructsreworked;
 
-import com.lays24mc.undergroundbiomesconstructsreworked.block.QuartziteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.RedGraniteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.RhyoliteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.SoapstoneBlocks;
+import com.lays24mc.undergroundbiomesconstructsreworked.block.*;
 import com.lays24mc.undergroundbiomesconstructsreworked.item.UBCItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
@@ -50,6 +47,7 @@ public class UndergroundBiomesConstructsReworked {
         RhyoliteBlocks.register(modEventBus);
         RedGraniteBlocks.register(modEventBus);
         QuartziteBlocks.register(modEventBus);
+        MigmatiteBlocks.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
 

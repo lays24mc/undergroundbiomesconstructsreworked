@@ -1,10 +1,7 @@
 package com.lays24mc.undergroundbiomesconstructsreworked.datagen;
 
 import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.QuartziteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.RedGraniteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.RhyoliteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.SoapstoneBlocks;
+import com.lays24mc.undergroundbiomesconstructsreworked.block.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -50,6 +47,11 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         // Quartzite
         //====================================================
         buildQuartziteRecipes(recipeOutput);
+
+        //====================================================
+        // Migmatite
+        //====================================================
+        buildMigmatiteRecipes(recipeOutput);
     }
 
     // ------------------------------------------------------------
@@ -167,8 +169,14 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
     private void buildQuartziteRecipes(RecipeOutput recipeOutput) {
 
         List<ItemLike> QUARTZITE_SMELTABLES = List.of(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK);
+        List<ItemLike> QUARTZITE_IRON_SMELTABLES = List.of(QuartziteBlocks.QUARTZITE_IRON_ORE);
+        List<ItemLike> QUARTZITE_GOLD_SMELTABLES = List.of(QuartziteBlocks.QUARTZITE_GOLD_ORE);
+        List<ItemLike> QUARTZITE_REDSTONE_SMELTABLES = List.of(QuartziteBlocks.QUARTZITE_REDSTONE_ORE);
+        List<ItemLike> QUARTZITE_LAPIS_SMELTABLES = List.of(QuartziteBlocks.QUARTZITE_LAPIS_ORE);
+        List<ItemLike> QUARTZITE_DIAMOND_SMELTABLES = List.of(QuartziteBlocks.QUARTZITE_DIAMOND_ORE);
+        List<ItemLike> QUARTZITE_EMERALD_SMELTABLES = List.of(QuartziteBlocks.QUARTZITE_EMERALD_ORE);
 
-        // Quartzite Brick (4x)
+        // Red Granite Brick (4x)
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get(), 4).pattern("AA").pattern("AA").define('A', QuartziteBlocks.QUARTZITE_BLOCK.get()).unlockedBy("has_quartzite_block", has(QuartziteBlocks.QUARTZITE_BLOCK)).save(recipeOutput);
 
         // Stone Button
@@ -176,15 +184,56 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
 
         // Smelting
         oreSmelting(recipeOutput, QUARTZITE_SMELTABLES, RecipeCategory.MISC, QuartziteBlocks.QUARTZITE_BLOCK.get(), 0.25f, 200, "quartzite");
+        oreSmelting(recipeOutput, QUARTZITE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "quartzite");
+        oreSmelting(recipeOutput, QUARTZITE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "quartzite");
+        oreSmelting(recipeOutput, QUARTZITE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "quartzite");
+        oreSmelting(recipeOutput, QUARTZITE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "quartzite");
+        oreSmelting(recipeOutput, QUARTZITE_DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "quartzite");
+        oreSmelting(recipeOutput, QUARTZITE_EMERALD_SMELTABLES, RecipeCategory.MISC, Items.EMERALD, 0.25f, 200, "quartzite");
+
 
         // Stairs, Slabs, Walls, Stonecutting
         stairBuilder(QuartziteBlocks.QUARTZITE_STAIRS.get(), Ingredient.of(QuartziteBlocks.QUARTZITE_BLOCK)).group("quartzite").unlockedBy("has_quartzite_block", has(QuartziteBlocks.QUARTZITE_BLOCK)).save(recipeOutput);
-
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, QuartziteBlocks.QUARTZITE_BLOCK_SLAB.get(), QuartziteBlocks.QUARTZITE_BLOCK.get());
-
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, QuartziteBlocks.QUARTZITE_BLOCK_WALL.get(), QuartziteBlocks.QUARTZITE_BLOCK.get());
-
         stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, QuartziteBlocks.QUARTZITE_BLOCK_SLAB.get(), QuartziteBlocks.QUARTZITE_BLOCK.get(), 2);
+
+    }
+
+    // ------------------------------------------------------------
+    // MIGMATITE RECIPES
+    // ------------------------------------------------------------
+    private void buildMigmatiteRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> MIGMATITE_SMELTABLES = List.of(MigmatiteBlocks.MIGMATITE_COBBLE_BLOCK);
+        List<ItemLike> MIGMATITE_IRON_SMELTABLES = List.of(MigmatiteBlocks.MIGMATITE_IRON_ORE);
+        List<ItemLike> MIGMATITE_GOLD_SMELTABLES = List.of(MigmatiteBlocks.MIGMATITE_GOLD_ORE);
+        List<ItemLike> MIGMATITE_REDSTONE_SMELTABLES = List.of(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE);
+        List<ItemLike> MIGMATITE_LAPIS_SMELTABLES = List.of(MigmatiteBlocks.MIGMATITE_LAPIS_ORE);
+        List<ItemLike> MIGMATITE_DIAMOND_SMELTABLES = List.of(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE);
+        List<ItemLike> MIGMATITE_EMERALD_SMELTABLES = List.of(MigmatiteBlocks.MIGMATITE_EMERALD_ORE);
+
+        // Red Granite Brick (4x)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, MigmatiteBlocks.MIGMATITE_BRICK_BLOCK.get(), 4).pattern("AA").pattern("AA").define('A', MigmatiteBlocks.MIGMATITE_BLOCK.get()).unlockedBy("has_migmatite_block", has(MigmatiteBlocks.MIGMATITE_BLOCK)).save(recipeOutput);
+
+        // Stone Button
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, MigmatiteBlocks.MIGMATITE_STONE_BUTTON.get()).pattern("A").define('A', MigmatiteBlocks.MIGMATITE_BLOCK.get()).unlockedBy("has_migmatite_block", has(MigmatiteBlocks.MIGMATITE_BLOCK)).save(recipeOutput);
+
+        // Smelting
+        oreSmelting(recipeOutput, MIGMATITE_SMELTABLES, RecipeCategory.MISC, MigmatiteBlocks.MIGMATITE_BLOCK.get(), 0.25f, 200, "migmatite");
+        oreSmelting(recipeOutput, MIGMATITE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "migmatite");
+        oreSmelting(recipeOutput, MIGMATITE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "migmatite");
+        oreSmelting(recipeOutput, MIGMATITE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "migmatite");
+        oreSmelting(recipeOutput, MIGMATITE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "migmatite");
+        oreSmelting(recipeOutput, MIGMATITE_DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "migmatite");
+        oreSmelting(recipeOutput, MIGMATITE_EMERALD_SMELTABLES, RecipeCategory.MISC, Items.EMERALD, 0.25f, 200, "migmatite");
+
+
+        // Stairs, Slabs, Walls, Stonecutting
+        stairBuilder(MigmatiteBlocks.MIGMATITE_STAIRS.get(), Ingredient.of(MigmatiteBlocks.MIGMATITE_BLOCK)).group("migmatite").unlockedBy("has_migmatite_block", has(MigmatiteBlocks.MIGMATITE_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MigmatiteBlocks.MIGMATITE_BLOCK_SLAB.get(), MigmatiteBlocks.MIGMATITE_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MigmatiteBlocks.MIGMATITE_BLOCK_WALL.get(), MigmatiteBlocks.MIGMATITE_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MigmatiteBlocks.MIGMATITE_BLOCK_SLAB.get(), MigmatiteBlocks.MIGMATITE_BLOCK.get(), 2);
     }
 
 

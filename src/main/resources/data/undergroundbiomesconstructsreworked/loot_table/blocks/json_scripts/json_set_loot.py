@@ -1,7 +1,7 @@
 import os
 
 # Zielordner
-BASE_DIR = r"C:\ModdingMC\undergroundbiomesconstructsreworked\src\main\resources\assets\undergroundbiomesconstructsreworked\data\loot_table\blocks"
+BASE_DIR = r"C:\ModdingMC\undergroundbiomesconstructsreworked\src\main\resources\data\undergroundbiomesconstructsreworked\loot_table\blocks"
 
 OLD_NAME = "soapstone"
 NEW_NAME = input("Bitte gib den neuen Blocknamen ein (z.B. limestone): ").strip()

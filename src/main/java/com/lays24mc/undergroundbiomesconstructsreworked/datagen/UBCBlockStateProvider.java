@@ -1,10 +1,7 @@
 package com.lays24mc.undergroundbiomesconstructsreworked.datagen;
 
 import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.QuartziteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.RedGraniteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.RhyoliteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.SoapstoneBlocks;
+import com.lays24mc.undergroundbiomesconstructsreworked.block.*;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.custom.UBCButtonsBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.custom.UBCSlabBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.custom.UBCStairsBlocks;
@@ -75,12 +72,28 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(RedGraniteBlocks.RED_GRANITE_GOLD_ORE);
         blockWithItem(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE);
         blockWithItem(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE);
-        blockItem(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE);
-        blockItem(RedGraniteBlocks.RED_GRANITE_EMERALD_ORE);
+        blockWithItem(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE);
+        blockWithItem(RedGraniteBlocks.RED_GRANITE_EMERALD_ORE);
 
         blockWithItem(QuartziteBlocks.QUARTZITE_BLOCK);
         blockWithItem(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK);
         blockWithItem(QuartziteBlocks.QUARTZITE_BRICK_BLOCK);
+        blockWithItem(QuartziteBlocks.QUARTZITE_IRON_ORE);
+        blockWithItem(QuartziteBlocks.QUARTZITE_GOLD_ORE);
+        blockWithItem(QuartziteBlocks.QUARTZITE_REDSTONE_ORE);
+        blockWithItem(QuartziteBlocks.QUARTZITE_LAPIS_ORE);
+        blockWithItem(QuartziteBlocks.QUARTZITE_DIAMOND_ORE);
+        blockWithItem(QuartziteBlocks.QUARTZITE_EMERALD_ORE);
+
+        blockWithItem(MigmatiteBlocks.MIGMATITE_BLOCK);
+        blockWithItem(MigmatiteBlocks.MIGMATITE_COBBLE_BLOCK);
+        blockWithItem(MigmatiteBlocks.MIGMATITE_BRICK_BLOCK);
+        blockWithItem(MigmatiteBlocks.MIGMATITE_IRON_ORE);
+        blockWithItem(MigmatiteBlocks.MIGMATITE_GOLD_ORE);
+        blockWithItem(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE);
+        blockWithItem(MigmatiteBlocks.MIGMATITE_LAPIS_ORE);
+        blockWithItem(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE);
+        blockWithItem(MigmatiteBlocks.MIGMATITE_EMERALD_ORE);
 
         // --------------------------
         // Register buttons

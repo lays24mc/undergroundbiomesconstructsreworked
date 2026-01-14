@@ -60,6 +60,7 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> RED_GRANITE_IRON_ORE_SMALL_PLACED_KEY = registerKey("red_granite_iron_small_placed");
     public static final ResourceKey<PlacedFeature> RED_GRANITE_GOLD_ORE_PLACED_KEY = registerKey("red_granite_gold_ore_placed");
     public static final ResourceKey<PlacedFeature> RED_GRANITE_GOLD_ORE_LOWER_PLACED_KEY = registerKey("red_granite_gold_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> RED_GRANITE_REDSTONE_ORE_PLACED_KEY = registerKey("red_granite_redstone_ore_placed");
     public static final ResourceKey<PlacedFeature> RED_GRANITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("red_granite_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> RED_GRANITE_LAPIS_ORE_PLACED_KEY = registerKey("red_granite_lapis_ore_placed");
     public static final ResourceKey<PlacedFeature> RED_GRANITE_LAPIS_ORE_BURIED_PLACED_KEY = registerKey("red_granite_lapis_ore_buried_placed");
@@ -70,6 +71,34 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> RED_GRANITE_EMERALD_ORE_PLACED_KEY = registerKey("red_granite_ermerald_ore_placed");
 
     public static final ResourceKey<PlacedFeature> QUARTZITE_BLOCK_PLACED_KEY = registerKey("quartzite_block_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("quartzite_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_IRON_ORE_SMALL_PLACED_KEY = registerKey("quartzite_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_GOLD_ORE_PLACED_KEY = registerKey("quartzite_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_GOLD_ORE_LOWER_PLACED_KEY = registerKey("quartzite_gold_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_REDSTONE_ORE_PLACED_KEY = registerKey("quartzite_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("quartzite_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_LAPIS_ORE_PLACED_KEY = registerKey("quartzite_lapis_ore_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_LAPIS_ORE_BURIED_PLACED_KEY = registerKey("quartzite_lapis_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_DIAMOND_ORE_SMALL_PLACED_KEY = registerKey("quartzite_diamond_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_DIAMOND_ORE_LARGE_PLACED_KEY = registerKey("quartzite_diamond_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_DIAMOND_ORE_BURIED_PLACED_KEY = registerKey("quartzite_diamond_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_DIAMOND_ORE_MEDIUM_PLACED_KEY = registerKey("quartzite_diamond_ore_medium_placed");
+    public static final ResourceKey<PlacedFeature> QUARTZITE_EMERALD_ORE_PLACED_KEY = registerKey("quartzite_ermerald_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> MIGMATITE_BLOCK_PLACED_KEY = registerKey("migmatite_block_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("migmatite_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_IRON_ORE_SMALL_PLACED_KEY = registerKey("migmatite_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_GOLD_ORE_PLACED_KEY = registerKey("migmatite_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_GOLD_ORE_LOWER_PLACED_KEY = registerKey("migmatite_gold_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_REDSTONE_ORE_PLACED_KEY = registerKey("migmatite_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("migmatite_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_LAPIS_ORE_PLACED_KEY = registerKey("migmatite_lapis_ore_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_LAPIS_ORE_BURIED_PLACED_KEY = registerKey("migmatite_lapis_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_DIAMOND_ORE_SMALL_PLACED_KEY = registerKey("migmatite_diamond_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_DIAMOND_ORE_LARGE_PLACED_KEY = registerKey("migmatite_diamond_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_DIAMOND_ORE_BURIED_PLACED_KEY = registerKey("migmatite_diamond_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_DIAMOND_ORE_MEDIUM_PLACED_KEY = registerKey("migmatite_diamond_ore_medium_placed");
+    public static final ResourceKey<PlacedFeature> MIGMATITE_EMERALD_ORE_PLACED_KEY = registerKey("migmatite_ermerald_ore_placed");
 
     /**
      * Bootstrap method.
@@ -440,6 +469,19 @@ public class UBCPlacedFeatures {
                 )
         );
 
+        // Redstone ore
+        register(context, RED_GRANITE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+
         // Redstone ore – deep distribution
         register(context, RED_GRANITE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_REDSTONE_ORE_LOWER_KEY),
@@ -545,8 +587,335 @@ public class UBCPlacedFeatures {
                 commonOrePlacement(
                         2,
                         HeightRangePlacement.uniform(
-                                VerticalAnchor.absolute(0),
-                                VerticalAnchor.absolute(128)
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        // Iron ore – middle layer
+        register(context, QUARTZITE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-24),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        // Iron ore – small veins
+        register(context, QUARTZITE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        // Gold ore – standard distribution
+        register(context, QUARTZITE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        // Gold ore – lower distribution (badlands-like, higher Y-levels)
+        register(context, QUARTZITE_GOLD_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_GOLD_ORE_LOWER_KEY),
+                UBCOrePlacements.orePlacement(
+                        CountPlacement.of(UniformInt.of(0, 1)),
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-48)
+                        )
+                )
+        );
+
+        // Redstone ore
+        register(context, QUARTZITE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+        // Redstone ore – deep distribution
+        register(context, QUARTZITE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_REDSTONE_ORE_LOWER_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-32),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Lapis ore
+        register(context, QUARTZITE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-32),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        // Lapis ore buried
+        register(context, QUARTZITE_LAPIS_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(64)
+                        )
+                )
+        );
+
+        // Diamond ore small
+        register(context, QUARTZITE_DIAMOND_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_DIAMOND_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        7,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Diamond ore large
+        register(context, QUARTZITE_DIAMOND_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_DIAMOND_ORE_LARGE_KEY),
+                rareOrePlacement(
+                        9,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Diamond ore buried
+        register(context, QUARTZITE_DIAMOND_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_DIAMOND_ORE_BURIED_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Diamond ore medium
+        register(context, QUARTZITE_DIAMOND_ORE_MEDIUM_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_DIAMOND_ORE_MEDIUM_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-4)
+                        )
+                )
+        );
+
+        // Emerald ore
+        register(context, QUARTZITE_EMERALD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_EMERALD_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        /* ------------------------------------------------------------
+         * MIGMATITE
+         * ------------------------------------------------------------ */
+
+        register(context, MIGMATITE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        // Iron ore – middle layer
+        register(context, MIGMATITE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-24),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        // Iron ore – small veins
+        register(context, MIGMATITE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        // Gold ore – standard distribution
+        register(context, MIGMATITE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        // Gold ore – lower distribution (badlands-like, higher Y-levels)
+        register(context, MIGMATITE_GOLD_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_GOLD_ORE_LOWER_KEY),
+                UBCOrePlacements.orePlacement(
+                        CountPlacement.of(UniformInt.of(0, 1)),
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-48)
+                        )
+                )
+        );
+
+        // Redstone ore
+        register(context, MIGMATITE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+        // Redstone ore – deep distribution
+        register(context, MIGMATITE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_REDSTONE_ORE_LOWER_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-32),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Lapis ore
+        register(context, MIGMATITE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-32),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        // Lapis ore buried
+        register(context, MIGMATITE_LAPIS_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(64)
+                        )
+                )
+        );
+
+        // Diamond ore small
+        register(context, MIGMATITE_DIAMOND_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_DIAMOND_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        7,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Diamond ore large
+        register(context, MIGMATITE_DIAMOND_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_DIAMOND_ORE_LARGE_KEY),
+                rareOrePlacement(
+                        9,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Diamond ore buried
+        register(context, MIGMATITE_DIAMOND_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_DIAMOND_ORE_BURIED_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        // Diamond ore medium
+        register(context, MIGMATITE_DIAMOND_ORE_MEDIUM_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_DIAMOND_ORE_MEDIUM_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-4)
+                        )
+                )
+        );
+
+        // Emerald ore
+        register(context, MIGMATITE_EMERALD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_EMERALD_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(0)
                         )
                 )
         );

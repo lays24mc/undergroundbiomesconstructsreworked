@@ -1,10 +1,7 @@
 package com.lays24mc.undergroundbiomesconstructsreworked.worldgen;
 
 import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.QuartziteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.RedGraniteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.RhyoliteBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.SoapstoneBlocks;
+import com.lays24mc.undergroundbiomesconstructsreworked.block.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -55,6 +52,7 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_IRON_ORE_SMALL_KEY = registerKey("red_granite_iron_ore_small");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_GOLD_ORE_KEY = registerKey("red_granite_gold_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_GOLD_ORE_LOWER_KEY = registerKey("red_granite_gold_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_REDSTONE_ORE_KEY = registerKey("red_granite_redstone_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_REDSTONE_ORE_LOWER_KEY = registerKey("red_granite_redstone_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_LAPIS_ORE_KEY = registerKey("red_granite_lapis_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_LAPIS_ORE_BURIED_KEY = registerKey("red_granite_lapis_ore_buried");
@@ -64,10 +62,35 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_DIAMOND_ORE_MEDIUM_KEY = registerKey("red_granite_diamond_ore_medium");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RED_GRANITE_EMERALD_ORE_KEY = registerKey("red_granite_emerald_ore");
 
-
-
-
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_BLOCK_KEY = registerKey("quartzite_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_IRON_ORE_KEY = registerKey("quartzite_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_IRON_ORE_SMALL_KEY = registerKey("quartzite_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_GOLD_ORE_KEY = registerKey("quartzite_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_GOLD_ORE_LOWER_KEY = registerKey("quartzite_gold_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_REDSTONE_ORE_KEY = registerKey("quartzite_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_REDSTONE_ORE_LOWER_KEY = registerKey("quartzite_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_LAPIS_ORE_KEY = registerKey("quartzite_lapis_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_LAPIS_ORE_BURIED_KEY = registerKey("quartzite_lapis_ore_buried");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_DIAMOND_ORE_SMALL_KEY = registerKey("quartzite_diamond_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_DIAMOND_ORE_LARGE_KEY = registerKey("quartzite_diamond_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_DIAMOND_ORE_BURIED_KEY = registerKey("quartzite_diamond_ore_buried");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_DIAMOND_ORE_MEDIUM_KEY = registerKey("quartzite_diamond_ore_medium");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZITE_EMERALD_ORE_KEY = registerKey("quartzite_emerald_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_BLOCK_KEY = registerKey("migmatite_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_IRON_ORE_KEY = registerKey("migmatite_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_IRON_ORE_SMALL_KEY = registerKey("migmatite_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_GOLD_ORE_KEY = registerKey("migmatite_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_GOLD_ORE_LOWER_KEY = registerKey("migmatite_gold_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_REDSTONE_ORE_LOWER_KEY = registerKey("migmatite_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_REDSTONE_ORE_KEY = registerKey("migmatite_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_LAPIS_ORE_KEY = registerKey("migmatite_lapis_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_LAPIS_ORE_BURIED_KEY = registerKey("migmatite_lapis_ore_buried");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_DIAMOND_ORE_SMALL_KEY = registerKey("migmatite_diamond_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_DIAMOND_ORE_LARGE_KEY = registerKey("migmatite_diamond_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_DIAMOND_ORE_BURIED_KEY = registerKey("migmatite_diamond_ore_buried");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_DIAMOND_ORE_MEDIUM_KEY = registerKey("migmatite_diamond_ore_medium");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_EMERALD_ORE_KEY = registerKey("migmatite_emerald_ore");
 
     //public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
     //public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
@@ -166,14 +189,15 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_RHYOLITE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(rhyoliteLapisTargets, 7));
 
         //Red Granite
+
         List<OreConfiguration.TargetBlockState> overworldRedGraniteBlock = List.of(
-                OreConfiguration.target(deepslateReplaceables, RedGraniteBlocks.RED_GRANITE_BLOCK.get().defaultBlockState()));
-
-        register(context, OVERWORLD_RED_GRANITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldRedGraniteBlock, 64));
-
-        List<OreConfiguration.TargetBlockState> redgraniteIronTargets = List.of(
+                OreConfiguration.target(deepslateReplaceables, RedGraniteBlocks.RED_GRANITE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(new BlockMatchTest(RedGraniteBlocks.RED_GRANITE_BLOCK.get()),
                         RedGraniteBlocks.RED_GRANITE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> redgraniteIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(QuartziteBlocks.QUARTZITE_BLOCK.get()),
+                        QuartziteBlocks.QUARTZITE_IRON_ORE.get().defaultBlockState()));
 
         List<OreConfiguration.TargetBlockState> redgraniteGoldTargets = List.of(
                 OreConfiguration.target(new BlockMatchTest(RedGraniteBlocks.RED_GRANITE_BLOCK.get()),
@@ -195,13 +219,13 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(RedGraniteBlocks.RED_GRANITE_BLOCK.get()),
                         RedGraniteBlocks.RED_GRANITE_EMERALD_ORE.get().defaultBlockState()));
 
-
-
+        register(context, OVERWORLD_RED_GRANITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldRedGraniteBlock, 64));
         register(context, OVERWORLD_RED_GRANITE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(redgraniteIronTargets, 9));
         register(context, OVERWORLD_RED_GRANITE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(redgraniteIronTargets, 4));
         register(context, OVERWORLD_RED_GRANITE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(redgraniteGoldTargets, 9));
         register(context, OVERWORLD_RED_GRANITE_GOLD_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(redgraniteGoldTargets, 4, 0.5f));
         register(context, OVERWORLD_RED_GRANITE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(redgraniteRedstoneTargets, 8));
+        register(context, OVERWORLD_RED_GRANITE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(redgraniteRedstoneTargets, 8));
         register(context, OVERWORLD_RED_GRANITE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(redgraniteLapisTargets, 7));
         register(context, OVERWORLD_RED_GRANITE_LAPIS_ORE_BURIED_KEY, Feature.ORE, new OreConfiguration(redgraniteLapisTargets, 7, 1.0F));
         register(context, OVERWORLD_RED_GRANITE_DIAMOND_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(redgraniteDiamondTargets, 4, 0.5F));
@@ -212,9 +236,92 @@ public class UBCConfiguredFeatures {
 
         //Quartzite
         List<OreConfiguration.TargetBlockState> overworldQuartziteBlock = List.of(
-                OreConfiguration.target(stoneReplaceables, QuartziteBlocks.QUARTZITE_BLOCK.get().defaultBlockState()));
+                OreConfiguration.target(deepslateReplaceables, QuartziteBlocks.QUARTZITE_BLOCK.get().defaultBlockState()));
 
         register(context, OVERWORLD_QUARTZITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldQuartziteBlock, 64));
+
+        List<OreConfiguration.TargetBlockState> quartziteIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(QuartziteBlocks.QUARTZITE_BLOCK.get()),
+                        QuartziteBlocks.QUARTZITE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> quartziteGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(QuartziteBlocks.QUARTZITE_BLOCK.get()),
+                        QuartziteBlocks.QUARTZITE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> quartziteRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(QuartziteBlocks.QUARTZITE_BLOCK.get()),
+                        QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> quartziteLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(SoapstoneBlocks.SOAPSTONE_BLOCK.get()),
+                        SoapstoneBlocks.SOAPSTONE_LAPIS_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> quartziteDiamondTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(QuartziteBlocks.QUARTZITE_BLOCK.get()),
+                        QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> quartziteEmeraldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(QuartziteBlocks.QUARTZITE_BLOCK.get()),
+                        QuartziteBlocks.QUARTZITE_EMERALD_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_QUARTZITE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(quartziteIronTargets, 9));
+        register(context, OVERWORLD_QUARTZITE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(quartziteIronTargets, 4));
+        register(context, OVERWORLD_QUARTZITE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(quartziteGoldTargets, 9));
+        register(context, OVERWORLD_QUARTZITE_GOLD_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(quartziteGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_QUARTZITE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(quartziteRedstoneTargets, 8));
+        register(context, OVERWORLD_QUARTZITE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(quartziteRedstoneTargets, 8));
+
+        register(context, OVERWORLD_QUARTZITE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(quartziteLapisTargets, 7));
+        register(context, OVERWORLD_QUARTZITE_LAPIS_ORE_BURIED_KEY, Feature.ORE, new OreConfiguration(quartziteLapisTargets, 7, 1.0F));
+        register(context, OVERWORLD_QUARTZITE_DIAMOND_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(quartziteDiamondTargets, 4, 0.5F));
+        register(context, OVERWORLD_QUARTZITE_DIAMOND_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(quartziteDiamondTargets, 12, 0.7F));
+        register(context, OVERWORLD_QUARTZITE_DIAMOND_ORE_BURIED_KEY, Feature.ORE, new OreConfiguration(quartziteDiamondTargets, 8, 1.0F));
+        register(context, OVERWORLD_QUARTZITE_DIAMOND_ORE_MEDIUM_KEY, Feature.ORE, new OreConfiguration(quartziteDiamondTargets, 8, 0.5F));
+        register(context, OVERWORLD_QUARTZITE_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(quartziteEmeraldTargets, 3));
+
+        //Migmatite
+        List<OreConfiguration.TargetBlockState> overworldMigmatiteBlock = List.of(
+                OreConfiguration.target(deepslateReplaceables, MigmatiteBlocks.MIGMATITE_BLOCK.get().defaultBlockState()));
+
+        register(context, OVERWORLD_MIGMATITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldMigmatiteBlock, 64));
+
+        List<OreConfiguration.TargetBlockState> migmatiteIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(MigmatiteBlocks.MIGMATITE_BLOCK.get()),
+                        MigmatiteBlocks.MIGMATITE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> migmatiteGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(MigmatiteBlocks.MIGMATITE_BLOCK.get()),
+                        MigmatiteBlocks.MIGMATITE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> migmatiteRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(MigmatiteBlocks.MIGMATITE_BLOCK.get()),
+                        MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> migmatiteLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(SoapstoneBlocks.SOAPSTONE_BLOCK.get()),
+                        SoapstoneBlocks.SOAPSTONE_LAPIS_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> migmatiteDiamondTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(MigmatiteBlocks.MIGMATITE_BLOCK.get()),
+                        MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> migmatiteEmeraldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(MigmatiteBlocks.MIGMATITE_BLOCK.get()),
+                        MigmatiteBlocks.MIGMATITE_EMERALD_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_MIGMATITE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(migmatiteIronTargets, 9));
+        register(context, OVERWORLD_MIGMATITE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(migmatiteIronTargets, 4));
+        register(context, OVERWORLD_MIGMATITE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(migmatiteGoldTargets, 9));
+        register(context, OVERWORLD_MIGMATITE_GOLD_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(migmatiteGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_MIGMATITE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(migmatiteRedstoneTargets, 8));
+        register(context, OVERWORLD_MIGMATITE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(migmatiteRedstoneTargets, 8));
+        register(context, OVERWORLD_MIGMATITE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(migmatiteLapisTargets, 7));
+        register(context, OVERWORLD_MIGMATITE_LAPIS_ORE_BURIED_KEY, Feature.ORE, new OreConfiguration(migmatiteLapisTargets, 7, 1.0F));
+        register(context, OVERWORLD_MIGMATITE_DIAMOND_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(migmatiteDiamondTargets, 4, 0.5F));
+        register(context, OVERWORLD_MIGMATITE_DIAMOND_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(migmatiteDiamondTargets, 12, 0.7F));
+        register(context, OVERWORLD_MIGMATITE_DIAMOND_ORE_BURIED_KEY, Feature.ORE, new OreConfiguration(migmatiteDiamondTargets, 8, 1.0F));
+        register(context, OVERWORLD_MIGMATITE_DIAMOND_ORE_MEDIUM_KEY, Feature.ORE, new OreConfiguration(migmatiteDiamondTargets, 8, 0.5F));
+        register(context, OVERWORLD_MIGMATITE_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(migmatiteEmeraldTargets, 3));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
