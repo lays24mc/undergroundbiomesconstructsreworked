@@ -128,6 +128,49 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(QuartziteBlocks.QUARTZITE_COBBLE_WALL.get())
                 .add(QuartziteBlocks.QUARTZITE_BRICK_WALL.get());
 
+        // Ore tags
+        tag(BlockTags.COAL_ORES)
+                .add(SoapstoneBlocks.SOAPSTONE_COAL_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_COAL_ORE.get());
+
+        tag(BlockTags.COPPER_ORES)
+                .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_COPPER_ORE.get());
+
+        tag(BlockTags.IRON_ORES)
+                .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_IRON_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_IRON_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_IRON_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_IRON_ORE.get());
+
+        tag(BlockTags.GOLD_ORES)
+                .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_GOLD_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get());
+
+        tag(BlockTags.DIAMOND_ORES)
+                .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get());
+
+        tag(BlockTags.EMERALD_ORES)
+                .add(RedGraniteBlocks.RED_GRANITE_EMERALD_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_EMERALD_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_EMERALD_ORE.get());
+
+        tag(BlockTags.LAPIS_ORES)
+                .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_LAPIS_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_LAPIS_ORE.get());
+
+        tag(BlockTags.REDSTONE_ORES)
+                .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get());
+
         // Defines blocks considered as overworld base stone for generation purposes
         tag(BlockTags.BASE_STONE_OVERWORLD)
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK.get())
