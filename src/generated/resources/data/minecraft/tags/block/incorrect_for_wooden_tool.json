@@ -1,0 +1,29 @@
+{
+  "values": [
+    "undergroundbiomesconstructsreworked:red_granite_diamond_ore",
+    "undergroundbiomesconstructsreworked:quartzite_diamond_ore",
+    "undergroundbiomesconstructsreworked:migmatite_diamond_ore",
+    "undergroundbiomesconstructsreworked:red_granite_lapis_ore",
+    "undergroundbiomesconstructsreworked:quartzite_lapis_ore",
+    "undergroundbiomesconstructsreworked:migmatite_lapis_ore",
+    "undergroundbiomesconstructsreworked:soapstone_gold_ore",
+    "undergroundbiomesconstructsreworked:rhyolite_gold_ore",
+    "undergroundbiomesconstructsreworked:red_granite_gold_ore",
+    "undergroundbiomesconstructsreworked:quartzite_gold_ore",
+    "undergroundbiomesconstructsreworked:migmatite_gold_ore",
+    "undergroundbiomesconstructsreworked:soapstone_redstone_ore",
+    "undergroundbiomesconstructsreworked:rhyolite_redstone_ore",
+    "undergroundbiomesconstructsreworked:red_granite_redstone_ore",
+    "undergroundbiomesconstructsreworked:quartzite_redstone_ore",
+    "undergroundbiomesconstructsreworked:migmatite_redstone_ore",
+    "undergroundbiomesconstructsreworked:soapstone_iron_ore",
+    "undergroundbiomesconstructsreworked:rhyolite_iron_ore",
+    "undergroundbiomesconstructsreworked:red_granite_iron_ore",
+    "undergroundbiomesconstructsreworked:quartzite_iron_ore",
+    "undergroundbiomesconstructsreworked:migmatite_iron_ore",
+    "undergroundbiomesconstructsreworked:soapstone_copper_ore",
+    "undergroundbiomesconstructsreworked:rhyolite_copper_ore",
+    "undergroundbiomesconstructsreworked:soapstone_coal_ore",
+    "undergroundbiomesconstructsreworked:rhyolite_coal_ore"
+  ]
+}

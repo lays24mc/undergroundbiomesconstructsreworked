@@ -128,6 +128,116 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(QuartziteBlocks.QUARTZITE_COBBLE_WALL.get())
                 .add(QuartziteBlocks.QUARTZITE_BRICK_WALL.get());
 
+
+        //tools tag
+        tag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_GOLD_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_REDSTONE_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get());
+
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_LAPIS_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_LAPIS_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_LAPIS_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_LAPIS_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_IRON_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_IRON_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_IRON_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_IRON_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_COPPER_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_COAL_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_COAL_ORE.get());
+
+        tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+                .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_GOLD_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_REDSTONE_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get());
+
+        tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
+                .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_LAPIS_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_LAPIS_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_GOLD_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_REDSTONE_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_IRON_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_IRON_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_IRON_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_IRON_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_COPPER_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_COAL_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_COAL_ORE.get());
+
+        tag(BlockTags.INCORRECT_FOR_IRON_TOOL);
+
+        tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
+                .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_LAPIS_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_LAPIS_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_GOLD_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_REDSTONE_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_IRON_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_IRON_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_IRON_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_IRON_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_COPPER_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_COAL_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_COAL_ORE.get());
+
+        tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
+
+        tag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL);
+
         // Ore tags
         tag(BlockTags.COAL_ORES)
                 .add(SoapstoneBlocks.SOAPSTONE_COAL_ORE.get())
@@ -176,7 +286,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK.get())
                 .add(RhyoliteBlocks.RHYOLITE_BLOCK.get())
                 .add(RedGraniteBlocks.RED_GRANITE_BLOCK.get())
-                .add(QuartziteBlocks.QUARTZITE_BLOCK.get());
+                .add(QuartziteBlocks.QUARTZITE_BLOCK.get())
+                .add(MigmatiteBlocks.MIGMATITE_BLOCK.get());
 
         // Identifies all stairs
         tag(BlockTags.STAIRS)
