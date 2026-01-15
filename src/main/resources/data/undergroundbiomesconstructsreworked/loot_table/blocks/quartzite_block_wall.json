@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "undergroundbiomesconstructsreworked:quartzite_block_wall_block"
+          "name": "undergroundbiomesconstructsreworked:quartzite_block_wall"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "undergroundbiomesconstructsreworked:blocks/quartzite_block_wall_block"
+  "random_sequence": "undergroundbiomesconstructsreworked:blocks/quartzite_block_wall"
 }

@@ -52,6 +52,11 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         // Migmatite
         //====================================================
         buildMigmatiteRecipes(recipeOutput);
+
+        //====================================================
+        // Marble
+        //====================================================
+        buildMarbleRecipes(recipeOutput);
     }
 
     // ------------------------------------------------------------
@@ -234,6 +239,44 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MigmatiteBlocks.MIGMATITE_BLOCK_SLAB.get(), MigmatiteBlocks.MIGMATITE_BLOCK.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MigmatiteBlocks.MIGMATITE_BLOCK_WALL.get(), MigmatiteBlocks.MIGMATITE_BLOCK.get());
         stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MigmatiteBlocks.MIGMATITE_BLOCK_SLAB.get(), MigmatiteBlocks.MIGMATITE_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // MARBLE RECIPES
+    // ------------------------------------------------------------
+    private void buildMarbleRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> MARBLE_SMELTABLES = List.of(MarbleBlocks.MARBLE_COBBLE_BLOCK);
+        List<ItemLike> MARBLE_COAL_SMELTABLES = List.of(MarbleBlocks.MARBLE_COAL_ORE);
+        List<ItemLike> MARBLE_COPPER_SMELTABLES = List.of(MarbleBlocks.MARBLE_COPPER_ORE);
+        List<ItemLike> MARBLE_IRON_SMELTABLES = List.of(MarbleBlocks.MARBLE_IRON_ORE);
+        List<ItemLike> MARBLE_GOLD_SMELTABLES = List.of(MarbleBlocks.MARBLE_GOLD_ORE);
+        List<ItemLike> MARBLE_REDSTONE_SMELTABLES = List.of(MarbleBlocks.MARBLE_REDSTONE_ORE);
+        List<ItemLike> MARBLE_LAPIS_SMELTABLES = List.of(MarbleBlocks.MARBLE_LAPIS_ORE);
+
+        // Marble Brick (4x)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, MarbleBlocks.MARBLE_BRICK_BLOCK.get(), 4).pattern("AA").pattern("AA").define('A', MarbleBlocks.MARBLE_BLOCK.get()).unlockedBy("has_marble_block", has(MarbleBlocks.MARBLE_BLOCK)).save(recipeOutput);
+
+        // Stone Button
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, MarbleBlocks.MARBLE_STONE_BUTTON.get()).pattern("A").define('A', MarbleBlocks.MARBLE_BLOCK.get()).unlockedBy("has_marble_block", has(MarbleBlocks.MARBLE_BLOCK)).save(recipeOutput);
+
+        // Smelting
+        oreSmelting(recipeOutput, MARBLE_SMELTABLES, RecipeCategory.MISC, MarbleBlocks.MARBLE_BLOCK.get(), 0.25f, 200, "marble");
+        oreSmelting(recipeOutput, MARBLE_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "marble");
+        oreSmelting(recipeOutput, MARBLE_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "marble");
+        oreSmelting(recipeOutput, MARBLE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "marble");
+        oreSmelting(recipeOutput, MARBLE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "marble");
+        oreSmelting(recipeOutput, MARBLE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "marble");
+        oreSmelting(recipeOutput, MARBLE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "marble");
+
+        // Blasting
+//        oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
+
+        // Stairs, Slabs, Walls, Stonecutting
+        stairBuilder(MarbleBlocks.MARBLE_STAIRS.get(), Ingredient.of(MarbleBlocks.MARBLE_BLOCK)).group("marble").unlockedBy("has_marble_block", has(MarbleBlocks.MARBLE_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MarbleBlocks.MARBLE_BLOCK_SLAB.get(), MarbleBlocks.MARBLE_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MarbleBlocks.MARBLE_BLOCK_WALL.get(), MarbleBlocks.MARBLE_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MarbleBlocks.MARBLE_BLOCK_SLAB.get(), MarbleBlocks.MARBLE_BLOCK.get(), 2);
     }
 
 

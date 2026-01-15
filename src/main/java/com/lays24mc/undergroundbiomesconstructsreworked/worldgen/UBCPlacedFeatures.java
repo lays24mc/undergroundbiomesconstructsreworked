@@ -100,6 +100,19 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> MIGMATITE_DIAMOND_ORE_MEDIUM_PLACED_KEY = registerKey("migmatite_diamond_ore_medium_placed");
     public static final ResourceKey<PlacedFeature> MIGMATITE_EMERALD_ORE_PLACED_KEY = registerKey("migmatite_ermerald_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> MARBLE_BLOCK_PLACED_KEY = registerKey("marble_block_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_COAL_ORE_PLACED_KEY = registerKey("marble_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("marble_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_COPPER_ORE_LARGE_PLACED_KEY = registerKey("marble_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_IRON_ORE_UPPER_PLACED_KEY = registerKey("marble_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("marble_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_IRON_ORE_SMALL_PLACED_KEY = registerKey("marble_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_GOLD_ORE_PLACED_KEY = registerKey("marble_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("marble_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_REDSTONE_ORE_PLACED_KEY = registerKey("marble_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("marble_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> MARBLE_LAPIS_ORE_PLACED_KEY = registerKey("marble_lapis_ore_placed");
+
     /**
      * Bootstrap method.
      * Called during worldgen setup to register all PlacedFeatures.
@@ -919,7 +932,157 @@ public class UBCPlacedFeatures {
                         )
                 )
         );
+
+        /* ------------------------------------------------------------
+         * MARBLE – Base stone
+         * ------------------------------------------------------------ */
+
+        // Marble base rock (rare, spans most of the world height)
+        register(context, MARBLE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+        // Marble coal ore (very common, high Y-levels)
+        register(context, MARBLE_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_COAL_ORE_KEY),
+                commonOrePlacement(
+                        30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        )
+                )
+        );
+
+        // Small copper veins
+        register(context, MARBLE_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+        // Large copper veins
+        register(context, MARBLE_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+        // Iron ore – upper layer
+        register(context, MARBLE_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+        // Iron ore – middle layer
+        register(context, MARBLE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        )
+                )
+        );
+
+        // Iron ore – small veins
+        register(context, MARBLE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        )
+                )
+        );
+
+        // Gold ore – standard distribution
+        register(context, MARBLE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+        // Gold ore – extra distribution (badlands-like, higher Y-levels)
+        register(context, MARBLE_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        )
+                )
+        );
+
+        // Redstone ore – standard distribution
+        register(context, MARBLE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+        // Redstone ore – deep distribution
+        register(context, MARBLE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        )
+                )
+        );
+
+        // Lapis ore
+        register(context, MARBLE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
     }
+
+
 
     /**
      * Creates a ResourceKey for a PlacedFeature

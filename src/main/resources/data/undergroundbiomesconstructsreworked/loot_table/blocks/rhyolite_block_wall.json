@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "undergroundbiomesconstructsreworked:rhyolite_block_wall_block"
+          "name": "undergroundbiomesconstructsreworked:rhyolite_block_wall"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "undergroundbiomesconstructsreworked:blocks/rhyolite_block_wall_block"
+  "random_sequence": "undergroundbiomesconstructsreworked:blocks/rhyolite_block_wall"
 }

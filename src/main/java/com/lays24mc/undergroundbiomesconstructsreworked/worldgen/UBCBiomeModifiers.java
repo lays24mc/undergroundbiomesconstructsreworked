@@ -78,6 +78,19 @@ public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_MIGMATITE_DIAMOND_ORE_MEDIUM = registerKey("add_migmatite_diamond_ore_medium");
     public static final ResourceKey<BiomeModifier> ADD_MIGMATITE_EMERALD_ORE = registerKey("add_migmatite_emerald_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_BLOCK = registerKey("add_marble_block");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_COAL_ORE = registerKey("add_marble_coal_ore");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_COPPER_SMALL_ORE = registerKey("add_marble_copper_small_ore");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_COPPER_ORE_LARGE = registerKey("add_marble_copper_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_IRON_ORE_UPPER = registerKey("add_marble_iron_ore_upper");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_IRON_ORE_MIDDLE = registerKey("add_marble_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_IRON_ORE_SMALL = registerKey("add_marble_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_GOLD_ORE = registerKey("add_marble_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_GOLD_ORE_EXTRA = registerKey("add_marble_gold_ore_extra");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_REDSTONE_ORE = registerKey("add_marble_redstone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_REDSTONE_ORE_LOWER = registerKey("add_marble_redstone_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_MARBLE_LAPIS_ORE = registerKey("add_marble_lapis_ore");
+
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         // CF -> PF -> BM
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -400,6 +413,67 @@ public class UBCBiomeModifiers {
         context.register(ADD_MIGMATITE_EMERALD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MIGMATITE_EMERALD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //marble
+        context.register(ADD_MARBLE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_COAL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_COAL_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_COPPER_SMALL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_COPPER_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_COPPER_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_COPPER_ORE_LARGE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_IRON_ORE_UPPER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_IRON_ORE_UPPER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_IRON_ORE_MIDDLE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_GOLD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_GOLD_ORE_EXTRA, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_GOLD_ORE_EXTRA_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_REDSTONE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_REDSTONE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_REDSTONE_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_MARBLE_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_LAPIS_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
     }

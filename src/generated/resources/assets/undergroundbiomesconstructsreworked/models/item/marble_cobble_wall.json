@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "undergroundbiomesconstructsreworked:block/marble_cobble_block"
+  }
+}

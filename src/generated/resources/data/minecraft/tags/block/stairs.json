@@ -11,6 +11,12 @@
     "undergroundbiomesconstructsreworked:red_granite_cobble_stairs",
     "undergroundbiomesconstructsreworked:quartzite_stairs",
     "undergroundbiomesconstructsreworked:quartzite_brick_stairs",
-    "undergroundbiomesconstructsreworked:quartzite_cobble_stairs"
+    "undergroundbiomesconstructsreworked:quartzite_cobble_stairs",
+    "undergroundbiomesconstructsreworked:migmatite_stairs",
+    "undergroundbiomesconstructsreworked:migmatite_brick_stairs",
+    "undergroundbiomesconstructsreworked:migmatite_cobble_stairs",
+    "undergroundbiomesconstructsreworked:marble_stairs",
+    "undergroundbiomesconstructsreworked:marble_brick_stairs",
+    "undergroundbiomesconstructsreworked:marble_cobble_stairs"
   ]
 }

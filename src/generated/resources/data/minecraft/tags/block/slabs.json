@@ -11,6 +11,12 @@
     "undergroundbiomesconstructsreworked:rhyolite_brick_slab",
     "undergroundbiomesconstructsreworked:quartzite_block_slab",
     "undergroundbiomesconstructsreworked:quartzite_cobble_slab",
-    "undergroundbiomesconstructsreworked:quartzite_brick_slab"
+    "undergroundbiomesconstructsreworked:quartzite_brick_slab",
+    "undergroundbiomesconstructsreworked:migmatite_block_slab",
+    "undergroundbiomesconstructsreworked:migmatite_cobble_slab",
+    "undergroundbiomesconstructsreworked:migmatite_brick_slab",
+    "undergroundbiomesconstructsreworked:marble_block_slab",
+    "undergroundbiomesconstructsreworked:marble_cobble_slab",
+    "undergroundbiomesconstructsreworked:marble_brick_slab"
   ]
 }

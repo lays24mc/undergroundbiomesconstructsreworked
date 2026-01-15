@@ -95,6 +95,16 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE);
         blockWithItem(MigmatiteBlocks.MIGMATITE_EMERALD_ORE);
 
+        blockWithItem(MarbleBlocks.MARBLE_BLOCK);
+        blockWithItem(MarbleBlocks.MARBLE_COBBLE_BLOCK);
+        blockWithItem(MarbleBlocks.MARBLE_BRICK_BLOCK);
+        blockWithItem(MarbleBlocks.MARBLE_COAL_ORE);
+        blockWithItem(MarbleBlocks.MARBLE_COPPER_ORE);
+        blockWithItem(MarbleBlocks.MARBLE_IRON_ORE);
+        blockWithItem(MarbleBlocks.MARBLE_GOLD_ORE);
+        blockWithItem(MarbleBlocks.MARBLE_REDSTONE_ORE);
+        blockWithItem(MarbleBlocks.MARBLE_LAPIS_ORE);
+
         // --------------------------
         // Register buttons
         // --------------------------
@@ -102,6 +112,8 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         buttonWithItem((UBCButtonsBlocks) RhyoliteBlocks.RHYOLITE_STONE_BUTTON.get(), "rhyolite_stone_button", "rhyolite_block");
         buttonWithItem((UBCButtonsBlocks) RedGraniteBlocks.RED_GRANITE_STONE_BUTTON.get(), "red_granite_stone_button", "red_granite_block");
         buttonWithItem((UBCButtonsBlocks) QuartziteBlocks.QUARTZITE_STONE_BUTTON.get(), "quartzite_stone_button", "quartzite_block");
+        buttonWithItem((UBCButtonsBlocks) MigmatiteBlocks.MIGMATITE_STONE_BUTTON.get(), "migmatite_stone_button", "migmatite_block");
+        buttonWithItem((UBCButtonsBlocks) MarbleBlocks.MARBLE_STONE_BUTTON.get(), "marble_stone_button", "marble_block");
 
         // --------------------------
         // Register stairs, slabs, and walls, blocks multiple
@@ -138,6 +150,22 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockItem(QuartziteBlocks.QUARTZITE_COBBLE_STAIRS);
         blockItem(QuartziteBlocks.QUARTZITE_BRICK_STAIRS);
 
+        blockItem(MigmatiteBlocks.MIGMATITE_STAIRS);
+        blockItem(MigmatiteBlocks.MIGMATITE_COBBLE_STAIRS);
+        blockItem(MigmatiteBlocks.MIGMATITE_BRICK_STAIRS);
+
+        blockItem(MigmatiteBlocks.MIGMATITE_BLOCK_SLAB);
+        blockItem(MigmatiteBlocks.MIGMATITE_COBBLE_SLAB);
+        blockItem(MigmatiteBlocks.MIGMATITE_BRICK_SLAB);
+
+        blockItem(MarbleBlocks.MARBLE_STAIRS);
+        blockItem(MarbleBlocks.MARBLE_COBBLE_STAIRS);
+        blockItem(MarbleBlocks.MARBLE_BRICK_STAIRS);
+
+        blockItem(MarbleBlocks.MARBLE_BLOCK_SLAB);
+        blockItem(MarbleBlocks.MARBLE_COBBLE_SLAB);
+        blockItem(MarbleBlocks.MARBLE_BRICK_SLAB);
+
         wallItem(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL, SoapstoneBlocks.SOAPSTONE_BLOCK.get());
         wallItem(SoapstoneBlocks.SOAPSTONE_COBBLE_WALL, SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get());
         wallItem(SoapstoneBlocks.SOAPSTONE_BRICK_WALL, SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK.get());
@@ -153,6 +181,15 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallItem(QuartziteBlocks.QUARTZITE_BLOCK_WALL, QuartziteBlocks.QUARTZITE_BLOCK.get());
         wallItem(QuartziteBlocks.QUARTZITE_COBBLE_WALL, QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get());
         wallItem(QuartziteBlocks.QUARTZITE_BRICK_WALL, QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get());
+
+        wallItem(MigmatiteBlocks.MIGMATITE_BLOCK_WALL, MigmatiteBlocks.MIGMATITE_BLOCK.get());
+        wallItem(MigmatiteBlocks.MIGMATITE_COBBLE_WALL, MigmatiteBlocks.MIGMATITE_COBBLE_BLOCK.get());
+        wallItem(MigmatiteBlocks.MIGMATITE_BRICK_WALL, MigmatiteBlocks.MIGMATITE_BRICK_BLOCK.get());
+
+        wallItem(MarbleBlocks.MARBLE_BLOCK_WALL, MarbleBlocks.MARBLE_BLOCK.get());
+        wallItem(MarbleBlocks.MARBLE_COBBLE_WALL, MarbleBlocks.MARBLE_COBBLE_BLOCK.get());
+        wallItem(MarbleBlocks.MARBLE_BRICK_WALL, MarbleBlocks.MARBLE_BRICK_BLOCK.get());
+
 
         // Stairs
         stairsBlock((UBCStairsBlocks) SoapstoneBlocks.SOAPSTONE_STAIRS.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
@@ -170,6 +207,14 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         stairsBlock((UBCStairsBlocks) QuartziteBlocks.QUARTZITE_STAIRS.get(), blockTexture(QuartziteBlocks.QUARTZITE_BLOCK.get()));
         stairsBlock((UBCStairsBlocks) QuartziteBlocks.QUARTZITE_COBBLE_STAIRS.get(), blockTexture(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get()));
         stairsBlock((UBCStairsBlocks) QuartziteBlocks.QUARTZITE_BRICK_STAIRS.get(), blockTexture(QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) MigmatiteBlocks.MIGMATITE_STAIRS.get(), blockTexture(MigmatiteBlocks.MIGMATITE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) MigmatiteBlocks.MIGMATITE_COBBLE_STAIRS.get(), blockTexture(MigmatiteBlocks.MIGMATITE_COBBLE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) MigmatiteBlocks.MIGMATITE_BRICK_STAIRS.get(), blockTexture(MigmatiteBlocks.MIGMATITE_BRICK_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) MarbleBlocks.MARBLE_STAIRS.get(), blockTexture(MarbleBlocks.MARBLE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) MarbleBlocks.MARBLE_COBBLE_STAIRS.get(), blockTexture(MarbleBlocks.MARBLE_COBBLE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) MarbleBlocks.MARBLE_BRICK_STAIRS.get(), blockTexture(MarbleBlocks.MARBLE_BRICK_BLOCK.get()));
 
         // Slabs
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
@@ -189,11 +234,18 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         slabBlock((UBCSlabBlocks) QuartziteBlocks.QUARTZITE_COBBLE_SLAB.get(), blockTexture(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get()), blockTexture(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) QuartziteBlocks.QUARTZITE_BRICK_SLAB.get(), blockTexture(QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get()), blockTexture(QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get()));
 
+        slabBlock((UBCSlabBlocks) MigmatiteBlocks.MIGMATITE_BLOCK_SLAB.get(), blockTexture(MigmatiteBlocks.MIGMATITE_BLOCK.get()), blockTexture(MigmatiteBlocks.MIGMATITE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) MigmatiteBlocks.MIGMATITE_COBBLE_SLAB.get(), blockTexture(MigmatiteBlocks.MIGMATITE_COBBLE_BLOCK.get()), blockTexture(MigmatiteBlocks.MIGMATITE_COBBLE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) MigmatiteBlocks.MIGMATITE_BRICK_SLAB.get(), blockTexture(MigmatiteBlocks.MIGMATITE_BRICK_BLOCK.get()), blockTexture(MigmatiteBlocks.MIGMATITE_BRICK_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) MarbleBlocks.MARBLE_BLOCK_SLAB.get(), blockTexture(MarbleBlocks.MARBLE_BLOCK.get()), blockTexture(MarbleBlocks.MARBLE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) MarbleBlocks.MARBLE_COBBLE_SLAB.get(), blockTexture(MarbleBlocks.MARBLE_COBBLE_BLOCK.get()), blockTexture(MarbleBlocks.MARBLE_COBBLE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) MarbleBlocks.MARBLE_BRICK_SLAB.get(), blockTexture(MarbleBlocks.MARBLE_BRICK_BLOCK.get()), blockTexture(MarbleBlocks.MARBLE_BRICK_BLOCK.get()));
+
         // Walls
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_COBBLE_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()));
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_BRICK_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK.get()));
-
 
         wallBlock((UBCWallBlocks) RhyoliteBlocks.RHYOLITE_BLOCK_WALL.get(), blockTexture(RhyoliteBlocks.RHYOLITE_BLOCK.get()));
         wallBlock((UBCWallBlocks) RhyoliteBlocks.RHYOLITE_COBBLE_WALL.get(), blockTexture(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK.get()));
@@ -206,6 +258,14 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallBlock((UBCWallBlocks) QuartziteBlocks.QUARTZITE_BLOCK_WALL.get(), blockTexture(QuartziteBlocks.QUARTZITE_BLOCK.get()));
         wallBlock((UBCWallBlocks) QuartziteBlocks.QUARTZITE_COBBLE_WALL.get(), blockTexture(QuartziteBlocks.QUARTZITE_COBBLE_BLOCK.get()));
         wallBlock((UBCWallBlocks) QuartziteBlocks.QUARTZITE_BRICK_WALL.get(), blockTexture(QuartziteBlocks.QUARTZITE_BRICK_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) MigmatiteBlocks.MIGMATITE_BLOCK_WALL.get(), blockTexture(MigmatiteBlocks.MIGMATITE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) MigmatiteBlocks.MIGMATITE_COBBLE_WALL.get(), blockTexture(MigmatiteBlocks.MIGMATITE_COBBLE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) MigmatiteBlocks.MIGMATITE_BRICK_WALL.get(), blockTexture(MigmatiteBlocks.MIGMATITE_BRICK_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) MarbleBlocks.MARBLE_BLOCK_WALL.get(), blockTexture(MarbleBlocks.MARBLE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) MarbleBlocks.MARBLE_COBBLE_WALL.get(), blockTexture(MarbleBlocks.MARBLE_COBBLE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) MarbleBlocks.MARBLE_BRICK_WALL.get(), blockTexture(MarbleBlocks.MARBLE_BRICK_BLOCK.get()));
 
     }
 

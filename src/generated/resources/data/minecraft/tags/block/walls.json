@@ -11,6 +11,12 @@
     "undergroundbiomesconstructsreworked:red_granite_brick_wall",
     "undergroundbiomesconstructsreworked:quartzite_block_wall",
     "undergroundbiomesconstructsreworked:quartzite_cobble_wall",
-    "undergroundbiomesconstructsreworked:quartzite_brick_wall"
+    "undergroundbiomesconstructsreworked:quartzite_brick_wall",
+    "undergroundbiomesconstructsreworked:migmatite_block_wall",
+    "undergroundbiomesconstructsreworked:migmatite_cobble_wall",
+    "undergroundbiomesconstructsreworked:migmatite_brick_wall",
+    "undergroundbiomesconstructsreworked:marble_block_wall",
+    "undergroundbiomesconstructsreworked:marble_cobble_wall",
+    "undergroundbiomesconstructsreworked:marble_brick_wall"
   ]
 }

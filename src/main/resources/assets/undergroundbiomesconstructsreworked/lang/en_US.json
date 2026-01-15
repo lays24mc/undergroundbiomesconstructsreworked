@@ -104,5 +104,26 @@
   "block.undergroundbiomesconstructsreworked.migmatite_gold_ore": "Migmatite Gold Ore",
   "block.undergroundbiomesconstructsreworked.migmatite_emerald_ore": "Migmatite Emerald Ore",
   "block.undergroundbiomesconstructsreworked.migmatite_redstone_ore": "Migmatite Redstone Ore",
-  "block.undergroundbiomesconstructsreworked.migmatite_lapis_ore": "Migmatite Lapis Lazuli Ore"
+  "block.undergroundbiomesconstructsreworked.migmatite_lapis_ore": "Migmatite Lapis Lazuli Ore",
+
+  "block.undergroundbiomesconstructsreworked.marble_block": "Marble",
+  "block.undergroundbiomesconstructsreworked.marble_cobble_block": "Marble Cobblestone",
+  "block.undergroundbiomesconstructsreworked.marble_brick_block": "Marble Brick",
+  "block.undergroundbiomesconstructsreworked.marble_block_slab": "Marble Block Slab",
+  "block.undergroundbiomesconstructsreworked.marble_cobble_slab": "Marble Cobble Slab",
+  "block.undergroundbiomesconstructsreworked.marble_brick_slab": "Marble Brick Slab",
+  "block.undergroundbiomesconstructsreworked.marble_stairs": "Marble Stairs",
+  "block.undergroundbiomesconstructsreworked.marble_brick_stairs": "Marble Brick Stairs",
+  "block.undergroundbiomesconstructsreworked.marble_cobble_stairs": "Marble Cobble Stairs",
+  "block.undergroundbiomesconstructsreworked.marble_block_wall": "Marble Wall",
+  "block.undergroundbiomesconstructsreworked.marble_brick_wall": "Marble Brick Wall",
+  "block.undergroundbiomesconstructsreworked.marble_cobble_wall": "Marble Cobble Wall",
+  "block.undergroundbiomesconstructsreworked.marble_stone_button": "Marble Stone Button",
+  "block.undergroundbiomesconstructsreworked.marble_coal_ore": "Marble Coal Ore",
+  "block.undergroundbiomesconstructsreworked.marble_copper_ore": "Marble Copper Ore",
+  "block.undergroundbiomesconstructsreworked.marble_iron_ore": "Marble Iron Ore",
+  "block.undergroundbiomesconstructsreworked.marble_gold_ore": "Marble Gold Ore",
+  "block.undergroundbiomesconstructsreworked.marble_emerald_ore": "Marble Emerald Ore",
+  "block.undergroundbiomesconstructsreworked.marble_redstone_ore": "Marble Redstone Ore",
+  "block.undergroundbiomesconstructsreworked.marble_lapis_ore": "Marble Lapis Lazuli Ore"
 }

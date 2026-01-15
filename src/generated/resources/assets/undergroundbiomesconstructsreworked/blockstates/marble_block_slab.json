@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "undergroundbiomesconstructsreworked:block/marble_block_slab"
+    },
+    "type=double": {
+      "model": "undergroundbiomesconstructsreworked:block/marble_block"
+    },
+    "type=top": {
+      "model": "undergroundbiomesconstructsreworked:block/marble_block_slab_top"
+    }
+  }
+}
