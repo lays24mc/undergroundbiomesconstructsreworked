@@ -29,6 +29,16 @@
     "undergroundbiomesconstructsreworked:marble_copper_ore",
     "undergroundbiomesconstructsreworked:soapstone_coal_ore",
     "undergroundbiomesconstructsreworked:rhyolite_coal_ore",
-    "undergroundbiomesconstructsreworked:marble_coal_ore"
+    "undergroundbiomesconstructsreworked:marble_coal_ore",
+    "undergroundbiomesconstructsreworked:limestone_gold_ore",
+    "undergroundbiomesconstructsreworked:limestone_redstone_ore",
+    "undergroundbiomesconstructsreworked:limestone_iron_ore",
+    "undergroundbiomesconstructsreworked:limestone_copper_ore",
+    "undergroundbiomesconstructsreworked:limestone_coal_ore",
+    "undergroundbiomesconstructsreworked:siltstone_gold_ore",
+    "undergroundbiomesconstructsreworked:siltstone_redstone_ore",
+    "undergroundbiomesconstructsreworked:siltstone_iron_ore",
+    "undergroundbiomesconstructsreworked:siltstone_copper_ore",
+    "undergroundbiomesconstructsreworked:siltstone_coal_ore"
   ]
 }

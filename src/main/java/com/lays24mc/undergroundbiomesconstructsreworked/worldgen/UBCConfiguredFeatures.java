@@ -104,6 +104,30 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_REDSTONE_ORE_LOWER_KEY = registerKey("marble_redstone_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_LAPIS_ORE_KEY = registerKey("marble_lapis_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_BLOCK_KEY = registerKey("limestone_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_COAL_ORE_KEY = registerKey("limestone_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_COPPER_ORE_SMALL_KEY = registerKey("limestone_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_COPPER_ORE_LARGE_KEY = registerKey("limestone_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_IRON_ORE_KEY = registerKey("limestone_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_IRON_ORE_SMALL_KEY = registerKey("limestone_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_GOLD_ORE_KEY = registerKey("limestone_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_GOLD_ORE_EXTRA_KEY = registerKey("limestone_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_REDSTONE_ORE_KEY = registerKey("limestone_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_REDSTONE_ORE_LOWER_KEY = registerKey("limestone_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_LAPIS_ORE_KEY = registerKey("limestone_lapis_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_BLOCK_KEY = registerKey("siltstone_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_COAL_ORE_KEY = registerKey("siltstone_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_COPPER_ORE_SMALL_KEY = registerKey("siltstone_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_COPPER_ORE_LARGE_KEY = registerKey("siltstone_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_IRON_ORE_KEY = registerKey("siltstone_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_IRON_ORE_SMALL_KEY = registerKey("siltstone_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_GOLD_ORE_KEY = registerKey("siltstone_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_GOLD_ORE_EXTRA_KEY = registerKey("siltstone_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_REDSTONE_ORE_KEY = registerKey("siltstone_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_REDSTONE_ORE_LOWER_KEY = registerKey("siltstone_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_LAPIS_ORE_KEY = registerKey("siltstone_lapis_ore");
+
     //public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
     //public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
 
@@ -374,6 +398,90 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_MARBLE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(marbleRedstoneTargets, 8));
         register(context, OVERWORLD_MARBLE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(marbleRedstoneTargets, 8));
         register(context, OVERWORLD_MARBLE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(marbleLapisTargets, 7));
+
+        //Limestone
+        List<OreConfiguration.TargetBlockState> overworldLimestoneBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, LimestoneBlocks.LIMESTONE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(LimestoneBlocks.LIMESTONE_BLOCK.get()),
+                        LimestoneBlocks.LIMESTONE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> limestoneCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LimestoneBlocks.LIMESTONE_BLOCK.get()),
+                        LimestoneBlocks.LIMESTONE_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> limestoneCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LimestoneBlocks.LIMESTONE_BLOCK.get()),
+                        LimestoneBlocks.LIMESTONE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> limestoneIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LimestoneBlocks.LIMESTONE_BLOCK.get()),
+                        LimestoneBlocks.LIMESTONE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> limestoneGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LimestoneBlocks.LIMESTONE_BLOCK.get()),
+                        LimestoneBlocks.LIMESTONE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> limestoneRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LimestoneBlocks.LIMESTONE_BLOCK.get()),
+                        LimestoneBlocks.LIMESTONE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> limestoneLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LimestoneBlocks.LIMESTONE_BLOCK.get()),
+                        LimestoneBlocks.LIMESTONE_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_LIMESTONE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldLimestoneBlock, 64));
+        register(context, OVERWORLD_LIMESTONE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(limestoneCoalTargets, 17));
+        register(context, OVERWORLD_LIMESTONE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(limestoneCopperTargets, 10));
+        register(context, OVERWORLD_LIMESTONE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(limestoneCopperTargets, 20));
+        register(context, OVERWORLD_LIMESTONE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(limestoneIronTargets, 9));
+        register(context, OVERWORLD_LIMESTONE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(limestoneIronTargets, 4));
+        register(context, OVERWORLD_LIMESTONE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(limestoneGoldTargets, 9));
+        register(context, OVERWORLD_LIMESTONE_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(limestoneGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_LIMESTONE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(limestoneRedstoneTargets, 8));
+        register(context, OVERWORLD_LIMESTONE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(limestoneRedstoneTargets, 8));
+        register(context, OVERWORLD_LIMESTONE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(limestoneLapisTargets, 7));
+
+        //Siltstone
+        List<OreConfiguration.TargetBlockState> overworldSiltstoneBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, SiltstoneBlocks.SILTSTONE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(SiltstoneBlocks.SILTSTONE_BLOCK.get()),
+                        SiltstoneBlocks.SILTSTONE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> siltstoneCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(SiltstoneBlocks.SILTSTONE_BLOCK.get()),
+                        SiltstoneBlocks.SILTSTONE_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> siltstoneCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(SiltstoneBlocks.SILTSTONE_BLOCK.get()),
+                        SiltstoneBlocks.SILTSTONE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> siltstoneIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(SiltstoneBlocks.SILTSTONE_BLOCK.get()),
+                        SiltstoneBlocks.SILTSTONE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> siltstoneGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(SiltstoneBlocks.SILTSTONE_BLOCK.get()),
+                        SiltstoneBlocks.SILTSTONE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> siltstoneRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(SiltstoneBlocks.SILTSTONE_BLOCK.get()),
+                        SiltstoneBlocks.SILTSTONE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> siltstoneLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(SiltstoneBlocks.SILTSTONE_BLOCK.get()),
+                        SiltstoneBlocks.SILTSTONE_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_SILTSTONE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldSiltstoneBlock, 64));
+        register(context, OVERWORLD_SILTSTONE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(siltstoneCoalTargets, 17));
+        register(context, OVERWORLD_SILTSTONE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(siltstoneCopperTargets, 10));
+        register(context, OVERWORLD_SILTSTONE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(siltstoneCopperTargets, 20));
+        register(context, OVERWORLD_SILTSTONE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(siltstoneIronTargets, 9));
+        register(context, OVERWORLD_SILTSTONE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(siltstoneIronTargets, 4));
+        register(context, OVERWORLD_SILTSTONE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(siltstoneGoldTargets, 9));
+        register(context, OVERWORLD_SILTSTONE_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(siltstoneGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_SILTSTONE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(siltstoneRedstoneTargets, 8));
+        register(context, OVERWORLD_SILTSTONE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(siltstoneRedstoneTargets, 8));
+        register(context, OVERWORLD_SILTSTONE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(siltstoneLapisTargets, 7));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

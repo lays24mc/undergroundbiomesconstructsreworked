@@ -14,6 +14,10 @@
     "undergroundbiomesconstructsreworked:red_granite_redstone_ore",
     "undergroundbiomesconstructsreworked:quartzite_redstone_ore",
     "undergroundbiomesconstructsreworked:migmatite_redstone_ore",
-    "undergroundbiomesconstructsreworked:marble_redstone_ore"
+    "undergroundbiomesconstructsreworked:marble_redstone_ore",
+    "undergroundbiomesconstructsreworked:limestone_gold_ore",
+    "undergroundbiomesconstructsreworked:limestone_redstone_ore",
+    "undergroundbiomesconstructsreworked:siltstone_gold_ore",
+    "undergroundbiomesconstructsreworked:siltstone_redstone_ore"
   ]
 }

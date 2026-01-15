@@ -105,6 +105,22 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(MarbleBlocks.MARBLE_REDSTONE_ORE);
         blockWithItem(MarbleBlocks.MARBLE_LAPIS_ORE);
 
+        blockWithItem(LimestoneBlocks.LIMESTONE_BLOCK);
+        blockWithItem(LimestoneBlocks.LIMESTONE_COAL_ORE);
+        blockWithItem(LimestoneBlocks.LIMESTONE_COPPER_ORE);
+        blockWithItem(LimestoneBlocks.LIMESTONE_IRON_ORE);
+        blockWithItem(LimestoneBlocks.LIMESTONE_GOLD_ORE);
+        blockWithItem(LimestoneBlocks.LIMESTONE_REDSTONE_ORE);
+        blockWithItem(LimestoneBlocks.LIMESTONE_LAPIS_ORE);
+
+        blockWithItem(SiltstoneBlocks.SILTSTONE_BLOCK);
+        blockWithItem(SiltstoneBlocks.SILTSTONE_COAL_ORE);
+        blockWithItem(SiltstoneBlocks.SILTSTONE_COPPER_ORE);
+        blockWithItem(SiltstoneBlocks.SILTSTONE_IRON_ORE);
+        blockWithItem(SiltstoneBlocks.SILTSTONE_GOLD_ORE);
+        blockWithItem(SiltstoneBlocks.SILTSTONE_REDSTONE_ORE);
+        blockWithItem(SiltstoneBlocks.SILTSTONE_LAPIS_ORE);
+
         // --------------------------
         // Register buttons
         // --------------------------
@@ -114,6 +130,9 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         buttonWithItem((UBCButtonsBlocks) QuartziteBlocks.QUARTZITE_STONE_BUTTON.get(), "quartzite_stone_button", "quartzite_block");
         buttonWithItem((UBCButtonsBlocks) MigmatiteBlocks.MIGMATITE_STONE_BUTTON.get(), "migmatite_stone_button", "migmatite_block");
         buttonWithItem((UBCButtonsBlocks) MarbleBlocks.MARBLE_STONE_BUTTON.get(), "marble_stone_button", "marble_block");
+        buttonWithItem((UBCButtonsBlocks) LimestoneBlocks.LIMESTONE_STONE_BUTTON.get(), "limestone_stone_button", "limestone_block");
+        buttonWithItem((UBCButtonsBlocks) SiltstoneBlocks.SILTSTONE_STONE_BUTTON.get(), "siltstone_stone_button", "siltstone_block");
+
 
         // --------------------------
         // Register stairs, slabs, and walls, blocks multiple
@@ -166,6 +185,12 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockItem(MarbleBlocks.MARBLE_COBBLE_SLAB);
         blockItem(MarbleBlocks.MARBLE_BRICK_SLAB);
 
+        blockItem(LimestoneBlocks.LIMESTONE_STAIRS);
+        blockItem(LimestoneBlocks.LIMESTONE_BLOCK_SLAB);
+
+        blockItem(SiltstoneBlocks.SILTSTONE_STAIRS);
+        blockItem(SiltstoneBlocks.SILTSTONE_BLOCK_SLAB);
+
         wallItem(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL, SoapstoneBlocks.SOAPSTONE_BLOCK.get());
         wallItem(SoapstoneBlocks.SOAPSTONE_COBBLE_WALL, SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get());
         wallItem(SoapstoneBlocks.SOAPSTONE_BRICK_WALL, SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK.get());
@@ -190,6 +215,8 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallItem(MarbleBlocks.MARBLE_COBBLE_WALL, MarbleBlocks.MARBLE_COBBLE_BLOCK.get());
         wallItem(MarbleBlocks.MARBLE_BRICK_WALL, MarbleBlocks.MARBLE_BRICK_BLOCK.get());
 
+        wallItem(SiltstoneBlocks.SILTSTONE_BLOCK_WALL, SiltstoneBlocks.SILTSTONE_BLOCK.get());
+        wallItem(SiltstoneBlocks.SILTSTONE_BLOCK_WALL, SiltstoneBlocks.SILTSTONE_BLOCK.get());
 
         // Stairs
         stairsBlock((UBCStairsBlocks) SoapstoneBlocks.SOAPSTONE_STAIRS.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
@@ -215,6 +242,10 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         stairsBlock((UBCStairsBlocks) MarbleBlocks.MARBLE_STAIRS.get(), blockTexture(MarbleBlocks.MARBLE_BLOCK.get()));
         stairsBlock((UBCStairsBlocks) MarbleBlocks.MARBLE_COBBLE_STAIRS.get(), blockTexture(MarbleBlocks.MARBLE_COBBLE_BLOCK.get()));
         stairsBlock((UBCStairsBlocks) MarbleBlocks.MARBLE_BRICK_STAIRS.get(), blockTexture(MarbleBlocks.MARBLE_BRICK_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) LimestoneBlocks.LIMESTONE_STAIRS.get(), blockTexture(LimestoneBlocks.LIMESTONE_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) SiltstoneBlocks.SILTSTONE_STAIRS.get(), blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()));
 
         // Slabs
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
@@ -242,6 +273,10 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         slabBlock((UBCSlabBlocks) MarbleBlocks.MARBLE_COBBLE_SLAB.get(), blockTexture(MarbleBlocks.MARBLE_COBBLE_BLOCK.get()), blockTexture(MarbleBlocks.MARBLE_COBBLE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) MarbleBlocks.MARBLE_BRICK_SLAB.get(), blockTexture(MarbleBlocks.MARBLE_BRICK_BLOCK.get()), blockTexture(MarbleBlocks.MARBLE_BRICK_BLOCK.get()));
 
+        slabBlock((UBCSlabBlocks) LimestoneBlocks.LIMESTONE_BLOCK_SLAB.get(), blockTexture(LimestoneBlocks.LIMESTONE_BLOCK.get()), blockTexture(LimestoneBlocks.LIMESTONE_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) SiltstoneBlocks.SILTSTONE_BLOCK_SLAB.get(),blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()), blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()));
+
         // Walls
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_COBBLE_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()));
@@ -266,6 +301,10 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallBlock((UBCWallBlocks) MarbleBlocks.MARBLE_BLOCK_WALL.get(), blockTexture(MarbleBlocks.MARBLE_BLOCK.get()));
         wallBlock((UBCWallBlocks) MarbleBlocks.MARBLE_COBBLE_WALL.get(), blockTexture(MarbleBlocks.MARBLE_COBBLE_BLOCK.get()));
         wallBlock((UBCWallBlocks) MarbleBlocks.MARBLE_BRICK_WALL.get(), blockTexture(MarbleBlocks.MARBLE_BRICK_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) LimestoneBlocks.LIMESTONE_BLOCK_WALL.get(), blockTexture(LimestoneBlocks.LIMESTONE_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) SiltstoneBlocks.SILTSTONE_BLOCK_WALL.get(), blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()));
 
     }
 

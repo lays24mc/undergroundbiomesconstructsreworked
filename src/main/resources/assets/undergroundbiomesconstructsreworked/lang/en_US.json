@@ -125,5 +125,31 @@
   "block.undergroundbiomesconstructsreworked.marble_gold_ore": "Marble Gold Ore",
   "block.undergroundbiomesconstructsreworked.marble_emerald_ore": "Marble Emerald Ore",
   "block.undergroundbiomesconstructsreworked.marble_redstone_ore": "Marble Redstone Ore",
-  "block.undergroundbiomesconstructsreworked.marble_lapis_ore": "Marble Lapis Lazuli Ore"
+  "block.undergroundbiomesconstructsreworked.marble_lapis_ore": "Marble Lapis Lazuli Ore",
+
+  "block.undergroundbiomesconstructsreworked.limestone_block": "Limestone",
+  "block.undergroundbiomesconstructsreworked.limestone_block_slab": "Limestone Block Slab",
+  "block.undergroundbiomesconstructsreworked.limestone_stairs": "Limestone Stairs",
+  "block.undergroundbiomesconstructsreworked.limestone_block_wall": "Limestone Wall",
+  "block.undergroundbiomesconstructsreworked.limestone_stone_button": "Limestone Stone Button",
+  "block.undergroundbiomesconstructsreworked.limestone_coal_ore": "Limestone Coal Ore",
+  "block.undergroundbiomesconstructsreworked.limestone_copper_ore": "Limestone Copper Ore",
+  "block.undergroundbiomesconstructsreworked.limestone_iron_ore": "Limestone Iron Ore",
+  "block.undergroundbiomesconstructsreworked.limestone_gold_ore": "Limestone Gold Ore",
+  "block.undergroundbiomesconstructsreworked.limestone_emerald_ore": "Limestone Emerald Ore",
+  "block.undergroundbiomesconstructsreworked.limestone_redstone_ore": "Limestone Redstone Ore",
+  "block.undergroundbiomesconstructsreworked.limestone_lapis_ore": "Limestone Lapis Lazuli Ore",
+
+  "block.undergroundbiomesconstructsreworked.siltstone_block": "Siltstone",
+  "block.undergroundbiomesconstructsreworked.siltstone_block_slab": "Siltstone Block Slab",
+  "block.undergroundbiomesconstructsreworked.siltstone_stairs": "Siltstone Stairs",
+  "block.undergroundbiomesconstructsreworked.siltstone_block_wall": "Siltstone Wall",
+  "block.undergroundbiomesconstructsreworked.siltstone_stone_button": "Siltstone Stone Button",
+  "block.undergroundbiomesconstructsreworked.siltstone_coal_ore": "Siltstone Coal Ore",
+  "block.undergroundbiomesconstructsreworked.siltstone_copper_ore": "Siltstone Copper Ore",
+  "block.undergroundbiomesconstructsreworked.siltstone_iron_ore": "Siltstone Iron Ore",
+  "block.undergroundbiomesconstructsreworked.siltstone_gold_ore": "Siltstone Gold Ore",
+  "block.undergroundbiomesconstructsreworked.siltstone_emerald_ore": "Siltstone Emerald Ore",
+  "block.undergroundbiomesconstructsreworked.siltstone_redstone_ore": "Siltstone Redstone Ore",
+  "block.undergroundbiomesconstructsreworked.siltstone_lapis_ore": "Siltstone Lapis Lazuli Ore"
 }

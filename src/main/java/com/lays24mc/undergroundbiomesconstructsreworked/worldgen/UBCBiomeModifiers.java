@@ -91,6 +91,32 @@ public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_MARBLE_REDSTONE_ORE_LOWER = registerKey("add_marble_redstone_ore_lower");
     public static final ResourceKey<BiomeModifier> ADD_MARBLE_LAPIS_ORE = registerKey("add_marble_lapis_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_BLOCK = registerKey("add_limestone_block");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_COAL_ORE = registerKey("add_limestone_coal_ore");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_COPPER_SMALL_ORE = registerKey("add_limestone_copper_small_ore");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_COPPER_ORE_LARGE = registerKey("add_limestone_copper_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_IRON_ORE_UPPER = registerKey("add_limestone_iron_ore_upper");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_IRON_ORE_MIDDLE = registerKey("add_limestone_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_IRON_ORE_SMALL = registerKey("add_limestone_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_GOLD_ORE = registerKey("add_limestone_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_GOLD_ORE_EXTRA = registerKey("add_limestone_gold_ore_extra");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_REDSTONE_ORE = registerKey("add_limestone_redstone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_REDSTONE_ORE_LOWER = registerKey("add_limestone_redstone_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_LIMESTONE_LAPIS_ORE = registerKey("add_limestone_lapis_ore");
+
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_BLOCK = registerKey("add_siltstone_block");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_COAL_ORE = registerKey("add_siltstone_coal_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_COPPER_SMALL_ORE = registerKey("add_siltstone_copper_small_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_COPPER_ORE_LARGE = registerKey("add_siltstone_copper_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_IRON_ORE_UPPER = registerKey("add_siltstone_iron_ore_upper");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_IRON_ORE_MIDDLE = registerKey("add_siltstone_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_IRON_ORE_SMALL = registerKey("add_siltstone_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_GOLD_ORE = registerKey("add_siltstone_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_GOLD_ORE_EXTRA = registerKey("add_siltstone_gold_ore_extra");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_REDSTONE_ORE = registerKey("add_siltstone_redstone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_REDSTONE_ORE_LOWER = registerKey("add_siltstone_redstone_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_SILTSTONE_LAPIS_ORE = registerKey("add_siltstone_lapis_ore");
+
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         // CF -> PF -> BM
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -474,6 +500,128 @@ public class UBCBiomeModifiers {
         context.register(ADD_MARBLE_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.MARBLE_LAPIS_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //limestone
+        context.register(ADD_LIMESTONE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_COAL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_COAL_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_COPPER_SMALL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_COPPER_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_COPPER_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_COPPER_ORE_LARGE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_IRON_ORE_UPPER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_IRON_ORE_UPPER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_IRON_ORE_MIDDLE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_GOLD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_GOLD_ORE_EXTRA, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_GOLD_ORE_EXTRA_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_REDSTONE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_REDSTONE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_REDSTONE_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_LIMESTONE_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.LIMESTONE_LAPIS_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //siltstone
+        context.register(ADD_SILTSTONE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_COAL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_COAL_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_COPPER_SMALL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_COPPER_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_COPPER_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_COPPER_ORE_LARGE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_IRON_ORE_UPPER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_IRON_ORE_UPPER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_IRON_ORE_MIDDLE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_GOLD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_GOLD_ORE_EXTRA, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_GOLD_ORE_EXTRA_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_REDSTONE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_REDSTONE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_REDSTONE_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SILTSTONE_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SILTSTONE_LAPIS_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
     }

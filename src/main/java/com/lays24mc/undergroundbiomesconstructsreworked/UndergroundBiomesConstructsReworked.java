@@ -49,6 +49,8 @@ public class UndergroundBiomesConstructsReworked {
         QuartziteBlocks.register(modEventBus);
         MigmatiteBlocks.register(modEventBus);
         MarbleBlocks.register(modEventBus);
+        LimestoneBlocks.register(modEventBus);
+        SiltstoneBlocks.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
 

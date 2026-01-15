@@ -5,6 +5,8 @@
     "undergroundbiomesconstructsreworked:red_granite_block",
     "undergroundbiomesconstructsreworked:quartzite_block",
     "undergroundbiomesconstructsreworked:migmatite_block",
-    "undergroundbiomesconstructsreworked:marble_block"
+    "undergroundbiomesconstructsreworked:marble_block",
+    "undergroundbiomesconstructsreworked:limestone_block",
+    "undergroundbiomesconstructsreworked:siltstone_block"
   ]
 }

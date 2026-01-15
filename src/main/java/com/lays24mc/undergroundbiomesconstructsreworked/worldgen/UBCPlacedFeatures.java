@@ -113,6 +113,32 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> MARBLE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("marble_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> MARBLE_LAPIS_ORE_PLACED_KEY = registerKey("marble_lapis_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> LIMESTONE_BLOCK_PLACED_KEY = registerKey("limestone_block_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_COAL_ORE_PLACED_KEY = registerKey("limestone_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("limestone_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_COPPER_ORE_LARGE_PLACED_KEY = registerKey("limestone_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_IRON_ORE_UPPER_PLACED_KEY = registerKey("limestone_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("limestone_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_IRON_ORE_SMALL_PLACED_KEY = registerKey("limestone_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_GOLD_ORE_PLACED_KEY = registerKey("limestone_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("limestone_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_REDSTONE_ORE_PLACED_KEY = registerKey("limestone_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("limestone_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> LIMESTONE_LAPIS_ORE_PLACED_KEY = registerKey("limestone_lapis_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> SILTSTONE_BLOCK_PLACED_KEY = registerKey("siltstone_block_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_COAL_ORE_PLACED_KEY = registerKey("siltstone_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("siltstone_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_COPPER_ORE_LARGE_PLACED_KEY = registerKey("siltstone_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_IRON_ORE_UPPER_PLACED_KEY = registerKey("siltstone_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("siltstone_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_IRON_ORE_SMALL_PLACED_KEY = registerKey("siltstone_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_GOLD_ORE_PLACED_KEY = registerKey("siltstone_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("siltstone_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_REDSTONE_ORE_PLACED_KEY = registerKey("siltstone_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("siltstone_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> SILTSTONE_LAPIS_ORE_PLACED_KEY = registerKey("siltstone_lapis_ore_placed");
+
     /**
      * Bootstrap method.
      * Called during worldgen setup to register all PlacedFeatures.
@@ -1080,9 +1106,303 @@ public class UBCPlacedFeatures {
                         )
                 )
         );
+
+        /* ------------------------------------------------------------
+         * LIMESTONE – Base stone
+         * ------------------------------------------------------------ */
+
+        // Limestone base rock (rare, spans most of the world height)
+        register(context, LIMESTONE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+        // Limestone coal ore (very common, high Y-levels)
+        register(context, LIMESTONE_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_COAL_ORE_KEY),
+                commonOrePlacement(
+                        30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        )
+                )
+        );
+
+        // Small copper veins
+        register(context, LIMESTONE_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+        // Large copper veins
+        register(context, LIMESTONE_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+        // Iron ore – upper layer
+        register(context, LIMESTONE_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+        // Iron ore – middle layer
+        register(context, LIMESTONE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        )
+                )
+        );
+
+        // Iron ore – small veins
+        register(context, LIMESTONE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        )
+                )
+        );
+
+        // Gold ore – standard distribution
+        register(context, LIMESTONE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+        // Gold ore – extra distribution (badlands-like, higher Y-levels)
+        register(context, LIMESTONE_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        )
+                )
+        );
+
+        // Redstone ore – standard distribution
+        register(context, LIMESTONE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+        // Redstone ore – deep distribution
+        register(context, LIMESTONE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        )
+                )
+        );
+
+        // Lapis ore
+        register(context, LIMESTONE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+        /* ------------------------------------------------------------
+         * SILTSTONE – Base stone
+         * ------------------------------------------------------------ */
+
+        // Siltstone base rock (rare, spans most of the world height)
+        register(context, SILTSTONE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+        // Siltstone coal ore (very common, high Y-levels)
+        register(context, SILTSTONE_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_COAL_ORE_KEY),
+                commonOrePlacement(
+                        30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        )
+                )
+        );
+
+        // Small copper veins
+        register(context, SILTSTONE_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+        // Large copper veins
+        register(context, SILTSTONE_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+        // Iron ore – upper layer
+        register(context, SILTSTONE_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+        // Iron ore – middle layer
+        register(context, SILTSTONE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        )
+                )
+        );
+
+        // Iron ore – small veins
+        register(context, SILTSTONE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        )
+                )
+        );
+
+        // Gold ore – standard distribution
+        register(context, SILTSTONE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+        // Gold ore – extra distribution (badlands-like, higher Y-levels)
+        register(context, SILTSTONE_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        )
+                )
+        );
+
+        // Redstone ore – standard distribution
+        register(context, SILTSTONE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+        // Redstone ore – deep distribution
+        register(context, SILTSTONE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        )
+                )
+        );
+
+        // Lapis ore
+        register(context, SILTSTONE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
     }
-
-
 
     /**
      * Creates a ResourceKey for a PlacedFeature

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/siltstone_block",
+    "side": "undergroundbiomesconstructsreworked:block/siltstone_block",
+    "top": "undergroundbiomesconstructsreworked:block/siltstone_block"
+  }
+}

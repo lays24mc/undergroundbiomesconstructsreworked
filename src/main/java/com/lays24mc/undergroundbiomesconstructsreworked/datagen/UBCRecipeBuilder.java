@@ -57,6 +57,11 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         // Marble
         //====================================================
         buildMarbleRecipes(recipeOutput);
+
+        //====================================================
+        // Siltstone
+        //====================================================
+        buildSiltstoneRecipes(recipeOutput);
     }
 
     // ------------------------------------------------------------
@@ -277,6 +282,72 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MarbleBlocks.MARBLE_BLOCK_SLAB.get(), MarbleBlocks.MARBLE_BLOCK.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MarbleBlocks.MARBLE_BLOCK_WALL.get(), MarbleBlocks.MARBLE_BLOCK.get());
         stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, MarbleBlocks.MARBLE_BLOCK_SLAB.get(), MarbleBlocks.MARBLE_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // LIMESTONE RECIPES
+    // ------------------------------------------------------------
+    private void buildLimestoneRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> LIMESTONE_COAL_SMELTABLES = List.of(LimestoneBlocks.LIMESTONE_COAL_ORE);
+        List<ItemLike> LIMESTONE_COPPER_SMELTABLES = List.of(LimestoneBlocks.LIMESTONE_COPPER_ORE);
+        List<ItemLike> LIMESTONE_IRON_SMELTABLES = List.of(LimestoneBlocks.LIMESTONE_IRON_ORE);
+        List<ItemLike> LIMESTONE_GOLD_SMELTABLES = List.of(LimestoneBlocks.LIMESTONE_GOLD_ORE);
+        List<ItemLike> LIMESTONE_REDSTONE_SMELTABLES = List.of(LimestoneBlocks.LIMESTONE_REDSTONE_ORE);
+        List<ItemLike> LIMESTONE_LAPIS_SMELTABLES = List.of(LimestoneBlocks.LIMESTONE_LAPIS_ORE);
+
+        // Stone Button
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, LimestoneBlocks.LIMESTONE_STONE_BUTTON.get()).pattern("A").define('A', LimestoneBlocks.LIMESTONE_BLOCK.get()).unlockedBy("has_limestone_block", has(LimestoneBlocks.LIMESTONE_BLOCK)).save(recipeOutput);
+
+        // Smelting;
+        oreSmelting(recipeOutput, LIMESTONE_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "limestone");
+        oreSmelting(recipeOutput, LIMESTONE_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "limestone");
+        oreSmelting(recipeOutput, LIMESTONE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "limestone");
+        oreSmelting(recipeOutput, LIMESTONE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "limestone");
+        oreSmelting(recipeOutput, LIMESTONE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "limestone");
+        oreSmelting(recipeOutput, LIMESTONE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "limestone");
+
+        // Blasting
+//        oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
+
+        // Stairs, Slabs, Walls, Stonecutting
+        stairBuilder(LimestoneBlocks.LIMESTONE_STAIRS.get(), Ingredient.of(LimestoneBlocks.LIMESTONE_BLOCK)).group("limestone").unlockedBy("has_limestone_block", has(LimestoneBlocks.LIMESTONE_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, LimestoneBlocks.LIMESTONE_BLOCK_SLAB.get(), LimestoneBlocks.LIMESTONE_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, LimestoneBlocks.LIMESTONE_BLOCK_WALL.get(), LimestoneBlocks.LIMESTONE_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, LimestoneBlocks.LIMESTONE_BLOCK_SLAB.get(), LimestoneBlocks.LIMESTONE_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // SILTSTONE RECIPES
+    // ------------------------------------------------------------
+    private void buildSiltstoneRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> SILTSTONE_COAL_SMELTABLES = List.of(SiltstoneBlocks.SILTSTONE_COAL_ORE);
+        List<ItemLike> SILTSTONE_COPPER_SMELTABLES = List.of(SiltstoneBlocks.SILTSTONE_COPPER_ORE);
+        List<ItemLike> SILTSTONE_IRON_SMELTABLES = List.of(SiltstoneBlocks.SILTSTONE_IRON_ORE);
+        List<ItemLike> SILTSTONE_GOLD_SMELTABLES = List.of(SiltstoneBlocks.SILTSTONE_GOLD_ORE);
+        List<ItemLike> SILTSTONE_REDSTONE_SMELTABLES = List.of(SiltstoneBlocks.SILTSTONE_REDSTONE_ORE);
+        List<ItemLike> SILTSTONE_LAPIS_SMELTABLES = List.of(SiltstoneBlocks.SILTSTONE_LAPIS_ORE);
+
+        // Stone Button
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SiltstoneBlocks.SILTSTONE_STONE_BUTTON.get()).pattern("A").define('A', SiltstoneBlocks.SILTSTONE_BLOCK.get()).unlockedBy("has_siltstone_block", has(SiltstoneBlocks.SILTSTONE_BLOCK)).save(recipeOutput);
+
+        // Smelting;
+        oreSmelting(recipeOutput, SILTSTONE_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "siltstone");
+        oreSmelting(recipeOutput, SILTSTONE_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "siltstone");
+        oreSmelting(recipeOutput, SILTSTONE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "siltstone");
+        oreSmelting(recipeOutput, SILTSTONE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "siltstone");
+        oreSmelting(recipeOutput, SILTSTONE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "siltstone");
+        oreSmelting(recipeOutput, SILTSTONE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "siltstone");
+
+        // Blasting
+//        oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
+
+        // Stairs, Slabs, Walls, Stonecutting
+        stairBuilder(SiltstoneBlocks.SILTSTONE_STAIRS.get(), Ingredient.of(SiltstoneBlocks.SILTSTONE_BLOCK)).group("siltstone").unlockedBy("has_siltstone_block", has(SiltstoneBlocks.SILTSTONE_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, SiltstoneBlocks.SILTSTONE_BLOCK_SLAB.get(), SiltstoneBlocks.SILTSTONE_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, SiltstoneBlocks.SILTSTONE_BLOCK_WALL.get(), SiltstoneBlocks.SILTSTONE_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, SiltstoneBlocks.SILTSTONE_BLOCK_SLAB.get(), SiltstoneBlocks.SILTSTONE_BLOCK.get(), 2);
     }
 
 
