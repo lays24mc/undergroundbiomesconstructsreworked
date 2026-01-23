@@ -54,7 +54,6 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE);
         blockWithItem(SoapstoneBlocks.SOAPSTONE_LAPIS_ORE);
 
-
         blockWithItem(RhyoliteBlocks.RHYOLITE_BLOCK);
         blockWithItem(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK);
         blockWithItem(RhyoliteBlocks.RHYOLITE_BRICK_BLOCK);
@@ -217,6 +216,8 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         wallItem(SiltstoneBlocks.SILTSTONE_BLOCK_WALL, SiltstoneBlocks.SILTSTONE_BLOCK.get());
         wallItem(SiltstoneBlocks.SILTSTONE_BLOCK_WALL, SiltstoneBlocks.SILTSTONE_BLOCK.get());
+
+        wallItem(LimestoneBlocks.LIMESTONE_BLOCK_WALL, LimestoneBlocks.LIMESTONE_BLOCK.get());
 
         // Stairs
         stairsBlock((UBCStairsBlocks) SoapstoneBlocks.SOAPSTONE_STAIRS.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
