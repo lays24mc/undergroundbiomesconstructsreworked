@@ -6,10 +6,10 @@
     "targets": [
       {
         "state": {
-          "Name": "undergroundbiomesconstructsreworked:marble_lapis_ore"
+          "Name": "undergroundbiomesconstructsreworked:soapstone_lapis_ore"
         },
         "target": {
-          "block": "undergroundbiomesconstructsreworked:marble_block",
+          "block": "undergroundbiomesconstructsreworked:soapstone_block",
           "predicate_type": "minecraft:block_match"
         }
       }

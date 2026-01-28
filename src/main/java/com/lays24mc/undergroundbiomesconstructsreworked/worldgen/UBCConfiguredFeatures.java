@@ -93,16 +93,19 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MIGMATITE_EMERALD_ORE_KEY = registerKey("migmatite_emerald_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_BLOCK_KEY = registerKey("marble_block");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_COAL_ORE_KEY = registerKey("marble_coal_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_COPPER_ORE_SMALL_KEY = registerKey("marble_copper_ore_small");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_COPPER_ORE_LARGE_KEY = registerKey("marble_copper_ore_large");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_IRON_ORE_KEY = registerKey("marble_iron_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_IRON_ORE_SMALL_KEY = registerKey("marble_iron_ore_small");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_GOLD_ORE_KEY = registerKey("marble_gold_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_GOLD_ORE_EXTRA_KEY = registerKey("marble_gold_ore_extra");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_REDSTONE_ORE_KEY = registerKey("marble_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_GOLD_ORE_LOWER_KEY = registerKey("marble_gold_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_REDSTONE_ORE_LOWER_KEY = registerKey("marble_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_REDSTONE_ORE_KEY = registerKey("marble_redstone_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_LAPIS_ORE_KEY = registerKey("marble_lapis_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_LAPIS_ORE_BURIED_KEY = registerKey("marble_lapis_ore_buried");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_DIAMOND_ORE_SMALL_KEY = registerKey("marble_diamond_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_DIAMOND_ORE_LARGE_KEY = registerKey("marble_diamond_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_DIAMOND_ORE_BURIED_KEY = registerKey("marble_diamond_ore_buried");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_DIAMOND_ORE_MEDIUM_KEY = registerKey("marble_diamond_ore_medium");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MARBLE_EMERALD_ORE_KEY = registerKey("marble_emerald_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_BLOCK_KEY = registerKey("limestone_block");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIMESTONE_COAL_ORE_KEY = registerKey("limestone_coal_ore");
@@ -127,6 +130,18 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_REDSTONE_ORE_KEY = registerKey("siltstone_redstone_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_REDSTONE_ORE_LOWER_KEY = registerKey("siltstone_redstone_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_LAPIS_ORE_KEY = registerKey("siltstone_lapis_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_BLOCK_KEY = registerKey("bluechist_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_COAL_ORE_KEY = registerKey("bluechist_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_COPPER_ORE_SMALL_KEY = registerKey("bluechist_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_COPPER_ORE_LARGE_KEY = registerKey("bluechist_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_IRON_ORE_KEY = registerKey("bluechist_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_IRON_ORE_SMALL_KEY = registerKey("bluechist_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_GOLD_ORE_KEY = registerKey("bluechist_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_GOLD_ORE_EXTRA_KEY = registerKey("bluechist_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_REDSTONE_ORE_KEY = registerKey("bluechist_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_REDSTONE_ORE_LOWER_KEY = registerKey("bluechist_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_LAPIS_ORE_KEY = registerKey("bluechist_lapis_ore");
 
     //public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
     //public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
@@ -358,18 +373,11 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_MIGMATITE_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(migmatiteEmeraldTargets, 3));
 
         //Marble
+        //Marble
         List<OreConfiguration.TargetBlockState> overworldMarbleBlock = List.of(
-                OreConfiguration.target(stoneReplaceables, MarbleBlocks.MARBLE_BLOCK.get().defaultBlockState()),
-                OreConfiguration.target(new BlockMatchTest(MarbleBlocks.MARBLE_BLOCK.get()),
-                        MarbleBlocks.MARBLE_COAL_ORE.get().defaultBlockState()));
+                OreConfiguration.target(deepslateReplaceables, MarbleBlocks.MARBLE_BLOCK.get().defaultBlockState()));
 
-        List<OreConfiguration.TargetBlockState> marbleCopperTargets = List.of(
-                OreConfiguration.target(new BlockMatchTest(MarbleBlocks.MARBLE_BLOCK.get()),
-                        MarbleBlocks.MARBLE_COPPER_ORE.get().defaultBlockState()));
-
-        List<OreConfiguration.TargetBlockState> marbleCoalTargets = List.of(
-                OreConfiguration.target(new BlockMatchTest(MarbleBlocks.MARBLE_BLOCK.get()),
-                        MarbleBlocks.MARBLE_COAL_ORE.get().defaultBlockState()));
+        register(context, OVERWORLD_MARBLE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldMarbleBlock, 64));
 
         List<OreConfiguration.TargetBlockState> marbleIronTargets = List.of(
                 OreConfiguration.target(new BlockMatchTest(MarbleBlocks.MARBLE_BLOCK.get()),
@@ -384,20 +392,30 @@ public class UBCConfiguredFeatures {
                         MarbleBlocks.MARBLE_REDSTONE_ORE.get().defaultBlockState()));
 
         List<OreConfiguration.TargetBlockState> marbleLapisTargets = List.of(
-                OreConfiguration.target(new BlockMatchTest(MarbleBlocks.MARBLE_BLOCK.get()),
-                        MarbleBlocks.MARBLE_LAPIS_ORE.get().defaultBlockState()));
+                OreConfiguration.target(new BlockMatchTest(SoapstoneBlocks.SOAPSTONE_BLOCK.get()),
+                        SoapstoneBlocks.SOAPSTONE_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_MARBLE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldMarbleBlock, 64));
-        register(context, OVERWORLD_MARBLE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(marbleCoalTargets, 17));
-        register(context, OVERWORLD_MARBLE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(marbleCopperTargets, 10));
-        register(context, OVERWORLD_MARBLE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(marbleCopperTargets, 20));
+        List<OreConfiguration.TargetBlockState> marbleDiamondTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(MarbleBlocks.MARBLE_BLOCK.get()),
+                        MarbleBlocks.MARBLE_DIAMOND_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> marbleEmeraldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(MarbleBlocks.MARBLE_BLOCK.get()),
+                        MarbleBlocks.MARBLE_EMERALD_ORE.get().defaultBlockState()));
+
         register(context, OVERWORLD_MARBLE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(marbleIronTargets, 9));
         register(context, OVERWORLD_MARBLE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(marbleIronTargets, 4));
         register(context, OVERWORLD_MARBLE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(marbleGoldTargets, 9));
-        register(context, OVERWORLD_MARBLE_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(marbleGoldTargets, 4, 0.5f));
-        register(context, OVERWORLD_MARBLE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(marbleRedstoneTargets, 8));
+        register(context, OVERWORLD_MARBLE_GOLD_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(marbleGoldTargets, 4, 0.5f));
         register(context, OVERWORLD_MARBLE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(marbleRedstoneTargets, 8));
+        register(context, OVERWORLD_MARBLE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(marbleRedstoneTargets, 8));
         register(context, OVERWORLD_MARBLE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(marbleLapisTargets, 7));
+        register(context, OVERWORLD_MARBLE_LAPIS_ORE_BURIED_KEY, Feature.ORE, new OreConfiguration(marbleLapisTargets, 7, 1.0F));
+        register(context, OVERWORLD_MARBLE_DIAMOND_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(marbleDiamondTargets, 4, 0.5F));
+        register(context, OVERWORLD_MARBLE_DIAMOND_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(marbleDiamondTargets, 12, 0.7F));
+        register(context, OVERWORLD_MARBLE_DIAMOND_ORE_BURIED_KEY, Feature.ORE, new OreConfiguration(marbleDiamondTargets, 8, 1.0F));
+        register(context, OVERWORLD_MARBLE_DIAMOND_ORE_MEDIUM_KEY, Feature.ORE, new OreConfiguration(marbleDiamondTargets, 8, 0.5F));
+        register(context, OVERWORLD_MARBLE_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(marbleEmeraldTargets, 3));
 
         //Limestone
         List<OreConfiguration.TargetBlockState> overworldLimestoneBlock = List.of(
@@ -482,6 +500,48 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_SILTSTONE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(siltstoneRedstoneTargets, 8));
         register(context, OVERWORLD_SILTSTONE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(siltstoneRedstoneTargets, 8));
         register(context, OVERWORLD_SILTSTONE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(siltstoneLapisTargets, 7));
+
+        //Bluechist
+        List<OreConfiguration.TargetBlockState> overworldBluechistBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, BluechistBlocks.BLUECHIST_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
+                        BluechistBlocks.BLUECHIST_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> bluechistCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
+                        BluechistBlocks.BLUECHIST_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> bluechistCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
+                        BluechistBlocks.BLUECHIST_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> bluechistIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
+                        BluechistBlocks.BLUECHIST_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> bluechistGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
+                        BluechistBlocks.BLUECHIST_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> bluechistRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
+                        BluechistBlocks.BLUECHIST_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> bluechistLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
+                        BluechistBlocks.BLUECHIST_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_BLUECHIST_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldBluechistBlock, 64));
+        register(context, OVERWORLD_BLUECHIST_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistCoalTargets, 17));
+        register(context, OVERWORLD_BLUECHIST_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(bluechistCopperTargets, 10));
+        register(context, OVERWORLD_BLUECHIST_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(bluechistCopperTargets, 20));
+        register(context, OVERWORLD_BLUECHIST_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistIronTargets, 9));
+        register(context, OVERWORLD_BLUECHIST_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(bluechistIronTargets, 4));
+        register(context, OVERWORLD_BLUECHIST_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistGoldTargets, 9));
+        register(context, OVERWORLD_BLUECHIST_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(bluechistGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_BLUECHIST_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistRedstoneTargets, 8));
+        register(context, OVERWORLD_BLUECHIST_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(bluechistRedstoneTargets, 8));
+        register(context, OVERWORLD_BLUECHIST_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistLapisTargets, 7));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

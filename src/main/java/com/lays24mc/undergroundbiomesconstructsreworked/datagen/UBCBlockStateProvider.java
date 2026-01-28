@@ -97,12 +97,12 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(MarbleBlocks.MARBLE_BLOCK);
         blockWithItem(MarbleBlocks.MARBLE_COBBLE_BLOCK);
         blockWithItem(MarbleBlocks.MARBLE_BRICK_BLOCK);
-        blockWithItem(MarbleBlocks.MARBLE_COAL_ORE);
-        blockWithItem(MarbleBlocks.MARBLE_COPPER_ORE);
         blockWithItem(MarbleBlocks.MARBLE_IRON_ORE);
         blockWithItem(MarbleBlocks.MARBLE_GOLD_ORE);
         blockWithItem(MarbleBlocks.MARBLE_REDSTONE_ORE);
         blockWithItem(MarbleBlocks.MARBLE_LAPIS_ORE);
+        blockWithItem(MarbleBlocks.MARBLE_DIAMOND_ORE);
+        blockWithItem(MarbleBlocks.MARBLE_EMERALD_ORE);
 
         blockWithItem(LimestoneBlocks.LIMESTONE_BLOCK);
         blockWithItem(LimestoneBlocks.LIMESTONE_COAL_ORE);
@@ -120,6 +120,16 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(SiltstoneBlocks.SILTSTONE_REDSTONE_ORE);
         blockWithItem(SiltstoneBlocks.SILTSTONE_LAPIS_ORE);
 
+        blockWithItem(BluechistBlocks.BLUECHIST_BLOCK);
+        blockWithItem(BluechistBlocks.BLUECHIST_COBBLE_BLOCK);
+        blockWithItem(BluechistBlocks.BLUECHIST_BRICK_BLOCK);
+        blockWithItem(BluechistBlocks.BLUECHIST_COAL_ORE);
+        blockWithItem(BluechistBlocks.BLUECHIST_COPPER_ORE);
+        blockWithItem(BluechistBlocks.BLUECHIST_IRON_ORE);
+        blockWithItem(BluechistBlocks.BLUECHIST_GOLD_ORE);
+        blockWithItem(BluechistBlocks.BLUECHIST_REDSTONE_ORE);
+        blockWithItem(BluechistBlocks.BLUECHIST_LAPIS_ORE);
+
         // --------------------------
         // Register buttons
         // --------------------------
@@ -131,6 +141,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         buttonWithItem((UBCButtonsBlocks) MarbleBlocks.MARBLE_STONE_BUTTON.get(), "marble_stone_button", "marble_block");
         buttonWithItem((UBCButtonsBlocks) LimestoneBlocks.LIMESTONE_STONE_BUTTON.get(), "limestone_stone_button", "limestone_block");
         buttonWithItem((UBCButtonsBlocks) SiltstoneBlocks.SILTSTONE_STONE_BUTTON.get(), "siltstone_stone_button", "siltstone_block");
+        buttonWithItem((UBCButtonsBlocks) BluechistBlocks.BLUECHIST_STONE_BUTTON.get(), "bluechist_stone_button", "bluechist_block");
 
 
         // --------------------------
@@ -190,6 +201,15 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockItem(SiltstoneBlocks.SILTSTONE_STAIRS);
         blockItem(SiltstoneBlocks.SILTSTONE_BLOCK_SLAB);
 
+        blockItem(BluechistBlocks.BLUECHIST_STAIRS);
+        blockItem(BluechistBlocks.BLUECHIST_COBBLE_STAIRS);
+        blockItem(BluechistBlocks.BLUECHIST_BRICK_STAIRS);
+
+        blockItem(BluechistBlocks.BLUECHIST_BLOCK_SLAB);
+        blockItem(BluechistBlocks.BLUECHIST_COBBLE_SLAB);
+        blockItem(BluechistBlocks.BLUECHIST_BRICK_SLAB);
+
+        //Wall items
         wallItem(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL, SoapstoneBlocks.SOAPSTONE_BLOCK.get());
         wallItem(SoapstoneBlocks.SOAPSTONE_COBBLE_WALL, SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get());
         wallItem(SoapstoneBlocks.SOAPSTONE_BRICK_WALL, SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK.get());
@@ -218,6 +238,10 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallItem(SiltstoneBlocks.SILTSTONE_BLOCK_WALL, SiltstoneBlocks.SILTSTONE_BLOCK.get());
 
         wallItem(LimestoneBlocks.LIMESTONE_BLOCK_WALL, LimestoneBlocks.LIMESTONE_BLOCK.get());
+
+        wallItem(BluechistBlocks.BLUECHIST_BLOCK_WALL, BluechistBlocks.BLUECHIST_BLOCK.get());
+        wallItem(BluechistBlocks.BLUECHIST_COBBLE_WALL, BluechistBlocks.BLUECHIST_COBBLE_BLOCK.get());
+        wallItem(BluechistBlocks.BLUECHIST_BRICK_WALL, BluechistBlocks.BLUECHIST_BRICK_BLOCK.get());
 
         // Stairs
         stairsBlock((UBCStairsBlocks) SoapstoneBlocks.SOAPSTONE_STAIRS.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
@@ -248,11 +272,14 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         stairsBlock((UBCStairsBlocks) SiltstoneBlocks.SILTSTONE_STAIRS.get(), blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()));
 
+        stairsBlock((UBCStairsBlocks) BluechistBlocks.BLUECHIST_STAIRS.get(), blockTexture(BluechistBlocks.BLUECHIST_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) BluechistBlocks.BLUECHIST_COBBLE_STAIRS.get(), blockTexture(BluechistBlocks.BLUECHIST_COBBLE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) BluechistBlocks.BLUECHIST_BRICK_STAIRS.get(), blockTexture(BluechistBlocks.BLUECHIST_BRICK_BLOCK.get()));
+
         // Slabs
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_COBBLE_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_BRICK_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_BRICK_BLOCK.get()));
-
 
         slabBlock((UBCSlabBlocks) RhyoliteBlocks.RHYOLITE_BLOCK_SLAB.get(), blockTexture(RhyoliteBlocks.RHYOLITE_BLOCK.get()), blockTexture(RhyoliteBlocks.RHYOLITE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) RhyoliteBlocks.RHYOLITE_COBBLE_SLAB.get(), blockTexture(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK.get()), blockTexture(RhyoliteBlocks.RHYOLITE_COBBLE_BLOCK.get()));
@@ -277,6 +304,10 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         slabBlock((UBCSlabBlocks) LimestoneBlocks.LIMESTONE_BLOCK_SLAB.get(), blockTexture(LimestoneBlocks.LIMESTONE_BLOCK.get()), blockTexture(LimestoneBlocks.LIMESTONE_BLOCK.get()));
 
         slabBlock((UBCSlabBlocks) SiltstoneBlocks.SILTSTONE_BLOCK_SLAB.get(),blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()), blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) BluechistBlocks.BLUECHIST_BLOCK_SLAB.get(), blockTexture(BluechistBlocks.BLUECHIST_BLOCK.get()), blockTexture(BluechistBlocks.BLUECHIST_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) BluechistBlocks.BLUECHIST_COBBLE_SLAB.get(), blockTexture(BluechistBlocks.BLUECHIST_COBBLE_BLOCK.get()), blockTexture(BluechistBlocks.BLUECHIST_COBBLE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) BluechistBlocks.BLUECHIST_BRICK_SLAB.get(), blockTexture(BluechistBlocks.BLUECHIST_BRICK_BLOCK.get()), blockTexture(BluechistBlocks.BLUECHIST_BRICK_BLOCK.get()));
 
         // Walls
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
@@ -306,6 +337,10 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallBlock((UBCWallBlocks) LimestoneBlocks.LIMESTONE_BLOCK_WALL.get(), blockTexture(LimestoneBlocks.LIMESTONE_BLOCK.get()));
 
         wallBlock((UBCWallBlocks) SiltstoneBlocks.SILTSTONE_BLOCK_WALL.get(), blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) BluechistBlocks.BLUECHIST_BLOCK_WALL.get(), blockTexture(BluechistBlocks.BLUECHIST_BLOCK.get()));
+        wallBlock((UBCWallBlocks) BluechistBlocks.BLUECHIST_COBBLE_WALL.get(), blockTexture(BluechistBlocks.BLUECHIST_COBBLE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) BluechistBlocks.BLUECHIST_BRICK_WALL.get(), blockTexture(BluechistBlocks.BLUECHIST_BRICK_BLOCK.get()));
 
     }
 

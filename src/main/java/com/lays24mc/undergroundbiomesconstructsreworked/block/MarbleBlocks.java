@@ -23,31 +23,31 @@ public class MarbleBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> MARBLE_BLOCK = registerBlock("marble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.1F, 1.11F)
     );
     public static  DeferredBlock<Block> MARBLE_COBBLE_BLOCK = registerBlock("marble_cobble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.1F, 1.11F)
     );
     public static  DeferredBlock<Block> MARBLE_BRICK_BLOCK = registerBlock("marble_brick_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> MARBLE_COAL_ORE = registerBlock("marble_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> MARBLE_COPPER_ORE = registerBlock("marble_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.1F, 1.11F)
     );
     public static DeferredBlock<Block> MARBLE_IRON_ORE = registerBlock("marble_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.1F, 1.11F)
     );
     public static DeferredBlock<Block> MARBLE_GOLD_ORE = registerBlock("marble_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.1F, 1.11F)
     );
     public static DeferredBlock<Block> MARBLE_REDSTONE_ORE = registerBlock("marble_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.1F, 1.11F)
     );
     public static DeferredBlock<Block> MARBLE_LAPIS_ORE = registerBlock("marble_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.1F, 1.11F)
+    );
+    public static DeferredBlock<Block> MARBLE_DIAMOND_ORE = registerBlock("marble_diamond_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.1F, 1.11F)
+    );
+    public static DeferredBlock<Block> MARBLE_EMERALD_ORE = registerBlock("marble_emerald_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.1F, 1.11F)
     );
 
     // Stairs

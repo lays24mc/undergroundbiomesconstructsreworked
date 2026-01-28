@@ -23,13 +23,31 @@ public class MigmatiteBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> MIGMATITE_BLOCK = registerBlock("migmatite_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.9F, 0.86F)
     );
     public static  DeferredBlock<Block> MIGMATITE_COBBLE_BLOCK = registerBlock("migmatite_cobble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.9F, 0.86F)
     );
     public static  DeferredBlock<Block> MIGMATITE_BRICK_BLOCK = registerBlock("migmatite_brick_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.9F, 0.86F)
+    );
+    public static DeferredBlock<Block> MIGMATITE_IRON_ORE = registerBlock("migmatite_iron_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.9F, 0.86F)
+    );
+    public static DeferredBlock<Block> MIGMATITE_GOLD_ORE = registerBlock("migmatite_gold_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.9F, 0.86F)
+    );
+    public static DeferredBlock<Block> MIGMATITE_REDSTONE_ORE = registerBlock("migmatite_redstone_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.9F, 0.86F)
+    );
+    public static DeferredBlock<Block> MIGMATITE_LAPIS_ORE = registerBlock("migmatite_lapis_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.9F, 0.86F)
+    );
+    public static DeferredBlock<Block> MIGMATITE_DIAMOND_ORE = registerBlock("migmatite_diamond_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.9F, 0.86F)
+    );
+    public static DeferredBlock<Block> MIGMATITE_EMERALD_ORE = registerBlock("migmatite_emerald_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.9F, 0.86F)
     );
 
     // Stairs
@@ -63,24 +81,6 @@ public class MigmatiteBlocks {
     );
     public static final DeferredBlock<Block> MIGMATITE_BRICK_WALL = registerBlock("migmatite_brick_wall",
             () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> MIGMATITE_IRON_ORE = registerBlock("migmatite_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> MIGMATITE_GOLD_ORE = registerBlock("migmatite_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> MIGMATITE_REDSTONE_ORE = registerBlock("migmatite_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> MIGMATITE_LAPIS_ORE = registerBlock("migmatite_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> MIGMATITE_DIAMOND_ORE = registerBlock("migmatite_diamond_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> MIGMATITE_EMERALD_ORE = registerBlock("migmatite_emerald_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
 
     // Buttons

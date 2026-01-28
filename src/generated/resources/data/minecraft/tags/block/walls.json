@@ -19,6 +19,9 @@
     "undergroundbiomesconstructsreworked:marble_cobble_wall",
     "undergroundbiomesconstructsreworked:marble_brick_wall",
     "undergroundbiomesconstructsreworked:limestone_block_wall",
-    "undergroundbiomesconstructsreworked:siltstone_block_wall"
+    "undergroundbiomesconstructsreworked:siltstone_block_wall",
+    "undergroundbiomesconstructsreworked:bluechist_block_wall",
+    "undergroundbiomesconstructsreworked:bluechist_cobble_wall",
+    "undergroundbiomesconstructsreworked:bluechist_brick_wall"
   ]
 }

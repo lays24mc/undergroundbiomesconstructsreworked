@@ -10,12 +10,12 @@ public class UBCBlocks extends Block {
 
     private static final Logger log = LogManager.getLogger(UBCBlocks.class);
 
-    public UBCBlocks(MapColor color) {
+    public UBCBlocks(MapColor color, Float strength, Float explosionResistance) {
         super(
                 BlockBehaviour.Properties
                         .of()
-                        .strength(2f)
-                        .explosionResistance(6f)
+                        .strength(strength)
+                        .explosionResistance(explosionResistance)
                         .requiresCorrectToolForDrops()
                         .mapColor(color));
     }

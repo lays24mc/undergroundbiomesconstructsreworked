@@ -24,31 +24,31 @@ public class SoapstoneBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> SOAPSTONE_BLOCK = registerBlock("soapstone_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.4F, 0.2F)
     );
     public static  DeferredBlock<Block> SOAPSTONE_COBBLE_BLOCK = registerBlock("soapstone_cobble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.4F, 0.2F)
     );
     public static  DeferredBlock<Block> SOAPSTONE_BRICK_BLOCK = registerBlock("soapstone_brick_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.4F, 0.2F)
     );
     public static DeferredBlock<Block> SOAPSTONE_COAL_ORE = registerBlock("soapstone_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.4F, 0.2F)
     );
     public static DeferredBlock<Block> SOAPSTONE_COPPER_ORE = registerBlock("soapstone_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.4F, 0.2F)
     );
     public static DeferredBlock<Block> SOAPSTONE_IRON_ORE = registerBlock("soapstone_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.4F, 0.2F)
     );
     public static DeferredBlock<Block> SOAPSTONE_GOLD_ORE = registerBlock("soapstone_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.4F, 0.2F)
     );
     public static DeferredBlock<Block> SOAPSTONE_REDSTONE_ORE = registerBlock("soapstone_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.4F, 0.2F)
     );
     public static DeferredBlock<Block> SOAPSTONE_LAPIS_ORE = registerBlock("soapstone_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.4F, 0.2F)
     );
 
     // Stairs

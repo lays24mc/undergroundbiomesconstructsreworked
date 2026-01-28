@@ -1,5 +1,5 @@
 {
-  "feature": "undergroundbiomesconstructsreworked:marble_gold_ore_extra",
+  "feature": "undergroundbiomesconstructsreworked:marble_redstone_ore_lower",
   "placement": [
     {
       "type": "minecraft:count",
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:trapezoid",
         "max_inclusive": {
-          "above_bottom": 32
+          "above_bottom": 0
         },
         "min_inclusive": {
-          "above_bottom": -16
+          "above_bottom": -32
         }
       }
     },

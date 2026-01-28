@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "undergroundbiomesconstructsreworked:bluechist_block"
+    }
+  },
+  "pattern": [
+    "A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "undergroundbiomesconstructsreworked:bluechist_stone_button"
+  }
+}

@@ -10,16 +10,7 @@
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "minecraft:stone_ore_replaceables"
-        }
-      },
-      {
-        "state": {
-          "Name": "undergroundbiomesconstructsreworked:marble_coal_ore"
-        },
-        "target": {
-          "block": "undergroundbiomesconstructsreworked:marble_block",
-          "predicate_type": "minecraft:block_match"
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       }
     ]

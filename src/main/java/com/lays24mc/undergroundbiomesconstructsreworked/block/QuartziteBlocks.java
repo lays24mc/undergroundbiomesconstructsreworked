@@ -23,13 +23,31 @@ public class QuartziteBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> QUARTZITE_BLOCK = registerBlock("quartzite_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
     public static  DeferredBlock<Block> QUARTZITE_COBBLE_BLOCK = registerBlock("quartzite_cobble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
     public static  DeferredBlock<Block> QUARTZITE_BRICK_BLOCK = registerBlock("quartzite_brick_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
+    );
+    public static DeferredBlock<Block> QUARTZITE_IRON_ORE = registerBlock("quartzite_iron_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
+    );
+    public static DeferredBlock<Block> QUARTZITE_GOLD_ORE = registerBlock("quartzite_gold_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
+    );
+    public static DeferredBlock<Block> QUARTZITE_REDSTONE_ORE = registerBlock("quartzite_redstone_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
+    );
+    public static DeferredBlock<Block> QUARTZITE_LAPIS_ORE = registerBlock("quartzite_lapis_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
+    );
+    public static DeferredBlock<Block> QUARTZITE_DIAMOND_ORE = registerBlock("quartzite_diamond_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
+    );
+    public static DeferredBlock<Block> QUARTZITE_EMERALD_ORE = registerBlock("quartzite_emerald_ore",
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
 
     // Stairs
@@ -63,24 +81,6 @@ public class QuartziteBlocks {
     );
     public static final DeferredBlock<Block> QUARTZITE_BRICK_WALL = registerBlock("quartzite_brick_wall",
             () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> QUARTZITE_IRON_ORE = registerBlock("quartzite_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> QUARTZITE_GOLD_ORE = registerBlock("quartzite_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> QUARTZITE_REDSTONE_ORE = registerBlock("quartzite_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> QUARTZITE_LAPIS_ORE = registerBlock("quartzite_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> QUARTZITE_DIAMOND_ORE = registerBlock("quartzite_diamond_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
-    );
-    public static DeferredBlock<Block> QUARTZITE_EMERALD_ORE = registerBlock("quartzite_emerald_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
     );
 
     // Buttons

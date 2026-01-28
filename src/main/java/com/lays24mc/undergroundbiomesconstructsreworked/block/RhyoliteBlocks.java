@@ -23,31 +23,31 @@ public class RhyoliteBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> RHYOLITE_BLOCK = registerBlock("rhyolite_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
     public static DeferredBlock<Block> RHYOLITE_COBBLE_BLOCK = registerBlock("rhyolite_cobble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
     public static DeferredBlock<Block> RHYOLITE_BRICK_BLOCK = registerBlock("rhyolite_brick_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
     public static DeferredBlock<Block> RHYOLITE_COAL_ORE = registerBlock("rhyolite_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
     public static DeferredBlock<Block> RHYOLITE_COPPER_ORE = registerBlock("rhyolite_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
     public static DeferredBlock<Block> RHYOLITE_IRON_ORE = registerBlock("rhyolite_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
     public static DeferredBlock<Block> RHYOLITE_GOLD_ORE = registerBlock("rhyolite_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
     public static DeferredBlock<Block> RHYOLITE_REDSTONE_ORE = registerBlock("rhyolite_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
     public static DeferredBlock<Block> RHYOLITE_LAPIS_ORE = registerBlock("rhyolite_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.3F, 1.26F)
     );
 
     // Stairs

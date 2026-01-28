@@ -24,25 +24,25 @@ public class SiltstoneBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> SILTSTONE_BLOCK = registerBlock("siltstone_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
     );
     public static DeferredBlock<Block> SILTSTONE_COAL_ORE = registerBlock("siltstone_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
     );
     public static DeferredBlock<Block> SILTSTONE_COPPER_ORE = registerBlock("siltstone_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
     );
     public static DeferredBlock<Block> SILTSTONE_IRON_ORE = registerBlock("siltstone_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
     );
     public static DeferredBlock<Block> SILTSTONE_GOLD_ORE = registerBlock("siltstone_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
     );
     public static DeferredBlock<Block> SILTSTONE_REDSTONE_ORE = registerBlock("siltstone_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
     );
     public static DeferredBlock<Block> SILTSTONE_LAPIS_ORE = registerBlock("siltstone_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
     );
 
     // Stairs
