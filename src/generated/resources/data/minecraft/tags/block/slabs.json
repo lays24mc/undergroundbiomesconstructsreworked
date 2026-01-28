@@ -22,6 +22,9 @@
     "undergroundbiomesconstructsreworked:siltstone_block_slab",
     "undergroundbiomesconstructsreworked:bluechist_block_slab",
     "undergroundbiomesconstructsreworked:bluechist_cobble_slab",
-    "undergroundbiomesconstructsreworked:bluechist_brick_slab"
+    "undergroundbiomesconstructsreworked:bluechist_brick_slab",
+    "undergroundbiomesconstructsreworked:greenschist_block_slab",
+    "undergroundbiomesconstructsreworked:greenschist_cobble_slab",
+    "undergroundbiomesconstructsreworked:greenschist_brick_slab"
   ]
 }

@@ -143,6 +143,18 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_REDSTONE_ORE_LOWER_KEY = registerKey("bluechist_redstone_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_LAPIS_ORE_KEY = registerKey("bluechist_lapis_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_BLOCK_KEY = registerKey("greenschist_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_COAL_ORE_KEY = registerKey("greenschist_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_COPPER_ORE_SMALL_KEY = registerKey("greenschist_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_COPPER_ORE_LARGE_KEY = registerKey("greenschist_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_IRON_ORE_KEY = registerKey("greenschist_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_IRON_ORE_SMALL_KEY = registerKey("greenschist_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_GOLD_ORE_KEY = registerKey("greenschist_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_GOLD_ORE_EXTRA_KEY = registerKey("greenschist_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_REDSTONE_ORE_KEY = registerKey("greenschist_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_REDSTONE_ORE_LOWER_KEY = registerKey("greenschist_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_LAPIS_ORE_KEY = registerKey("greenschist_lapis_ore");
+
     //public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
     //public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
 
@@ -542,6 +554,48 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_BLUECHIST_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistRedstoneTargets, 8));
         register(context, OVERWORLD_BLUECHIST_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(bluechistRedstoneTargets, 8));
         register(context, OVERWORLD_BLUECHIST_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistLapisTargets, 7));
+
+        //Greenschist
+        List<OreConfiguration.TargetBlockState> overworldGreenschistBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, GreenschistBlocks.GREENSCHIST_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(GreenschistBlocks.GREENSCHIST_BLOCK.get()),
+                        GreenschistBlocks.GREENSCHIST_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greenschistCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreenschistBlocks.GREENSCHIST_BLOCK.get()),
+                        GreenschistBlocks.GREENSCHIST_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greenschistCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreenschistBlocks.GREENSCHIST_BLOCK.get()),
+                        GreenschistBlocks.GREENSCHIST_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greenschistIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreenschistBlocks.GREENSCHIST_BLOCK.get()),
+                        GreenschistBlocks.GREENSCHIST_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greenschistGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreenschistBlocks.GREENSCHIST_BLOCK.get()),
+                        GreenschistBlocks.GREENSCHIST_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greenschistRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreenschistBlocks.GREENSCHIST_BLOCK.get()),
+                        GreenschistBlocks.GREENSCHIST_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greenschistLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreenschistBlocks.GREENSCHIST_BLOCK.get()),
+                        GreenschistBlocks.GREENSCHIST_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_GREENSCHIST_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldGreenschistBlock, 64));
+        register(context, OVERWORLD_GREENSCHIST_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(greenschistCoalTargets, 17));
+        register(context, OVERWORLD_GREENSCHIST_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(greenschistCopperTargets, 10));
+        register(context, OVERWORLD_GREENSCHIST_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(greenschistCopperTargets, 20));
+        register(context, OVERWORLD_GREENSCHIST_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(greenschistIronTargets, 9));
+        register(context, OVERWORLD_GREENSCHIST_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(greenschistIronTargets, 4));
+        register(context, OVERWORLD_GREENSCHIST_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(greenschistGoldTargets, 9));
+        register(context, OVERWORLD_GREENSCHIST_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(greenschistGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_GREENSCHIST_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(greenschistRedstoneTargets, 8));
+        register(context, OVERWORLD_GREENSCHIST_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(greenschistRedstoneTargets, 8));
+        register(context, OVERWORLD_GREENSCHIST_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(greenschistLapisTargets, 7));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

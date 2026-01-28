@@ -22,6 +22,9 @@
     "undergroundbiomesconstructsreworked:siltstone_stairs",
     "undergroundbiomesconstructsreworked:bluechist_stairs",
     "undergroundbiomesconstructsreworked:bluechist_brick_stairs",
-    "undergroundbiomesconstructsreworked:bluechist_cobble_stairs"
+    "undergroundbiomesconstructsreworked:bluechist_cobble_stairs",
+    "undergroundbiomesconstructsreworked:greenschist_stairs",
+    "undergroundbiomesconstructsreworked:greenschist_brick_stairs",
+    "undergroundbiomesconstructsreworked:greenschist_cobble_stairs"
   ]
 }

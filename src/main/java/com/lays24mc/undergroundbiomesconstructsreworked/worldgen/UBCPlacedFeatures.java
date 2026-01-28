@@ -154,6 +154,19 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLUECHIST_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("bluechist_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> BLUECHIST_LAPIS_ORE_PLACED_KEY = registerKey("bluechist_lapis_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_BLOCK_PLACED_KEY = registerKey("greenschist_block_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_COAL_ORE_PLACED_KEY = registerKey("greenschist_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_COPPER_ORE_SMALL_PLACED_KEY = registerKey("greenschist_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_COPPER_ORE_LARGE_PLACED_KEY = registerKey("greenschist_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_IRON_ORE_UPPER_PLACED_KEY = registerKey("greenschist_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("greenschist_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_IRON_ORE_SMALL_PLACED_KEY = registerKey("greenschist_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_GOLD_ORE_PLACED_KEY = registerKey("greenschist_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("greenschist_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_REDSTONE_ORE_PLACED_KEY = registerKey("greenschist_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("greenschist_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> GREENSCHIST_LAPIS_ORE_PLACED_KEY = registerKey("greenschist_lapis_ore_placed");
+
     /**
      * Bootstrap method.
      * Called during worldgen setup to register all PlacedFeatures.
@@ -1580,6 +1593,154 @@ public class UBCPlacedFeatures {
         // Lapis ore
         register(context, BLUECHIST_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+        /* ------------------------------------------------------------
+         * GREENSCHIST – Base stone
+         * ------------------------------------------------------------ */
+
+        // Greenschist base rock (rare, spans most of the world height)
+        register(context, GREENSCHIST_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+        // Greenschist coal ore (very common, high Y-levels)
+        register(context, GREENSCHIST_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_COAL_ORE_KEY),
+                commonOrePlacement(
+                        30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        )
+                )
+        );
+
+        // Small copper veins
+        register(context, GREENSCHIST_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+        // Large copper veins
+        register(context, GREENSCHIST_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+        // Iron ore – upper layer
+        register(context, GREENSCHIST_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_IRON_ORE_KEY),
+                commonOrePlacement(
+                        90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+        // Iron ore – middle layer
+        register(context, GREENSCHIST_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        )
+                )
+        );
+
+        // Iron ore – small veins
+        register(context, GREENSCHIST_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        )
+                )
+        );
+
+        // Gold ore – standard distribution
+        register(context, GREENSCHIST_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+        // Gold ore – extra distribution (badlands-like, higher Y-levels)
+        register(context, GREENSCHIST_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        )
+                )
+        );
+
+        // Redstone ore – standard distribution
+        register(context, GREENSCHIST_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+        // Redstone ore – deep distribution
+        register(context, GREENSCHIST_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        )
+                )
+        );
+
+        // Lapis ore
+        register(context, GREENSCHIST_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_LAPIS_ORE_KEY),
                 commonOrePlacement(
                         2,
                         HeightRangePlacement.triangle(

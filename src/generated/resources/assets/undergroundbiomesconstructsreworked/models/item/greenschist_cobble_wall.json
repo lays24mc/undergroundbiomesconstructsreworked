@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "undergroundbiomesconstructsreworked:block/greenschist_cobble_block"
+  }
+}

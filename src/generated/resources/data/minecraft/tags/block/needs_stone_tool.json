@@ -27,6 +27,10 @@
     "undergroundbiomesconstructsreworked:bluechist_lapis_ore",
     "undergroundbiomesconstructsreworked:bluechist_iron_ore",
     "undergroundbiomesconstructsreworked:bluechist_copper_ore",
-    "undergroundbiomesconstructsreworked:bluechist_coal_ore"
+    "undergroundbiomesconstructsreworked:bluechist_coal_ore",
+    "undergroundbiomesconstructsreworked:greenschist_lapis_ore",
+    "undergroundbiomesconstructsreworked:greenschist_iron_ore",
+    "undergroundbiomesconstructsreworked:greenschist_copper_ore",
+    "undergroundbiomesconstructsreworked:greenschist_coal_ore"
   ]
 }

@@ -64,9 +64,14 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         buildSiltstoneRecipes(recipeOutput);
 
         //====================================================
-        // Soapstone
+        // Blueschist
         //====================================================
         buildBluechistRecipes(recipeOutput);
+
+        //====================================================
+        // Greenschist
+        //====================================================
+        buildGreenschistRecipes(recipeOutput);
     }
 
     // ------------------------------------------------------------
@@ -98,7 +103,7 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         oreSmelting(recipeOutput, SOAPSTONE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "soapstone");
 
         // Blasting
-//        oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
+        //oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
 
         // Stairs, Slabs, Walls, Stonecutting
         stairBuilder(SoapstoneBlocks.SOAPSTONE_STAIRS.get(), Ingredient.of(SoapstoneBlocks.SOAPSTONE_BLOCK)).group("soapstone").unlockedBy("has_soapstone_block", has(SoapstoneBlocks.SOAPSTONE_BLOCK)).save(recipeOutput);
@@ -391,6 +396,40 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, BluechistBlocks.BLUECHIST_BLOCK_SLAB.get(), BluechistBlocks.BLUECHIST_BLOCK.get(), 2);
     }
 
+    private void buildGreenschistRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> GREENSCHIST_SMELTABLES = List.of(GreenschistBlocks.GREENSCHIST_COBBLE_BLOCK);
+        List<ItemLike> GREENSCHIST_COAL_SMELTABLES = List.of(GreenschistBlocks.GREENSCHIST_COAL_ORE);
+        List<ItemLike> GREENSCHIST_COPPER_SMELTABLES = List.of(GreenschistBlocks.GREENSCHIST_COPPER_ORE);
+        List<ItemLike> GREENSCHIST_IRON_SMELTABLES = List.of(GreenschistBlocks.GREENSCHIST_IRON_ORE);
+        List<ItemLike> GREENSCHIST_GOLD_SMELTABLES = List.of(GreenschistBlocks.GREENSCHIST_GOLD_ORE);
+        List<ItemLike> GREENSCHIST_REDSTONE_SMELTABLES = List.of(GreenschistBlocks.GREENSCHIST_REDSTONE_ORE);
+        List<ItemLike> GREENSCHIST_LAPIS_SMELTABLES = List.of(GreenschistBlocks.GREENSCHIST_LAPIS_ORE);
+
+        // Greenschist Brick (4x)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, GreenschistBlocks.GREENSCHIST_BRICK_BLOCK.get(), 4).pattern("AA").pattern("AA").define('A', GreenschistBlocks.GREENSCHIST_BLOCK.get()).unlockedBy("has_greenschist_block", has(GreenschistBlocks.GREENSCHIST_BLOCK)).save(recipeOutput);
+
+        // Stone Button
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, GreenschistBlocks.GREENSCHIST_STONE_BUTTON.get()).pattern("A").define('A', GreenschistBlocks.GREENSCHIST_BLOCK.get()).unlockedBy("has_greenschist_block", has(GreenschistBlocks.GREENSCHIST_BLOCK)).save(recipeOutput);
+
+        // Smelting
+        oreSmelting(recipeOutput, GREENSCHIST_SMELTABLES, RecipeCategory.MISC, GreenschistBlocks.GREENSCHIST_BLOCK.get(), 0.25f, 200, "greenschist");
+        oreSmelting(recipeOutput, GREENSCHIST_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "greenschist");
+        oreSmelting(recipeOutput, GREENSCHIST_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "greenschist");
+        oreSmelting(recipeOutput, GREENSCHIST_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "greenschist");
+        oreSmelting(recipeOutput, GREENSCHIST_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "greenschist");
+        oreSmelting(recipeOutput, GREENSCHIST_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "greenschist");
+        oreSmelting(recipeOutput, GREENSCHIST_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "greenschist");
+
+        // Blasting
+        //oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
+
+        // Stairs, Slabs, Walls, Stonecutting
+        stairBuilder(GreenschistBlocks.GREENSCHIST_STAIRS.get(), Ingredient.of(GreenschistBlocks.GREENSCHIST_BLOCK)).group("greenschist").unlockedBy("has_greenschist_block", has(GreenschistBlocks.GREENSCHIST_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreenschistBlocks.GREENSCHIST_BLOCK_SLAB.get(), GreenschistBlocks.GREENSCHIST_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreenschistBlocks.GREENSCHIST_BLOCK_WALL.get(), GreenschistBlocks.GREENSCHIST_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreenschistBlocks.GREENSCHIST_BLOCK_SLAB.get(), GreenschistBlocks.GREENSCHIST_BLOCK.get(), 2);
+    }
 
     // ------------------------------------------------------------
     // GENERIC COOKING HELPERS

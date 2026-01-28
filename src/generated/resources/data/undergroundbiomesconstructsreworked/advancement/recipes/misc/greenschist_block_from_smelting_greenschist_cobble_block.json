@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_greenschist_cobble_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "undergroundbiomesconstructsreworked:greenschist_cobble_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undergroundbiomesconstructsreworked:greenschist_block_from_smelting_greenschist_cobble_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_greenschist_cobble_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undergroundbiomesconstructsreworked:greenschist_block_from_smelting_greenschist_cobble_block"
+    ]
+  }
+}
