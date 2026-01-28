@@ -180,6 +180,19 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CHALK_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("chalk_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> CHALK_LAPIS_ORE_PLACED_KEY = registerKey("chalk_lapis_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> SHALE_BLOCK_PLACED_KEY = registerKey("shale_block_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_COAL_ORE_PLACED_KEY = registerKey("shale_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("shale_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_COPPER_ORE_LARGE_PLACED_KEY = registerKey("shale_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_IRON_ORE_UPPER_PLACED_KEY = registerKey("shale_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("shale_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_IRON_ORE_SMALL_PLACED_KEY = registerKey("shale_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_GOLD_ORE_PLACED_KEY = registerKey("shale_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("shale_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_REDSTONE_ORE_PLACED_KEY = registerKey("shale_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("shale_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> SHALE_LAPIS_ORE_PLACED_KEY = registerKey("shale_lapis_ore_placed");
+
     /**
      * Bootstrap method.
      * Called during worldgen setup to register all PlacedFeatures.
@@ -1902,6 +1915,154 @@ public class UBCPlacedFeatures {
         // Lapis ore
         register(context, CHALK_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+        /* ------------------------------------------------------------
+         * SHALE – Base stone
+         * ------------------------------------------------------------ */
+
+        // Shale base rock (rare, spans most of the world height)
+        register(context, SHALE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+        // Shale coal ore (very common, high Y-levels)
+        register(context, SHALE_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_COAL_ORE_KEY),
+                commonOrePlacement(
+                        30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        )
+                )
+        );
+
+        // Small copper veins
+        register(context, SHALE_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+        // Large copper veins
+        register(context, SHALE_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+        // Iron ore – upper layer
+        register(context, SHALE_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+        // Iron ore – middle layer
+        register(context, SHALE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        )
+                )
+        );
+
+        // Iron ore – small veins
+        register(context, SHALE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        )
+                )
+        );
+
+        // Gold ore – standard distribution
+        register(context, SHALE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+        // Gold ore – extra distribution (badlands-like, higher Y-levels)
+        register(context, SHALE_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        )
+                )
+        );
+
+        // Redstone ore – standard distribution
+        register(context, SHALE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+        // Redstone ore – deep distribution
+        register(context, SHALE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        )
+                )
+        );
+
+        // Lapis ore
+        register(context, SHALE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_LAPIS_ORE_KEY),
                 commonOrePlacement(
                         2,
                         HeightRangePlacement.triangle(

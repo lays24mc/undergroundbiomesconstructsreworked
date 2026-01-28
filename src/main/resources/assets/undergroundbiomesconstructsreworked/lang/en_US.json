@@ -206,5 +206,18 @@
   "block.undergroundbiomesconstructsreworked.chalk_gold_ore": "Chalk Gold Ore",
   "block.undergroundbiomesconstructsreworked.chalk_emerald_ore": "Chalk Emerald Ore",
   "block.undergroundbiomesconstructsreworked.chalk_redstone_ore": "Chalk Redstone Ore",
-  "block.undergroundbiomesconstructsreworked.chalk_lapis_ore": "Chalk Lapis Lazuli Ore"
+  "block.undergroundbiomesconstructsreworked.chalk_lapis_ore": "Chalk Lapis Lazuli Ore",
+
+  "block.undergroundbiomesconstructsreworked.shale_block": "Shale",
+  "block.undergroundbiomesconstructsreworked.shale_block_slab": "Shale Block Slab",
+  "block.undergroundbiomesconstructsreworked.shale_stairs": "Shale Stairs",
+  "block.undergroundbiomesconstructsreworked.shale_block_wall": "Shale Wall",
+  "block.undergroundbiomesconstructsreworked.shale_stone_button": "Shale Stone Button",
+  "block.undergroundbiomesconstructsreworked.shale_coal_ore": "Shale Coal Ore",
+  "block.undergroundbiomesconstructsreworked.shale_copper_ore": "Shale Copper Ore",
+  "block.undergroundbiomesconstructsreworked.shale_iron_ore": "Shale Iron Ore",
+  "block.undergroundbiomesconstructsreworked.shale_gold_ore": "Shale Gold Ore",
+  "block.undergroundbiomesconstructsreworked.shale_emerald_ore": "Shale Emerald Ore",
+  "block.undergroundbiomesconstructsreworked.shale_redstone_ore": "Shale Redstone Ore",
+  "block.undergroundbiomesconstructsreworked.shale_lapis_ore": "Shale Lapis Lazuli Ore"
 }

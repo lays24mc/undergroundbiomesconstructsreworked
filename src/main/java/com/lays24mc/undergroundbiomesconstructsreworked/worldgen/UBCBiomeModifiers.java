@@ -156,6 +156,19 @@ public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_CHALK_REDSTONE_ORE_LOWER = registerKey("add_chalk_redstone_ore_lower");
     public static final ResourceKey<BiomeModifier> ADD_CHALK_LAPIS_ORE = registerKey("add_chalk_lapis_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_BLOCK = registerKey("add_shale_block");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_COAL_ORE = registerKey("add_shale_coal_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_COPPER_SMALL_ORE = registerKey("add_shale_copper_small_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_COPPER_ORE_LARGE = registerKey("add_shale_copper_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_IRON_ORE_UPPER = registerKey("add_shale_iron_ore_upper");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_IRON_ORE_MIDDLE = registerKey("add_shale_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_IRON_ORE_SMALL = registerKey("add_shale_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_GOLD_ORE = registerKey("add_shale_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_GOLD_ORE_EXTRA = registerKey("add_shale_gold_ore_extra");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_REDSTONE_ORE = registerKey("add_shale_redstone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_REDSTONE_ORE_LOWER = registerKey("add_shale_redstone_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_SHALE_LAPIS_ORE = registerKey("add_shale_lapis_ore");
+
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         // CF -> PF -> BM
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -843,6 +856,67 @@ public class UBCBiomeModifiers {
         context.register(ADD_CHALK_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.CHALK_LAPIS_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //shale
+        context.register(ADD_SHALE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_COAL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_COAL_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_COPPER_SMALL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_COPPER_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_COPPER_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_COPPER_ORE_LARGE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_IRON_ORE_UPPER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_IRON_ORE_UPPER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_IRON_ORE_MIDDLE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_GOLD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_GOLD_ORE_EXTRA, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_GOLD_ORE_EXTRA_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_REDSTONE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_REDSTONE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_REDSTONE_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SHALE_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.SHALE_LAPIS_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
     }

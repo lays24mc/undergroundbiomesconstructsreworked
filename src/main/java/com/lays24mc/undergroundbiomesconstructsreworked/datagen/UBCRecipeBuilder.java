@@ -77,6 +77,11 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         // Chalk
         //====================================================
         buildChalkRecipes(recipeOutput);
+
+        //====================================================
+        // Shale
+        //====================================================
+        buildShaleRecipes(recipeOutput);
     }
 
     // ------------------------------------------------------------
@@ -467,6 +472,39 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ChalkBlocks.CHALK_BLOCK_SLAB.get(), ChalkBlocks.CHALK_BLOCK.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ChalkBlocks.CHALK_BLOCK_WALL.get(), ChalkBlocks.CHALK_BLOCK.get());
         stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ChalkBlocks.CHALK_BLOCK_SLAB.get(), ChalkBlocks.CHALK_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // SHALE RECIPES
+    // ------------------------------------------------------------
+    private void buildShaleRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> SHALE_COAL_SMELTABLES = List.of(ShaleBlocks.SHALE_COAL_ORE);
+        List<ItemLike> SHALE_COPPER_SMELTABLES = List.of(ShaleBlocks.SHALE_COPPER_ORE);
+        List<ItemLike> SHALE_IRON_SMELTABLES = List.of(ShaleBlocks.SHALE_IRON_ORE);
+        List<ItemLike> SHALE_GOLD_SMELTABLES = List.of(ShaleBlocks.SHALE_GOLD_ORE);
+        List<ItemLike> SHALE_REDSTONE_SMELTABLES = List.of(ShaleBlocks.SHALE_REDSTONE_ORE);
+        List<ItemLike> SHALE_LAPIS_SMELTABLES = List.of(ShaleBlocks.SHALE_LAPIS_ORE);
+
+        // Stone Button
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ShaleBlocks.SHALE_STONE_BUTTON.get()).pattern("A").define('A', ShaleBlocks.SHALE_BLOCK.get()).unlockedBy("has_shale_block", has(ShaleBlocks.SHALE_BLOCK)).save(recipeOutput);
+
+        // Smelting;
+        oreSmelting(recipeOutput, SHALE_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "shale");
+        oreSmelting(recipeOutput, SHALE_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "shale");
+        oreSmelting(recipeOutput, SHALE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "shale");
+        oreSmelting(recipeOutput, SHALE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "shale");
+        oreSmelting(recipeOutput, SHALE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "shale");
+        oreSmelting(recipeOutput, SHALE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "shale");
+
+        // Blasting
+        //        oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
+
+        // Stairs, Slabs, Walls, Stonecutting
+        stairBuilder(ShaleBlocks.SHALE_STAIRS.get(), Ingredient.of(ShaleBlocks.SHALE_BLOCK)).group("shale").unlockedBy("has_shale_block", has(ShaleBlocks.SHALE_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ShaleBlocks.SHALE_BLOCK_SLAB.get(), ShaleBlocks.SHALE_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ShaleBlocks.SHALE_BLOCK_WALL.get(), ShaleBlocks.SHALE_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ShaleBlocks.SHALE_BLOCK_SLAB.get(), ShaleBlocks.SHALE_BLOCK.get(), 2);
     }
 
     // ------------------------------------------------------------

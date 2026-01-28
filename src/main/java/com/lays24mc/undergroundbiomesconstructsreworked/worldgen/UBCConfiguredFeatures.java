@@ -167,6 +167,18 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_REDSTONE_ORE_LOWER_KEY = registerKey("chalk_redstone_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_LAPIS_ORE_KEY = registerKey("chalk_lapis_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_BLOCK_KEY = registerKey("shale_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_COAL_ORE_KEY = registerKey("shale_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_COPPER_ORE_SMALL_KEY = registerKey("shale_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_COPPER_ORE_LARGE_KEY = registerKey("shale_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_IRON_ORE_KEY = registerKey("shale_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_IRON_ORE_SMALL_KEY = registerKey("shale_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_GOLD_ORE_KEY = registerKey("shale_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_GOLD_ORE_EXTRA_KEY = registerKey("shale_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_REDSTONE_ORE_KEY = registerKey("shale_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_REDSTONE_ORE_LOWER_KEY = registerKey("shale_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_LAPIS_ORE_KEY = registerKey("shale_lapis_ore");
+
     //public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
     //public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
 
@@ -649,6 +661,48 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_CHALK_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(chalkRedstoneTargets, 8));
         register(context, OVERWORLD_CHALK_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(chalkRedstoneTargets, 8));
         register(context, OVERWORLD_CHALK_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(chalkLapisTargets, 7));
+
+        //Shale
+        List<OreConfiguration.TargetBlockState> overworldShaleBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, ShaleBlocks.SHALE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(ShaleBlocks.SHALE_BLOCK.get()),
+                        ShaleBlocks.SHALE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> shaleCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ShaleBlocks.SHALE_BLOCK.get()),
+                        ShaleBlocks.SHALE_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> shaleCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ShaleBlocks.SHALE_BLOCK.get()),
+                        ShaleBlocks.SHALE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> shaleIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ShaleBlocks.SHALE_BLOCK.get()),
+                        ShaleBlocks.SHALE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> shaleGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ShaleBlocks.SHALE_BLOCK.get()),
+                        ShaleBlocks.SHALE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> shaleRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ShaleBlocks.SHALE_BLOCK.get()),
+                        ShaleBlocks.SHALE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> shaleLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ShaleBlocks.SHALE_BLOCK.get()),
+                        ShaleBlocks.SHALE_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_SHALE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldShaleBlock, 64));
+        register(context, OVERWORLD_SHALE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(shaleCoalTargets, 17));
+        register(context, OVERWORLD_SHALE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(shaleCopperTargets, 10));
+        register(context, OVERWORLD_SHALE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(shaleCopperTargets, 20));
+        register(context, OVERWORLD_SHALE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(shaleIronTargets, 9));
+        register(context, OVERWORLD_SHALE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(shaleIronTargets, 4));
+        register(context, OVERWORLD_SHALE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(shaleGoldTargets, 9));
+        register(context, OVERWORLD_SHALE_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(shaleGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_SHALE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(shaleRedstoneTargets, 8));
+        register(context, OVERWORLD_SHALE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(shaleRedstoneTargets, 8));
+        register(context, OVERWORLD_SHALE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(shaleLapisTargets, 7));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

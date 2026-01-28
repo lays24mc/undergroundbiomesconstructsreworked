@@ -148,6 +148,14 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(ChalkBlocks.CHALK_REDSTONE_ORE);
         blockWithItem(ChalkBlocks.CHALK_LAPIS_ORE);
 
+        blockWithItem(ShaleBlocks.SHALE_BLOCK);
+        blockWithItem(ShaleBlocks.SHALE_COAL_ORE);
+        blockWithItem(ShaleBlocks.SHALE_COPPER_ORE);
+        blockWithItem(ShaleBlocks.SHALE_IRON_ORE);
+        blockWithItem(ShaleBlocks.SHALE_GOLD_ORE);
+        blockWithItem(ShaleBlocks.SHALE_REDSTONE_ORE);
+        blockWithItem(ShaleBlocks.SHALE_LAPIS_ORE);
+
         // --------------------------
         // Register buttons
         // --------------------------
@@ -162,6 +170,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         buttonWithItem((UBCButtonsBlocks) BluechistBlocks.BLUECHIST_STONE_BUTTON.get(), "bluechist_stone_button", "bluechist_block");
         buttonWithItem((UBCButtonsBlocks) GreenschistBlocks.GREENSCHIST_STONE_BUTTON.get(), "greenschist_stone_button", "greenschist_block");
         buttonWithItem((UBCButtonsBlocks) ChalkBlocks.CHALK_STONE_BUTTON.get(), "chalk_stone_button", "chalk_block");
+        buttonWithItem((UBCButtonsBlocks) ShaleBlocks.SHALE_STONE_BUTTON.get(), "shale_stone_button", "shale_block");
 
 
         // --------------------------
@@ -240,6 +249,9 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockItem(ChalkBlocks.CHALK_STAIRS);
         blockItem(ChalkBlocks.CHALK_BLOCK_SLAB);
 
+        blockItem(ShaleBlocks.SHALE_STAIRS);
+        blockItem(ShaleBlocks.SHALE_BLOCK_SLAB);
+
         //Wall items
         wallItem(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL, SoapstoneBlocks.SOAPSTONE_BLOCK.get());
         wallItem(SoapstoneBlocks.SOAPSTONE_COBBLE_WALL, SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get());
@@ -279,7 +291,8 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallItem(GreenschistBlocks.GREENSCHIST_BRICK_WALL, GreenschistBlocks.GREENSCHIST_BRICK_BLOCK.get());
 
         wallItem(ChalkBlocks.CHALK_BLOCK_WALL, ChalkBlocks.CHALK_BLOCK.get());
-        wallItem(ChalkBlocks.CHALK_BLOCK_WALL, ChalkBlocks.CHALK_BLOCK.get());
+
+        wallItem(ShaleBlocks.SHALE_BLOCK_WALL, ShaleBlocks.SHALE_BLOCK.get());
 
 
         // Stairs
@@ -321,6 +334,8 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         stairsBlock((UBCStairsBlocks) ChalkBlocks.CHALK_STAIRS.get(), blockTexture(ChalkBlocks.CHALK_BLOCK.get()));
 
+        stairsBlock((UBCStairsBlocks) ShaleBlocks.SHALE_STAIRS.get(), blockTexture(ShaleBlocks.SHALE_BLOCK.get()));
+
         // Slabs
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_COBBLE_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()));
@@ -360,6 +375,8 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         slabBlock((UBCSlabBlocks) ChalkBlocks.CHALK_BLOCK_SLAB.get(),blockTexture(ChalkBlocks.CHALK_BLOCK.get()), blockTexture(ChalkBlocks.CHALK_BLOCK.get()));
 
+        slabBlock((UBCSlabBlocks) ShaleBlocks.SHALE_BLOCK_SLAB.get(), blockTexture(ShaleBlocks.SHALE_BLOCK.get()), blockTexture(ShaleBlocks.SHALE_BLOCK.get()));
+
         // Walls
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_COBBLE_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()));
@@ -398,6 +415,8 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallBlock((UBCWallBlocks) GreenschistBlocks.GREENSCHIST_BRICK_WALL.get(), blockTexture(GreenschistBlocks.GREENSCHIST_BRICK_BLOCK.get()));
 
         wallBlock((UBCWallBlocks) ChalkBlocks.CHALK_BLOCK_WALL.get(), blockTexture(ChalkBlocks.CHALK_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) ShaleBlocks.SHALE_BLOCK_WALL.get(), blockTexture(ShaleBlocks.SHALE_BLOCK.get()));
     }
 
     // ------------------------------------------------------------

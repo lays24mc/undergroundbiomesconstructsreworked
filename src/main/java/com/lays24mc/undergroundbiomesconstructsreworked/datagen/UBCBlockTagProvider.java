@@ -121,6 +121,22 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreenschistBlocks.GREENSCHIST_REDSTONE_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_LAPIS_ORE.get())
 
+                .add(ChalkBlocks.CHALK_BLOCK.get())
+                .add(ChalkBlocks.CHALK_COAL_ORE.get())
+                .add(ChalkBlocks.CHALK_COPPER_ORE.get())
+                .add(ChalkBlocks.CHALK_IRON_ORE.get())
+                .add(ChalkBlocks.CHALK_GOLD_ORE.get())
+                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
+                .add(ChalkBlocks.CHALK_LAPIS_ORE.get())
+
+                .add(ShaleBlocks.SHALE_BLOCK.get())
+                .add(ShaleBlocks.SHALE_COAL_ORE.get())
+                .add(ShaleBlocks.SHALE_COPPER_ORE.get())
+                .add(ShaleBlocks.SHALE_IRON_ORE.get())
+                .add(ShaleBlocks.SHALE_GOLD_ORE.get())
+                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get())
+                .add(ShaleBlocks.SHALE_LAPIS_ORE.get())
+
                 // Slabs
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COBBLE_SLAB.get())
@@ -158,14 +174,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreenschistBlocks.GREENSCHIST_COBBLE_SLAB.get())
                 .add(GreenschistBlocks.GREENSCHIST_BRICK_SLAB.get())
 
-                .add(ChalkBlocks.CHALK_BLOCK.get())
-                .add(ChalkBlocks.CHALK_COAL_ORE.get())
-                .add(ChalkBlocks.CHALK_COPPER_ORE.get())
-                .add(ChalkBlocks.CHALK_IRON_ORE.get())
-                .add(ChalkBlocks.CHALK_GOLD_ORE.get())
-                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
-                .add(ChalkBlocks.CHALK_LAPIS_ORE.get())
+                .add(ChalkBlocks.CHALK_BLOCK_SLAB.get())
 
+                .add(ShaleBlocks.SHALE_BLOCK_SLAB.get())
 
                 // Stairs
                 .add(SoapstoneBlocks.SOAPSTONE_STAIRS.get())
@@ -206,6 +217,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(ChalkBlocks.CHALK_STAIRS.get())
 
+                .add(ShaleBlocks.SHALE_STAIRS.get())
+
                 // Walls
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COBBLE_WALL.get())
@@ -243,7 +256,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreenschistBlocks.GREENSCHIST_COBBLE_WALL.get())
                 .add(GreenschistBlocks.GREENSCHIST_BRICK_WALL.get())
 
-                .add(ChalkBlocks.CHALK_BLOCK_WALL.get());
+                .add(ChalkBlocks.CHALK_BLOCK_WALL.get())
+
+                .add(ShaleBlocks.SHALE_BLOCK_WALL.get());
 
         //tools tag
         tag(BlockTags.NEEDS_DIAMOND_TOOL);
@@ -294,7 +309,11 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 // CHALK
                 .add(ChalkBlocks.CHALK_GOLD_ORE.get())
-                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get());
+                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
+
+                // SHALE
+                .add(ShaleBlocks.SHALE_GOLD_ORE.get())
+                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get());
 
 
         tag(BlockTags.NEEDS_STONE_TOOL)
@@ -353,7 +372,13 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(ChalkBlocks.CHALK_COAL_ORE.get())
                 .add(ChalkBlocks.CHALK_LAPIS_ORE.get())
                 .add(ChalkBlocks.CHALK_IRON_ORE.get())
-                .add(ChalkBlocks.CHALK_COPPER_ORE.get());
+                .add(ChalkBlocks.CHALK_COPPER_ORE.get())
+
+                // Shale
+                .add(ShaleBlocks.SHALE_COAL_ORE.get())
+                .add(ShaleBlocks.SHALE_LAPIS_ORE.get())
+                .add(ShaleBlocks.SHALE_IRON_ORE.get())
+                .add(ShaleBlocks.SHALE_COPPER_ORE.get());
 
 
         tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
@@ -403,7 +428,11 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 // Chalk
                 .add(ChalkBlocks.CHALK_GOLD_ORE.get())
-                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get());
+                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
+
+                // Shale
+                .add(ShaleBlocks.SHALE_GOLD_ORE.get())
+                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get());
 
         tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
                 // Red Granite
@@ -475,6 +504,13 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreenschistBlocks.GREENSCHIST_IRON_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_COPPER_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_COAL_ORE.get())
+
+                // Chalk
+                .add(ChalkBlocks.CHALK_GOLD_ORE.get())
+                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
+                .add(ChalkBlocks.CHALK_IRON_ORE.get())
+                .add(ChalkBlocks.CHALK_COPPER_ORE.get())
+                .add(ChalkBlocks.CHALK_COAL_ORE.get())
 
                 // Chalk
                 .add(ChalkBlocks.CHALK_GOLD_ORE.get())
@@ -562,7 +598,14 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
                 .add(ChalkBlocks.CHALK_IRON_ORE.get())
                 .add(ChalkBlocks.CHALK_COPPER_ORE.get())
-                .add(ChalkBlocks.CHALK_COAL_ORE.get());
+                .add(ChalkBlocks.CHALK_COAL_ORE.get())
+
+                // Shale
+                .add(ShaleBlocks.SHALE_GOLD_ORE.get())
+                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get())
+                .add(ShaleBlocks.SHALE_IRON_ORE.get())
+                .add(ShaleBlocks.SHALE_COPPER_ORE.get())
+                .add(ShaleBlocks.SHALE_COAL_ORE.get());
 
 
         tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
@@ -577,7 +620,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LimestoneBlocks.LIMESTONE_COAL_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_COAL_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_COAL_ORE.get())
-                .add(ChalkBlocks.CHALK_COAL_ORE.get());
+                .add(ChalkBlocks.CHALK_COAL_ORE.get())
+                .add(ShaleBlocks.SHALE_COAL_ORE.get());
 
         tag(BlockTags.COPPER_ORES)
                 .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
@@ -586,7 +630,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LimestoneBlocks.LIMESTONE_COPPER_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_COPPER_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_COPPER_ORE.get())
-                .add(ChalkBlocks.CHALK_COPPER_ORE.get());
+                .add(ChalkBlocks.CHALK_COPPER_ORE.get())
+                .add(ShaleBlocks.SHALE_COPPER_ORE.get());
 
         tag(BlockTags.IRON_ORES)
                 .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
@@ -599,7 +644,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LimestoneBlocks.LIMESTONE_IRON_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_IRON_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_IRON_ORE.get())
-                .add(ChalkBlocks.CHALK_IRON_ORE.get());
+                .add(ChalkBlocks.CHALK_IRON_ORE.get())
+                .add(ShaleBlocks.SHALE_IRON_ORE.get());
 
         tag(BlockTags.GOLD_ORES)
                 .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
@@ -612,7 +658,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(SiltstoneBlocks.SILTSTONE_GOLD_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_GOLD_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_GOLD_ORE.get())
-                .add(ChalkBlocks.CHALK_GOLD_ORE.get());
+                .add(ChalkBlocks.CHALK_GOLD_ORE.get())
+                .add(ShaleBlocks.SHALE_GOLD_ORE.get());
 
         tag(BlockTags.DIAMOND_ORES)
                 .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
@@ -636,7 +683,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LimestoneBlocks.LIMESTONE_LAPIS_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_LAPIS_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_LAPIS_ORE.get())
-                .add(ChalkBlocks.CHALK_LAPIS_ORE.get());
+                .add(ChalkBlocks.CHALK_LAPIS_ORE.get())
+                .add(ShaleBlocks.SHALE_LAPIS_ORE.get());
 
         tag(BlockTags.REDSTONE_ORES)
                 .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
@@ -648,7 +696,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LimestoneBlocks.LIMESTONE_REDSTONE_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_REDSTONE_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_REDSTONE_ORE.get())
-                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get());
+                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
+                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get());
 
         // Defines blocks considered as overworld base stone for generation purposes
         tag(BlockTags.BASE_STONE_OVERWORLD)
@@ -662,7 +711,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(SiltstoneBlocks.SILTSTONE_BLOCK.get())
                 .add(BluechistBlocks.BLUECHIST_BLOCK.get())
                 .add(GreenschistBlocks.GREENSCHIST_BLOCK.get())
-                .add(ChalkBlocks.CHALK_BLOCK.get());
+                .add(ChalkBlocks.CHALK_BLOCK.get())
+                .add(ShaleBlocks.SHALE_BLOCK.get());
 
         // Identifies all stairs
         tag(BlockTags.STAIRS)
@@ -702,7 +752,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreenschistBlocks.GREENSCHIST_BRICK_STAIRS.get())
                 .add(GreenschistBlocks.GREENSCHIST_COBBLE_STAIRS.get())
 
-                .add(ChalkBlocks.CHALK_STAIRS.get());
+                .add(ChalkBlocks.CHALK_STAIRS.get())
+
+                .add(ShaleBlocks.SHALE_STAIRS.get());
 
         // Identifies all slabs
         tag(BlockTags.SLABS)
@@ -742,7 +794,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreenschistBlocks.GREENSCHIST_COBBLE_SLAB.get())
                 .add(GreenschistBlocks.GREENSCHIST_BRICK_SLAB.get())
 
-                .add(ChalkBlocks.CHALK_BLOCK_SLAB.get());
+                .add(ChalkBlocks.CHALK_BLOCK_SLAB.get())
+
+                .add(ShaleBlocks.SHALE_BLOCK_SLAB.get());
 
         // Identifies all walls
         tag(BlockTags.WALLS)
@@ -782,7 +836,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreenschistBlocks.GREENSCHIST_COBBLE_WALL.get())
                 .add(GreenschistBlocks.GREENSCHIST_BRICK_WALL.get())
 
-                .add(ChalkBlocks.CHALK_BLOCK_WALL.get());
+                .add(ChalkBlocks.CHALK_BLOCK_WALL.get())
+
+                .add(ShaleBlocks.SHALE_BLOCK_WALL.get());
 
         // Identifies all buttons
         tag(BlockTags.BUTTONS)
@@ -796,6 +852,7 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(SiltstoneBlocks.SILTSTONE_STONE_BUTTON.get())
                 .add(BluechistBlocks.BLUECHIST_STONE_BUTTON.get())
                 .add(GreenschistBlocks.GREENSCHIST_STONE_BUTTON.get())
-                .add(ChalkBlocks.CHALK_STONE_BUTTON.get());
+                .add(ChalkBlocks.CHALK_STONE_BUTTON.get())
+                .add(ShaleBlocks.SHALE_STONE_BUTTON.get());
     }
 }

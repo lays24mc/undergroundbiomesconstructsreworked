@@ -24,25 +24,25 @@ public class ChalkBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> CHALK_BLOCK = registerBlock("chalk_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> CHALK_COAL_ORE = registerBlock("chalk_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> CHALK_COPPER_ORE = registerBlock("chalk_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> CHALK_IRON_ORE = registerBlock("chalk_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> CHALK_GOLD_ORE = registerBlock("chalk_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> CHALK_REDSTONE_ORE = registerBlock("chalk_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> CHALK_LAPIS_ORE = registerBlock("chalk_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.6F, 0.4F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
     );
 
     // Stairs

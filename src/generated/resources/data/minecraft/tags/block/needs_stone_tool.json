@@ -35,6 +35,10 @@
     "undergroundbiomesconstructsreworked:chalk_coal_ore",
     "undergroundbiomesconstructsreworked:chalk_lapis_ore",
     "undergroundbiomesconstructsreworked:chalk_iron_ore",
-    "undergroundbiomesconstructsreworked:chalk_copper_ore"
+    "undergroundbiomesconstructsreworked:chalk_copper_ore",
+    "undergroundbiomesconstructsreworked:shale_coal_ore",
+    "undergroundbiomesconstructsreworked:shale_lapis_ore",
+    "undergroundbiomesconstructsreworked:shale_iron_ore",
+    "undergroundbiomesconstructsreworked:shale_copper_ore"
   ]
 }

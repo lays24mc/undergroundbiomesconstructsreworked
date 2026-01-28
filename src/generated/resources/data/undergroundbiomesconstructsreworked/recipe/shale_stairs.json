@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shale",
+  "key": {
+    "#": {
+      "item": "undergroundbiomesconstructsreworked:shale_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "undergroundbiomesconstructsreworked:shale_stairs"
+  }
+}
