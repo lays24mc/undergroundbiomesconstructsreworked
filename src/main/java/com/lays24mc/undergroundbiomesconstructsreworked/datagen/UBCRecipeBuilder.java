@@ -72,6 +72,11 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         // Greenschist
         //====================================================
         buildGreenschistRecipes(recipeOutput);
+
+        //====================================================
+        // Chalk
+        //====================================================
+        buildChalkRecipes(recipeOutput);
     }
 
     // ------------------------------------------------------------
@@ -429,6 +434,39 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreenschistBlocks.GREENSCHIST_BLOCK_SLAB.get(), GreenschistBlocks.GREENSCHIST_BLOCK.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreenschistBlocks.GREENSCHIST_BLOCK_WALL.get(), GreenschistBlocks.GREENSCHIST_BLOCK.get());
         stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreenschistBlocks.GREENSCHIST_BLOCK_SLAB.get(), GreenschistBlocks.GREENSCHIST_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // CHALK RECIPES
+    // ------------------------------------------------------------
+    private void buildChalkRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> CHALK_COAL_SMELTABLES = List.of(ChalkBlocks.CHALK_COAL_ORE);
+        List<ItemLike> CHALK_COPPER_SMELTABLES = List.of(ChalkBlocks.CHALK_COPPER_ORE);
+        List<ItemLike> CHALK_IRON_SMELTABLES = List.of(ChalkBlocks.CHALK_IRON_ORE);
+        List<ItemLike> CHALK_GOLD_SMELTABLES = List.of(ChalkBlocks.CHALK_GOLD_ORE);
+        List<ItemLike> CHALK_REDSTONE_SMELTABLES = List.of(ChalkBlocks.CHALK_REDSTONE_ORE);
+        List<ItemLike> CHALK_LAPIS_SMELTABLES = List.of(ChalkBlocks.CHALK_LAPIS_ORE);
+
+        // Stone Button
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ChalkBlocks.CHALK_STONE_BUTTON.get()).pattern("A").define('A', ChalkBlocks.CHALK_BLOCK.get()).unlockedBy("has_chalk_block", has(ChalkBlocks.CHALK_BLOCK)).save(recipeOutput);
+
+        // Smelting;
+        oreSmelting(recipeOutput, CHALK_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "chalk");
+        oreSmelting(recipeOutput, CHALK_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "chalk");
+        oreSmelting(recipeOutput, CHALK_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "chalk");
+        oreSmelting(recipeOutput, CHALK_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "chalk");
+        oreSmelting(recipeOutput, CHALK_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "chalk");
+        oreSmelting(recipeOutput, CHALK_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "chalk");
+
+        // Blasting
+        //        oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
+
+        // Stairs, Slabs, Walls, Stonecutting
+        stairBuilder(ChalkBlocks.CHALK_STAIRS.get(), Ingredient.of(ChalkBlocks.CHALK_BLOCK)).group("chalk").unlockedBy("has_chalk_block", has(ChalkBlocks.CHALK_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ChalkBlocks.CHALK_BLOCK_SLAB.get(), ChalkBlocks.CHALK_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ChalkBlocks.CHALK_BLOCK_WALL.get(), ChalkBlocks.CHALK_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ChalkBlocks.CHALK_BLOCK_SLAB.get(), ChalkBlocks.CHALK_BLOCK.get(), 2);
     }
 
     // ------------------------------------------------------------

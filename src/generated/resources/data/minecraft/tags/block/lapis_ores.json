@@ -3,6 +3,12 @@
     "undergroundbiomesconstructsreworked:red_granite_lapis_ore",
     "undergroundbiomesconstructsreworked:quartzite_lapis_ore",
     "undergroundbiomesconstructsreworked:migmatite_lapis_ore",
-    "undergroundbiomesconstructsreworked:marble_lapis_ore"
+    "undergroundbiomesconstructsreworked:marble_lapis_ore",
+    "undergroundbiomesconstructsreworked:siltstone_lapis_ore",
+    "undergroundbiomesconstructsreworked:rhyolite_lapis_ore",
+    "undergroundbiomesconstructsreworked:limestone_lapis_ore",
+    "undergroundbiomesconstructsreworked:bluechist_lapis_ore",
+    "undergroundbiomesconstructsreworked:greenschist_lapis_ore",
+    "undergroundbiomesconstructsreworked:chalk_lapis_ore"
   ]
 }

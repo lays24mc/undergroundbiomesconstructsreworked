@@ -7,8 +7,9 @@
     "undergroundbiomesconstructsreworked:migmatite_gold_ore",
     "undergroundbiomesconstructsreworked:marble_gold_ore",
     "undergroundbiomesconstructsreworked:limestone_gold_ore",
-    "undergroundbiomesconstructsreworked:limestone_gold_ore",
+    "undergroundbiomesconstructsreworked:siltstone_gold_ore",
     "undergroundbiomesconstructsreworked:bluechist_gold_ore",
-    "undergroundbiomesconstructsreworked:greenschist_gold_ore"
+    "undergroundbiomesconstructsreworked:greenschist_gold_ore",
+    "undergroundbiomesconstructsreworked:chalk_gold_ore"
   ]
 }

@@ -112,6 +112,13 @@
     "undergroundbiomesconstructsreworked:greenschist_block_slab",
     "undergroundbiomesconstructsreworked:greenschist_cobble_slab",
     "undergroundbiomesconstructsreworked:greenschist_brick_slab",
+    "undergroundbiomesconstructsreworked:chalk_block",
+    "undergroundbiomesconstructsreworked:chalk_coal_ore",
+    "undergroundbiomesconstructsreworked:chalk_copper_ore",
+    "undergroundbiomesconstructsreworked:chalk_iron_ore",
+    "undergroundbiomesconstructsreworked:chalk_gold_ore",
+    "undergroundbiomesconstructsreworked:chalk_redstone_ore",
+    "undergroundbiomesconstructsreworked:chalk_lapis_ore",
     "undergroundbiomesconstructsreworked:soapstone_stairs",
     "undergroundbiomesconstructsreworked:soapstone_brick_stairs",
     "undergroundbiomesconstructsreworked:soapstone_cobble_stairs",
@@ -138,6 +145,7 @@
     "undergroundbiomesconstructsreworked:greenschist_stairs",
     "undergroundbiomesconstructsreworked:greenschist_brick_stairs",
     "undergroundbiomesconstructsreworked:greenschist_cobble_stairs",
+    "undergroundbiomesconstructsreworked:chalk_stairs",
     "undergroundbiomesconstructsreworked:soapstone_block_wall",
     "undergroundbiomesconstructsreworked:soapstone_cobble_wall",
     "undergroundbiomesconstructsreworked:soapstone_brick_wall",
@@ -163,6 +171,7 @@
     "undergroundbiomesconstructsreworked:bluechist_brick_wall",
     "undergroundbiomesconstructsreworked:greenschist_block_wall",
     "undergroundbiomesconstructsreworked:greenschist_cobble_wall",
-    "undergroundbiomesconstructsreworked:greenschist_brick_wall"
+    "undergroundbiomesconstructsreworked:greenschist_brick_wall",
+    "undergroundbiomesconstructsreworked:chalk_block_wall"
   ]
 }

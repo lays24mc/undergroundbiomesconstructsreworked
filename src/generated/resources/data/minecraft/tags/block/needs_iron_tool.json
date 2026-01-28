@@ -22,6 +22,8 @@
     "undergroundbiomesconstructsreworked:bluechist_gold_ore",
     "undergroundbiomesconstructsreworked:bluechist_redstone_ore",
     "undergroundbiomesconstructsreworked:greenschist_gold_ore",
-    "undergroundbiomesconstructsreworked:greenschist_redstone_ore"
+    "undergroundbiomesconstructsreworked:greenschist_redstone_ore",
+    "undergroundbiomesconstructsreworked:chalk_gold_ore",
+    "undergroundbiomesconstructsreworked:chalk_redstone_ore"
   ]
 }

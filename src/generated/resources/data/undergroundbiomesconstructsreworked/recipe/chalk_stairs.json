@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chalk",
+  "key": {
+    "#": {
+      "item": "undergroundbiomesconstructsreworked:chalk_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "undergroundbiomesconstructsreworked:chalk_stairs"
+  }
+}

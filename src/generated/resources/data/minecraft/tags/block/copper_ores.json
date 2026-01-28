@@ -2,9 +2,10 @@
   "values": [
     "undergroundbiomesconstructsreworked:soapstone_copper_ore",
     "undergroundbiomesconstructsreworked:rhyolite_copper_ore",
-    "undergroundbiomesconstructsreworked:limestone_copper_ore",
+    "undergroundbiomesconstructsreworked:siltstone_copper_ore",
     "undergroundbiomesconstructsreworked:limestone_copper_ore",
     "undergroundbiomesconstructsreworked:bluechist_copper_ore",
-    "undergroundbiomesconstructsreworked:greenschist_copper_ore"
+    "undergroundbiomesconstructsreworked:greenschist_copper_ore",
+    "undergroundbiomesconstructsreworked:chalk_copper_ore"
   ]
 }

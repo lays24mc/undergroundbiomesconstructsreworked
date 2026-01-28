@@ -193,5 +193,18 @@
   "block.undergroundbiomesconstructsreworked.greenschist_gold_ore": "Greenschist Gold Ore",
   "block.undergroundbiomesconstructsreworked.greenschist_emerald_ore": "Greenschist Emerald Ore",
   "block.undergroundbiomesconstructsreworked.greenschist_redstone_ore": "Greenschist Redstone Ore",
-  "block.undergroundbiomesconstructsreworked.greenschist_lapis_ore": "Greenschist Lapis Lazuli Ore"
+  "block.undergroundbiomesconstructsreworked.greenschist_lapis_ore": "Greenschist Lapis Lazuli Ore",
+
+  "block.undergroundbiomesconstructsreworked.chalk_block": "Chalk",
+  "block.undergroundbiomesconstructsreworked.chalk_block_slab": "Chalk Block Slab",
+  "block.undergroundbiomesconstructsreworked.chalk_stairs": "Chalk Stairs",
+  "block.undergroundbiomesconstructsreworked.chalk_block_wall": "Chalk Wall",
+  "block.undergroundbiomesconstructsreworked.chalk_stone_button": "Chalk Stone Button",
+  "block.undergroundbiomesconstructsreworked.chalk_coal_ore": "Chalk Coal Ore",
+  "block.undergroundbiomesconstructsreworked.chalk_copper_ore": "Chalk Copper Ore",
+  "block.undergroundbiomesconstructsreworked.chalk_iron_ore": "Chalk Iron Ore",
+  "block.undergroundbiomesconstructsreworked.chalk_gold_ore": "Chalk Gold Ore",
+  "block.undergroundbiomesconstructsreworked.chalk_emerald_ore": "Chalk Emerald Ore",
+  "block.undergroundbiomesconstructsreworked.chalk_redstone_ore": "Chalk Redstone Ore",
+  "block.undergroundbiomesconstructsreworked.chalk_lapis_ore": "Chalk Lapis Lazuli Ore"
 }

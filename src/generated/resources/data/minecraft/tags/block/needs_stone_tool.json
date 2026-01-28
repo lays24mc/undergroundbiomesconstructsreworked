@@ -31,6 +31,10 @@
     "undergroundbiomesconstructsreworked:greenschist_lapis_ore",
     "undergroundbiomesconstructsreworked:greenschist_iron_ore",
     "undergroundbiomesconstructsreworked:greenschist_copper_ore",
-    "undergroundbiomesconstructsreworked:greenschist_coal_ore"
+    "undergroundbiomesconstructsreworked:greenschist_coal_ore",
+    "undergroundbiomesconstructsreworked:chalk_coal_ore",
+    "undergroundbiomesconstructsreworked:chalk_lapis_ore",
+    "undergroundbiomesconstructsreworked:chalk_iron_ore",
+    "undergroundbiomesconstructsreworked:chalk_copper_ore"
   ]
 }

@@ -6,9 +6,10 @@
     "undergroundbiomesconstructsreworked:quartzite_iron_ore",
     "undergroundbiomesconstructsreworked:migmatite_iron_ore",
     "undergroundbiomesconstructsreworked:marble_iron_ore",
-    "undergroundbiomesconstructsreworked:limestone_iron_ore",
+    "undergroundbiomesconstructsreworked:siltstone_iron_ore",
     "undergroundbiomesconstructsreworked:limestone_iron_ore",
     "undergroundbiomesconstructsreworked:bluechist_iron_ore",
-    "undergroundbiomesconstructsreworked:greenschist_iron_ore"
+    "undergroundbiomesconstructsreworked:greenschist_iron_ore",
+    "undergroundbiomesconstructsreworked:chalk_iron_ore"
   ]
 }

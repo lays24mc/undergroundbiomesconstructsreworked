@@ -155,6 +155,18 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_REDSTONE_ORE_LOWER_KEY = registerKey("greenschist_redstone_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_LAPIS_ORE_KEY = registerKey("greenschist_lapis_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_BLOCK_KEY = registerKey("chalk_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_COAL_ORE_KEY = registerKey("chalk_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_COPPER_ORE_SMALL_KEY = registerKey("chalk_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_COPPER_ORE_LARGE_KEY = registerKey("chalk_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_IRON_ORE_KEY = registerKey("chalk_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_IRON_ORE_SMALL_KEY = registerKey("chalk_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_GOLD_ORE_KEY = registerKey("chalk_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_GOLD_ORE_EXTRA_KEY = registerKey("chalk_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_REDSTONE_ORE_KEY = registerKey("chalk_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_REDSTONE_ORE_LOWER_KEY = registerKey("chalk_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHALK_LAPIS_ORE_KEY = registerKey("chalk_lapis_ore");
+
     //public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
     //public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
 
@@ -385,7 +397,6 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_MIGMATITE_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(migmatiteEmeraldTargets, 3));
 
         //Marble
-        //Marble
         List<OreConfiguration.TargetBlockState> overworldMarbleBlock = List.of(
                 OreConfiguration.target(deepslateReplaceables, MarbleBlocks.MARBLE_BLOCK.get().defaultBlockState()));
 
@@ -596,6 +607,48 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_GREENSCHIST_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(greenschistRedstoneTargets, 8));
         register(context, OVERWORLD_GREENSCHIST_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(greenschistRedstoneTargets, 8));
         register(context, OVERWORLD_GREENSCHIST_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(greenschistLapisTargets, 7));
+
+        //Chalk
+        List<OreConfiguration.TargetBlockState> overworldChalkBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, ChalkBlocks.CHALK_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(ChalkBlocks.CHALK_BLOCK.get()),
+                        ChalkBlocks.CHALK_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chalkCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChalkBlocks.CHALK_BLOCK.get()),
+                        ChalkBlocks.CHALK_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chalkCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChalkBlocks.CHALK_BLOCK.get()),
+                        ChalkBlocks.CHALK_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chalkIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChalkBlocks.CHALK_BLOCK.get()),
+                        ChalkBlocks.CHALK_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chalkGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChalkBlocks.CHALK_BLOCK.get()),
+                        ChalkBlocks.CHALK_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chalkRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChalkBlocks.CHALK_BLOCK.get()),
+                        ChalkBlocks.CHALK_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chalkLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChalkBlocks.CHALK_BLOCK.get()),
+                        ChalkBlocks.CHALK_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_CHALK_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldChalkBlock, 64));
+        register(context, OVERWORLD_CHALK_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(chalkCoalTargets, 17));
+        register(context, OVERWORLD_CHALK_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(chalkCopperTargets, 10));
+        register(context, OVERWORLD_CHALK_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(chalkCopperTargets, 20));
+        register(context, OVERWORLD_CHALK_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(chalkIronTargets, 9));
+        register(context, OVERWORLD_CHALK_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(chalkIronTargets, 4));
+        register(context, OVERWORLD_CHALK_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(chalkGoldTargets, 9));
+        register(context, OVERWORLD_CHALK_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(chalkGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_CHALK_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(chalkRedstoneTargets, 8));
+        register(context, OVERWORLD_CHALK_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(chalkRedstoneTargets, 8));
+        register(context, OVERWORLD_CHALK_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(chalkLapisTargets, 7));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
