@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/greywacke_block",
+    "side": "undergroundbiomesconstructsreworked:block/greywacke_block",
+    "top": "undergroundbiomesconstructsreworked:block/greywacke_block"
+  }
+}

@@ -39,6 +39,26 @@
     "undergroundbiomesconstructsreworked:shale_coal_ore",
     "undergroundbiomesconstructsreworked:shale_lapis_ore",
     "undergroundbiomesconstructsreworked:shale_iron_ore",
-    "undergroundbiomesconstructsreworked:shale_copper_ore"
+    "undergroundbiomesconstructsreworked:shale_copper_ore",
+    "undergroundbiomesconstructsreworked:chert_coal_ore",
+    "undergroundbiomesconstructsreworked:chert_lapis_ore",
+    "undergroundbiomesconstructsreworked:chert_iron_ore",
+    "undergroundbiomesconstructsreworked:chert_copper_ore",
+    "undergroundbiomesconstructsreworked:lignite_coal_ore",
+    "undergroundbiomesconstructsreworked:lignite_lapis_ore",
+    "undergroundbiomesconstructsreworked:lignite_iron_ore",
+    "undergroundbiomesconstructsreworked:lignite_copper_ore",
+    "undergroundbiomesconstructsreworked:dolomit_coal_ore",
+    "undergroundbiomesconstructsreworked:dolomit_lapis_ore",
+    "undergroundbiomesconstructsreworked:dolomit_iron_ore",
+    "undergroundbiomesconstructsreworked:dolomit_copper_ore",
+    "undergroundbiomesconstructsreworked:eclogite_coal_ore",
+    "undergroundbiomesconstructsreworked:eclogite_lapis_ore",
+    "undergroundbiomesconstructsreworked:eclogite_iron_ore",
+    "undergroundbiomesconstructsreworked:eclogite_copper_ore",
+    "undergroundbiomesconstructsreworked:greywacke_coal_ore",
+    "undergroundbiomesconstructsreworked:greywacke_lapis_ore",
+    "undergroundbiomesconstructsreworked:greywacke_iron_ore",
+    "undergroundbiomesconstructsreworked:greywacke_copper_ore"
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "greywacke",
+  "key": {
+    "#": {
+      "item": "undergroundbiomesconstructsreworked:greywacke_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "undergroundbiomesconstructsreworked:greywacke_stairs"
+  }
+}

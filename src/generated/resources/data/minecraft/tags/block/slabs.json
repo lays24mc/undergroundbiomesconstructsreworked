@@ -27,6 +27,11 @@
     "undergroundbiomesconstructsreworked:greenschist_cobble_slab",
     "undergroundbiomesconstructsreworked:greenschist_brick_slab",
     "undergroundbiomesconstructsreworked:chalk_block_slab",
-    "undergroundbiomesconstructsreworked:shale_block_slab"
+    "undergroundbiomesconstructsreworked:shale_block_slab",
+    "undergroundbiomesconstructsreworked:chert_block_slab",
+    "undergroundbiomesconstructsreworked:lignite_block_slab",
+    "undergroundbiomesconstructsreworked:dolomit_block_slab",
+    "undergroundbiomesconstructsreworked:eclogite_block_slab",
+    "undergroundbiomesconstructsreworked:greywacke_block_slab"
   ]
 }

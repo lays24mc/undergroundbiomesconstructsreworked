@@ -179,6 +179,72 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_REDSTONE_ORE_LOWER_KEY = registerKey("shale_redstone_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SHALE_LAPIS_ORE_KEY = registerKey("shale_lapis_ore");
 
+    // CHERT
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_BLOCK_KEY = registerKey("chert_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_COAL_ORE_KEY = registerKey("chert_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_COPPER_ORE_SMALL_KEY = registerKey("chert_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_COPPER_ORE_LARGE_KEY = registerKey("chert_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_IRON_ORE_KEY = registerKey("chert_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_IRON_ORE_SMALL_KEY = registerKey("chert_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_GOLD_ORE_KEY = registerKey("chert_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_GOLD_ORE_EXTRA_KEY = registerKey("chert_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_REDSTONE_ORE_KEY = registerKey("chert_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_REDSTONE_ORE_LOWER_KEY = registerKey("chert_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHERT_LAPIS_ORE_KEY = registerKey("chert_lapis_ore");
+
+    // LIGNITE
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_BLOCK_KEY = registerKey("lignite_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_COAL_ORE_KEY = registerKey("lignite_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_COPPER_ORE_SMALL_KEY = registerKey("lignite_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_COPPER_ORE_LARGE_KEY = registerKey("lignite_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_IRON_ORE_KEY = registerKey("lignite_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_IRON_ORE_SMALL_KEY = registerKey("lignite_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_GOLD_ORE_KEY = registerKey("lignite_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_GOLD_ORE_EXTRA_KEY = registerKey("lignite_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_REDSTONE_ORE_KEY = registerKey("lignite_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_REDSTONE_ORE_LOWER_KEY = registerKey("lignite_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LIGNITE_LAPIS_ORE_KEY = registerKey("lignite_lapis_ore");
+
+    // DOLOMIT
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_BLOCK_KEY = registerKey("dolomit_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_COAL_ORE_KEY = registerKey("dolomit_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_COPPER_ORE_SMALL_KEY = registerKey("dolomit_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_COPPER_ORE_LARGE_KEY = registerKey("dolomit_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_IRON_ORE_KEY = registerKey("dolomit_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_IRON_ORE_SMALL_KEY = registerKey("dolomit_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_GOLD_ORE_KEY = registerKey("dolomit_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_GOLD_ORE_EXTRA_KEY = registerKey("dolomit_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_REDSTONE_ORE_KEY = registerKey("dolomit_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_REDSTONE_ORE_LOWER_KEY = registerKey("dolomit_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DOLOMIT_LAPIS_ORE_KEY = registerKey("dolomit_lapis_ore");
+
+    // ECLOGITE
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_BLOCK_KEY = registerKey("eclogite_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_COAL_ORE_KEY = registerKey("eclogite_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_COPPER_ORE_SMALL_KEY = registerKey("eclogite_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_COPPER_ORE_LARGE_KEY = registerKey("eclogite_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_IRON_ORE_KEY = registerKey("eclogite_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_IRON_ORE_SMALL_KEY = registerKey("eclogite_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_GOLD_ORE_KEY = registerKey("eclogite_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_GOLD_ORE_EXTRA_KEY = registerKey("eclogite_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_REDSTONE_ORE_KEY = registerKey("eclogite_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_REDSTONE_ORE_LOWER_KEY = registerKey("eclogite_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ECLOGITE_LAPIS_ORE_KEY = registerKey("eclogite_lapis_ore");
+
+    // GREYWACKE
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_BLOCK_KEY = registerKey("greywacke_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_COAL_ORE_KEY = registerKey("greywacke_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_COPPER_ORE_SMALL_KEY = registerKey("greywacke_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_COPPER_ORE_LARGE_KEY = registerKey("greywacke_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_IRON_ORE_KEY = registerKey("greywacke_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_IRON_ORE_SMALL_KEY = registerKey("greywacke_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_GOLD_ORE_KEY = registerKey("greywacke_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_GOLD_ORE_EXTRA_KEY = registerKey("greywacke_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_REDSTONE_ORE_KEY = registerKey("greywacke_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_REDSTONE_ORE_LOWER_KEY = registerKey("greywacke_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_LAPIS_ORE_KEY = registerKey("greywacke_lapis_ore");
+
+
     //public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
     //public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
 
@@ -703,6 +769,231 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_SHALE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(shaleRedstoneTargets, 8));
         register(context, OVERWORLD_SHALE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(shaleRedstoneTargets, 8));
         register(context, OVERWORLD_SHALE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(shaleLapisTargets, 7));
+
+        //====================================================
+        // CHERT
+        //====================================================
+        List<OreConfiguration.TargetBlockState> overworldChertBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, ChertBlocks.CHERT_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(ChertBlocks.CHERT_BLOCK.get()),
+                        ChertBlocks.CHERT_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chertCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChertBlocks.CHERT_BLOCK.get()),
+                        ChertBlocks.CHERT_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chertCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChertBlocks.CHERT_BLOCK.get()),
+                        ChertBlocks.CHERT_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chertIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChertBlocks.CHERT_BLOCK.get()),
+                        ChertBlocks.CHERT_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chertGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChertBlocks.CHERT_BLOCK.get()),
+                        ChertBlocks.CHERT_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chertRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChertBlocks.CHERT_BLOCK.get()),
+                        ChertBlocks.CHERT_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> chertLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ChertBlocks.CHERT_BLOCK.get()),
+                        ChertBlocks.CHERT_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_CHERT_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldChertBlock, 64));
+        register(context, OVERWORLD_CHERT_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(chertCoalTargets, 17));
+        register(context, OVERWORLD_CHERT_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(chertCopperTargets, 10));
+        register(context, OVERWORLD_CHERT_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(chertCopperTargets, 20));
+        register(context, OVERWORLD_CHERT_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(chertIronTargets, 9));
+        register(context, OVERWORLD_CHERT_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(chertIronTargets, 4));
+        register(context, OVERWORLD_CHERT_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(chertGoldTargets, 9));
+        register(context, OVERWORLD_CHERT_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(chertGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_CHERT_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(chertRedstoneTargets, 8));
+        register(context, OVERWORLD_CHERT_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(chertRedstoneTargets, 8));
+        register(context, OVERWORLD_CHERT_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(chertLapisTargets, 7));
+
+
+        //====================================================
+        // LIGNITE
+        //====================================================
+        List<OreConfiguration.TargetBlockState> overworldLigniteBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, LigniteBlocks.LIGNITE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(LigniteBlocks.LIGNITE_BLOCK.get()),
+                        LigniteBlocks.LIGNITE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> ligniteCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LigniteBlocks.LIGNITE_BLOCK.get()),
+                        LigniteBlocks.LIGNITE_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> ligniteCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LigniteBlocks.LIGNITE_BLOCK.get()),
+                        LigniteBlocks.LIGNITE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> ligniteIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LigniteBlocks.LIGNITE_BLOCK.get()),
+                        LigniteBlocks.LIGNITE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> ligniteGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LigniteBlocks.LIGNITE_BLOCK.get()),
+                        LigniteBlocks.LIGNITE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> ligniteRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LigniteBlocks.LIGNITE_BLOCK.get()),
+                        LigniteBlocks.LIGNITE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> ligniteLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(LigniteBlocks.LIGNITE_BLOCK.get()),
+                        LigniteBlocks.LIGNITE_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_LIGNITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldLigniteBlock, 64));
+        register(context, OVERWORLD_LIGNITE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(ligniteCoalTargets, 17));
+        register(context, OVERWORLD_LIGNITE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(ligniteCopperTargets, 10));
+        register(context, OVERWORLD_LIGNITE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(ligniteCopperTargets, 20));
+        register(context, OVERWORLD_LIGNITE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(ligniteIronTargets, 9));
+        register(context, OVERWORLD_LIGNITE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(ligniteIronTargets, 4));
+        register(context, OVERWORLD_LIGNITE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(ligniteGoldTargets, 9));
+        register(context, OVERWORLD_LIGNITE_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(ligniteGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_LIGNITE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(ligniteRedstoneTargets, 8));
+        register(context, OVERWORLD_LIGNITE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(ligniteRedstoneTargets, 8));
+        register(context, OVERWORLD_LIGNITE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(ligniteLapisTargets, 7));
+
+
+        //====================================================
+        // DOLOMIT
+        //====================================================
+        List<OreConfiguration.TargetBlockState> overworldDolomitBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, DolomitBlocks.DOLOMIT_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(DolomitBlocks.DOLOMIT_BLOCK.get()),
+                        DolomitBlocks.DOLOMIT_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> dolomitCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DolomitBlocks.DOLOMIT_BLOCK.get()),
+                        DolomitBlocks.DOLOMIT_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> dolomitCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DolomitBlocks.DOLOMIT_BLOCK.get()),
+                        DolomitBlocks.DOLOMIT_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> dolomitIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DolomitBlocks.DOLOMIT_BLOCK.get()),
+                        DolomitBlocks.DOLOMIT_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> dolomitGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DolomitBlocks.DOLOMIT_BLOCK.get()),
+                        DolomitBlocks.DOLOMIT_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> dolomitRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DolomitBlocks.DOLOMIT_BLOCK.get()),
+                        DolomitBlocks.DOLOMIT_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> dolomitLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DolomitBlocks.DOLOMIT_BLOCK.get()),
+                        DolomitBlocks.DOLOMIT_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_DOLOMIT_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldDolomitBlock, 64));
+        register(context, OVERWORLD_DOLOMIT_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(dolomitCoalTargets, 17));
+        register(context, OVERWORLD_DOLOMIT_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(dolomitCopperTargets, 10));
+        register(context, OVERWORLD_DOLOMIT_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(dolomitCopperTargets, 20));
+        register(context, OVERWORLD_DOLOMIT_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(dolomitIronTargets, 9));
+        register(context, OVERWORLD_DOLOMIT_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(dolomitIronTargets, 4));
+        register(context, OVERWORLD_DOLOMIT_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(dolomitGoldTargets, 9));
+        register(context, OVERWORLD_DOLOMIT_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(dolomitGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_DOLOMIT_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(dolomitRedstoneTargets, 8));
+        register(context, OVERWORLD_DOLOMIT_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(dolomitRedstoneTargets, 8));
+        register(context, OVERWORLD_DOLOMIT_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(dolomitLapisTargets, 7));
+
+
+        //====================================================
+        // ECLOGITE
+        //====================================================
+        List<OreConfiguration.TargetBlockState> overworldEclogiteBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, EclogiteBlocks.ECLOGITE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(EclogiteBlocks.ECLOGITE_BLOCK.get()),
+                        EclogiteBlocks.ECLOGITE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> eclogiteCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(EclogiteBlocks.ECLOGITE_BLOCK.get()),
+                        EclogiteBlocks.ECLOGITE_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> eclogiteCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(EclogiteBlocks.ECLOGITE_BLOCK.get()),
+                        EclogiteBlocks.ECLOGITE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> eclogiteIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(EclogiteBlocks.ECLOGITE_BLOCK.get()),
+                        EclogiteBlocks.ECLOGITE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> eclogiteGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(EclogiteBlocks.ECLOGITE_BLOCK.get()),
+                        EclogiteBlocks.ECLOGITE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> eclogiteRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(EclogiteBlocks.ECLOGITE_BLOCK.get()),
+                        EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> eclogiteLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(EclogiteBlocks.ECLOGITE_BLOCK.get()),
+                        EclogiteBlocks.ECLOGITE_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_ECLOGITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldEclogiteBlock, 64));
+        register(context, OVERWORLD_ECLOGITE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(eclogiteCoalTargets, 17));
+        register(context, OVERWORLD_ECLOGITE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(eclogiteCopperTargets, 10));
+        register(context, OVERWORLD_ECLOGITE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(eclogiteCopperTargets, 20));
+        register(context, OVERWORLD_ECLOGITE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(eclogiteIronTargets, 9));
+        register(context, OVERWORLD_ECLOGITE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(eclogiteIronTargets, 4));
+        register(context, OVERWORLD_ECLOGITE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(eclogiteGoldTargets, 9));
+        register(context, OVERWORLD_ECLOGITE_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(eclogiteGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_ECLOGITE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(eclogiteRedstoneTargets, 8));
+        register(context, OVERWORLD_ECLOGITE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(eclogiteRedstoneTargets, 8));
+        register(context, OVERWORLD_ECLOGITE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(eclogiteLapisTargets, 7));
+
+
+        //====================================================
+        // GREYWACKE
+        //====================================================
+        List<OreConfiguration.TargetBlockState> overworldGreywackeBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, GreywackeBlocks.GREYWACKE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(GreywackeBlocks.GREYWACKE_BLOCK.get()),
+                        GreywackeBlocks.GREYWACKE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greywackeCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreywackeBlocks.GREYWACKE_BLOCK.get()),
+                        GreywackeBlocks.GREYWACKE_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greywackeCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreywackeBlocks.GREYWACKE_BLOCK.get()),
+                        GreywackeBlocks.GREYWACKE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greywackeIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreywackeBlocks.GREYWACKE_BLOCK.get()),
+                        GreywackeBlocks.GREYWACKE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greywackeGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreywackeBlocks.GREYWACKE_BLOCK.get()),
+                        GreywackeBlocks.GREYWACKE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greywackeRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreywackeBlocks.GREYWACKE_BLOCK.get()),
+                        GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> greywackeLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(GreywackeBlocks.GREYWACKE_BLOCK.get()),
+                        GreywackeBlocks.GREYWACKE_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_GREYWACKE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldGreywackeBlock, 64));
+        register(context, OVERWORLD_GREYWACKE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(greywackeCoalTargets, 17));
+        register(context, OVERWORLD_GREYWACKE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(greywackeCopperTargets, 10));
+        register(context, OVERWORLD_GREYWACKE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(greywackeCopperTargets, 20));
+        register(context, OVERWORLD_GREYWACKE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(greywackeIronTargets, 9));
+        register(context, OVERWORLD_GREYWACKE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(greywackeIronTargets, 4));
+        register(context, OVERWORLD_GREYWACKE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(greywackeGoldTargets, 9));
+        register(context, OVERWORLD_GREYWACKE_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(greywackeGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_GREYWACKE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(greywackeRedstoneTargets, 8));
+        register(context, OVERWORLD_GREYWACKE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(greywackeRedstoneTargets, 8));
+        register(context, OVERWORLD_GREYWACKE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(greywackeLapisTargets, 7));
+        
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

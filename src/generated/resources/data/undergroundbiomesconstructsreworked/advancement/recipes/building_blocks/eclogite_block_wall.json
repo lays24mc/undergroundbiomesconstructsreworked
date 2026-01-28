@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_eclogite_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "undergroundbiomesconstructsreworked:eclogite_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undergroundbiomesconstructsreworked:eclogite_block_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_eclogite_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undergroundbiomesconstructsreworked:eclogite_block_wall"
+    ]
+  }
+}

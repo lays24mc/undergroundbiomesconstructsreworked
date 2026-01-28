@@ -7,6 +7,11 @@
     "undergroundbiomesconstructsreworked:bluechist_coal_ore",
     "undergroundbiomesconstructsreworked:greenschist_coal_ore",
     "undergroundbiomesconstructsreworked:chalk_coal_ore",
-    "undergroundbiomesconstructsreworked:shale_coal_ore"
+    "undergroundbiomesconstructsreworked:shale_coal_ore",
+    "undergroundbiomesconstructsreworked:chert_coal_ore",
+    "undergroundbiomesconstructsreworked:lignite_coal_ore",
+    "undergroundbiomesconstructsreworked:dolomit_coal_ore",
+    "undergroundbiomesconstructsreworked:eclogite_coal_ore",
+    "undergroundbiomesconstructsreworked:greywacke_coal_ore"
   ]
 }

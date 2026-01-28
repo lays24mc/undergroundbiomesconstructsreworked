@@ -27,6 +27,11 @@
     "undergroundbiomesconstructsreworked:greenschist_brick_stairs",
     "undergroundbiomesconstructsreworked:greenschist_cobble_stairs",
     "undergroundbiomesconstructsreworked:chalk_stairs",
-    "undergroundbiomesconstructsreworked:shale_stairs"
+    "undergroundbiomesconstructsreworked:shale_stairs",
+    "undergroundbiomesconstructsreworked:chert_stairs",
+    "undergroundbiomesconstructsreworked:lignite_stairs",
+    "undergroundbiomesconstructsreworked:dolomit_stairs",
+    "undergroundbiomesconstructsreworked:eclogite_stairs",
+    "undergroundbiomesconstructsreworked:greywacke_stairs"
   ]
 }

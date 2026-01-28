@@ -2,7 +2,6 @@ package com.lays24mc.undergroundbiomesconstructsreworked.datagen;
 
 import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.*;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -82,6 +81,32 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         // Shale
         //====================================================
         buildShaleRecipes(recipeOutput);
+
+        //====================================================
+        // Chert
+        //====================================================
+        buildChertRecipes(recipeOutput);
+
+        //====================================================
+        // Lignite
+        //====================================================
+        buildLigniteRecipes(recipeOutput);
+
+        //====================================================
+        // Dolomit
+        //====================================================
+        buildDolomitRecipes(recipeOutput);
+
+        //====================================================
+        // Eclogite
+        //====================================================
+        buildEclogiteRecipes(recipeOutput);
+
+        //====================================================
+        // Greywacke
+        //====================================================
+        buildGreywackeRecipes(recipeOutput);
+
     }
 
     // ------------------------------------------------------------
@@ -505,6 +530,166 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ShaleBlocks.SHALE_BLOCK_SLAB.get(), ShaleBlocks.SHALE_BLOCK.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ShaleBlocks.SHALE_BLOCK_WALL.get(), ShaleBlocks.SHALE_BLOCK.get());
         stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ShaleBlocks.SHALE_BLOCK_SLAB.get(), ShaleBlocks.SHALE_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // CHERT RECIPES
+    // ------------------------------------------------------------
+    private void buildChertRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> CHERT_COAL_SMELTABLES = List.of(ChertBlocks.CHERT_COAL_ORE);
+        List<ItemLike> CHERT_COPPER_SMELTABLES = List.of(ChertBlocks.CHERT_COPPER_ORE);
+        List<ItemLike> CHERT_IRON_SMELTABLES = List.of(ChertBlocks.CHERT_IRON_ORE);
+        List<ItemLike> CHERT_GOLD_SMELTABLES = List.of(ChertBlocks.CHERT_GOLD_ORE);
+        List<ItemLike> CHERT_REDSTONE_SMELTABLES = List.of(ChertBlocks.CHERT_REDSTONE_ORE);
+        List<ItemLike> CHERT_LAPIS_SMELTABLES = List.of(ChertBlocks.CHERT_LAPIS_ORE);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ChertBlocks.CHERT_STONE_BUTTON.get())
+                .pattern("A").define('A', ChertBlocks.CHERT_BLOCK.get())
+                .unlockedBy("has_chert_block", has(ChertBlocks.CHERT_BLOCK))
+                .save(recipeOutput);
+
+        oreSmelting(recipeOutput, CHERT_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "chert");
+        oreSmelting(recipeOutput, CHERT_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "chert");
+        oreSmelting(recipeOutput, CHERT_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "chert");
+        oreSmelting(recipeOutput, CHERT_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "chert");
+        oreSmelting(recipeOutput, CHERT_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "chert");
+        oreSmelting(recipeOutput, CHERT_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "chert");
+
+        stairBuilder(ChertBlocks.CHERT_STAIRS.get(), Ingredient.of(ChertBlocks.CHERT_BLOCK))
+                .group("chert").unlockedBy("has_chert_block", has(ChertBlocks.CHERT_BLOCK))
+                .save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ChertBlocks.CHERT_BLOCK_SLAB.get(), ChertBlocks.CHERT_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ChertBlocks.CHERT_BLOCK_WALL.get(), ChertBlocks.CHERT_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ChertBlocks.CHERT_BLOCK_SLAB.get(), ChertBlocks.CHERT_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // LIGNITE RECIPES
+    // ------------------------------------------------------------
+    private void buildLigniteRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> LIGNITE_COAL_SMELTABLES = List.of(LigniteBlocks.LIGNITE_COAL_ORE);
+        List<ItemLike> LIGNITE_COPPER_SMELTABLES = List.of(LigniteBlocks.LIGNITE_COPPER_ORE);
+        List<ItemLike> LIGNITE_IRON_SMELTABLES = List.of(LigniteBlocks.LIGNITE_IRON_ORE);
+        List<ItemLike> LIGNITE_GOLD_SMELTABLES = List.of(LigniteBlocks.LIGNITE_GOLD_ORE);
+        List<ItemLike> LIGNITE_REDSTONE_SMELTABLES = List.of(LigniteBlocks.LIGNITE_REDSTONE_ORE);
+        List<ItemLike> LIGNITE_LAPIS_SMELTABLES = List.of(LigniteBlocks.LIGNITE_LAPIS_ORE);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, LigniteBlocks.LIGNITE_STONE_BUTTON.get())
+                .pattern("A").define('A', LigniteBlocks.LIGNITE_BLOCK.get())
+                .unlockedBy("has_lignite_block", has(LigniteBlocks.LIGNITE_BLOCK))
+                .save(recipeOutput);
+
+        oreSmelting(recipeOutput, LIGNITE_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "lignite");
+        oreSmelting(recipeOutput, LIGNITE_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "lignite");
+        oreSmelting(recipeOutput, LIGNITE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "lignite");
+        oreSmelting(recipeOutput, LIGNITE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "lignite");
+        oreSmelting(recipeOutput, LIGNITE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "lignite");
+        oreSmelting(recipeOutput, LIGNITE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "lignite");
+
+        stairBuilder(LigniteBlocks.LIGNITE_STAIRS.get(), Ingredient.of(LigniteBlocks.LIGNITE_BLOCK))
+                .group("lignite").unlockedBy("has_lignite_block", has(LigniteBlocks.LIGNITE_BLOCK))
+                .save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, LigniteBlocks.LIGNITE_BLOCK_SLAB.get(), LigniteBlocks.LIGNITE_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, LigniteBlocks.LIGNITE_BLOCK_WALL.get(), LigniteBlocks.LIGNITE_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, LigniteBlocks.LIGNITE_BLOCK_SLAB.get(), LigniteBlocks.LIGNITE_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // DOLOMIT RECIPES
+    // ------------------------------------------------------------
+    private void buildDolomitRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> DOLOMIT_COAL_SMELTABLES = List.of(DolomitBlocks.DOLOMIT_COAL_ORE);
+        List<ItemLike> DOLOMIT_COPPER_SMELTABLES = List.of(DolomitBlocks.DOLOMIT_COPPER_ORE);
+        List<ItemLike> DOLOMIT_IRON_SMELTABLES = List.of(DolomitBlocks.DOLOMIT_IRON_ORE);
+        List<ItemLike> DOLOMIT_GOLD_SMELTABLES = List.of(DolomitBlocks.DOLOMIT_GOLD_ORE);
+        List<ItemLike> DOLOMIT_REDSTONE_SMELTABLES = List.of(DolomitBlocks.DOLOMIT_REDSTONE_ORE);
+        List<ItemLike> DOLOMIT_LAPIS_SMELTABLES = List.of(DolomitBlocks.DOLOMIT_LAPIS_ORE);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DolomitBlocks.DOLOMIT_STONE_BUTTON.get())
+                .pattern("A").define('A', DolomitBlocks.DOLOMIT_BLOCK.get())
+                .unlockedBy("has_dolomit_block", has(DolomitBlocks.DOLOMIT_BLOCK))
+                .save(recipeOutput);
+
+        oreSmelting(recipeOutput, DOLOMIT_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "dolomit");
+        oreSmelting(recipeOutput, DOLOMIT_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "dolomit");
+        oreSmelting(recipeOutput, DOLOMIT_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "dolomit");
+        oreSmelting(recipeOutput, DOLOMIT_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "dolomit");
+        oreSmelting(recipeOutput, DOLOMIT_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "dolomit");
+        oreSmelting(recipeOutput, DOLOMIT_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "dolomit");
+
+        stairBuilder(DolomitBlocks.DOLOMIT_STAIRS.get(), Ingredient.of(DolomitBlocks.DOLOMIT_BLOCK))
+                .group("dolomit").unlockedBy("has_dolomit_block", has(DolomitBlocks.DOLOMIT_BLOCK))
+                .save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, DolomitBlocks.DOLOMIT_BLOCK_SLAB.get(), DolomitBlocks.DOLOMIT_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, DolomitBlocks.DOLOMIT_BLOCK_WALL.get(), DolomitBlocks.DOLOMIT_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, DolomitBlocks.DOLOMIT_BLOCK_SLAB.get(), DolomitBlocks.DOLOMIT_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // ECLOGITE RECIPES
+    // ------------------------------------------------------------
+    private void buildEclogiteRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> ECLOGITE_COAL_SMELTABLES = List.of(EclogiteBlocks.ECLOGITE_COAL_ORE);
+        List<ItemLike> ECLOGITE_COPPER_SMELTABLES = List.of(EclogiteBlocks.ECLOGITE_COPPER_ORE);
+        List<ItemLike> ECLOGITE_IRON_SMELTABLES = List.of(EclogiteBlocks.ECLOGITE_IRON_ORE);
+        List<ItemLike> ECLOGITE_GOLD_SMELTABLES = List.of(EclogiteBlocks.ECLOGITE_GOLD_ORE);
+        List<ItemLike> ECLOGITE_REDSTONE_SMELTABLES = List.of(EclogiteBlocks.ECLOGITE_REDSTONE_ORE);
+        List<ItemLike> ECLOGITE_LAPIS_SMELTABLES = List.of(EclogiteBlocks.ECLOGITE_LAPIS_ORE);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EclogiteBlocks.ECLOGITE_STONE_BUTTON.get())
+                .pattern("A").define('A', EclogiteBlocks.ECLOGITE_BLOCK.get())
+                .unlockedBy("has_eclogite_block", has(EclogiteBlocks.ECLOGITE_BLOCK))
+                .save(recipeOutput);
+
+        oreSmelting(recipeOutput, ECLOGITE_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "eclogite");
+        oreSmelting(recipeOutput, ECLOGITE_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "eclogite");
+        oreSmelting(recipeOutput, ECLOGITE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "eclogite");
+        oreSmelting(recipeOutput, ECLOGITE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "eclogite");
+        oreSmelting(recipeOutput, ECLOGITE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "eclogite");
+        oreSmelting(recipeOutput, ECLOGITE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "eclogite");
+
+        stairBuilder(EclogiteBlocks.ECLOGITE_STAIRS.get(), Ingredient.of(EclogiteBlocks.ECLOGITE_BLOCK))
+                .group("eclogite").unlockedBy("has_eclogite_block", has(EclogiteBlocks.ECLOGITE_BLOCK))
+                .save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, EclogiteBlocks.ECLOGITE_BLOCK_SLAB.get(), EclogiteBlocks.ECLOGITE_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, EclogiteBlocks.ECLOGITE_BLOCK_WALL.get(), EclogiteBlocks.ECLOGITE_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, EclogiteBlocks.ECLOGITE_BLOCK_SLAB.get(), EclogiteBlocks.ECLOGITE_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // GREYWACKE RECIPES
+    // ------------------------------------------------------------
+    private void buildGreywackeRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> GREYWACKE_COAL_SMELTABLES = List.of(GreywackeBlocks.GREYWACKE_COAL_ORE);
+        List<ItemLike> GREYWACKE_COPPER_SMELTABLES = List.of(GreywackeBlocks.GREYWACKE_COPPER_ORE);
+        List<ItemLike> GREYWACKE_IRON_SMELTABLES = List.of(GreywackeBlocks.GREYWACKE_IRON_ORE);
+        List<ItemLike> GREYWACKE_GOLD_SMELTABLES = List.of(GreywackeBlocks.GREYWACKE_GOLD_ORE);
+        List<ItemLike> GREYWACKE_REDSTONE_SMELTABLES = List.of(GreywackeBlocks.GREYWACKE_REDSTONE_ORE);
+        List<ItemLike> GREYWACKE_LAPIS_SMELTABLES = List.of(GreywackeBlocks.GREYWACKE_LAPIS_ORE);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, GreywackeBlocks.GREYWACKE_STONE_BUTTON.get())
+                .pattern("A").define('A', GreywackeBlocks.GREYWACKE_BLOCK.get())
+                .unlockedBy("has_greywacke_block", has(GreywackeBlocks.GREYWACKE_BLOCK))
+                .save(recipeOutput);
+
+        oreSmelting(recipeOutput, GREYWACKE_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "greywacke");
+        oreSmelting(recipeOutput, GREYWACKE_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "greywacke");
+        oreSmelting(recipeOutput, GREYWACKE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "greywacke");
+        oreSmelting(recipeOutput, GREYWACKE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "greywacke");
+        oreSmelting(recipeOutput, GREYWACKE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "greywacke");
+        oreSmelting(recipeOutput, GREYWACKE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "greywacke");
+
+        stairBuilder(GreywackeBlocks.GREYWACKE_STAIRS.get(), Ingredient.of(GreywackeBlocks.GREYWACKE_BLOCK))
+                .group("greywacke").unlockedBy("has_greywacke_block", has(GreywackeBlocks.GREYWACKE_BLOCK))
+                .save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreywackeBlocks.GREYWACKE_BLOCK_SLAB.get(), GreywackeBlocks.GREYWACKE_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreywackeBlocks.GREYWACKE_BLOCK_WALL.get(), GreywackeBlocks.GREYWACKE_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreywackeBlocks.GREYWACKE_BLOCK_SLAB.get(), GreywackeBlocks.GREYWACKE_BLOCK.get(), 2);
     }
 
     // ------------------------------------------------------------

@@ -10,6 +10,11 @@
     "undergroundbiomesconstructsreworked:bluechist_lapis_ore",
     "undergroundbiomesconstructsreworked:greenschist_lapis_ore",
     "undergroundbiomesconstructsreworked:chalk_lapis_ore",
-    "undergroundbiomesconstructsreworked:shale_lapis_ore"
+    "undergroundbiomesconstructsreworked:shale_lapis_ore",
+    "undergroundbiomesconstructsreworked:chert_lapis_ore",
+    "undergroundbiomesconstructsreworked:lignite_lapis_ore",
+    "undergroundbiomesconstructsreworked:dolomit_lapis_ore",
+    "undergroundbiomesconstructsreworked:eclogite_lapis_ore",
+    "undergroundbiomesconstructsreworked:greywacke_lapis_ore"
   ]
 }

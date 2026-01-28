@@ -55,6 +55,11 @@ public class UndergroundBiomesConstructsReworked {
         GreenschistBlocks.register(modEventBus);
         ChalkBlocks.register(modEventBus);
         ShaleBlocks.register(modEventBus);
+        LigniteBlocks.register(modEventBus);
+        GreywackeBlocks.register(modEventBus);
+        EclogiteBlocks.register(modEventBus);
+        DolomitBlocks.register(modEventBus);
+        ChertBlocks.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
 

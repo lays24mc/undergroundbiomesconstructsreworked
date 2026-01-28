@@ -9,15 +9,12 @@ import com.lays24mc.undergroundbiomesconstructsreworked.block.custom.UBCWallBloc
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.level.block.state.properties.SlabType;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter;
 
 /**
  * BlockState and model provider for UndergroundBiomesConstructsReworked mod.
@@ -156,6 +153,47 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(ShaleBlocks.SHALE_REDSTONE_ORE);
         blockWithItem(ShaleBlocks.SHALE_LAPIS_ORE);
 
+        blockWithItem(ChertBlocks.CHERT_BLOCK);
+        blockWithItem(ChertBlocks.CHERT_COAL_ORE);
+        blockWithItem(ChertBlocks.CHERT_COPPER_ORE);
+        blockWithItem(ChertBlocks.CHERT_IRON_ORE);
+        blockWithItem(ChertBlocks.CHERT_GOLD_ORE);
+        blockWithItem(ChertBlocks.CHERT_REDSTONE_ORE);
+        blockWithItem(ChertBlocks.CHERT_LAPIS_ORE);
+
+        blockWithItem(LigniteBlocks.LIGNITE_BLOCK);
+        blockWithItem(LigniteBlocks.LIGNITE_COAL_ORE);
+        blockWithItem(LigniteBlocks.LIGNITE_COPPER_ORE);
+        blockWithItem(LigniteBlocks.LIGNITE_IRON_ORE);
+        blockWithItem(LigniteBlocks.LIGNITE_GOLD_ORE);
+        blockWithItem(LigniteBlocks.LIGNITE_REDSTONE_ORE);
+        blockWithItem(LigniteBlocks.LIGNITE_LAPIS_ORE);
+
+        blockWithItem(DolomitBlocks.DOLOMIT_BLOCK);
+        blockWithItem(DolomitBlocks.DOLOMIT_COAL_ORE);
+        blockWithItem(DolomitBlocks.DOLOMIT_COPPER_ORE);
+        blockWithItem(DolomitBlocks.DOLOMIT_IRON_ORE);
+        blockWithItem(DolomitBlocks.DOLOMIT_GOLD_ORE);
+        blockWithItem(DolomitBlocks.DOLOMIT_REDSTONE_ORE);
+        blockWithItem(DolomitBlocks.DOLOMIT_LAPIS_ORE);
+
+        blockWithItem(EclogiteBlocks.ECLOGITE_BLOCK);
+        blockWithItem(EclogiteBlocks.ECLOGITE_COAL_ORE);
+        blockWithItem(EclogiteBlocks.ECLOGITE_COPPER_ORE);
+        blockWithItem(EclogiteBlocks.ECLOGITE_IRON_ORE);
+        blockWithItem(EclogiteBlocks.ECLOGITE_GOLD_ORE);
+        blockWithItem(EclogiteBlocks.ECLOGITE_REDSTONE_ORE);
+        blockWithItem(EclogiteBlocks.ECLOGITE_LAPIS_ORE);
+
+        blockWithItem(GreywackeBlocks.GREYWACKE_BLOCK);
+        blockWithItem(GreywackeBlocks.GREYWACKE_COAL_ORE);
+        blockWithItem(GreywackeBlocks.GREYWACKE_COPPER_ORE);
+        blockWithItem(GreywackeBlocks.GREYWACKE_IRON_ORE);
+        blockWithItem(GreywackeBlocks.GREYWACKE_GOLD_ORE);
+        blockWithItem(GreywackeBlocks.GREYWACKE_REDSTONE_ORE);
+        blockWithItem(GreywackeBlocks.GREYWACKE_LAPIS_ORE);
+
+
         // --------------------------
         // Register buttons
         // --------------------------
@@ -171,6 +209,12 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         buttonWithItem((UBCButtonsBlocks) GreenschistBlocks.GREENSCHIST_STONE_BUTTON.get(), "greenschist_stone_button", "greenschist_block");
         buttonWithItem((UBCButtonsBlocks) ChalkBlocks.CHALK_STONE_BUTTON.get(), "chalk_stone_button", "chalk_block");
         buttonWithItem((UBCButtonsBlocks) ShaleBlocks.SHALE_STONE_BUTTON.get(), "shale_stone_button", "shale_block");
+        buttonWithItem((UBCButtonsBlocks) ChertBlocks.CHERT_STONE_BUTTON.get(), "chert_stone_button", "chert_block");
+        buttonWithItem((UBCButtonsBlocks) LigniteBlocks.LIGNITE_STONE_BUTTON.get(), "lignite_stone_button", "lignite_block");
+        buttonWithItem((UBCButtonsBlocks) DolomitBlocks.DOLOMIT_STONE_BUTTON.get(), "dolomit_stone_button", "dolomit_block");
+        buttonWithItem((UBCButtonsBlocks) EclogiteBlocks.ECLOGITE_STONE_BUTTON.get(), "eclogite_stone_button", "eclogite_block");
+        buttonWithItem((UBCButtonsBlocks) GreywackeBlocks.GREYWACKE_STONE_BUTTON.get(), "greywacke_stone_button", "greywacke_block");
+
 
 
         // --------------------------
@@ -252,6 +296,22 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockItem(ShaleBlocks.SHALE_STAIRS);
         blockItem(ShaleBlocks.SHALE_BLOCK_SLAB);
 
+        blockItem(ChertBlocks.CHERT_STAIRS);
+        blockItem(ChertBlocks.CHERT_BLOCK_SLAB);
+
+        blockItem(LigniteBlocks.LIGNITE_STAIRS);
+        blockItem(LigniteBlocks.LIGNITE_BLOCK_SLAB);
+
+        blockItem(DolomitBlocks.DOLOMIT_STAIRS);
+        blockItem(DolomitBlocks.DOLOMIT_BLOCK_SLAB);
+
+        blockItem(EclogiteBlocks.ECLOGITE_STAIRS);
+        blockItem(EclogiteBlocks.ECLOGITE_BLOCK_SLAB);
+
+        blockItem(GreywackeBlocks.GREYWACKE_STAIRS);
+        blockItem(GreywackeBlocks.GREYWACKE_BLOCK_SLAB);
+
+
         //Wall items
         wallItem(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL, SoapstoneBlocks.SOAPSTONE_BLOCK.get());
         wallItem(SoapstoneBlocks.SOAPSTONE_COBBLE_WALL, SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get());
@@ -293,6 +353,16 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallItem(ChalkBlocks.CHALK_BLOCK_WALL, ChalkBlocks.CHALK_BLOCK.get());
 
         wallItem(ShaleBlocks.SHALE_BLOCK_WALL, ShaleBlocks.SHALE_BLOCK.get());
+
+        wallItem(ChertBlocks.CHERT_BLOCK_WALL, ChertBlocks.CHERT_BLOCK.get());
+
+        wallItem(LigniteBlocks.LIGNITE_BLOCK_WALL, LigniteBlocks.LIGNITE_BLOCK.get());
+
+        wallItem(DolomitBlocks.DOLOMIT_BLOCK_WALL, DolomitBlocks.DOLOMIT_BLOCK.get());
+
+        wallItem(EclogiteBlocks.ECLOGITE_BLOCK_WALL, EclogiteBlocks.ECLOGITE_BLOCK.get());
+
+        wallItem(GreywackeBlocks.GREYWACKE_BLOCK_WALL, GreywackeBlocks.GREYWACKE_BLOCK.get());
 
 
         // Stairs
@@ -336,6 +406,17 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         stairsBlock((UBCStairsBlocks) ShaleBlocks.SHALE_STAIRS.get(), blockTexture(ShaleBlocks.SHALE_BLOCK.get()));
 
+        stairsBlock((UBCStairsBlocks) ChertBlocks.CHERT_STAIRS.get(), blockTexture(ChertBlocks.CHERT_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) LigniteBlocks.LIGNITE_STAIRS.get(), blockTexture(LigniteBlocks.LIGNITE_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) DolomitBlocks.DOLOMIT_STAIRS.get(), blockTexture(DolomitBlocks.DOLOMIT_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) EclogiteBlocks.ECLOGITE_STAIRS.get(), blockTexture(EclogiteBlocks.ECLOGITE_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) GreywackeBlocks.GREYWACKE_STAIRS.get(), blockTexture(GreywackeBlocks.GREYWACKE_BLOCK.get()));
+
+
         // Slabs
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_COBBLE_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()));
@@ -377,6 +458,17 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         slabBlock((UBCSlabBlocks) ShaleBlocks.SHALE_BLOCK_SLAB.get(), blockTexture(ShaleBlocks.SHALE_BLOCK.get()), blockTexture(ShaleBlocks.SHALE_BLOCK.get()));
 
+        slabBlock((UBCSlabBlocks) ChertBlocks.CHERT_BLOCK_SLAB.get(), blockTexture(ChertBlocks.CHERT_BLOCK.get()), blockTexture(ChertBlocks.CHERT_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) LigniteBlocks.LIGNITE_BLOCK_SLAB.get(), blockTexture(LigniteBlocks.LIGNITE_BLOCK.get()), blockTexture(LigniteBlocks.LIGNITE_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) DolomitBlocks.DOLOMIT_BLOCK_SLAB.get(), blockTexture(DolomitBlocks.DOLOMIT_BLOCK.get()), blockTexture(DolomitBlocks.DOLOMIT_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) EclogiteBlocks.ECLOGITE_BLOCK_SLAB.get(), blockTexture(EclogiteBlocks.ECLOGITE_BLOCK.get()), blockTexture(EclogiteBlocks.ECLOGITE_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) GreywackeBlocks.GREYWACKE_BLOCK_SLAB.get(), blockTexture(GreywackeBlocks.GREYWACKE_BLOCK.get()), blockTexture(GreywackeBlocks.GREYWACKE_BLOCK.get()));
+
+
         // Walls
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
         wallBlock((UBCWallBlocks) SoapstoneBlocks.SOAPSTONE_COBBLE_WALL.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_COBBLE_BLOCK.get()));
@@ -417,6 +509,17 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallBlock((UBCWallBlocks) ChalkBlocks.CHALK_BLOCK_WALL.get(), blockTexture(ChalkBlocks.CHALK_BLOCK.get()));
 
         wallBlock((UBCWallBlocks) ShaleBlocks.SHALE_BLOCK_WALL.get(), blockTexture(ShaleBlocks.SHALE_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) ChertBlocks.CHERT_BLOCK_WALL.get(), blockTexture(ChertBlocks.CHERT_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) LigniteBlocks.LIGNITE_BLOCK_WALL.get(), blockTexture(LigniteBlocks.LIGNITE_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) DolomitBlocks.DOLOMIT_BLOCK_WALL.get(), blockTexture(DolomitBlocks.DOLOMIT_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) EclogiteBlocks.ECLOGITE_BLOCK_WALL.get(), blockTexture(EclogiteBlocks.ECLOGITE_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) GreywackeBlocks.GREYWACKE_BLOCK_WALL.get(), blockTexture(GreywackeBlocks.GREYWACKE_BLOCK.get()));
+
     }
 
     // ------------------------------------------------------------

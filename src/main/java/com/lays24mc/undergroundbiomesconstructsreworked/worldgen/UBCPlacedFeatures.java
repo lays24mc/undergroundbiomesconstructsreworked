@@ -193,6 +193,77 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SHALE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("shale_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> SHALE_LAPIS_ORE_PLACED_KEY = registerKey("shale_lapis_ore_placed");
 
+    // CHERT
+    public static final ResourceKey<PlacedFeature> CHERT_BLOCK_PLACED_KEY = registerKey("chert_block_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_COAL_ORE_PLACED_KEY = registerKey("chert_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_COPPER_ORE_SMALL_PLACED_KEY = registerKey("chert_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_COPPER_ORE_LARGE_PLACED_KEY = registerKey("chert_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_IRON_ORE_UPPER_PLACED_KEY = registerKey("chert_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("chert_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_IRON_ORE_SMALL_PLACED_KEY = registerKey("chert_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_GOLD_ORE_PLACED_KEY = registerKey("chert_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("chert_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_REDSTONE_ORE_PLACED_KEY = registerKey("chert_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("chert_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> CHERT_LAPIS_ORE_PLACED_KEY = registerKey("chert_lapis_ore_placed");
+
+    // LIGNITE
+    public static final ResourceKey<PlacedFeature> LIGNITE_BLOCK_PLACED_KEY = registerKey("lignite_block_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_COAL_ORE_PLACED_KEY = registerKey("lignite_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("lignite_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_COPPER_ORE_LARGE_PLACED_KEY = registerKey("lignite_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_IRON_ORE_UPPER_PLACED_KEY = registerKey("lignite_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("lignite_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_IRON_ORE_SMALL_PLACED_KEY = registerKey("lignite_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_GOLD_ORE_PLACED_KEY = registerKey("lignite_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("lignite_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_REDSTONE_ORE_PLACED_KEY = registerKey("lignite_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("lignite_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> LIGNITE_LAPIS_ORE_PLACED_KEY = registerKey("lignite_lapis_ore_placed");
+
+    // DOLOMIT
+    public static final ResourceKey<PlacedFeature> DOLOMIT_BLOCK_PLACED_KEY = registerKey("dolomit_block_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_COAL_ORE_PLACED_KEY = registerKey("dolomit_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_COPPER_ORE_SMALL_PLACED_KEY = registerKey("dolomit_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_COPPER_ORE_LARGE_PLACED_KEY = registerKey("dolomit_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_IRON_ORE_UPPER_PLACED_KEY = registerKey("dolomit_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("dolomit_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_IRON_ORE_SMALL_PLACED_KEY = registerKey("dolomit_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_GOLD_ORE_PLACED_KEY = registerKey("dolomit_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("dolomit_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_REDSTONE_ORE_PLACED_KEY = registerKey("dolomit_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("dolomit_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMIT_LAPIS_ORE_PLACED_KEY = registerKey("dolomit_lapis_ore_placed");
+
+    // ECLOGITE
+    public static final ResourceKey<PlacedFeature> ECLOGITE_BLOCK_PLACED_KEY = registerKey("eclogite_block_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_COAL_ORE_PLACED_KEY = registerKey("eclogite_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("eclogite_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_COPPER_ORE_LARGE_PLACED_KEY = registerKey("eclogite_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_IRON_ORE_UPPER_PLACED_KEY = registerKey("eclogite_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("eclogite_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_IRON_ORE_SMALL_PLACED_KEY = registerKey("eclogite_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_GOLD_ORE_PLACED_KEY = registerKey("eclogite_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("eclogite_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_REDSTONE_ORE_PLACED_KEY = registerKey("eclogite_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("eclogite_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> ECLOGITE_LAPIS_ORE_PLACED_KEY = registerKey("eclogite_lapis_ore_placed");
+
+    // GREYWACKE
+    public static final ResourceKey<PlacedFeature> GREYWACKE_BLOCK_PLACED_KEY = registerKey("greywacke_block_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_COAL_ORE_PLACED_KEY = registerKey("greywacke_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("greywacke_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_COPPER_ORE_LARGE_PLACED_KEY = registerKey("greywacke_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_IRON_ORE_UPPER_PLACED_KEY = registerKey("greywacke_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("greywacke_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_IRON_ORE_SMALL_PLACED_KEY = registerKey("greywacke_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_GOLD_ORE_PLACED_KEY = registerKey("greywacke_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("greywacke_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_REDSTONE_ORE_PLACED_KEY = registerKey("greywacke_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("greywacke_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> GREYWACKE_LAPIS_ORE_PLACED_KEY = registerKey("greywacke_lapis_ore_placed");
+
+
     /**
      * Bootstrap method.
      * Called during worldgen setup to register all PlacedFeatures.
@@ -2072,6 +2143,565 @@ public class UBCPlacedFeatures {
                 )
         );
 
+        /* ------------------------------------------------------------
+         * CHERT – Base stone
+         * ------------------------------------------------------------ */
+        register(context, CHERT_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_BLOCK_KEY),
+                commonOrePlacement(2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        ))
+        );
+
+        register(context, CHERT_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_COAL_ORE_KEY),
+                commonOrePlacement(30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        ))
+        );
+
+        register(context, CHERT_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        ))
+        );
+
+        register(context, CHERT_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        ))
+        );
+
+        register(context, CHERT_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_IRON_ORE_KEY),
+                commonOrePlacement(90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        ))
+        );
+
+        register(context, CHERT_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_IRON_ORE_KEY),
+                commonOrePlacement(10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        ))
+        );
+
+        register(context, CHERT_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        ))
+        );
+
+        register(context, CHERT_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_GOLD_ORE_KEY),
+                commonOrePlacement(4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        ))
+        );
+
+        register(context, CHERT_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        ))
+        );
+
+        register(context, CHERT_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_REDSTONE_ORE_KEY),
+                commonOrePlacement(4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        ))
+        );
+
+        register(context, CHERT_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        ))
+        );
+
+        register(context, CHERT_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_LAPIS_ORE_KEY),
+                commonOrePlacement(2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        ))
+        );
+
+
+        /* ------------------------------------------------------------
+         * LIGNITE – Base stone
+         * ------------------------------------------------------------ */
+        register(context, LIGNITE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_BLOCK_KEY),
+                commonOrePlacement(2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        ))
+        );
+
+        register(context, LIGNITE_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_COAL_ORE_KEY),
+                commonOrePlacement(30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        ))
+        );
+
+        register(context, LIGNITE_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        ))
+        );
+
+        register(context, LIGNITE_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        ))
+        );
+
+        register(context, LIGNITE_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_IRON_ORE_KEY),
+                commonOrePlacement(90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        ))
+        );
+
+        register(context, LIGNITE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_IRON_ORE_KEY),
+                commonOrePlacement(10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        ))
+        );
+
+        register(context, LIGNITE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        ))
+        );
+
+        register(context, LIGNITE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_GOLD_ORE_KEY),
+                commonOrePlacement(4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        ))
+        );
+
+        register(context, LIGNITE_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        ))
+        );
+
+        register(context, LIGNITE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_REDSTONE_ORE_KEY),
+                commonOrePlacement(4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        ))
+        );
+
+        register(context, LIGNITE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        ))
+        );
+
+        register(context, LIGNITE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_LAPIS_ORE_KEY),
+                commonOrePlacement(2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        ))
+        );
+
+
+        /* ------------------------------------------------------------
+         * DOLOMIT – Base stone
+         * ------------------------------------------------------------ */
+        register(context, DOLOMIT_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_BLOCK_KEY),
+                commonOrePlacement(2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        ))
+        );
+
+        register(context, DOLOMIT_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_COAL_ORE_KEY),
+                commonOrePlacement(30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        ))
+        );
+
+        register(context, DOLOMIT_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        ))
+        );
+
+        register(context, DOLOMIT_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        ))
+        );
+
+        register(context, DOLOMIT_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_IRON_ORE_KEY),
+                commonOrePlacement(90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        ))
+        );
+
+        register(context, DOLOMIT_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_IRON_ORE_KEY),
+                commonOrePlacement(10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        ))
+        );
+
+        register(context, DOLOMIT_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        ))
+        );
+
+        register(context, DOLOMIT_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_GOLD_ORE_KEY),
+                commonOrePlacement(4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        ))
+        );
+
+        register(context, DOLOMIT_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        ))
+        );
+
+        register(context, DOLOMIT_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_REDSTONE_ORE_KEY),
+                commonOrePlacement(4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        ))
+        );
+
+        register(context, DOLOMIT_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        ))
+        );
+
+        register(context, DOLOMIT_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_LAPIS_ORE_KEY),
+                commonOrePlacement(2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        ))
+        );
+
+
+        /* ------------------------------------------------------------
+         * ECLOGITE – Base stone
+         * ------------------------------------------------------------ */
+        register(context, ECLOGITE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_BLOCK_KEY),
+                commonOrePlacement(2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        ))
+        );
+
+        register(context, ECLOGITE_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_COAL_ORE_KEY),
+                commonOrePlacement(30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        ))
+        );
+
+        register(context, ECLOGITE_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        ))
+        );
+
+        register(context, ECLOGITE_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        ))
+        );
+
+        register(context, ECLOGITE_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_IRON_ORE_KEY),
+                commonOrePlacement(90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        ))
+        );
+
+        register(context, ECLOGITE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_IRON_ORE_KEY),
+                commonOrePlacement(10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        ))
+        );
+
+        register(context, ECLOGITE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        ))
+        );
+
+        register(context, ECLOGITE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_GOLD_ORE_KEY),
+                commonOrePlacement(4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        ))
+        );
+
+        register(context, ECLOGITE_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        ))
+        );
+
+        register(context, ECLOGITE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_REDSTONE_ORE_KEY),
+                commonOrePlacement(4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        ))
+        );
+
+        register(context, ECLOGITE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        ))
+        );
+
+        register(context, ECLOGITE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_LAPIS_ORE_KEY),
+                commonOrePlacement(2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        ))
+        );
+
+
+        /* ------------------------------------------------------------
+         * GREYWACKE – Base stone
+         * ------------------------------------------------------------ */
+        register(context, GREYWACKE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_BLOCK_KEY),
+                commonOrePlacement(2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        ))
+        );
+
+        register(context, GREYWACKE_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_COAL_ORE_KEY),
+                commonOrePlacement(30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        ))
+        );
+
+        register(context, GREYWACKE_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        ))
+        );
+
+        register(context, GREYWACKE_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        ))
+        );
+
+        register(context, GREYWACKE_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_IRON_ORE_KEY),
+                commonOrePlacement(90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        ))
+        );
+
+        register(context, GREYWACKE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_IRON_ORE_KEY),
+                commonOrePlacement(10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        ))
+        );
+
+        register(context, GREYWACKE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        ))
+        );
+
+        register(context, GREYWACKE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_GOLD_ORE_KEY),
+                commonOrePlacement(4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        ))
+        );
+
+        register(context, GREYWACKE_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        ))
+        );
+
+        register(context, GREYWACKE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_REDSTONE_ORE_KEY),
+                commonOrePlacement(4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        ))
+        );
+
+        register(context, GREYWACKE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        ))
+        );
+
+        register(context, GREYWACKE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_LAPIS_ORE_KEY),
+                commonOrePlacement(2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        ))
+        );
+        
     }
 
     /**

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "undergroundbiomesconstructsreworked:chert_block"
+  },
+  "result": {
+    "count": 2,
+    "id": "undergroundbiomesconstructsreworked:chert_block_slab"
+  }
+}

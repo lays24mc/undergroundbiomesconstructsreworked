@@ -7,6 +7,11 @@
     "undergroundbiomesconstructsreworked:bluechist_copper_ore",
     "undergroundbiomesconstructsreworked:greenschist_copper_ore",
     "undergroundbiomesconstructsreworked:chalk_copper_ore",
-    "undergroundbiomesconstructsreworked:shale_copper_ore"
+    "undergroundbiomesconstructsreworked:shale_copper_ore",
+    "undergroundbiomesconstructsreworked:chert_copper_ore",
+    "undergroundbiomesconstructsreworked:lignite_copper_ore",
+    "undergroundbiomesconstructsreworked:dolomit_copper_ore",
+    "undergroundbiomesconstructsreworked:eclogite_copper_ore",
+    "undergroundbiomesconstructsreworked:greywacke_copper_ore"
   ]
 }

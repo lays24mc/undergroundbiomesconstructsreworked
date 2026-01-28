@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/chert_block",
+    "side": "undergroundbiomesconstructsreworked:block/chert_block",
+    "top": "undergroundbiomesconstructsreworked:block/chert_block"
+  }
+}

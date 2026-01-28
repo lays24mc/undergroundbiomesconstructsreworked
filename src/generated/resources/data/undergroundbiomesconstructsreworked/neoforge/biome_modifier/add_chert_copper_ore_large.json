@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "undergroundbiomesconstructsreworked:chert_copper_ore_large_placed",
+  "step": "underground_ores"
+}

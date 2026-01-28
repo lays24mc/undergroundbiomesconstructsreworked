@@ -11,6 +11,11 @@
     "undergroundbiomesconstructsreworked:bluechist_gold_ore",
     "undergroundbiomesconstructsreworked:greenschist_gold_ore",
     "undergroundbiomesconstructsreworked:chalk_gold_ore",
-    "undergroundbiomesconstructsreworked:shale_gold_ore"
+    "undergroundbiomesconstructsreworked:shale_gold_ore",
+    "undergroundbiomesconstructsreworked:chert_gold_ore",
+    "undergroundbiomesconstructsreworked:lignite_gold_ore",
+    "undergroundbiomesconstructsreworked:dolomit_gold_ore",
+    "undergroundbiomesconstructsreworked:eclogite_gold_ore",
+    "undergroundbiomesconstructsreworked:greywacke_gold_ore"
   ]
 }

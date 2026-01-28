@@ -11,6 +11,11 @@
     "undergroundbiomesconstructsreworked:bluechist_iron_ore",
     "undergroundbiomesconstructsreworked:greenschist_iron_ore",
     "undergroundbiomesconstructsreworked:chalk_iron_ore",
-    "undergroundbiomesconstructsreworked:shale_iron_ore"
+    "undergroundbiomesconstructsreworked:shale_iron_ore",
+    "undergroundbiomesconstructsreworked:chert_iron_ore",
+    "undergroundbiomesconstructsreworked:lignite_iron_ore",
+    "undergroundbiomesconstructsreworked:dolomit_iron_ore",
+    "undergroundbiomesconstructsreworked:eclogite_iron_ore",
+    "undergroundbiomesconstructsreworked:greywacke_iron_ore"
   ]
 }

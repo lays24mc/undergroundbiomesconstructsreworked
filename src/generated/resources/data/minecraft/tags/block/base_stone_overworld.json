@@ -11,6 +11,11 @@
     "undergroundbiomesconstructsreworked:bluechist_block",
     "undergroundbiomesconstructsreworked:greenschist_block",
     "undergroundbiomesconstructsreworked:chalk_block",
-    "undergroundbiomesconstructsreworked:shale_block"
+    "undergroundbiomesconstructsreworked:shale_block",
+    "undergroundbiomesconstructsreworked:chert_block",
+    "undergroundbiomesconstructsreworked:lignite_block",
+    "undergroundbiomesconstructsreworked:dolomit_block",
+    "undergroundbiomesconstructsreworked:eclogite_block",
+    "undergroundbiomesconstructsreworked:greywacke_block"
   ]
 }

@@ -10,6 +10,11 @@
     "undergroundbiomesconstructsreworked:bluechist_redstone_ore",
     "undergroundbiomesconstructsreworked:greenschist_redstone_ore",
     "undergroundbiomesconstructsreworked:chalk_redstone_ore",
-    "undergroundbiomesconstructsreworked:shale_redstone_ore"
+    "undergroundbiomesconstructsreworked:shale_redstone_ore",
+    "undergroundbiomesconstructsreworked:chert_redstone_ore",
+    "undergroundbiomesconstructsreworked:lignite_redstone_ore",
+    "undergroundbiomesconstructsreworked:dolomit_redstone_ore",
+    "undergroundbiomesconstructsreworked:eclogite_redstone_ore",
+    "undergroundbiomesconstructsreworked:greywacke_redstone_ore"
   ]
 }

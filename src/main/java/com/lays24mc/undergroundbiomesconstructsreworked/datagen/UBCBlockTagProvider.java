@@ -137,7 +137,47 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(ShaleBlocks.SHALE_REDSTONE_ORE.get())
                 .add(ShaleBlocks.SHALE_LAPIS_ORE.get())
 
-                // Slabs
+                .add(ChertBlocks.CHERT_BLOCK.get())
+                .add(ChertBlocks.CHERT_COAL_ORE.get())
+                .add(ChertBlocks.CHERT_COPPER_ORE.get())
+                .add(ChertBlocks.CHERT_IRON_ORE.get())
+                .add(ChertBlocks.CHERT_GOLD_ORE.get())
+                .add(ChertBlocks.CHERT_REDSTONE_ORE.get())
+                .add(ChertBlocks.CHERT_LAPIS_ORE.get())
+
+                .add(LigniteBlocks.LIGNITE_BLOCK.get())
+                .add(LigniteBlocks.LIGNITE_COAL_ORE.get())
+                .add(LigniteBlocks.LIGNITE_COPPER_ORE.get())
+                .add(LigniteBlocks.LIGNITE_IRON_ORE.get())
+                .add(LigniteBlocks.LIGNITE_GOLD_ORE.get())
+                .add(LigniteBlocks.LIGNITE_REDSTONE_ORE.get())
+                .add(LigniteBlocks.LIGNITE_LAPIS_ORE.get())
+
+                .add(DolomitBlocks.DOLOMIT_BLOCK.get())
+                .add(DolomitBlocks.DOLOMIT_COAL_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_COPPER_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_IRON_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_GOLD_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_REDSTONE_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_LAPIS_ORE.get())
+
+                .add(EclogiteBlocks.ECLOGITE_BLOCK.get())
+                .add(EclogiteBlocks.ECLOGITE_COAL_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_COPPER_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_IRON_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_GOLD_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_LAPIS_ORE.get())
+
+                .add(GreywackeBlocks.GREYWACKE_BLOCK.get())
+                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_IRON_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_GOLD_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_LAPIS_ORE.get())
+
+        // Slabs
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COBBLE_SLAB.get())
                 .add(SoapstoneBlocks.SOAPSTONE_BRICK_SLAB.get())
@@ -178,7 +218,17 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(ShaleBlocks.SHALE_BLOCK_SLAB.get())
 
-                // Stairs
+                .add(ChertBlocks.CHERT_BLOCK_SLAB.get())
+
+                .add(LigniteBlocks.LIGNITE_BLOCK_SLAB.get())
+
+                .add(DolomitBlocks.DOLOMIT_BLOCK_SLAB.get())
+
+                .add(EclogiteBlocks.ECLOGITE_BLOCK_SLAB.get())
+
+                .add(GreywackeBlocks.GREYWACKE_BLOCK_SLAB.get())
+
+        // Stairs
                 .add(SoapstoneBlocks.SOAPSTONE_STAIRS.get())
                 .add(SoapstoneBlocks.SOAPSTONE_BRICK_STAIRS.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COBBLE_STAIRS.get())
@@ -219,7 +269,17 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(ShaleBlocks.SHALE_STAIRS.get())
 
-                // Walls
+                .add(ChertBlocks.CHERT_STAIRS.get())
+
+                .add(LigniteBlocks.LIGNITE_STAIRS.get())
+
+                .add(DolomitBlocks.DOLOMIT_STAIRS.get())
+
+                .add(EclogiteBlocks.ECLOGITE_STAIRS.get())
+
+                .add(GreywackeBlocks.GREYWACKE_STAIRS.get())
+
+        // Walls
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COBBLE_WALL.get())
                 .add(SoapstoneBlocks.SOAPSTONE_BRICK_WALL.get())
@@ -258,106 +318,109 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(ChalkBlocks.CHALK_BLOCK_WALL.get())
 
-                .add(ShaleBlocks.SHALE_BLOCK_WALL.get());
+                .add(ShaleBlocks.SHALE_BLOCK_WALL.get())
+
+                .add(ChertBlocks.CHERT_BLOCK_WALL.get())
+
+                .add(LigniteBlocks.LIGNITE_BLOCK_WALL.get())
+
+                .add(DolomitBlocks.DOLOMIT_BLOCK_WALL.get())
+
+                .add(EclogiteBlocks.ECLOGITE_BLOCK_WALL.get())
+
+                .add(GreywackeBlocks.GREYWACKE_BLOCK_WALL.get());
 
         //tools tag
         tag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                // RED GRANITE
                 .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
 
-                // QUARTZITE
                 .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
 
-                // MIGMATITE
                 .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get())
 
-                // SOAPSTONE
                 .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
                 .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
 
-                // RHYOLITE
                 .add(RhyoliteBlocks.RHYOLITE_GOLD_ORE.get())
                 .add(RhyoliteBlocks.RHYOLITE_REDSTONE_ORE.get())
 
-                // MARBLE
                 .add(MarbleBlocks.MARBLE_GOLD_ORE.get())
                 .add(MarbleBlocks.MARBLE_REDSTONE_ORE.get())
 
-                // LIMESTONE
                 .add(LimestoneBlocks.LIMESTONE_GOLD_ORE.get())
                 .add(LimestoneBlocks.LIMESTONE_REDSTONE_ORE.get())
 
-                // SILTSTONE
                 .add(SiltstoneBlocks.SILTSTONE_GOLD_ORE.get())
                 .add(SiltstoneBlocks.SILTSTONE_REDSTONE_ORE.get())
 
-                // BLUECHIST
                 .add(BluechistBlocks.BLUECHIST_GOLD_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_REDSTONE_ORE.get())
 
-                // GREENSCHIST
                 .add(GreenschistBlocks.GREENSCHIST_GOLD_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_REDSTONE_ORE.get())
 
-                // CHALK
                 .add(ChalkBlocks.CHALK_GOLD_ORE.get())
                 .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
 
-                // SHALE
                 .add(ShaleBlocks.SHALE_GOLD_ORE.get())
-                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get());
+                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get())
 
+                .add(ChertBlocks.CHERT_GOLD_ORE.get())
+                .add(ChertBlocks.CHERT_REDSTONE_ORE.get())
+
+                .add(LigniteBlocks.LIGNITE_GOLD_ORE.get())
+                .add(LigniteBlocks.LIGNITE_REDSTONE_ORE.get())
+
+                .add(DolomitBlocks.DOLOMIT_GOLD_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_REDSTONE_ORE.get())
+
+                .add(EclogiteBlocks.ECLOGITE_GOLD_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get())
+
+                .add(GreywackeBlocks.GREYWACKE_GOLD_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
-                // Red Granite
                 .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_IRON_ORE.get())
 
-                // Rhyolite
                 .add(RhyoliteBlocks.RHYOLITE_LAPIS_ORE.get())
                 .add(RhyoliteBlocks.RHYOLITE_IRON_ORE.get())
                 .add(RhyoliteBlocks.RHYOLITE_COPPER_ORE.get())
                 .add(RhyoliteBlocks.RHYOLITE_COAL_ORE.get())
 
-                // Soapstone
                 .add(SoapstoneBlocks.SOAPSTONE_LAPIS_ORE.get())
                 .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COAL_ORE.get())
 
-                // Quartzite
                 .add(QuartziteBlocks.QUARTZITE_LAPIS_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_IRON_ORE.get())
 
-                // Migmatite
                 .add(MigmatiteBlocks.MIGMATITE_LAPIS_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_IRON_ORE.get())
 
-                // Marble
                 .add(MarbleBlocks.MARBLE_LAPIS_ORE.get())
                 .add(MarbleBlocks.MARBLE_IRON_ORE.get())
 
-                // Limestone
                 .add(LimestoneBlocks.LIMESTONE_COAL_ORE.get())
                 .add(LimestoneBlocks.LIMESTONE_LAPIS_ORE.get())
                 .add(LimestoneBlocks.LIMESTONE_IRON_ORE.get())
                 .add(LimestoneBlocks.LIMESTONE_COPPER_ORE.get())
 
-                // Siltstone
                 .add(SiltstoneBlocks.SILTSTONE_COAL_ORE.get())
                 .add(SiltstoneBlocks.SILTSTONE_LAPIS_ORE.get())
                 .add(SiltstoneBlocks.SILTSTONE_IRON_ORE.get())
                 .add(SiltstoneBlocks.SILTSTONE_COPPER_ORE.get())
 
-                // Bluechist
                 .add(BluechistBlocks.BLUECHIST_LAPIS_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_IRON_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_COPPER_ORE.get())
@@ -368,245 +431,305 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreenschistBlocks.GREENSCHIST_COPPER_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_COAL_ORE.get())
 
-                // Chalk
                 .add(ChalkBlocks.CHALK_COAL_ORE.get())
                 .add(ChalkBlocks.CHALK_LAPIS_ORE.get())
                 .add(ChalkBlocks.CHALK_IRON_ORE.get())
                 .add(ChalkBlocks.CHALK_COPPER_ORE.get())
 
-                // Shale
                 .add(ShaleBlocks.SHALE_COAL_ORE.get())
                 .add(ShaleBlocks.SHALE_LAPIS_ORE.get())
                 .add(ShaleBlocks.SHALE_IRON_ORE.get())
-                .add(ShaleBlocks.SHALE_COPPER_ORE.get());
+                .add(ShaleBlocks.SHALE_COPPER_ORE.get())
 
+                .add(ChertBlocks.CHERT_COAL_ORE.get())
+                .add(ChertBlocks.CHERT_LAPIS_ORE.get())
+                .add(ChertBlocks.CHERT_IRON_ORE.get())
+                .add(ChertBlocks.CHERT_COPPER_ORE.get())
+
+                .add(LigniteBlocks.LIGNITE_COAL_ORE.get())
+                .add(LigniteBlocks.LIGNITE_LAPIS_ORE.get())
+                .add(LigniteBlocks.LIGNITE_IRON_ORE.get())
+                .add(LigniteBlocks.LIGNITE_COPPER_ORE.get())
+
+                .add(DolomitBlocks.DOLOMIT_COAL_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_LAPIS_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_IRON_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_COPPER_ORE.get())
+
+                .add(EclogiteBlocks.ECLOGITE_COAL_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_LAPIS_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_IRON_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_COPPER_ORE.get())
+
+                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_LAPIS_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_IRON_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get());
 
         tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
-                // Red Granite
                 .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
 
-                // Quartzite
                 .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
 
-                // Migmatite
                 .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get())
 
-                // Marble
                 .add(MarbleBlocks.MARBLE_DIAMOND_ORE.get())
                 .add(MarbleBlocks.MARBLE_GOLD_ORE.get())
                 .add(MarbleBlocks.MARBLE_REDSTONE_ORE.get())
 
-                // Soapstone
                 .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
                 .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
 
-                // Rhyolite
                 .add(RhyoliteBlocks.RHYOLITE_GOLD_ORE.get())
                 .add(RhyoliteBlocks.RHYOLITE_REDSTONE_ORE.get())
 
-                // Limestone
                 .add(LimestoneBlocks.LIMESTONE_GOLD_ORE.get())
                 .add(LimestoneBlocks.LIMESTONE_REDSTONE_ORE.get())
 
-                // Siltstone
                 .add(SiltstoneBlocks.SILTSTONE_GOLD_ORE.get())
                 .add(SiltstoneBlocks.SILTSTONE_REDSTONE_ORE.get())
 
-                // Bluechist
                 .add(BluechistBlocks.BLUECHIST_GOLD_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_REDSTONE_ORE.get())
 
-                // Greenschist
                 .add(GreenschistBlocks.GREENSCHIST_GOLD_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_REDSTONE_ORE.get())
 
-                // Chalk
                 .add(ChalkBlocks.CHALK_GOLD_ORE.get())
                 .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
 
-                // Shale
                 .add(ShaleBlocks.SHALE_GOLD_ORE.get())
-                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get());
+                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get())
+
+                .add(ChertBlocks.CHERT_GOLD_ORE.get())
+                .add(ChertBlocks.CHERT_REDSTONE_ORE.get())
+
+                .add(LigniteBlocks.LIGNITE_GOLD_ORE.get())
+                .add(LigniteBlocks.LIGNITE_REDSTONE_ORE.get())
+
+                .add(DolomitBlocks.DOLOMIT_GOLD_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_REDSTONE_ORE.get())
+
+                .add(EclogiteBlocks.ECLOGITE_GOLD_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get())
+
+                .add(GreywackeBlocks.GREYWACKE_GOLD_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get());
+
 
         tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
-                // Red Granite
                 .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_IRON_ORE.get())
 
-                // Quartzite
                 .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_LAPIS_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_IRON_ORE.get())
 
-                // Migmatite
                 .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_LAPIS_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_IRON_ORE.get())
 
-                // Marble
                 .add(MarbleBlocks.MARBLE_DIAMOND_ORE.get())
                 .add(MarbleBlocks.MARBLE_LAPIS_ORE.get())
                 .add(MarbleBlocks.MARBLE_GOLD_ORE.get())
                 .add(MarbleBlocks.MARBLE_REDSTONE_ORE.get())
                 .add(MarbleBlocks.MARBLE_IRON_ORE.get())
 
-                // Soapstone
                 .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
                 .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
                 .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COAL_ORE.get())
 
-                // Rhyolite
                 .add(RhyoliteBlocks.RHYOLITE_GOLD_ORE.get())
                 .add(RhyoliteBlocks.RHYOLITE_REDSTONE_ORE.get())
                 .add(RhyoliteBlocks.RHYOLITE_IRON_ORE.get())
                 .add(RhyoliteBlocks.RHYOLITE_COPPER_ORE.get())
                 .add(RhyoliteBlocks.RHYOLITE_COAL_ORE.get())
 
-                // Limestone
                 .add(LimestoneBlocks.LIMESTONE_GOLD_ORE.get())
                 .add(LimestoneBlocks.LIMESTONE_REDSTONE_ORE.get())
                 .add(LimestoneBlocks.LIMESTONE_IRON_ORE.get())
                 .add(LimestoneBlocks.LIMESTONE_COPPER_ORE.get())
                 .add(LimestoneBlocks.LIMESTONE_COAL_ORE.get())
 
-                // Siltstone
                 .add(SiltstoneBlocks.SILTSTONE_GOLD_ORE.get())
                 .add(SiltstoneBlocks.SILTSTONE_REDSTONE_ORE.get())
                 .add(SiltstoneBlocks.SILTSTONE_IRON_ORE.get())
                 .add(SiltstoneBlocks.SILTSTONE_COPPER_ORE.get())
                 .add(SiltstoneBlocks.SILTSTONE_COAL_ORE.get())
 
-                // Bluechist
                 .add(BluechistBlocks.BLUECHIST_GOLD_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_REDSTONE_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_IRON_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_COPPER_ORE.get())
                 .add(BluechistBlocks.BLUECHIST_COAL_ORE.get())
 
-                // Greenschist
                 .add(GreenschistBlocks.GREENSCHIST_GOLD_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_REDSTONE_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_IRON_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_COPPER_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_COAL_ORE.get())
 
-                // Chalk
                 .add(ChalkBlocks.CHALK_GOLD_ORE.get())
                 .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
                 .add(ChalkBlocks.CHALK_IRON_ORE.get())
                 .add(ChalkBlocks.CHALK_COPPER_ORE.get())
                 .add(ChalkBlocks.CHALK_COAL_ORE.get())
 
-                // Chalk
-                .add(ChalkBlocks.CHALK_GOLD_ORE.get())
-                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
-                .add(ChalkBlocks.CHALK_IRON_ORE.get())
-                .add(ChalkBlocks.CHALK_COPPER_ORE.get())
-                .add(ChalkBlocks.CHALK_COAL_ORE.get());
-
-
-        tag(BlockTags.INCORRECT_FOR_IRON_TOOL);
-
-        tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
-                // Red Granite
-                .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
-                .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
-                .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
-                .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
-                .add(RedGraniteBlocks.RED_GRANITE_IRON_ORE.get())
-
-                // Quartzite
-                .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
-                .add(QuartziteBlocks.QUARTZITE_LAPIS_ORE.get())
-                .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
-                .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
-                .add(QuartziteBlocks.QUARTZITE_IRON_ORE.get())
-
-                // Migmatite
-                .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get())
-                .add(MigmatiteBlocks.MIGMATITE_LAPIS_ORE.get())
-                .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get())
-                .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get())
-                .add(MigmatiteBlocks.MIGMATITE_IRON_ORE.get())
-
-                // Marble
-                .add(MarbleBlocks.MARBLE_DIAMOND_ORE.get())
-                .add(MarbleBlocks.MARBLE_LAPIS_ORE.get())
-                .add(MarbleBlocks.MARBLE_GOLD_ORE.get())
-                .add(MarbleBlocks.MARBLE_REDSTONE_ORE.get())
-                .add(MarbleBlocks.MARBLE_IRON_ORE.get())
-
-                // Soapstone
-                .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
-                .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
-                .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
-                .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
-                .add(SoapstoneBlocks.SOAPSTONE_COAL_ORE.get())
-
-                // Rhyolite
-                .add(RhyoliteBlocks.RHYOLITE_GOLD_ORE.get())
-                .add(RhyoliteBlocks.RHYOLITE_REDSTONE_ORE.get())
-                .add(RhyoliteBlocks.RHYOLITE_IRON_ORE.get())
-                .add(RhyoliteBlocks.RHYOLITE_COPPER_ORE.get())
-                .add(RhyoliteBlocks.RHYOLITE_COAL_ORE.get())
-
-                // Limestone
-                .add(LimestoneBlocks.LIMESTONE_GOLD_ORE.get())
-                .add(LimestoneBlocks.LIMESTONE_REDSTONE_ORE.get())
-                .add(LimestoneBlocks.LIMESTONE_IRON_ORE.get())
-                .add(LimestoneBlocks.LIMESTONE_COPPER_ORE.get())
-                .add(LimestoneBlocks.LIMESTONE_COAL_ORE.get())
-
-                // Siltstone
-                .add(SiltstoneBlocks.SILTSTONE_GOLD_ORE.get())
-                .add(SiltstoneBlocks.SILTSTONE_REDSTONE_ORE.get())
-                .add(SiltstoneBlocks.SILTSTONE_IRON_ORE.get())
-                .add(SiltstoneBlocks.SILTSTONE_COPPER_ORE.get())
-                .add(SiltstoneBlocks.SILTSTONE_COAL_ORE.get())
-
-                // Bluechist
-                .add(BluechistBlocks.BLUECHIST_GOLD_ORE.get())
-                .add(BluechistBlocks.BLUECHIST_REDSTONE_ORE.get())
-                .add(BluechistBlocks.BLUECHIST_IRON_ORE.get())
-                .add(BluechistBlocks.BLUECHIST_COPPER_ORE.get())
-                .add(BluechistBlocks.BLUECHIST_COAL_ORE.get())
-
-                // Greenschist
-                .add(GreenschistBlocks.GREENSCHIST_GOLD_ORE.get())
-                .add(GreenschistBlocks.GREENSCHIST_REDSTONE_ORE.get())
-                .add(GreenschistBlocks.GREENSCHIST_IRON_ORE.get())
-                .add(GreenschistBlocks.GREENSCHIST_COPPER_ORE.get())
-                .add(GreenschistBlocks.GREENSCHIST_COAL_ORE.get())
-
-                // Chalk
-                .add(ChalkBlocks.CHALK_GOLD_ORE.get())
-                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
-                .add(ChalkBlocks.CHALK_IRON_ORE.get())
-                .add(ChalkBlocks.CHALK_COPPER_ORE.get())
-                .add(ChalkBlocks.CHALK_COAL_ORE.get())
-
-                // Shale
                 .add(ShaleBlocks.SHALE_GOLD_ORE.get())
                 .add(ShaleBlocks.SHALE_REDSTONE_ORE.get())
                 .add(ShaleBlocks.SHALE_IRON_ORE.get())
                 .add(ShaleBlocks.SHALE_COPPER_ORE.get())
-                .add(ShaleBlocks.SHALE_COAL_ORE.get());
+                .add(ShaleBlocks.SHALE_COAL_ORE.get())
 
+                .add(ChertBlocks.CHERT_GOLD_ORE.get())
+                .add(ChertBlocks.CHERT_REDSTONE_ORE.get())
+                .add(ChertBlocks.CHERT_IRON_ORE.get())
+                .add(ChertBlocks.CHERT_COPPER_ORE.get())
+                .add(ChertBlocks.CHERT_COAL_ORE.get())
+
+                .add(LigniteBlocks.LIGNITE_GOLD_ORE.get())
+                .add(LigniteBlocks.LIGNITE_REDSTONE_ORE.get())
+                .add(LigniteBlocks.LIGNITE_IRON_ORE.get())
+                .add(LigniteBlocks.LIGNITE_COPPER_ORE.get())
+                .add(LigniteBlocks.LIGNITE_COAL_ORE.get())
+
+                .add(DolomitBlocks.DOLOMIT_GOLD_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_REDSTONE_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_IRON_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_COPPER_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_COAL_ORE.get())
+
+                .add(EclogiteBlocks.ECLOGITE_GOLD_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_IRON_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_COPPER_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_COAL_ORE.get())
+
+                .add(GreywackeBlocks.GREYWACKE_GOLD_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_IRON_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get());
+
+        tag(BlockTags.INCORRECT_FOR_IRON_TOOL);
+
+        tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
+                .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
+                .add(RedGraniteBlocks.RED_GRANITE_IRON_ORE.get())
+
+                .add(QuartziteBlocks.QUARTZITE_DIAMOND_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_LAPIS_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_GOLD_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
+                .add(QuartziteBlocks.QUARTZITE_IRON_ORE.get())
+
+                .add(MigmatiteBlocks.MIGMATITE_DIAMOND_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_LAPIS_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_GOLD_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get())
+                .add(MigmatiteBlocks.MIGMATITE_IRON_ORE.get())
+
+                .add(MarbleBlocks.MARBLE_DIAMOND_ORE.get())
+                .add(MarbleBlocks.MARBLE_LAPIS_ORE.get())
+                .add(MarbleBlocks.MARBLE_GOLD_ORE.get())
+                .add(MarbleBlocks.MARBLE_REDSTONE_ORE.get())
+                .add(MarbleBlocks.MARBLE_IRON_ORE.get())
+
+                .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
+                .add(SoapstoneBlocks.SOAPSTONE_COAL_ORE.get())
+
+                .add(RhyoliteBlocks.RHYOLITE_GOLD_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_REDSTONE_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_IRON_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_COPPER_ORE.get())
+                .add(RhyoliteBlocks.RHYOLITE_COAL_ORE.get())
+
+                .add(LimestoneBlocks.LIMESTONE_GOLD_ORE.get())
+                .add(LimestoneBlocks.LIMESTONE_REDSTONE_ORE.get())
+                .add(LimestoneBlocks.LIMESTONE_IRON_ORE.get())
+                .add(LimestoneBlocks.LIMESTONE_COPPER_ORE.get())
+                .add(LimestoneBlocks.LIMESTONE_COAL_ORE.get())
+
+                .add(SiltstoneBlocks.SILTSTONE_GOLD_ORE.get())
+                .add(SiltstoneBlocks.SILTSTONE_REDSTONE_ORE.get())
+                .add(SiltstoneBlocks.SILTSTONE_IRON_ORE.get())
+                .add(SiltstoneBlocks.SILTSTONE_COPPER_ORE.get())
+                .add(SiltstoneBlocks.SILTSTONE_COAL_ORE.get())
+
+                .add(BluechistBlocks.BLUECHIST_GOLD_ORE.get())
+                .add(BluechistBlocks.BLUECHIST_REDSTONE_ORE.get())
+                .add(BluechistBlocks.BLUECHIST_IRON_ORE.get())
+                .add(BluechistBlocks.BLUECHIST_COPPER_ORE.get())
+                .add(BluechistBlocks.BLUECHIST_COAL_ORE.get())
+
+                .add(GreenschistBlocks.GREENSCHIST_GOLD_ORE.get())
+                .add(GreenschistBlocks.GREENSCHIST_REDSTONE_ORE.get())
+                .add(GreenschistBlocks.GREENSCHIST_IRON_ORE.get())
+                .add(GreenschistBlocks.GREENSCHIST_COPPER_ORE.get())
+                .add(GreenschistBlocks.GREENSCHIST_COAL_ORE.get())
+
+                .add(ChalkBlocks.CHALK_GOLD_ORE.get())
+                .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
+                .add(ChalkBlocks.CHALK_IRON_ORE.get())
+                .add(ChalkBlocks.CHALK_COPPER_ORE.get())
+                .add(ChalkBlocks.CHALK_COAL_ORE.get())
+
+                .add(ShaleBlocks.SHALE_GOLD_ORE.get())
+                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get())
+                .add(ShaleBlocks.SHALE_IRON_ORE.get())
+                .add(ShaleBlocks.SHALE_COPPER_ORE.get())
+                .add(ShaleBlocks.SHALE_COAL_ORE.get())
+
+                .add(ChertBlocks.CHERT_GOLD_ORE.get())
+                .add(ChertBlocks.CHERT_REDSTONE_ORE.get())
+                .add(ChertBlocks.CHERT_IRON_ORE.get())
+                .add(ChertBlocks.CHERT_COPPER_ORE.get())
+                .add(ChertBlocks.CHERT_COAL_ORE.get())
+
+                .add(LigniteBlocks.LIGNITE_GOLD_ORE.get())
+                .add(LigniteBlocks.LIGNITE_REDSTONE_ORE.get())
+                .add(LigniteBlocks.LIGNITE_IRON_ORE.get())
+                .add(LigniteBlocks.LIGNITE_COPPER_ORE.get())
+                .add(LigniteBlocks.LIGNITE_COAL_ORE.get())
+
+                .add(DolomitBlocks.DOLOMIT_GOLD_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_REDSTONE_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_IRON_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_COPPER_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_COAL_ORE.get())
+
+                .add(EclogiteBlocks.ECLOGITE_GOLD_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_IRON_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_COPPER_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_COAL_ORE.get())
+
+                .add(GreywackeBlocks.GREYWACKE_GOLD_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_IRON_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get());
 
         tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
 
@@ -621,7 +744,12 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(BluechistBlocks.BLUECHIST_COAL_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_COAL_ORE.get())
                 .add(ChalkBlocks.CHALK_COAL_ORE.get())
-                .add(ShaleBlocks.SHALE_COAL_ORE.get());
+                .add(ShaleBlocks.SHALE_COAL_ORE.get())
+                .add(ChertBlocks.CHERT_COAL_ORE.get())
+                .add(LigniteBlocks.LIGNITE_COAL_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_COAL_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_COAL_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get());
 
         tag(BlockTags.COPPER_ORES)
                 .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
@@ -631,7 +759,12 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(BluechistBlocks.BLUECHIST_COPPER_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_COPPER_ORE.get())
                 .add(ChalkBlocks.CHALK_COPPER_ORE.get())
-                .add(ShaleBlocks.SHALE_COPPER_ORE.get());
+                .add(ShaleBlocks.SHALE_COPPER_ORE.get())
+                .add(ChertBlocks.CHERT_COPPER_ORE.get())
+                .add(LigniteBlocks.LIGNITE_COPPER_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_COPPER_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_COPPER_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get());
 
         tag(BlockTags.IRON_ORES)
                 .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
@@ -645,7 +778,12 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(BluechistBlocks.BLUECHIST_IRON_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_IRON_ORE.get())
                 .add(ChalkBlocks.CHALK_IRON_ORE.get())
-                .add(ShaleBlocks.SHALE_IRON_ORE.get());
+                .add(ShaleBlocks.SHALE_IRON_ORE.get())
+                .add(ChertBlocks.CHERT_IRON_ORE.get())
+                .add(LigniteBlocks.LIGNITE_IRON_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_IRON_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_IRON_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_IRON_ORE.get());
 
         tag(BlockTags.GOLD_ORES)
                 .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
@@ -659,7 +797,12 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(BluechistBlocks.BLUECHIST_GOLD_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_GOLD_ORE.get())
                 .add(ChalkBlocks.CHALK_GOLD_ORE.get())
-                .add(ShaleBlocks.SHALE_GOLD_ORE.get());
+                .add(ShaleBlocks.SHALE_GOLD_ORE.get())
+                .add(ChertBlocks.CHERT_GOLD_ORE.get())
+                .add(LigniteBlocks.LIGNITE_GOLD_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_GOLD_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_GOLD_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_GOLD_ORE.get());
 
         tag(BlockTags.DIAMOND_ORES)
                 .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
@@ -684,7 +827,13 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(BluechistBlocks.BLUECHIST_LAPIS_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_LAPIS_ORE.get())
                 .add(ChalkBlocks.CHALK_LAPIS_ORE.get())
-                .add(ShaleBlocks.SHALE_LAPIS_ORE.get());
+                .add(ShaleBlocks.SHALE_LAPIS_ORE.get())
+                .add(ChertBlocks.CHERT_LAPIS_ORE.get())
+                .add(LigniteBlocks.LIGNITE_LAPIS_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_LAPIS_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_LAPIS_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_LAPIS_ORE.get());
+
 
         tag(BlockTags.REDSTONE_ORES)
                 .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
@@ -697,7 +846,12 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(BluechistBlocks.BLUECHIST_REDSTONE_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_REDSTONE_ORE.get())
                 .add(ChalkBlocks.CHALK_REDSTONE_ORE.get())
-                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get());
+                .add(ShaleBlocks.SHALE_REDSTONE_ORE.get())
+                .add(ChertBlocks.CHERT_REDSTONE_ORE.get())
+                .add(LigniteBlocks.LIGNITE_REDSTONE_ORE.get())
+                .add(DolomitBlocks.DOLOMIT_REDSTONE_ORE.get())
+                .add(EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get())
+                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get());
 
         // Defines blocks considered as overworld base stone for generation purposes
         tag(BlockTags.BASE_STONE_OVERWORLD)
@@ -712,7 +866,12 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(BluechistBlocks.BLUECHIST_BLOCK.get())
                 .add(GreenschistBlocks.GREENSCHIST_BLOCK.get())
                 .add(ChalkBlocks.CHALK_BLOCK.get())
-                .add(ShaleBlocks.SHALE_BLOCK.get());
+                .add(ShaleBlocks.SHALE_BLOCK.get())
+                .add(ChertBlocks.CHERT_BLOCK.get())
+                .add(LigniteBlocks.LIGNITE_BLOCK.get())
+                .add(DolomitBlocks.DOLOMIT_BLOCK.get())
+                .add(EclogiteBlocks.ECLOGITE_BLOCK.get())
+                .add(GreywackeBlocks.GREYWACKE_BLOCK.get());
 
         // Identifies all stairs
         tag(BlockTags.STAIRS)
@@ -754,7 +913,17 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(ChalkBlocks.CHALK_STAIRS.get())
 
-                .add(ShaleBlocks.SHALE_STAIRS.get());
+                .add(ShaleBlocks.SHALE_STAIRS.get())
+
+                .add(ChertBlocks.CHERT_STAIRS.get())
+
+                .add(LigniteBlocks.LIGNITE_STAIRS.get())
+
+                .add(DolomitBlocks.DOLOMIT_STAIRS.get())
+
+                .add(EclogiteBlocks.ECLOGITE_STAIRS.get())
+
+                .add(GreywackeBlocks.GREYWACKE_STAIRS.get());
 
         // Identifies all slabs
         tag(BlockTags.SLABS)
@@ -796,7 +965,17 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(ChalkBlocks.CHALK_BLOCK_SLAB.get())
 
-                .add(ShaleBlocks.SHALE_BLOCK_SLAB.get());
+                .add(ShaleBlocks.SHALE_BLOCK_SLAB.get())
+
+                .add(ChertBlocks.CHERT_BLOCK_SLAB.get())
+
+                .add(LigniteBlocks.LIGNITE_BLOCK_SLAB.get())
+
+                .add(DolomitBlocks.DOLOMIT_BLOCK_SLAB.get())
+
+                .add(EclogiteBlocks.ECLOGITE_BLOCK_SLAB.get())
+
+                .add(GreywackeBlocks.GREYWACKE_BLOCK_SLAB.get());
 
         // Identifies all walls
         tag(BlockTags.WALLS)
@@ -838,7 +1017,17 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(ChalkBlocks.CHALK_BLOCK_WALL.get())
 
-                .add(ShaleBlocks.SHALE_BLOCK_WALL.get());
+                .add(ShaleBlocks.SHALE_BLOCK_WALL.get())
+
+                .add(ChertBlocks.CHERT_BLOCK_WALL.get())
+
+                .add(LigniteBlocks.LIGNITE_BLOCK_WALL.get())
+
+                .add(DolomitBlocks.DOLOMIT_BLOCK_WALL.get())
+
+                .add(EclogiteBlocks.ECLOGITE_BLOCK_WALL.get())
+
+                .add(GreywackeBlocks.GREYWACKE_BLOCK_WALL.get());
 
         // Identifies all buttons
         tag(BlockTags.BUTTONS)
@@ -853,6 +1042,11 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(BluechistBlocks.BLUECHIST_STONE_BUTTON.get())
                 .add(GreenschistBlocks.GREENSCHIST_STONE_BUTTON.get())
                 .add(ChalkBlocks.CHALK_STONE_BUTTON.get())
-                .add(ShaleBlocks.SHALE_STONE_BUTTON.get());
+                .add(ShaleBlocks.SHALE_STONE_BUTTON.get())
+                .add(ChertBlocks.CHERT_STONE_BUTTON.get())
+                .add(LigniteBlocks.LIGNITE_STONE_BUTTON.get())
+                .add(DolomitBlocks.DOLOMIT_STONE_BUTTON.get())
+                .add(EclogiteBlocks.ECLOGITE_STONE_BUTTON.get())
+                .add(GreywackeBlocks.GREYWACKE_STONE_BUTTON.get());
     }
 }
