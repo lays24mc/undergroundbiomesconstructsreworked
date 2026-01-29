@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "undergroundbiomesconstructsreworked:block/bluechist_cobble_block",
-    "side": "undergroundbiomesconstructsreworked:block/bluechist_cobble_block",
-    "top": "undergroundbiomesconstructsreworked:block/bluechist_cobble_block"
-  }
-}

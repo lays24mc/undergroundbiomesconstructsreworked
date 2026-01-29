@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/blueschist_brick_block",
+    "side": "undergroundbiomesconstructsreworked:block/blueschist_brick_block",
+    "top": "undergroundbiomesconstructsreworked:block/blueschist_brick_block"
+  }
+}

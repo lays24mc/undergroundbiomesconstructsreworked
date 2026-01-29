@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/komatiite_brick_block",
+    "side": "undergroundbiomesconstructsreworked:block/komatiite_brick_block",
+    "top": "undergroundbiomesconstructsreworked:block/komatiite_brick_block"
+  }
+}

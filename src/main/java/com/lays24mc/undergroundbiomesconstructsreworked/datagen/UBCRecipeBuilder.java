@@ -65,7 +65,7 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         //====================================================
         // Blueschist
         //====================================================
-        buildBluechistRecipes(recipeOutput);
+        buildBlueschistRecipes(recipeOutput);
 
         //====================================================
         // Greenschist
@@ -405,41 +405,41 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
     }
 
     // ------------------------------------------------------------
-    // BLUECHIST RECIPES
+    // BLUESCHIST RECIPES
     // ------------------------------------------------------------
-    private void buildBluechistRecipes(RecipeOutput recipeOutput) {
+    private void buildBlueschistRecipes(RecipeOutput recipeOutput) {
 
-        List<ItemLike> BLUECHIST_SMELTABLES = List.of(BluechistBlocks.BLUECHIST_COBBLE_BLOCK);
-        List<ItemLike> BLUECHIST_COAL_SMELTABLES = List.of(BluechistBlocks.BLUECHIST_COAL_ORE);
-        List<ItemLike> BLUECHIST_COPPER_SMELTABLES = List.of(BluechistBlocks.BLUECHIST_COPPER_ORE);
-        List<ItemLike> BLUECHIST_IRON_SMELTABLES = List.of(BluechistBlocks.BLUECHIST_IRON_ORE);
-        List<ItemLike> BLUECHIST_GOLD_SMELTABLES = List.of(BluechistBlocks.BLUECHIST_GOLD_ORE);
-        List<ItemLike> BLUECHIST_REDSTONE_SMELTABLES = List.of(BluechistBlocks.BLUECHIST_REDSTONE_ORE);
-        List<ItemLike> BLUECHIST_LAPIS_SMELTABLES = List.of(BluechistBlocks.BLUECHIST_LAPIS_ORE);
+        List<ItemLike> BLUESCHIST_SMELTABLES = List.of(BlueschistBlocks.BLUESCHIST_COBBLE_BLOCK);
+        List<ItemLike> BLUESCHIST_COAL_SMELTABLES = List.of(BlueschistBlocks.BLUESCHIST_COAL_ORE);
+        List<ItemLike> BLUESCHIST_COPPER_SMELTABLES = List.of(BlueschistBlocks.BLUESCHIST_COPPER_ORE);
+        List<ItemLike> BLUESCHIST_IRON_SMELTABLES = List.of(BlueschistBlocks.BLUESCHIST_IRON_ORE);
+        List<ItemLike> BLUESCHIST_GOLD_SMELTABLES = List.of(BlueschistBlocks.BLUESCHIST_GOLD_ORE);
+        List<ItemLike> BLUESCHIST_REDSTONE_SMELTABLES = List.of(BlueschistBlocks.BLUESCHIST_REDSTONE_ORE);
+        List<ItemLike> BLUESCHIST_LAPIS_SMELTABLES = List.of(BlueschistBlocks.BLUESCHIST_LAPIS_ORE);
 
-        // Bluechist Brick (4x)
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BluechistBlocks.BLUECHIST_BRICK_BLOCK.get(), 4).pattern("AA").pattern("AA").define('A', BluechistBlocks.BLUECHIST_BLOCK.get()).unlockedBy("has_bluechist_block", has(BluechistBlocks.BLUECHIST_BLOCK)).save(recipeOutput);
+        // Blueschist Brick (4x)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlueschistBlocks.BLUESCHIST_BRICK_BLOCK.get(), 4).pattern("AA").pattern("AA").define('A', BlueschistBlocks.BLUESCHIST_BLOCK.get()).unlockedBy("has_blueschist_block", has(BlueschistBlocks.BLUESCHIST_BLOCK)).save(recipeOutput);
 
         // Stone Button
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BluechistBlocks.BLUECHIST_STONE_BUTTON.get()).pattern("A").define('A', BluechistBlocks.BLUECHIST_BLOCK.get()).unlockedBy("has_bluechist_block", has(BluechistBlocks.BLUECHIST_BLOCK)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlueschistBlocks.BLUESCHIST_STONE_BUTTON.get()).pattern("A").define('A', BlueschistBlocks.BLUESCHIST_BLOCK.get()).unlockedBy("has_blueschist_block", has(BlueschistBlocks.BLUESCHIST_BLOCK)).save(recipeOutput);
 
         // Smelting
-        oreSmelting(recipeOutput, BLUECHIST_SMELTABLES, RecipeCategory.MISC, BluechistBlocks.BLUECHIST_BLOCK.get(), 0.25f, 200, "bluechist");
-        oreSmelting(recipeOutput, BLUECHIST_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "bluechist");
-        oreSmelting(recipeOutput, BLUECHIST_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "bluechist");
-        oreSmelting(recipeOutput, BLUECHIST_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "bluechist");
-        oreSmelting(recipeOutput, BLUECHIST_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "bluechist");
-        oreSmelting(recipeOutput, BLUECHIST_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "bluechist");
-        oreSmelting(recipeOutput, BLUECHIST_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "bluechist");
+        oreSmelting(recipeOutput, BLUESCHIST_SMELTABLES, RecipeCategory.MISC, BlueschistBlocks.BLUESCHIST_BLOCK.get(), 0.25f, 200, "blueschist");
+        oreSmelting(recipeOutput, BLUESCHIST_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "blueschist");
+        oreSmelting(recipeOutput, BLUESCHIST_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "blueschist");
+        oreSmelting(recipeOutput, BLUESCHIST_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "blueschist");
+        oreSmelting(recipeOutput, BLUESCHIST_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "blueschist");
+        oreSmelting(recipeOutput, BLUESCHIST_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "blueschist");
+        oreSmelting(recipeOutput, BLUESCHIST_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "blueschist");
 
         // Blasting
         //        oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
 
         // Stairs, Slabs, Walls, Stonecutting
-        stairBuilder(BluechistBlocks.BLUECHIST_STAIRS.get(), Ingredient.of(BluechistBlocks.BLUECHIST_BLOCK)).group("bluechist").unlockedBy("has_bluechist_block", has(BluechistBlocks.BLUECHIST_BLOCK)).save(recipeOutput);
-        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, BluechistBlocks.BLUECHIST_BLOCK_SLAB.get(), BluechistBlocks.BLUECHIST_BLOCK.get());
-        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, BluechistBlocks.BLUECHIST_BLOCK_WALL.get(), BluechistBlocks.BLUECHIST_BLOCK.get());
-        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, BluechistBlocks.BLUECHIST_BLOCK_SLAB.get(), BluechistBlocks.BLUECHIST_BLOCK.get(), 2);
+        stairBuilder(BlueschistBlocks.BLUESCHIST_STAIRS.get(), Ingredient.of(BlueschistBlocks.BLUESCHIST_BLOCK)).group("blueschist").unlockedBy("has_blueschist_block", has(BlueschistBlocks.BLUESCHIST_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, BlueschistBlocks.BLUESCHIST_BLOCK_SLAB.get(), BlueschistBlocks.BLUESCHIST_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, BlueschistBlocks.BLUESCHIST_BLOCK_WALL.get(), BlueschistBlocks.BLUESCHIST_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, BlueschistBlocks.BLUESCHIST_BLOCK_SLAB.get(), BlueschistBlocks.BLUESCHIST_BLOCK.get(), 2);
     }
 
     private void buildGreenschistRecipes(RecipeOutput recipeOutput) {

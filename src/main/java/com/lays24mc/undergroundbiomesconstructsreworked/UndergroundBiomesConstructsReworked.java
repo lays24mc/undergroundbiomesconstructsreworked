@@ -51,7 +51,7 @@ public class UndergroundBiomesConstructsReworked {
         MarbleBlocks.register(modEventBus);
         LimestoneBlocks.register(modEventBus);
         SiltstoneBlocks.register(modEventBus);
-        BluechistBlocks.register(modEventBus);
+        BlueschistBlocks.register(modEventBus);
         GreenschistBlocks.register(modEventBus);
         ChalkBlocks.register(modEventBus);
         ShaleBlocks.register(modEventBus);

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "blueschist",
+  "key": {
+    "#": {
+      "item": "undergroundbiomesconstructsreworked:blueschist_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "undergroundbiomesconstructsreworked:blueschist_stairs"
+  }
+}

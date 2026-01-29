@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "undergroundbiomesconstructsreworked:bluechist_cobble_slab",
+                  "block": "undergroundbiomesconstructsreworked:blueschist_cobble_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,11 +25,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "undergroundbiomesconstructsreworked:bluechist_cobble_slab"
+          "name": "undergroundbiomesconstructsreworked:blueschist_cobble_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "undergroundbiomesconstructsreworked:blocks/bluechist_cobble_slab"
+  "random_sequence": "undergroundbiomesconstructsreworked:blocks/blueschist_cobble_slab"
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/dacite_brick_block",
+    "side": "undergroundbiomesconstructsreworked:block/dacite_brick_block",
+    "top": "undergroundbiomesconstructsreworked:block/dacite_brick_block"
+  }
+}

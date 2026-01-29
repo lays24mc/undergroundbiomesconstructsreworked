@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "undergroundbiomesconstructsreworked:bluechist_cobble_block"
+          "name": "undergroundbiomesconstructsreworked:blueschist_cobble_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "undergroundbiomesconstructsreworked:blocks/bluechist_cobble_block"
+  "random_sequence": "undergroundbiomesconstructsreworked:blocks/blueschist_cobble_block"
 }

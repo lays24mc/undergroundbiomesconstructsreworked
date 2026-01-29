@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "undergroundbiomesconstructsreworked:block/bluechist_cobble_block"
-  }
-}

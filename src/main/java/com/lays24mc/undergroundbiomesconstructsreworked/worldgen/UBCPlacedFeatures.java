@@ -141,18 +141,18 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SILTSTONE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("siltstone_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> SILTSTONE_LAPIS_ORE_PLACED_KEY = registerKey("siltstone_lapis_ore_placed");
 
-    public static final ResourceKey<PlacedFeature> BLUECHIST_BLOCK_PLACED_KEY = registerKey("bluechist_block_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_COAL_ORE_PLACED_KEY = registerKey("bluechist_coal_ore_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_COPPER_ORE_SMALL_PLACED_KEY = registerKey("bluechist_copper_ore_small_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_COPPER_ORE_LARGE_PLACED_KEY = registerKey("bluechist_copper_ore_large_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_IRON_ORE_UPPER_PLACED_KEY = registerKey("bluechist_iron_upper_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("bluechist_iron_middle_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_IRON_ORE_SMALL_PLACED_KEY = registerKey("bluechist_iron_small_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_GOLD_ORE_PLACED_KEY = registerKey("bluechist_gold_ore_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("bluechist_gold_ore_extra_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_REDSTONE_ORE_PLACED_KEY = registerKey("bluechist_redstone_ore_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("bluechist_redstone_ore_lower_placed");
-    public static final ResourceKey<PlacedFeature> BLUECHIST_LAPIS_ORE_PLACED_KEY = registerKey("bluechist_lapis_ore_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_BLOCK_PLACED_KEY = registerKey("blueschist_block_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_COAL_ORE_PLACED_KEY = registerKey("blueschist_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_COPPER_ORE_SMALL_PLACED_KEY = registerKey("blueschist_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_COPPER_ORE_LARGE_PLACED_KEY = registerKey("blueschist_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_IRON_ORE_UPPER_PLACED_KEY = registerKey("blueschist_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("blueschist_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_IRON_ORE_SMALL_PLACED_KEY = registerKey("blueschist_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_GOLD_ORE_PLACED_KEY = registerKey("blueschist_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("blueschist_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_REDSTONE_ORE_PLACED_KEY = registerKey("blueschist_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("blueschist_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> BLUESCHIST_LAPIS_ORE_PLACED_KEY = registerKey("blueschist_lapis_ore_placed");
 
     public static final ResourceKey<PlacedFeature> GREENSCHIST_BLOCK_PLACED_KEY = registerKey("greenschist_block_placed");
     public static final ResourceKey<PlacedFeature> GREENSCHIST_COAL_ORE_PLACED_KEY = registerKey("greenschist_coal_ore_placed");
@@ -1579,12 +1579,12 @@ public class UBCPlacedFeatures {
         );
 
         /* ------------------------------------------------------------
-         * BLUECHIST – Base stone
+         * BLUESCHIST – Base stone
          * ------------------------------------------------------------ */
 
-        // Bluechist base rock (rare, spans most of the world height)
-        register(context, BLUECHIST_BLOCK_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_BLOCK_KEY),
+        // Blueschist base rock (rare, spans most of the world height)
+        register(context, BLUESCHIST_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_BLOCK_KEY),
                 commonOrePlacement(
                         2,
                         HeightRangePlacement.uniform(
@@ -1594,9 +1594,9 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Bluechist coal ore (very common, high Y-levels)
-        register(context, BLUECHIST_COAL_ORE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_COAL_ORE_KEY),
+        // Blueschist coal ore (very common, high Y-levels)
+        register(context, BLUESCHIST_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_COAL_ORE_KEY),
                 commonOrePlacement(
                         30,
                         HeightRangePlacement.uniform(
@@ -1607,8 +1607,8 @@ public class UBCPlacedFeatures {
         );
 
         // Small copper veins
-        register(context, BLUECHIST_COPPER_ORE_SMALL_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_COPPER_ORE_SMALL_KEY),
+        register(context, BLUESCHIST_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
                         16,
                         HeightRangePlacement.triangle(
@@ -1619,8 +1619,8 @@ public class UBCPlacedFeatures {
         );
 
         // Large copper veins
-        register(context, BLUECHIST_COPPER_ORE_LARGE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_COPPER_ORE_LARGE_KEY),
+        register(context, BLUESCHIST_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
                         16,
                         HeightRangePlacement.triangle(
@@ -1631,8 +1631,8 @@ public class UBCPlacedFeatures {
         );
 
         // Iron ore – upper layer
-        register(context, BLUECHIST_IRON_ORE_UPPER_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_IRON_ORE_KEY),
+        register(context, BLUESCHIST_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_IRON_ORE_KEY),
                 commonOrePlacement(
                         90,
                         HeightRangePlacement.triangle(
@@ -1643,8 +1643,8 @@ public class UBCPlacedFeatures {
         );
 
         // Iron ore – middle layer
-        register(context, BLUECHIST_IRON_ORE_MIDDLE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_IRON_ORE_KEY),
+        register(context, BLUESCHIST_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_IRON_ORE_KEY),
                 commonOrePlacement(
                         10,
                         HeightRangePlacement.triangle(
@@ -1655,8 +1655,8 @@ public class UBCPlacedFeatures {
         );
 
         // Iron ore – small veins
-        register(context, BLUECHIST_IRON_ORE_SMALL_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_IRON_ORE_SMALL_KEY),
+        register(context, BLUESCHIST_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
                         10,
                         HeightRangePlacement.uniform(
@@ -1667,8 +1667,8 @@ public class UBCPlacedFeatures {
         );
 
         // Gold ore – standard distribution
-        register(context, BLUECHIST_GOLD_ORE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_GOLD_ORE_KEY),
+        register(context, BLUESCHIST_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_GOLD_ORE_KEY),
                 commonOrePlacement(
                         4,
                         HeightRangePlacement.triangle(
@@ -1679,8 +1679,8 @@ public class UBCPlacedFeatures {
         );
 
         // Gold ore – extra distribution (badlands-like, higher Y-levels)
-        register(context, BLUECHIST_GOLD_ORE_EXTRA_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_GOLD_ORE_EXTRA_KEY),
+        register(context, BLUESCHIST_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
                         50,
                         HeightRangePlacement.uniform(
@@ -1691,8 +1691,8 @@ public class UBCPlacedFeatures {
         );
 
         // Redstone ore – standard distribution
-        register(context, BLUECHIST_REDSTONE_ORE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_REDSTONE_ORE_KEY),
+        register(context, BLUESCHIST_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_REDSTONE_ORE_KEY),
                 commonOrePlacement(
                         4,
                         HeightRangePlacement.uniform(
@@ -1703,8 +1703,8 @@ public class UBCPlacedFeatures {
         );
 
         // Redstone ore – deep distribution
-        register(context, BLUECHIST_REDSTONE_ORE_LOWER_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_GOLD_ORE_EXTRA_KEY),
+        register(context, BLUESCHIST_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
                         8,
                         HeightRangePlacement.triangle(
@@ -1715,8 +1715,8 @@ public class UBCPlacedFeatures {
         );
 
         // Lapis ore
-        register(context, BLUECHIST_LAPIS_ORE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUECHIST_LAPIS_ORE_KEY),
+        register(context, BLUESCHIST_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_LAPIS_ORE_KEY),
                 commonOrePlacement(
                         2,
                         HeightRangePlacement.triangle(

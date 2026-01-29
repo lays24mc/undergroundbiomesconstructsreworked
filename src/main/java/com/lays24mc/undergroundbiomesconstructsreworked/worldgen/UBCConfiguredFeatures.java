@@ -131,17 +131,17 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_REDSTONE_ORE_LOWER_KEY = registerKey("siltstone_redstone_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILTSTONE_LAPIS_ORE_KEY = registerKey("siltstone_lapis_ore");
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_BLOCK_KEY = registerKey("bluechist_block");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_COAL_ORE_KEY = registerKey("bluechist_coal_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_COPPER_ORE_SMALL_KEY = registerKey("bluechist_copper_ore_small");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_COPPER_ORE_LARGE_KEY = registerKey("bluechist_copper_ore_large");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_IRON_ORE_KEY = registerKey("bluechist_iron_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_IRON_ORE_SMALL_KEY = registerKey("bluechist_iron_ore_small");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_GOLD_ORE_KEY = registerKey("bluechist_gold_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_GOLD_ORE_EXTRA_KEY = registerKey("bluechist_gold_ore_extra");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_REDSTONE_ORE_KEY = registerKey("bluechist_redstone_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_REDSTONE_ORE_LOWER_KEY = registerKey("bluechist_redstone_ore_lower");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUECHIST_LAPIS_ORE_KEY = registerKey("bluechist_lapis_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_BLOCK_KEY = registerKey("blueschist_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_COAL_ORE_KEY = registerKey("blueschist_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_COPPER_ORE_SMALL_KEY = registerKey("blueschist_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_COPPER_ORE_LARGE_KEY = registerKey("blueschist_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_IRON_ORE_KEY = registerKey("blueschist_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_IRON_ORE_SMALL_KEY = registerKey("blueschist_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_GOLD_ORE_KEY = registerKey("blueschist_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_GOLD_ORE_EXTRA_KEY = registerKey("blueschist_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_REDSTONE_ORE_KEY = registerKey("blueschist_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_REDSTONE_ORE_LOWER_KEY = registerKey("blueschist_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLUESCHIST_LAPIS_ORE_KEY = registerKey("blueschist_lapis_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_BLOCK_KEY = registerKey("greenschist_block");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREENSCHIST_COAL_ORE_KEY = registerKey("greenschist_coal_ore");
@@ -627,47 +627,47 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_SILTSTONE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(siltstoneRedstoneTargets, 8));
         register(context, OVERWORLD_SILTSTONE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(siltstoneLapisTargets, 7));
 
-        //Bluechist
-        List<OreConfiguration.TargetBlockState> overworldBluechistBlock = List.of(
-                OreConfiguration.target(stoneReplaceables, BluechistBlocks.BLUECHIST_BLOCK.get().defaultBlockState()),
-                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
-                        BluechistBlocks.BLUECHIST_COAL_ORE.get().defaultBlockState()));
+        //Blueschist
+        List<OreConfiguration.TargetBlockState> overworldBlueschistBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, BlueschistBlocks.BLUESCHIST_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(BlueschistBlocks.BLUESCHIST_BLOCK.get()),
+                        BlueschistBlocks.BLUESCHIST_COAL_ORE.get().defaultBlockState()));
 
-        List<OreConfiguration.TargetBlockState> bluechistCopperTargets = List.of(
-                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
-                        BluechistBlocks.BLUECHIST_COPPER_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> blueschistCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BlueschistBlocks.BLUESCHIST_BLOCK.get()),
+                        BlueschistBlocks.BLUESCHIST_COPPER_ORE.get().defaultBlockState()));
 
-        List<OreConfiguration.TargetBlockState> bluechistCoalTargets = List.of(
-                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
-                        BluechistBlocks.BLUECHIST_COAL_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> blueschistCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BlueschistBlocks.BLUESCHIST_BLOCK.get()),
+                        BlueschistBlocks.BLUESCHIST_COAL_ORE.get().defaultBlockState()));
 
-        List<OreConfiguration.TargetBlockState> bluechistIronTargets = List.of(
-                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
-                        BluechistBlocks.BLUECHIST_IRON_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> blueschistIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BlueschistBlocks.BLUESCHIST_BLOCK.get()),
+                        BlueschistBlocks.BLUESCHIST_IRON_ORE.get().defaultBlockState()));
 
-        List<OreConfiguration.TargetBlockState> bluechistGoldTargets = List.of(
-                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
-                        BluechistBlocks.BLUECHIST_GOLD_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> blueschistGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BlueschistBlocks.BLUESCHIST_BLOCK.get()),
+                        BlueschistBlocks.BLUESCHIST_GOLD_ORE.get().defaultBlockState()));
 
-        List<OreConfiguration.TargetBlockState> bluechistRedstoneTargets = List.of(
-                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
-                        BluechistBlocks.BLUECHIST_REDSTONE_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> blueschistRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BlueschistBlocks.BLUESCHIST_BLOCK.get()),
+                        BlueschistBlocks.BLUESCHIST_REDSTONE_ORE.get().defaultBlockState()));
 
-        List<OreConfiguration.TargetBlockState> bluechistLapisTargets = List.of(
-                OreConfiguration.target(new BlockMatchTest(BluechistBlocks.BLUECHIST_BLOCK.get()),
-                        BluechistBlocks.BLUECHIST_LAPIS_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> blueschistLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(BlueschistBlocks.BLUESCHIST_BLOCK.get()),
+                        BlueschistBlocks.BLUESCHIST_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_BLUECHIST_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldBluechistBlock, 64));
-        register(context, OVERWORLD_BLUECHIST_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistCoalTargets, 17));
-        register(context, OVERWORLD_BLUECHIST_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(bluechistCopperTargets, 10));
-        register(context, OVERWORLD_BLUECHIST_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(bluechistCopperTargets, 20));
-        register(context, OVERWORLD_BLUECHIST_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistIronTargets, 9));
-        register(context, OVERWORLD_BLUECHIST_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(bluechistIronTargets, 4));
-        register(context, OVERWORLD_BLUECHIST_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistGoldTargets, 9));
-        register(context, OVERWORLD_BLUECHIST_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(bluechistGoldTargets, 4, 0.5f));
-        register(context, OVERWORLD_BLUECHIST_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistRedstoneTargets, 8));
-        register(context, OVERWORLD_BLUECHIST_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(bluechistRedstoneTargets, 8));
-        register(context, OVERWORLD_BLUECHIST_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(bluechistLapisTargets, 7));
+        register(context, OVERWORLD_BLUESCHIST_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldBlueschistBlock, 64));
+        register(context, OVERWORLD_BLUESCHIST_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(blueschistCoalTargets, 17));
+        register(context, OVERWORLD_BLUESCHIST_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(blueschistCopperTargets, 10));
+        register(context, OVERWORLD_BLUESCHIST_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(blueschistCopperTargets, 20));
+        register(context, OVERWORLD_BLUESCHIST_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(blueschistIronTargets, 9));
+        register(context, OVERWORLD_BLUESCHIST_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(blueschistIronTargets, 4));
+        register(context, OVERWORLD_BLUESCHIST_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(blueschistGoldTargets, 9));
+        register(context, OVERWORLD_BLUESCHIST_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(blueschistGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_BLUESCHIST_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(blueschistRedstoneTargets, 8));
+        register(context, OVERWORLD_BLUESCHIST_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(blueschistRedstoneTargets, 8));
+        register(context, OVERWORLD_BLUESCHIST_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(blueschistLapisTargets, 7));
 
         //Greenschist
         List<OreConfiguration.TargetBlockState> overworldGreenschistBlock = List.of(

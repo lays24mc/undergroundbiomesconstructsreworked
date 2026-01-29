@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "undergroundbiomesconstructsreworked:bluechist_coal_ore"
+              "name": "undergroundbiomesconstructsreworked:blueschist_coal_ore"
             },
             {
               "type": "minecraft:item",
@@ -48,5 +48,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "undergroundbiomesconstructsreworked:blocks/bluechist_coal_ore"
+  "random_sequence": "undergroundbiomesconstructsreworked:blocks/blueschist_coal_ore"
 }
