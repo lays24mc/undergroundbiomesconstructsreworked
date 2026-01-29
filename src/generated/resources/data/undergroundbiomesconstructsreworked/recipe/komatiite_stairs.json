@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "komatiite",
+  "key": {
+    "#": {
+      "item": "undergroundbiomesconstructsreworked:komatiite_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "undergroundbiomesconstructsreworked:komatiite_stairs"
+  }
+}

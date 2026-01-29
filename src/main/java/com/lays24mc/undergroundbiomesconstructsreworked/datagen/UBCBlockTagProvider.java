@@ -177,7 +177,28 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get())
                 .add(GreywackeBlocks.GREYWACKE_LAPIS_ORE.get())
 
-        // Slabs
+                .add(KomatiiteBlocks.KOMATIITE_BLOCK.get())
+                .add(KomatiiteBlocks.KOMATIITE_COBBLE_BLOCK.get())
+                .add(KomatiiteBlocks.KOMATIITE_BRICK_BLOCK.get())
+                .add(KomatiiteBlocks.KOMATIITE_COAL_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_COPPER_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_IRON_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_GOLD_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_REDSTONE_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_LAPIS_ORE.get())
+
+                .add(DaciteBlocks.DACITE_BLOCK.get())
+                .add(DaciteBlocks.DACITE_COBBLE_BLOCK.get())
+                .add(DaciteBlocks.DACITE_BRICK_BLOCK.get())
+                .add(DaciteBlocks.DACITE_COAL_ORE.get())
+                .add(DaciteBlocks.DACITE_COPPER_ORE.get())
+                .add(DaciteBlocks.DACITE_IRON_ORE.get())
+                .add(DaciteBlocks.DACITE_GOLD_ORE.get())
+                .add(DaciteBlocks.DACITE_REDSTONE_ORE.get())
+                .add(DaciteBlocks.DACITE_LAPIS_ORE.get())
+
+
+                // Slabs
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COBBLE_SLAB.get())
                 .add(SoapstoneBlocks.SOAPSTONE_BRICK_SLAB.get())
@@ -227,6 +248,14 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(EclogiteBlocks.ECLOGITE_BLOCK_SLAB.get())
 
                 .add(GreywackeBlocks.GREYWACKE_BLOCK_SLAB.get())
+
+                .add(KomatiiteBlocks.KOMATIITE_BLOCK_SLAB.get())
+                .add(KomatiiteBlocks.KOMATIITE_COBBLE_SLAB.get())
+                .add(KomatiiteBlocks.KOMATIITE_BRICK_SLAB.get())
+
+                .add(DaciteBlocks.DACITE_BLOCK_SLAB.get())
+                .add(DaciteBlocks.DACITE_COBBLE_SLAB.get())
+                .add(DaciteBlocks.DACITE_BRICK_SLAB.get())
 
         // Stairs
                 .add(SoapstoneBlocks.SOAPSTONE_STAIRS.get())
@@ -279,6 +308,14 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(GreywackeBlocks.GREYWACKE_STAIRS.get())
 
+                .add(KomatiiteBlocks.KOMATIITE_STAIRS.get())
+                .add(KomatiiteBlocks.KOMATIITE_BRICK_STAIRS.get())
+                .add(KomatiiteBlocks.KOMATIITE_COBBLE_STAIRS.get())
+
+                .add(DaciteBlocks.DACITE_STAIRS.get())
+                .add(DaciteBlocks.DACITE_BRICK_STAIRS.get())
+                .add(DaciteBlocks.DACITE_COBBLE_STAIRS.get())
+
         // Walls
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COBBLE_WALL.get())
@@ -328,7 +365,15 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(EclogiteBlocks.ECLOGITE_BLOCK_WALL.get())
 
-                .add(GreywackeBlocks.GREYWACKE_BLOCK_WALL.get());
+                .add(GreywackeBlocks.GREYWACKE_BLOCK_WALL.get())
+
+                .add(KomatiiteBlocks.KOMATIITE_BLOCK_WALL.get())
+                .add(KomatiiteBlocks.KOMATIITE_COBBLE_WALL.get())
+                .add(KomatiiteBlocks.KOMATIITE_BRICK_WALL.get())
+
+                .add(DaciteBlocks.DACITE_BLOCK_WALL.get())
+                .add(DaciteBlocks.DACITE_COBBLE_WALL.get())
+                .add(DaciteBlocks.DACITE_BRICK_WALL.get());
 
         //tools tag
         tag(BlockTags.NEEDS_DIAMOND_TOOL);
@@ -386,7 +431,13 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get())
 
                 .add(GreywackeBlocks.GREYWACKE_GOLD_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get())
+
+                .add(KomatiiteBlocks.KOMATIITE_GOLD_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_REDSTONE_ORE.get())
+
+                .add(DaciteBlocks.DACITE_GOLD_ORE.get())
+                .add(DaciteBlocks.DACITE_REDSTONE_ORE.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
@@ -464,7 +515,16 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get())
                 .add(GreywackeBlocks.GREYWACKE_LAPIS_ORE.get())
                 .add(GreywackeBlocks.GREYWACKE_IRON_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get())
+
+                .add(KomatiiteBlocks.KOMATIITE_LAPIS_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_IRON_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_COPPER_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_COAL_ORE.get())
+                .add(DaciteBlocks.DACITE_LAPIS_ORE.get())
+                .add(DaciteBlocks.DACITE_IRON_ORE.get())
+                .add(DaciteBlocks.DACITE_COPPER_ORE.get())
+                .add(DaciteBlocks.DACITE_COAL_ORE.get());
 
         tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
                 .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
@@ -520,7 +580,13 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get())
 
                 .add(GreywackeBlocks.GREYWACKE_GOLD_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get())
+
+                .add(KomatiiteBlocks.KOMATIITE_GOLD_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_REDSTONE_ORE.get())
+
+                .add(DaciteBlocks.DACITE_GOLD_ORE.get())
+                .add(DaciteBlocks.DACITE_REDSTONE_ORE.get());
 
 
         tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
@@ -624,7 +690,19 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get())
                 .add(GreywackeBlocks.GREYWACKE_IRON_ORE.get())
                 .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get())
+
+                .add(KomatiiteBlocks.KOMATIITE_GOLD_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_REDSTONE_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_IRON_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_COPPER_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_COAL_ORE.get())
+
+                .add(DaciteBlocks.DACITE_GOLD_ORE.get())
+                .add(DaciteBlocks.DACITE_REDSTONE_ORE.get())
+                .add(DaciteBlocks.DACITE_IRON_ORE.get())
+                .add(DaciteBlocks.DACITE_COPPER_ORE.get())
+                .add(DaciteBlocks.DACITE_COAL_ORE.get());
 
         tag(BlockTags.INCORRECT_FOR_IRON_TOOL);
 
@@ -729,7 +807,19 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get())
                 .add(GreywackeBlocks.GREYWACKE_IRON_ORE.get())
                 .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get())
+
+                .add(KomatiiteBlocks.KOMATIITE_GOLD_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_REDSTONE_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_IRON_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_COPPER_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_COAL_ORE.get())
+
+                .add(DaciteBlocks.DACITE_GOLD_ORE.get())
+                .add(DaciteBlocks.DACITE_REDSTONE_ORE.get())
+                .add(DaciteBlocks.DACITE_IRON_ORE.get())
+                .add(DaciteBlocks.DACITE_COPPER_ORE.get())
+                .add(DaciteBlocks.DACITE_COAL_ORE.get());
 
         tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
 
@@ -749,7 +839,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LigniteBlocks.LIGNITE_COAL_ORE.get())
                 .add(DolomitBlocks.DOLOMIT_COAL_ORE.get())
                 .add(EclogiteBlocks.ECLOGITE_COAL_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_COAL_ORE.get())
+                .add(DaciteBlocks.DACITE_COAL_ORE.get());
 
         tag(BlockTags.COPPER_ORES)
                 .add(SoapstoneBlocks.SOAPSTONE_COPPER_ORE.get())
@@ -764,7 +856,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LigniteBlocks.LIGNITE_COPPER_ORE.get())
                 .add(DolomitBlocks.DOLOMIT_COPPER_ORE.get())
                 .add(EclogiteBlocks.ECLOGITE_COPPER_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_COPPER_ORE.get())
+                .add(DaciteBlocks.DACITE_COPPER_ORE.get());
 
         tag(BlockTags.IRON_ORES)
                 .add(SoapstoneBlocks.SOAPSTONE_IRON_ORE.get())
@@ -783,7 +877,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LigniteBlocks.LIGNITE_IRON_ORE.get())
                 .add(DolomitBlocks.DOLOMIT_IRON_ORE.get())
                 .add(EclogiteBlocks.ECLOGITE_IRON_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_IRON_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_IRON_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_IRON_ORE.get())
+                .add(DaciteBlocks.DACITE_IRON_ORE.get());
 
         tag(BlockTags.GOLD_ORES)
                 .add(SoapstoneBlocks.SOAPSTONE_GOLD_ORE.get())
@@ -802,7 +898,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LigniteBlocks.LIGNITE_GOLD_ORE.get())
                 .add(DolomitBlocks.DOLOMIT_GOLD_ORE.get())
                 .add(EclogiteBlocks.ECLOGITE_GOLD_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_GOLD_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_GOLD_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_GOLD_ORE.get())
+                .add(DaciteBlocks.DACITE_GOLD_ORE.get());
 
         tag(BlockTags.DIAMOND_ORES)
                 .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
@@ -817,6 +915,7 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(MarbleBlocks.MARBLE_EMERALD_ORE.get());
 
         tag(BlockTags.LAPIS_ORES)
+                .add(SoapstoneBlocks.SOAPSTONE_LAPIS_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_LAPIS_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_LAPIS_ORE.get())
@@ -832,10 +931,13 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LigniteBlocks.LIGNITE_LAPIS_ORE.get())
                 .add(DolomitBlocks.DOLOMIT_LAPIS_ORE.get())
                 .add(EclogiteBlocks.ECLOGITE_LAPIS_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_LAPIS_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_LAPIS_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_LAPIS_ORE.get())
+                .add(DaciteBlocks.DACITE_LAPIS_ORE.get());
 
 
         tag(BlockTags.REDSTONE_ORES)
+                .add(SoapstoneBlocks.SOAPSTONE_REDSTONE_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_REDSTONE_ORE.get())
                 .add(QuartziteBlocks.QUARTZITE_REDSTONE_ORE.get())
                 .add(MigmatiteBlocks.MIGMATITE_REDSTONE_ORE.get())
@@ -851,7 +953,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LigniteBlocks.LIGNITE_REDSTONE_ORE.get())
                 .add(DolomitBlocks.DOLOMIT_REDSTONE_ORE.get())
                 .add(EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get())
-                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get());
+                .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get())
+                .add(KomatiiteBlocks.KOMATIITE_REDSTONE_ORE.get())
+                .add(DaciteBlocks.DACITE_REDSTONE_ORE.get());
 
         // Defines blocks considered as overworld base stone for generation purposes
         tag(BlockTags.BASE_STONE_OVERWORLD)
@@ -871,7 +975,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LigniteBlocks.LIGNITE_BLOCK.get())
                 .add(DolomitBlocks.DOLOMIT_BLOCK.get())
                 .add(EclogiteBlocks.ECLOGITE_BLOCK.get())
-                .add(GreywackeBlocks.GREYWACKE_BLOCK.get());
+                .add(GreywackeBlocks.GREYWACKE_BLOCK.get())
+                .add(KomatiiteBlocks.KOMATIITE_BLOCK.get())
+                .add(DaciteBlocks.DACITE_BLOCK.get());
 
         // Identifies all stairs
         tag(BlockTags.STAIRS)
@@ -923,7 +1029,15 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(EclogiteBlocks.ECLOGITE_STAIRS.get())
 
-                .add(GreywackeBlocks.GREYWACKE_STAIRS.get());
+                .add(GreywackeBlocks.GREYWACKE_STAIRS.get())
+
+                .add(KomatiiteBlocks.KOMATIITE_STAIRS.get())
+                .add(KomatiiteBlocks.KOMATIITE_BRICK_STAIRS.get())
+                .add(KomatiiteBlocks.KOMATIITE_COBBLE_STAIRS.get())
+
+                .add(DaciteBlocks.DACITE_STAIRS.get())
+                .add(DaciteBlocks.DACITE_BRICK_STAIRS.get())
+                .add(DaciteBlocks.DACITE_COBBLE_STAIRS.get());
 
         // Identifies all slabs
         tag(BlockTags.SLABS)
@@ -975,7 +1089,15 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(EclogiteBlocks.ECLOGITE_BLOCK_SLAB.get())
 
-                .add(GreywackeBlocks.GREYWACKE_BLOCK_SLAB.get());
+                .add(GreywackeBlocks.GREYWACKE_BLOCK_SLAB.get())
+
+                .add(KomatiiteBlocks.KOMATIITE_BLOCK_SLAB.get())
+                .add(KomatiiteBlocks.KOMATIITE_COBBLE_SLAB.get())
+                .add(KomatiiteBlocks.KOMATIITE_BRICK_SLAB.get())
+
+                .add(DaciteBlocks.DACITE_BLOCK_SLAB.get())
+                .add(DaciteBlocks.DACITE_COBBLE_SLAB.get())
+                .add(DaciteBlocks.DACITE_BRICK_SLAB.get());
 
         // Identifies all walls
         tag(BlockTags.WALLS)
@@ -1027,7 +1149,15 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
 
                 .add(EclogiteBlocks.ECLOGITE_BLOCK_WALL.get())
 
-                .add(GreywackeBlocks.GREYWACKE_BLOCK_WALL.get());
+                .add(GreywackeBlocks.GREYWACKE_BLOCK_WALL.get())
+
+                .add(KomatiiteBlocks.KOMATIITE_BLOCK_WALL.get())
+                .add(KomatiiteBlocks.KOMATIITE_COBBLE_WALL.get())
+                .add(KomatiiteBlocks.KOMATIITE_BRICK_WALL.get())
+
+                .add(DaciteBlocks.DACITE_BLOCK_WALL.get())
+                .add(DaciteBlocks.DACITE_COBBLE_WALL.get())
+                .add(DaciteBlocks.DACITE_BRICK_WALL.get());
 
         // Identifies all buttons
         tag(BlockTags.BUTTONS)
@@ -1047,6 +1177,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LigniteBlocks.LIGNITE_STONE_BUTTON.get())
                 .add(DolomitBlocks.DOLOMIT_STONE_BUTTON.get())
                 .add(EclogiteBlocks.ECLOGITE_STONE_BUTTON.get())
-                .add(GreywackeBlocks.GREYWACKE_STONE_BUTTON.get());
+                .add(GreywackeBlocks.GREYWACKE_STONE_BUTTON.get())
+                .add(KomatiiteBlocks.KOMATIITE_STONE_BUTTON.get())
+                .add(DaciteBlocks.DACITE_STONE_BUTTON.get());
     }
 }

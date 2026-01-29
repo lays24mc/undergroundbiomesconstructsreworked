@@ -37,6 +37,10 @@
     "undergroundbiomesconstructsreworked:eclogite_gold_ore",
     "undergroundbiomesconstructsreworked:eclogite_redstone_ore",
     "undergroundbiomesconstructsreworked:greywacke_gold_ore",
-    "undergroundbiomesconstructsreworked:greywacke_redstone_ore"
+    "undergroundbiomesconstructsreworked:greywacke_redstone_ore",
+    "undergroundbiomesconstructsreworked:komatiite_gold_ore",
+    "undergroundbiomesconstructsreworked:komatiite_redstone_ore",
+    "undergroundbiomesconstructsreworked:dacite_gold_ore",
+    "undergroundbiomesconstructsreworked:dacite_redstone_ore"
   ]
 }

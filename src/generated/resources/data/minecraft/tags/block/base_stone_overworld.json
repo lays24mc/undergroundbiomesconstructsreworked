@@ -16,6 +16,8 @@
     "undergroundbiomesconstructsreworked:lignite_block",
     "undergroundbiomesconstructsreworked:dolomit_block",
     "undergroundbiomesconstructsreworked:eclogite_block",
-    "undergroundbiomesconstructsreworked:greywacke_block"
+    "undergroundbiomesconstructsreworked:greywacke_block",
+    "undergroundbiomesconstructsreworked:komatiite_block",
+    "undergroundbiomesconstructsreworked:dacite_block"
   ]
 }

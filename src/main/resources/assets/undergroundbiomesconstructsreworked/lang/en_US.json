@@ -284,6 +284,32 @@
   "block.undergroundbiomesconstructsreworked.greywacke_gold_ore": "Greywacke Gold Ore",
   "block.undergroundbiomesconstructsreworked.greywacke_emerald_ore": "Greywacke Emerald Ore",
   "block.undergroundbiomesconstructsreworked.greywacke_redstone_ore": "Greywacke Redstone Ore",
-  "block.undergroundbiomesconstructsreworked.greywacke_lapis_ore": "Greywacke Lapis Lazuli Ore"
+  "block.undergroundbiomesconstructsreworked.greywacke_lapis_ore": "Greywacke Lapis Lazuli Ore",
+
+  "block.undergroundbiomesconstructsreworked.komatiite_block": "Komatiite",
+  "block.undergroundbiomesconstructsreworked.komatiite_block_slab": "Komatiite Block Slab",
+  "block.undergroundbiomesconstructsreworked.komatiite_stairs": "Komatiite Stairs",
+  "block.undergroundbiomesconstructsreworked.komatiite_block_wall": "Komatiite Wall",
+  "block.undergroundbiomesconstructsreworked.komatiite_stone_button": "Komatiite Stone Button",
+  "block.undergroundbiomesconstructsreworked.komatiite_coal_ore": "Komatiite Coal Ore",
+  "block.undergroundbiomesconstructsreworked.komatiite_copper_ore": "Komatiite Copper Ore",
+  "block.undergroundbiomesconstructsreworked.komatiite_iron_ore": "Komatiite Iron Ore",
+  "block.undergroundbiomesconstructsreworked.komatiite_gold_ore": "Komatiite Gold Ore",
+  "block.undergroundbiomesconstructsreworked.komatiite_emerald_ore": "Komatiite Emerald Ore",
+  "block.undergroundbiomesconstructsreworked.komatiite_redstone_ore": "Komatiite Redstone Ore",
+  "block.undergroundbiomesconstructsreworked.komatiite_lapis_ore": "Komatiite Lapis Lazuli Ore",
+
+  "block.undergroundbiomesconstructsreworked.dacite_block": "Dacite",
+  "block.undergroundbiomesconstructsreworked.dacite_block_slab": "Dacite Block Slab",
+  "block.undergroundbiomesconstructsreworked.dacite_stairs": "Dacite Stairs",
+  "block.undergroundbiomesconstructsreworked.dacite_block_wall": "Dacite Wall",
+  "block.undergroundbiomesconstructsreworked.dacite_stone_button": "Dacite Stone Button",
+  "block.undergroundbiomesconstructsreworked.dacite_coal_ore": "Dacite Coal Ore",
+  "block.undergroundbiomesconstructsreworked.dacite_copper_ore": "Dacite Copper Ore",
+  "block.undergroundbiomesconstructsreworked.dacite_iron_ore": "Dacite Iron Ore",
+  "block.undergroundbiomesconstructsreworked.dacite_gold_ore": "Dacite Gold Ore",
+  "block.undergroundbiomesconstructsreworked.dacite_emerald_ore": "Dacite Emerald Ore",
+  "block.undergroundbiomesconstructsreworked.dacite_redstone_ore": "Dacite Redstone Ore",
+  "block.undergroundbiomesconstructsreworked.dacite_lapis_ore": "Dacite Lapis Lazuli Ore"
 
 }

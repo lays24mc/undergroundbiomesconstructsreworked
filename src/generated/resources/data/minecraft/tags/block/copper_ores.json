@@ -12,6 +12,8 @@
     "undergroundbiomesconstructsreworked:lignite_copper_ore",
     "undergroundbiomesconstructsreworked:dolomit_copper_ore",
     "undergroundbiomesconstructsreworked:eclogite_copper_ore",
-    "undergroundbiomesconstructsreworked:greywacke_copper_ore"
+    "undergroundbiomesconstructsreworked:greywacke_copper_ore",
+    "undergroundbiomesconstructsreworked:komatiite_copper_ore",
+    "undergroundbiomesconstructsreworked:dacite_copper_ore"
   ]
 }

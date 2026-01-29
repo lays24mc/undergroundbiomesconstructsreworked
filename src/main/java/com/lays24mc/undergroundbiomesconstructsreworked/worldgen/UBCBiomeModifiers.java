@@ -234,7 +234,31 @@ public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_GREYWACKE_REDSTONE_ORE_LOWER = registerKey("add_greywacke_redstone_ore_lower");
     public static final ResourceKey<BiomeModifier> ADD_GREYWACKE_LAPIS_ORE = registerKey("add_greywacke_lapis_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_BLOCK = registerKey("add_komatiite_block");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_COAL_ORE = registerKey("add_komatiite_coal_ore");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_COPPER_SMALL_ORE = registerKey("add_komatiite_copper_small_ore");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_COPPER_ORE_LARGE = registerKey("add_komatiite_copper_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_IRON_ORE_UPPER = registerKey("add_komatiite_iron_ore_upper");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_IRON_ORE_MIDDLE = registerKey("add_komatiite_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_IRON_ORE_SMALL = registerKey("add_komatiite_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_GOLD_ORE = registerKey("add_komatiite_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_GOLD_ORE_EXTRA = registerKey("add_komatiite_gold_ore_extra");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_REDSTONE_ORE = registerKey("add_komatiite_redstone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_REDSTONE_ORE_LOWER = registerKey("add_komatiite_redstone_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_KOMATIITE_LAPIS_ORE = registerKey("add_komatiite_lapis_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_BLOCK = registerKey("add_dacite_block");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_COAL_ORE = registerKey("add_dacite_coal_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_COPPER_SMALL_ORE = registerKey("add_dacite_copper_small_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_COPPER_ORE_LARGE = registerKey("add_dacite_copper_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_IRON_ORE_UPPER = registerKey("add_dacite_iron_ore_upper");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_IRON_ORE_MIDDLE = registerKey("add_dacite_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_IRON_ORE_SMALL = registerKey("add_dacite_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_GOLD_ORE = registerKey("add_dacite_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_GOLD_ORE_EXTRA = registerKey("add_dacite_gold_ore_extra");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_REDSTONE_ORE = registerKey("add_dacite_redstone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_REDSTONE_ORE_LOWER = registerKey("add_dacite_redstone_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_DACITE_LAPIS_ORE = registerKey("add_dacite_lapis_ore");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         // CF -> PF -> BM
@@ -1294,6 +1318,129 @@ public class UBCBiomeModifiers {
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GREYWACKE_LAPIS_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        // komatiite
+        context.register(ADD_KOMATIITE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_COAL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_COAL_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_COPPER_SMALL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_COPPER_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_COPPER_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_COPPER_ORE_LARGE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_IRON_ORE_UPPER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_IRON_ORE_UPPER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_IRON_ORE_MIDDLE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_GOLD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_GOLD_ORE_EXTRA, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_GOLD_ORE_EXTRA_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_REDSTONE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_REDSTONE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_REDSTONE_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_KOMATIITE_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.KOMATIITE_LAPIS_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        // dacite
+        context.register(ADD_DACITE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_COAL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_COAL_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_COPPER_SMALL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_COPPER_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_COPPER_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_COPPER_ORE_LARGE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_IRON_ORE_UPPER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_IRON_ORE_UPPER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_IRON_ORE_MIDDLE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_GOLD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_GOLD_ORE_EXTRA, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_GOLD_ORE_EXTRA_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_REDSTONE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_REDSTONE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_REDSTONE_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_DACITE_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_LAPIS_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
 
     }
 

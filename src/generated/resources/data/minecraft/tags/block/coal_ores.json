@@ -12,6 +12,8 @@
     "undergroundbiomesconstructsreworked:lignite_coal_ore",
     "undergroundbiomesconstructsreworked:dolomit_coal_ore",
     "undergroundbiomesconstructsreworked:eclogite_coal_ore",
-    "undergroundbiomesconstructsreworked:greywacke_coal_ore"
+    "undergroundbiomesconstructsreworked:greywacke_coal_ore",
+    "undergroundbiomesconstructsreworked:komatiite_coal_ore",
+    "undergroundbiomesconstructsreworked:dacite_coal_ore"
   ]
 }

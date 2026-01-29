@@ -244,6 +244,31 @@ public class UBCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_REDSTONE_ORE_LOWER_KEY = registerKey("greywacke_redstone_ore_lower");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GREYWACKE_LAPIS_ORE_KEY = registerKey("greywacke_lapis_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_BLOCK_KEY = registerKey("komatiite_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_COAL_ORE_KEY = registerKey("komatiite_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_COPPER_ORE_SMALL_KEY = registerKey("komatiite_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_COPPER_ORE_LARGE_KEY = registerKey("komatiite_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_IRON_ORE_KEY = registerKey("komatiite_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_IRON_ORE_SMALL_KEY = registerKey("komatiite_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_GOLD_ORE_KEY = registerKey("komatiite_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_GOLD_ORE_EXTRA_KEY = registerKey("komatiite_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_REDSTONE_ORE_KEY = registerKey("komatiite_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_REDSTONE_ORE_LOWER_KEY = registerKey("komatiite_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_KOMATIITE_LAPIS_ORE_KEY = registerKey("komatiite_lapis_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_BLOCK_KEY = registerKey("dacite_block");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_COAL_ORE_KEY = registerKey("dacite_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_COPPER_ORE_SMALL_KEY = registerKey("dacite_copper_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_COPPER_ORE_LARGE_KEY = registerKey("dacite_copper_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_IRON_ORE_KEY = registerKey("dacite_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_IRON_ORE_SMALL_KEY = registerKey("dacite_iron_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_GOLD_ORE_KEY = registerKey("dacite_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_GOLD_ORE_EXTRA_KEY = registerKey("dacite_gold_ore_extra");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_REDSTONE_ORE_KEY = registerKey("dacite_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_REDSTONE_ORE_LOWER_KEY = registerKey("dacite_redstone_ore_lower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DACITE_LAPIS_ORE_KEY = registerKey("dacite_lapis_ore");
+
+
 
     //public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
     //public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOAPSTONE_BLOCK_KEY = registerKey("soapstone_block");
@@ -993,7 +1018,92 @@ public class UBCConfiguredFeatures {
         register(context, OVERWORLD_GREYWACKE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(greywackeRedstoneTargets, 8));
         register(context, OVERWORLD_GREYWACKE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(greywackeRedstoneTargets, 8));
         register(context, OVERWORLD_GREYWACKE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(greywackeLapisTargets, 7));
-        
+
+        // Komatiite
+        List<OreConfiguration.TargetBlockState> overworldKomatiiteBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, KomatiiteBlocks.KOMATIITE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(KomatiiteBlocks.KOMATIITE_BLOCK.get()),
+                        KomatiiteBlocks.KOMATIITE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> komatiiteCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(KomatiiteBlocks.KOMATIITE_BLOCK.get()),
+                        KomatiiteBlocks.KOMATIITE_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> komatiiteCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(KomatiiteBlocks.KOMATIITE_BLOCK.get()),
+                        KomatiiteBlocks.KOMATIITE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> komatiiteIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(KomatiiteBlocks.KOMATIITE_BLOCK.get()),
+                        KomatiiteBlocks.KOMATIITE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> komatiiteGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(KomatiiteBlocks.KOMATIITE_BLOCK.get()),
+                        KomatiiteBlocks.KOMATIITE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> komatiiteRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(KomatiiteBlocks.KOMATIITE_BLOCK.get()),
+                        KomatiiteBlocks.KOMATIITE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> komatiiteLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(KomatiiteBlocks.KOMATIITE_BLOCK.get()),
+                        KomatiiteBlocks.KOMATIITE_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_KOMATIITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldKomatiiteBlock, 64));
+        register(context, OVERWORLD_KOMATIITE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(komatiiteCoalTargets, 17));
+        register(context, OVERWORLD_KOMATIITE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(komatiiteCopperTargets, 10));
+        register(context, OVERWORLD_KOMATIITE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(komatiiteCopperTargets, 20));
+        register(context, OVERWORLD_KOMATIITE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(komatiiteIronTargets, 9));
+        register(context, OVERWORLD_KOMATIITE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(komatiiteIronTargets, 4));
+        register(context, OVERWORLD_KOMATIITE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(komatiiteGoldTargets, 9));
+        register(context, OVERWORLD_KOMATIITE_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(komatiiteGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_KOMATIITE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(komatiiteRedstoneTargets, 8));
+        register(context, OVERWORLD_KOMATIITE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(komatiiteRedstoneTargets, 8));
+        register(context, OVERWORLD_KOMATIITE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(komatiiteLapisTargets, 7));
+
+        // Dacite
+        List<OreConfiguration.TargetBlockState> overworldDaciteBlock = List.of(
+                OreConfiguration.target(stoneReplaceables, DaciteBlocks.DACITE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(DaciteBlocks.DACITE_BLOCK.get()),
+                        DaciteBlocks.DACITE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> daciteCopperTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DaciteBlocks.DACITE_BLOCK.get()),
+                        DaciteBlocks.DACITE_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> daciteCoalTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DaciteBlocks.DACITE_BLOCK.get()),
+                        DaciteBlocks.DACITE_COAL_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> daciteIronTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DaciteBlocks.DACITE_BLOCK.get()),
+                        DaciteBlocks.DACITE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> daciteGoldTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DaciteBlocks.DACITE_BLOCK.get()),
+                        DaciteBlocks.DACITE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> daciteRedstoneTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DaciteBlocks.DACITE_BLOCK.get()),
+                        DaciteBlocks.DACITE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> daciteLapisTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(DaciteBlocks.DACITE_BLOCK.get()),
+                        DaciteBlocks.DACITE_LAPIS_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_DACITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldDaciteBlock, 64));
+        register(context, OVERWORLD_DACITE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(daciteCoalTargets, 17));
+        register(context, OVERWORLD_DACITE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(daciteCopperTargets, 10));
+        register(context, OVERWORLD_DACITE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(daciteCopperTargets, 20));
+        register(context, OVERWORLD_DACITE_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(daciteIronTargets, 9));
+        register(context, OVERWORLD_DACITE_IRON_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(daciteIronTargets, 4));
+        register(context, OVERWORLD_DACITE_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(daciteGoldTargets, 9));
+        register(context, OVERWORLD_DACITE_GOLD_ORE_EXTRA_KEY, Feature.ORE, new OreConfiguration(daciteGoldTargets, 4, 0.5f));
+        register(context, OVERWORLD_DACITE_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(daciteRedstoneTargets, 8));
+        register(context, OVERWORLD_DACITE_REDSTONE_ORE_LOWER_KEY, Feature.ORE, new OreConfiguration(daciteRedstoneTargets, 8));
+        register(context, OVERWORLD_DACITE_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(daciteLapisTargets, 7));
+
+
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

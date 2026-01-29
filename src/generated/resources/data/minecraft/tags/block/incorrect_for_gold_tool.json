@@ -84,6 +84,16 @@
     "undergroundbiomesconstructsreworked:greywacke_redstone_ore",
     "undergroundbiomesconstructsreworked:greywacke_iron_ore",
     "undergroundbiomesconstructsreworked:greywacke_copper_ore",
-    "undergroundbiomesconstructsreworked:greywacke_coal_ore"
+    "undergroundbiomesconstructsreworked:greywacke_coal_ore",
+    "undergroundbiomesconstructsreworked:komatiite_gold_ore",
+    "undergroundbiomesconstructsreworked:komatiite_redstone_ore",
+    "undergroundbiomesconstructsreworked:komatiite_iron_ore",
+    "undergroundbiomesconstructsreworked:komatiite_copper_ore",
+    "undergroundbiomesconstructsreworked:komatiite_coal_ore",
+    "undergroundbiomesconstructsreworked:dacite_gold_ore",
+    "undergroundbiomesconstructsreworked:dacite_redstone_ore",
+    "undergroundbiomesconstructsreworked:dacite_iron_ore",
+    "undergroundbiomesconstructsreworked:dacite_copper_ore",
+    "undergroundbiomesconstructsreworked:dacite_coal_ore"
   ]
 }

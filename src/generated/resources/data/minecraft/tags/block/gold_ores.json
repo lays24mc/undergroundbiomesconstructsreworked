@@ -16,6 +16,8 @@
     "undergroundbiomesconstructsreworked:lignite_gold_ore",
     "undergroundbiomesconstructsreworked:dolomit_gold_ore",
     "undergroundbiomesconstructsreworked:eclogite_gold_ore",
-    "undergroundbiomesconstructsreworked:greywacke_gold_ore"
+    "undergroundbiomesconstructsreworked:greywacke_gold_ore",
+    "undergroundbiomesconstructsreworked:komatiite_gold_ore",
+    "undergroundbiomesconstructsreworked:dacite_gold_ore"
   ]
 }

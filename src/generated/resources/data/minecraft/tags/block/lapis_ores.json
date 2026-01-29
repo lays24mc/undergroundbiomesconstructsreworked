@@ -1,5 +1,6 @@
 {
   "values": [
+    "undergroundbiomesconstructsreworked:soapstone_lapis_ore",
     "undergroundbiomesconstructsreworked:red_granite_lapis_ore",
     "undergroundbiomesconstructsreworked:quartzite_lapis_ore",
     "undergroundbiomesconstructsreworked:migmatite_lapis_ore",
@@ -15,6 +16,8 @@
     "undergroundbiomesconstructsreworked:lignite_lapis_ore",
     "undergroundbiomesconstructsreworked:dolomit_lapis_ore",
     "undergroundbiomesconstructsreworked:eclogite_lapis_ore",
-    "undergroundbiomesconstructsreworked:greywacke_lapis_ore"
+    "undergroundbiomesconstructsreworked:greywacke_lapis_ore",
+    "undergroundbiomesconstructsreworked:komatiite_lapis_ore",
+    "undergroundbiomesconstructsreworked:dacite_lapis_ore"
   ]
 }

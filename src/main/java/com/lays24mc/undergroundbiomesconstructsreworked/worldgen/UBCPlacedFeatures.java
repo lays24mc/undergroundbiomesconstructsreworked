@@ -263,6 +263,33 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GREYWACKE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("greywacke_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> GREYWACKE_LAPIS_ORE_PLACED_KEY = registerKey("greywacke_lapis_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> KOMATIITE_BLOCK_PLACED_KEY = registerKey("komatiite_block_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_COAL_ORE_PLACED_KEY = registerKey("komatiite_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("komatiite_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_COPPER_ORE_LARGE_PLACED_KEY = registerKey("komatiite_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_IRON_ORE_UPPER_PLACED_KEY = registerKey("komatiite_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("komatiite_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_IRON_ORE_SMALL_PLACED_KEY = registerKey("komatiite_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_GOLD_ORE_PLACED_KEY = registerKey("komatiite_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("komatiite_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_REDSTONE_ORE_PLACED_KEY = registerKey("komatiite_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("komatiite_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> KOMATIITE_LAPIS_ORE_PLACED_KEY = registerKey("komatiite_lapis_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> DACITE_BLOCK_PLACED_KEY = registerKey("dacite_block_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_COAL_ORE_PLACED_KEY = registerKey("dacite_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("dacite_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_COPPER_ORE_LARGE_PLACED_KEY = registerKey("dacite_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_IRON_ORE_UPPER_PLACED_KEY = registerKey("dacite_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("dacite_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_IRON_ORE_SMALL_PLACED_KEY = registerKey("dacite_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_GOLD_ORE_PLACED_KEY = registerKey("dacite_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("dacite_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_REDSTONE_ORE_PLACED_KEY = registerKey("dacite_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("dacite_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> DACITE_LAPIS_ORE_PLACED_KEY = registerKey("dacite_lapis_ore_placed");
+
+
 
     /**
      * Bootstrap method.
@@ -400,7 +427,7 @@ public class UBCPlacedFeatures {
 
         // Redstone ore – deep distribution
         register(context, SOAPSTONE_REDSTONE_ORE_LOWER_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_GOLD_ORE_EXTRA_KEY),
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_REDSTONE_ORE_LOWER_KEY),
                 commonOrePlacement(
                         8,
                         HeightRangePlacement.triangle(
@@ -2701,7 +2728,304 @@ public class UBCPlacedFeatures {
                                 VerticalAnchor.absolute(32)
                         ))
         );
-        
+
+        /* ------------------------------------------------------------
+         * KOMATIITE – Base stone
+         * ------------------------------------------------------------ */
+
+// Komatiite base rock (rare, spans most of the world height)
+        register(context, KOMATIITE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+// Komatiite coal ore (very common, high Y-levels)
+        register(context, KOMATIITE_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_COAL_ORE_KEY),
+                commonOrePlacement(
+                        30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        )
+                )
+        );
+
+// Small copper veins
+        register(context, KOMATIITE_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+// Large copper veins
+        register(context, KOMATIITE_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+// Iron ore – upper layer
+        register(context, KOMATIITE_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+// Iron ore – middle layer
+        register(context, KOMATIITE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        )
+                )
+        );
+
+// Iron ore – small veins
+        register(context, KOMATIITE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        )
+                )
+        );
+
+// Gold ore – standard distribution
+        register(context, KOMATIITE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+// Gold ore – extra distribution (higher Y-levels)
+        register(context, KOMATIITE_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        )
+                )
+        );
+
+// Redstone ore – standard distribution
+        register(context, KOMATIITE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+// Redstone ore – deep distribution
+        register(context, KOMATIITE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_REDSTONE_ORE_LOWER_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        )
+                )
+        );
+
+// Lapis ore
+        register(context, KOMATIITE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+        /* ------------------------------------------------------------
+         * DACITE – Base stone
+         * ------------------------------------------------------------ */
+
+// Dacite base rock (rare, spans most of the world height)
+        register(context, DACITE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-17),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+// Dacite coal ore (very common, high Y-levels)
+        register(context, DACITE_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_COAL_ORE_KEY),
+                commonOrePlacement(
+                        30,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(128),
+                                VerticalAnchor.top()
+                        )
+                )
+        );
+
+// Small copper veins
+        register(context, DACITE_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_COPPER_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+// Large copper veins
+        register(context, DACITE_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_COPPER_ORE_LARGE_KEY),
+                commonOrePlacement(
+                        16,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(112)
+                        )
+                )
+        );
+
+// Iron ore – upper layer
+        register(context, DACITE_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        90,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(80),
+                                VerticalAnchor.absolute(384)
+                        )
+                )
+        );
+
+// Iron ore – middle layer
+        register(context, DACITE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(56)
+                        )
+                )
+        );
+
+// Iron ore – small veins
+        register(context, DACITE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(72)
+                        )
+                )
+        );
+
+// Gold ore – standard distribution
+        register(context, DACITE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+// Gold ore – extra distribution (higher Y-levels)
+        register(context, DACITE_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_GOLD_ORE_EXTRA_KEY),
+                commonOrePlacement(
+                        50,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(32),
+                                VerticalAnchor.absolute(256)
+                        )
+                )
+        );
+
+// Redstone ore – standard distribution
+        register(context, DACITE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+// Redstone ore – deep distribution
+        register(context, DACITE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_REDSTONE_ORE_LOWER_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-16),
+                                VerticalAnchor.aboveBottom(32)
+                        )
+                )
+        );
+
+// Lapis ore
+        register(context, DACITE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(32)
+                        )
+                )
+        );
+
+
     }
 
     /**

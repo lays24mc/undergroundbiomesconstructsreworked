@@ -32,6 +32,12 @@
     "undergroundbiomesconstructsreworked:lignite_block_slab",
     "undergroundbiomesconstructsreworked:dolomit_block_slab",
     "undergroundbiomesconstructsreworked:eclogite_block_slab",
-    "undergroundbiomesconstructsreworked:greywacke_block_slab"
+    "undergroundbiomesconstructsreworked:greywacke_block_slab",
+    "undergroundbiomesconstructsreworked:komatiite_block_slab",
+    "undergroundbiomesconstructsreworked:komatiite_cobble_slab",
+    "undergroundbiomesconstructsreworked:komatiite_brick_slab",
+    "undergroundbiomesconstructsreworked:dacite_block_slab",
+    "undergroundbiomesconstructsreworked:dacite_cobble_slab",
+    "undergroundbiomesconstructsreworked:dacite_brick_slab"
   ]
 }

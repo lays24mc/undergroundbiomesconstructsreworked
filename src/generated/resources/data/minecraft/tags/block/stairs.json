@@ -32,6 +32,12 @@
     "undergroundbiomesconstructsreworked:lignite_stairs",
     "undergroundbiomesconstructsreworked:dolomit_stairs",
     "undergroundbiomesconstructsreworked:eclogite_stairs",
-    "undergroundbiomesconstructsreworked:greywacke_stairs"
+    "undergroundbiomesconstructsreworked:greywacke_stairs",
+    "undergroundbiomesconstructsreworked:komatiite_stairs",
+    "undergroundbiomesconstructsreworked:komatiite_brick_stairs",
+    "undergroundbiomesconstructsreworked:komatiite_cobble_stairs",
+    "undergroundbiomesconstructsreworked:dacite_stairs",
+    "undergroundbiomesconstructsreworked:dacite_brick_stairs",
+    "undergroundbiomesconstructsreworked:dacite_cobble_stairs"
   ]
 }

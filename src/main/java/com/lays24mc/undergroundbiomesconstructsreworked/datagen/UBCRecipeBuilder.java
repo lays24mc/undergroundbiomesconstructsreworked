@@ -107,6 +107,17 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         //====================================================
         buildGreywackeRecipes(recipeOutput);
 
+        //====================================================
+        // Komatiite
+        //====================================================
+        buildKomatiiteRecipes(recipeOutput);
+
+        //====================================================
+        // Dacite
+        //====================================================
+        buildDaciteRecipes(recipeOutput);
+
+
     }
 
     // ------------------------------------------------------------
@@ -690,7 +701,89 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreywackeBlocks.GREYWACKE_BLOCK_SLAB.get(), GreywackeBlocks.GREYWACKE_BLOCK.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreywackeBlocks.GREYWACKE_BLOCK_WALL.get(), GreywackeBlocks.GREYWACKE_BLOCK.get());
         stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, GreywackeBlocks.GREYWACKE_BLOCK_SLAB.get(), GreywackeBlocks.GREYWACKE_BLOCK.get(), 2);
+
     }
+
+    // ------------------------------------------------------------
+    // KOMATIITE RECIPES
+    // ------------------------------------------------------------
+    private void buildKomatiiteRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> KOMATIITE_SMELTABLES = List.of(KomatiiteBlocks.KOMATIITE_COBBLE_BLOCK);
+        List<ItemLike> KOMATIITE_COAL_SMELTABLES = List.of(KomatiiteBlocks.KOMATIITE_COAL_ORE);
+        List<ItemLike> KOMATIITE_COPPER_SMELTABLES = List.of(KomatiiteBlocks.KOMATIITE_COPPER_ORE);
+        List<ItemLike> KOMATIITE_IRON_SMELTABLES = List.of(KomatiiteBlocks.KOMATIITE_IRON_ORE);
+        List<ItemLike> KOMATIITE_GOLD_SMELTABLES = List.of(KomatiiteBlocks.KOMATIITE_GOLD_ORE);
+        List<ItemLike> KOMATIITE_REDSTONE_SMELTABLES = List.of(KomatiiteBlocks.KOMATIITE_REDSTONE_ORE);
+        List<ItemLike> KOMATIITE_LAPIS_SMELTABLES = List.of(KomatiiteBlocks.KOMATIITE_LAPIS_ORE);
+
+        // Komatiite Brick (4x)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, KomatiiteBlocks.KOMATIITE_BRICK_BLOCK.get(), 4)
+                .pattern("AA").pattern("AA").define('A', KomatiiteBlocks.KOMATIITE_BLOCK.get())
+                .unlockedBy("has_komatiite_block", has(KomatiiteBlocks.KOMATIITE_BLOCK)).save(recipeOutput);
+
+        // Stone Button
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, KomatiiteBlocks.KOMATIITE_STONE_BUTTON.get())
+                .pattern("A").define('A', KomatiiteBlocks.KOMATIITE_BLOCK.get())
+                .unlockedBy("has_komatiite_block", has(KomatiiteBlocks.KOMATIITE_BLOCK)).save(recipeOutput);
+
+        // Smelting
+        oreSmelting(recipeOutput, KOMATIITE_SMELTABLES, RecipeCategory.MISC, KomatiiteBlocks.KOMATIITE_BLOCK.get(), 0.25f, 200, "komatiite");
+        oreSmelting(recipeOutput, KOMATIITE_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "komatiite");
+        oreSmelting(recipeOutput, KOMATIITE_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "komatiite");
+        oreSmelting(recipeOutput, KOMATIITE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "komatiite");
+        oreSmelting(recipeOutput, KOMATIITE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "komatiite");
+        oreSmelting(recipeOutput, KOMATIITE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "komatiite");
+        oreSmelting(recipeOutput, KOMATIITE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "komatiite");
+
+        // Stairs, Slabs, Walls, Stonecutting
+        stairBuilder(KomatiiteBlocks.KOMATIITE_STAIRS.get(), Ingredient.of(KomatiiteBlocks.KOMATIITE_BLOCK))
+                .group("komatiite").unlockedBy("has_komatiite_block", has(KomatiiteBlocks.KOMATIITE_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, KomatiiteBlocks.KOMATIITE_BLOCK_SLAB.get(), KomatiiteBlocks.KOMATIITE_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, KomatiiteBlocks.KOMATIITE_BLOCK_WALL.get(), KomatiiteBlocks.KOMATIITE_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, KomatiiteBlocks.KOMATIITE_BLOCK_SLAB.get(), KomatiiteBlocks.KOMATIITE_BLOCK.get(), 2);
+    }
+
+    // ------------------------------------------------------------
+    // DACITE RECIPES
+    // ------------------------------------------------------------
+    private void buildDaciteRecipes(RecipeOutput recipeOutput) {
+
+        List<ItemLike> DACITE_SMELTABLES = List.of(DaciteBlocks.DACITE_COBBLE_BLOCK);
+        List<ItemLike> DACITE_COAL_SMELTABLES = List.of(DaciteBlocks.DACITE_COAL_ORE);
+        List<ItemLike> DACITE_COPPER_SMELTABLES = List.of(DaciteBlocks.DACITE_COPPER_ORE);
+        List<ItemLike> DACITE_IRON_SMELTABLES = List.of(DaciteBlocks.DACITE_IRON_ORE);
+        List<ItemLike> DACITE_GOLD_SMELTABLES = List.of(DaciteBlocks.DACITE_GOLD_ORE);
+        List<ItemLike> DACITE_REDSTONE_SMELTABLES = List.of(DaciteBlocks.DACITE_REDSTONE_ORE);
+        List<ItemLike> DACITE_LAPIS_SMELTABLES = List.of(DaciteBlocks.DACITE_LAPIS_ORE);
+
+        // Dacite Brick (4x)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DaciteBlocks.DACITE_BRICK_BLOCK.get(), 4)
+                .pattern("AA").pattern("AA").define('A', DaciteBlocks.DACITE_BLOCK.get())
+                .unlockedBy("has_dacite_block", has(DaciteBlocks.DACITE_BLOCK)).save(recipeOutput);
+
+        // Stone Button
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DaciteBlocks.DACITE_STONE_BUTTON.get())
+                .pattern("A").define('A', DaciteBlocks.DACITE_BLOCK.get())
+                .unlockedBy("has_dacite_block", has(DaciteBlocks.DACITE_BLOCK)).save(recipeOutput);
+
+        // Smelting
+        oreSmelting(recipeOutput, DACITE_SMELTABLES, RecipeCategory.MISC, DaciteBlocks.DACITE_BLOCK.get(), 0.25f, 200, "dacite");
+        oreSmelting(recipeOutput, DACITE_COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "dacite");
+        oreSmelting(recipeOutput, DACITE_COPPER_SMELTABLES, RecipeCategory.MISC, Items.RAW_COPPER, 0.25f, 200, "dacite");
+        oreSmelting(recipeOutput, DACITE_IRON_SMELTABLES, RecipeCategory.MISC, Items.RAW_IRON, 0.25f, 200, "dacite");
+        oreSmelting(recipeOutput, DACITE_GOLD_SMELTABLES, RecipeCategory.MISC, Items.RAW_GOLD, 0.25f, 200, "dacite");
+        oreSmelting(recipeOutput, DACITE_REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "dacite");
+        oreSmelting(recipeOutput, DACITE_LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "dacite");
+
+        // Stairs, Slabs, Walls, Stonecutting
+        stairBuilder(DaciteBlocks.DACITE_STAIRS.get(), Ingredient.of(DaciteBlocks.DACITE_BLOCK))
+                .group("dacite").unlockedBy("has_dacite_block", has(DaciteBlocks.DACITE_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, DaciteBlocks.DACITE_BLOCK_SLAB.get(), DaciteBlocks.DACITE_BLOCK.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, DaciteBlocks.DACITE_BLOCK_WALL.get(), DaciteBlocks.DACITE_BLOCK.get());
+        stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, DaciteBlocks.DACITE_BLOCK_SLAB.get(), DaciteBlocks.DACITE_BLOCK.get(), 2);
+    }
+
 
     // ------------------------------------------------------------
     // GENERIC COOKING HELPERS

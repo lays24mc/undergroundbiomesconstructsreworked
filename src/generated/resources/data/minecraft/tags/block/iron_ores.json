@@ -16,6 +16,8 @@
     "undergroundbiomesconstructsreworked:lignite_iron_ore",
     "undergroundbiomesconstructsreworked:dolomit_iron_ore",
     "undergroundbiomesconstructsreworked:eclogite_iron_ore",
-    "undergroundbiomesconstructsreworked:greywacke_iron_ore"
+    "undergroundbiomesconstructsreworked:greywacke_iron_ore",
+    "undergroundbiomesconstructsreworked:komatiite_iron_ore",
+    "undergroundbiomesconstructsreworked:dacite_iron_ore"
   ]
 }
