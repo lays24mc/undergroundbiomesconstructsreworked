@@ -195,18 +195,18 @@ public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_LIGNITE_REDSTONE_ORE_LOWER = registerKey("add_lignite_redstone_ore_lower");
     public static final ResourceKey<BiomeModifier> ADD_LIGNITE_LAPIS_ORE = registerKey("add_lignite_lapis_ore");
 
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_BLOCK = registerKey("add_dolomit_block");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_COAL_ORE = registerKey("add_dolomit_coal_ore");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_COPPER_SMALL_ORE = registerKey("add_dolomit_copper_small_ore");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_COPPER_ORE_LARGE = registerKey("add_dolomit_copper_ore_large");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_IRON_ORE_UPPER = registerKey("add_dolomit_iron_ore_upper");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_IRON_ORE_MIDDLE = registerKey("add_dolomit_iron_ore_middle");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_IRON_ORE_SMALL = registerKey("add_dolomit_iron_ore_small");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_GOLD_ORE = registerKey("add_dolomit_gold_ore");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_GOLD_ORE_EXTRA = registerKey("add_dolomit_gold_ore_extra");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_REDSTONE_ORE = registerKey("add_dolomit_redstone_ore");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_REDSTONE_ORE_LOWER = registerKey("add_dolomit_redstone_ore_lower");
-    public static final ResourceKey<BiomeModifier> ADD_DOLOMIT_LAPIS_ORE = registerKey("add_dolomit_lapis_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_BLOCK = registerKey("add_dolomite_block");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_COAL_ORE = registerKey("add_dolomite_coal_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_COPPER_SMALL_ORE = registerKey("add_dolomite_copper_small_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_COPPER_ORE_LARGE = registerKey("add_dolomite_copper_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_IRON_ORE_UPPER = registerKey("add_dolomite_iron_ore_upper");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_IRON_ORE_MIDDLE = registerKey("add_dolomite_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_IRON_ORE_SMALL = registerKey("add_dolomite_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_GOLD_ORE = registerKey("add_dolomite_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_GOLD_ORE_EXTRA = registerKey("add_dolomite_gold_ore_extra");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_REDSTONE_ORE = registerKey("add_dolomite_redstone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_REDSTONE_ORE_LOWER = registerKey("add_dolomite_redstone_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_DOLOMITE_LAPIS_ORE = registerKey("add_dolomite_lapis_ore");
 
     public static final ResourceKey<BiomeModifier> ADD_ECLOGITE_BLOCK = registerKey("add_eclogite_block");
     public static final ResourceKey<BiomeModifier> ADD_ECLOGITE_COAL_ORE = registerKey("add_eclogite_coal_ore");
@@ -259,6 +259,46 @@ public class UBCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_DACITE_REDSTONE_ORE = registerKey("add_dacite_redstone_ore");
     public static final ResourceKey<BiomeModifier> ADD_DACITE_REDSTONE_ORE_LOWER = registerKey("add_dacite_redstone_ore_lower");
     public static final ResourceKey<BiomeModifier> ADD_DACITE_LAPIS_ORE = registerKey("add_dacite_lapis_ore");
+
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_BLOCK = registerKey("add_black_granite_block");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_IRON_ORE_MIDDLE = registerKey("add_black_granite_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_IRON_ORE_SMALL = registerKey("add_black_granite_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_GOLD_ORE = registerKey("add_black_granite_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_GOLD_ORE_LOWER = registerKey("add_black_granite_gold_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_REDSTONE_ORE_LOWER = registerKey("add_black_granite_redstone_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_LAPIS_ORE = registerKey("add_black_granite_lapis_ore");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_DIAMOND_ORE_SMALL = registerKey("add_black_granite_diamond_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_DIAMOND_ORE_LARGE = registerKey("add_black_granite_diamond_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_DIAMOND_ORE_BURIED = registerKey("add_black_granite_diamond_ore_buried");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_DIAMOND_ORE_MEDIUM = registerKey("add_black_granite_diamond_ore_medium");
+    public static final ResourceKey<BiomeModifier> ADD_BLACK_GRANITE_EMERALD_ORE = registerKey("add_black_granite_emerald_ore");
+
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_BLOCK = registerKey("add_gabbro_block");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_IRON_ORE_MIDDLE = registerKey("add_gabbro_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_IRON_ORE_SMALL = registerKey("add_gabbro_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_GOLD_ORE = registerKey("add_gabbro_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_GOLD_ORE_LOWER = registerKey("add_gabbro_gold_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_REDSTONE_ORE_LOWER = registerKey("add_gabbro_redstone_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_LAPIS_ORE = registerKey("add_gabbro_lapis_ore");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_DIAMOND_ORE_SMALL = registerKey("add_gabbro_diamond_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_DIAMOND_ORE_LARGE = registerKey("add_gabbro_diamond_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_DIAMOND_ORE_BURIED = registerKey("add_gabbro_diamond_ore_buried");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_DIAMOND_ORE_MEDIUM = registerKey("add_gabbro_diamond_ore_medium");
+    public static final ResourceKey<BiomeModifier> ADD_GABBRO_EMERALD_ORE = registerKey("add_gabbro_emerald_ore");
+
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_BLOCK = registerKey("add_gneiss_block");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_IRON_ORE_MIDDLE = registerKey("add_gneiss_iron_ore_middle");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_IRON_ORE_SMALL = registerKey("add_gneiss_iron_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_GOLD_ORE = registerKey("add_gneiss_gold_ore");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_GOLD_ORE_LOWER = registerKey("add_gneiss_gold_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_REDSTONE_ORE_LOWER = registerKey("add_gneiss_redstone_ore_lower");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_LAPIS_ORE = registerKey("add_gneiss_lapis_ore");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_DIAMOND_ORE_SMALL = registerKey("add_gneiss_diamond_ore_small");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_DIAMOND_ORE_LARGE = registerKey("add_gneiss_diamond_ore_large");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_DIAMOND_ORE_BURIED = registerKey("add_gneiss_diamond_ore_buried");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_DIAMOND_ORE_MEDIUM = registerKey("add_gneiss_diamond_ore_medium");
+    public static final ResourceKey<BiomeModifier> ADD_GNEISS_EMERALD_ORE = registerKey("add_gneiss_emerald_ore");
+
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         // CF -> PF -> BM
@@ -1134,65 +1174,65 @@ public class UBCBiomeModifiers {
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
 
-// dolomit
-        context.register(ADD_DOLOMIT_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+// dolomite
+        context.register(ADD_DOLOMITE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_BLOCK_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_BLOCK_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_COAL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_COAL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_COAL_ORE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_COAL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_COPPER_SMALL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_COPPER_SMALL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_COPPER_ORE_SMALL_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_COPPER_ORE_SMALL_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_COPPER_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_COPPER_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_COPPER_ORE_LARGE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_COPPER_ORE_LARGE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_IRON_ORE_UPPER, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_IRON_ORE_UPPER, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_IRON_ORE_UPPER_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_IRON_ORE_UPPER_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_IRON_ORE_MIDDLE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_IRON_ORE_MIDDLE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_IRON_ORE_SMALL_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_IRON_ORE_SMALL_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_GOLD_ORE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_GOLD_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_GOLD_ORE_EXTRA, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_GOLD_ORE_EXTRA, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_GOLD_ORE_EXTRA_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_GOLD_ORE_EXTRA_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_REDSTONE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_REDSTONE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_REDSTONE_ORE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_REDSTONE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_REDSTONE_ORE_LOWER_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_REDSTONE_ORE_LOWER_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_DOLOMIT_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DOLOMITE_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMIT_LAPIS_ORE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DOLOMITE_LAPIS_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
 
@@ -1441,6 +1481,188 @@ public class UBCBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.DACITE_LAPIS_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
+        //black granite
+        context.register(ADD_BLACK_GRANITE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_IRON_ORE_MIDDLE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_GOLD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_GOLD_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_GOLD_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_REDSTONE_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_LAPIS_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_DIAMOND_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_DIAMOND_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_DIAMOND_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_DIAMOND_ORE_LARGE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_DIAMOND_ORE_BURIED, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_DIAMOND_ORE_BURIED_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_DIAMOND_ORE_MEDIUM, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_DIAMOND_ORE_MEDIUM_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_BLACK_GRANITE_EMERALD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.BLACK_GRANITE_EMERALD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+//gabbro
+        context.register(ADD_GABBRO_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_IRON_ORE_MIDDLE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_GOLD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_GOLD_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_GOLD_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_REDSTONE_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_LAPIS_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_DIAMOND_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_DIAMOND_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_DIAMOND_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_DIAMOND_ORE_LARGE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_DIAMOND_ORE_BURIED, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_DIAMOND_ORE_BURIED_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_DIAMOND_ORE_MEDIUM, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_DIAMOND_ORE_MEDIUM_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GABBRO_EMERALD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GABBRO_EMERALD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+//gneiss
+        context.register(ADD_GNEISS_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_IRON_ORE_MIDDLE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_IRON_ORE_MIDDLE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_IRON_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_IRON_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_GOLD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_GOLD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_GOLD_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_GOLD_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_REDSTONE_ORE_LOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_REDSTONE_ORE_LOWER_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_LAPIS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_LAPIS_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_DIAMOND_ORE_SMALL, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_DIAMOND_ORE_SMALL_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_DIAMOND_ORE_LARGE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_DIAMOND_ORE_LARGE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_DIAMOND_ORE_BURIED, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_DIAMOND_ORE_BURIED_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_DIAMOND_ORE_MEDIUM, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_DIAMOND_ORE_MEDIUM_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GNEISS_EMERALD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(UBCPlacedFeatures.GNEISS_EMERALD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
 
     }
 

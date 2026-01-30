@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/gneiss_cobble_block",
+    "side": "undergroundbiomesconstructsreworked:block/gneiss_cobble_block",
+    "top": "undergroundbiomesconstructsreworked:block/gneiss_cobble_block"
+  }
+}

@@ -14,10 +14,13 @@
     "undergroundbiomesconstructsreworked:shale_gold_ore",
     "undergroundbiomesconstructsreworked:chert_gold_ore",
     "undergroundbiomesconstructsreworked:lignite_gold_ore",
-    "undergroundbiomesconstructsreworked:dolomit_gold_ore",
+    "undergroundbiomesconstructsreworked:dolomite_gold_ore",
     "undergroundbiomesconstructsreworked:eclogite_gold_ore",
     "undergroundbiomesconstructsreworked:greywacke_gold_ore",
     "undergroundbiomesconstructsreworked:komatiite_gold_ore",
-    "undergroundbiomesconstructsreworked:dacite_gold_ore"
+    "undergroundbiomesconstructsreworked:dacite_gold_ore",
+    "undergroundbiomesconstructsreworked:black_granite_gold_ore",
+    "undergroundbiomesconstructsreworked:gabbro_gold_ore",
+    "undergroundbiomesconstructsreworked:gneiss_gold_ore"
   ]
 }

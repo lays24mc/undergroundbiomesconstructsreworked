@@ -221,19 +221,19 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> LIGNITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("lignite_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> LIGNITE_LAPIS_ORE_PLACED_KEY = registerKey("lignite_lapis_ore_placed");
 
-    // DOLOMIT
-    public static final ResourceKey<PlacedFeature> DOLOMIT_BLOCK_PLACED_KEY = registerKey("dolomit_block_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_COAL_ORE_PLACED_KEY = registerKey("dolomit_coal_ore_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_COPPER_ORE_SMALL_PLACED_KEY = registerKey("dolomit_copper_ore_small_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_COPPER_ORE_LARGE_PLACED_KEY = registerKey("dolomit_copper_ore_large_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_IRON_ORE_UPPER_PLACED_KEY = registerKey("dolomit_iron_upper_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("dolomit_iron_middle_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_IRON_ORE_SMALL_PLACED_KEY = registerKey("dolomit_iron_small_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_GOLD_ORE_PLACED_KEY = registerKey("dolomit_gold_ore_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("dolomit_gold_ore_extra_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_REDSTONE_ORE_PLACED_KEY = registerKey("dolomit_redstone_ore_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("dolomit_redstone_ore_lower_placed");
-    public static final ResourceKey<PlacedFeature> DOLOMIT_LAPIS_ORE_PLACED_KEY = registerKey("dolomit_lapis_ore_placed");
+    // DOLOMITE
+    public static final ResourceKey<PlacedFeature> DOLOMITE_BLOCK_PLACED_KEY = registerKey("dolomite_block_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_COAL_ORE_PLACED_KEY = registerKey("dolomite_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("dolomite_copper_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_COPPER_ORE_LARGE_PLACED_KEY = registerKey("dolomite_copper_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_IRON_ORE_UPPER_PLACED_KEY = registerKey("dolomite_iron_upper_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("dolomite_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_IRON_ORE_SMALL_PLACED_KEY = registerKey("dolomite_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_GOLD_ORE_PLACED_KEY = registerKey("dolomite_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_GOLD_ORE_EXTRA_PLACED_KEY = registerKey("dolomite_gold_ore_extra_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_REDSTONE_ORE_PLACED_KEY = registerKey("dolomite_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("dolomite_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> DOLOMITE_LAPIS_ORE_PLACED_KEY = registerKey("dolomite_lapis_ore_placed");
 
     // ECLOGITE
     public static final ResourceKey<PlacedFeature> ECLOGITE_BLOCK_PLACED_KEY = registerKey("eclogite_block_placed");
@@ -289,7 +289,50 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> DACITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("dacite_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> DACITE_LAPIS_ORE_PLACED_KEY = registerKey("dacite_lapis_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_BLOCK_PLACED_KEY = registerKey("black_granite_block_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("black_granite_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_IRON_ORE_SMALL_PLACED_KEY = registerKey("black_granite_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_GOLD_ORE_PLACED_KEY = registerKey("black_granite_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_GOLD_ORE_LOWER_PLACED_KEY = registerKey("black_granite_gold_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_REDSTONE_ORE_PLACED_KEY = registerKey("black_granite_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("black_granite_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_LAPIS_ORE_PLACED_KEY = registerKey("black_granite_lapis_ore_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_LAPIS_ORE_BURIED_PLACED_KEY = registerKey("black_granite_lapis_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_DIAMOND_ORE_SMALL_PLACED_KEY = registerKey("black_granite_diamond_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_DIAMOND_ORE_LARGE_PLACED_KEY = registerKey("black_granite_diamond_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_DIAMOND_ORE_BURIED_PLACED_KEY = registerKey("black_granite_diamond_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_DIAMOND_ORE_MEDIUM_PLACED_KEY = registerKey("black_granite_diamond_ore_medium_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_GRANITE_EMERALD_ORE_PLACED_KEY = registerKey("black_granite_emerald_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> GABBRO_BLOCK_PLACED_KEY = registerKey("gabbro_block_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("gabbro_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_IRON_ORE_SMALL_PLACED_KEY = registerKey("gabbro_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_GOLD_ORE_PLACED_KEY = registerKey("gabbro_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_GOLD_ORE_LOWER_PLACED_KEY = registerKey("gabbro_gold_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_REDSTONE_ORE_PLACED_KEY = registerKey("gabbro_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("gabbro_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_LAPIS_ORE_PLACED_KEY = registerKey("gabbro_lapis_ore_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_LAPIS_ORE_BURIED_PLACED_KEY = registerKey("gabbro_lapis_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_DIAMOND_ORE_SMALL_PLACED_KEY = registerKey("gabbro_diamond_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_DIAMOND_ORE_LARGE_PLACED_KEY = registerKey("gabbro_diamond_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_DIAMOND_ORE_BURIED_PLACED_KEY = registerKey("gabbro_diamond_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_DIAMOND_ORE_MEDIUM_PLACED_KEY = registerKey("gabbro_diamond_ore_medium_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_EMERALD_ORE_PLACED_KEY = registerKey("gabbro_emerald_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> GNEISS_BLOCK_PLACED_KEY = registerKey("gneiss_block_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_IRON_ORE_MIDDLE_PLACED_KEY = registerKey("gneiss_iron_middle_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_IRON_ORE_SMALL_PLACED_KEY = registerKey("gneiss_iron_small_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_GOLD_ORE_PLACED_KEY = registerKey("gneiss_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_GOLD_ORE_LOWER_PLACED_KEY = registerKey("gneiss_gold_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_REDSTONE_ORE_PLACED_KEY = registerKey("gneiss_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("gneiss_redstone_ore_lower_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_LAPIS_ORE_PLACED_KEY = registerKey("gneiss_lapis_ore_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_LAPIS_ORE_BURIED_PLACED_KEY = registerKey("gneiss_lapis_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_DIAMOND_ORE_SMALL_PLACED_KEY = registerKey("gneiss_diamond_ore_small_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_DIAMOND_ORE_LARGE_PLACED_KEY = registerKey("gneiss_diamond_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_DIAMOND_ORE_BURIED_PLACED_KEY = registerKey("gneiss_diamond_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_DIAMOND_ORE_MEDIUM_PLACED_KEY = registerKey("gneiss_diamond_ore_medium_placed");
+    public static final ResourceKey<PlacedFeature> GNEISS_EMERALD_ORE_PLACED_KEY = registerKey("gneiss_emerald_ore_placed");
 
     /**
      * Bootstrap method.
@@ -2395,10 +2438,10 @@ public class UBCPlacedFeatures {
 
 
         /* ------------------------------------------------------------
-         * DOLOMIT – Base stone
+         * DOLOMITE – Base stone
          * ------------------------------------------------------------ */
-        register(context, DOLOMIT_BLOCK_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_BLOCK_KEY),
+        register(context, DOLOMITE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_BLOCK_KEY),
                 commonOrePlacement(2,
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
@@ -2406,8 +2449,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_COAL_ORE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_COAL_ORE_KEY),
+        register(context, DOLOMITE_COAL_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_COAL_ORE_KEY),
                 commonOrePlacement(30,
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(128),
@@ -2415,8 +2458,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_COPPER_ORE_SMALL_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_COPPER_ORE_SMALL_KEY),
+        register(context, DOLOMITE_COPPER_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(16,
                         HeightRangePlacement.triangle(
                                 VerticalAnchor.absolute(-16),
@@ -2424,8 +2467,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_COPPER_ORE_LARGE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_COPPER_ORE_LARGE_KEY),
+        register(context, DOLOMITE_COPPER_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(16,
                         HeightRangePlacement.triangle(
                                 VerticalAnchor.absolute(-16),
@@ -2433,8 +2476,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_IRON_ORE_UPPER_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_IRON_ORE_KEY),
+        register(context, DOLOMITE_IRON_ORE_UPPER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_IRON_ORE_KEY),
                 commonOrePlacement(90,
                         HeightRangePlacement.triangle(
                                 VerticalAnchor.absolute(80),
@@ -2442,8 +2485,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_IRON_ORE_MIDDLE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_IRON_ORE_KEY),
+        register(context, DOLOMITE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_IRON_ORE_KEY),
                 commonOrePlacement(10,
                         HeightRangePlacement.triangle(
                                 VerticalAnchor.absolute(-16),
@@ -2451,8 +2494,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_IRON_ORE_SMALL_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_IRON_ORE_SMALL_KEY),
+        register(context, DOLOMITE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(10,
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.bottom(),
@@ -2460,8 +2503,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_GOLD_ORE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_GOLD_ORE_KEY),
+        register(context, DOLOMITE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_GOLD_ORE_KEY),
                 commonOrePlacement(4,
                         HeightRangePlacement.triangle(
                                 VerticalAnchor.absolute(-16),
@@ -2469,8 +2512,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_GOLD_ORE_EXTRA_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_GOLD_ORE_EXTRA_KEY),
+        register(context, DOLOMITE_GOLD_ORE_EXTRA_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(50,
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(32),
@@ -2478,8 +2521,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_REDSTONE_ORE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_REDSTONE_ORE_KEY),
+        register(context, DOLOMITE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_REDSTONE_ORE_KEY),
                 commonOrePlacement(4,
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.bottom(),
@@ -2487,8 +2530,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_REDSTONE_ORE_LOWER_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_GOLD_ORE_EXTRA_KEY),
+        register(context, DOLOMITE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(8,
                         HeightRangePlacement.triangle(
                                 VerticalAnchor.aboveBottom(-16),
@@ -2496,8 +2539,8 @@ public class UBCPlacedFeatures {
                         ))
         );
 
-        register(context, DOLOMIT_LAPIS_ORE_PLACED_KEY,
-                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMIT_LAPIS_ORE_KEY),
+        register(context, DOLOMITE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_LAPIS_ORE_KEY),
                 commonOrePlacement(2,
                         HeightRangePlacement.triangle(
                                 VerticalAnchor.absolute(-16),
@@ -3025,6 +3068,481 @@ public class UBCPlacedFeatures {
                 )
         );
 
+        /* ------------------------------------------------------------
+         * BLACK GRANITE
+         * ------------------------------------------------------------ */
+
+        register(context, BLACK_GRANITE_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-24),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_GOLD_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_GOLD_ORE_LOWER_KEY),
+                UBCOrePlacements.orePlacement(
+                        CountPlacement.of(UniformInt.of(0, 1)),
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-48)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_REDSTONE_ORE_LOWER_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-32),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-32),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_LAPIS_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(64)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_DIAMOND_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_DIAMOND_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        7,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_DIAMOND_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_DIAMOND_ORE_LARGE_KEY),
+                rareOrePlacement(
+                        9,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_DIAMOND_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_DIAMOND_ORE_BURIED_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_DIAMOND_ORE_MEDIUM_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_DIAMOND_ORE_MEDIUM_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-4)
+                        )
+                )
+        );
+
+        register(context, BLACK_GRANITE_EMERALD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_EMERALD_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+
+        /* ------------------------------------------------------------
+         * GABBRO
+         * ------------------------------------------------------------ */
+
+        register(context, GABBRO_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, GABBRO_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-24),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, GABBRO_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, GABBRO_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, GABBRO_GOLD_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_GOLD_ORE_LOWER_KEY),
+                UBCOrePlacements.orePlacement(
+                        CountPlacement.of(UniformInt.of(0, 1)),
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-48)
+                        )
+                )
+        );
+
+        register(context, GABBRO_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+        register(context, GABBRO_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_REDSTONE_ORE_LOWER_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-32),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, GABBRO_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-32),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, GABBRO_LAPIS_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(64)
+                        )
+                )
+        );
+
+        register(context, GABBRO_DIAMOND_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_DIAMOND_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        7,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, GABBRO_DIAMOND_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_DIAMOND_ORE_LARGE_KEY),
+                rareOrePlacement(
+                        9,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, GABBRO_DIAMOND_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_DIAMOND_ORE_BURIED_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, GABBRO_DIAMOND_ORE_MEDIUM_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_DIAMOND_ORE_MEDIUM_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-4)
+                        )
+                )
+        );
+
+        register(context, GABBRO_EMERALD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_EMERALD_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+
+        /* ------------------------------------------------------------
+         * GNEISS
+         * ------------------------------------------------------------ */
+
+        register(context, GNEISS_BLOCK_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_BLOCK_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, GNEISS_IRON_ORE_MIDDLE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_IRON_ORE_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-24),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, GNEISS_IRON_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_IRON_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        10,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, GNEISS_GOLD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_GOLD_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, GNEISS_GOLD_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_GOLD_ORE_LOWER_KEY),
+                UBCOrePlacements.orePlacement(
+                        CountPlacement.of(UniformInt.of(0, 1)),
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-48)
+                        )
+                )
+        );
+
+        register(context, GNEISS_REDSTONE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_REDSTONE_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(15)
+                        )
+                )
+        );
+
+        register(context, GNEISS_REDSTONE_ORE_LOWER_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_REDSTONE_ORE_LOWER_KEY),
+                commonOrePlacement(
+                        8,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-32),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, GNEISS_LAPIS_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-32),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
+
+        register(context, GNEISS_LAPIS_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_LAPIS_ORE_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.bottom(),
+                                VerticalAnchor.absolute(64)
+                        )
+                )
+        );
+
+        register(context, GNEISS_DIAMOND_ORE_SMALL_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_DIAMOND_ORE_SMALL_KEY),
+                commonOrePlacement(
+                        7,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, GNEISS_DIAMOND_ORE_LARGE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_DIAMOND_ORE_LARGE_KEY),
+                rareOrePlacement(
+                        9,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, GNEISS_DIAMOND_ORE_BURIED_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_DIAMOND_ORE_BURIED_KEY),
+                commonOrePlacement(
+                        4,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.aboveBottom(-80),
+                                VerticalAnchor.aboveBottom(0)
+                        )
+                )
+        );
+
+        register(context, GNEISS_DIAMOND_ORE_MEDIUM_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_DIAMOND_ORE_MEDIUM_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-64),
+                                VerticalAnchor.absolute(-4)
+                        )
+                )
+        );
+
+        register(context, GNEISS_EMERALD_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_EMERALD_ORE_KEY),
+                commonOrePlacement(
+                        2,
+                        HeightRangePlacement.triangle(
+                                VerticalAnchor.absolute(-16),
+                                VerticalAnchor.absolute(0)
+                        )
+                )
+        );
 
     }
 

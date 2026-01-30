@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "undergroundbiomesconstructsreworked:block/dolomite_block",
+    "side": "undergroundbiomesconstructsreworked:block/dolomite_block",
+    "top": "undergroundbiomesconstructsreworked:block/dolomite_block"
+  }
+}

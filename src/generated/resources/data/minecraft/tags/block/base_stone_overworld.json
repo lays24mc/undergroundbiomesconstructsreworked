@@ -14,10 +14,13 @@
     "undergroundbiomesconstructsreworked:shale_block",
     "undergroundbiomesconstructsreworked:chert_block",
     "undergroundbiomesconstructsreworked:lignite_block",
-    "undergroundbiomesconstructsreworked:dolomit_block",
+    "undergroundbiomesconstructsreworked:dolomite_block",
     "undergroundbiomesconstructsreworked:eclogite_block",
     "undergroundbiomesconstructsreworked:greywacke_block",
     "undergroundbiomesconstructsreworked:komatiite_block",
-    "undergroundbiomesconstructsreworked:dacite_block"
+    "undergroundbiomesconstructsreworked:dacite_block",
+    "undergroundbiomesconstructsreworked:black_granite_block",
+    "undergroundbiomesconstructsreworked:gabbro_block",
+    "undergroundbiomesconstructsreworked:gneiss_block"
   ]
 }

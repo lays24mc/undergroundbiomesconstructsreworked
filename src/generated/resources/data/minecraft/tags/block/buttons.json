@@ -14,10 +14,13 @@
     "undergroundbiomesconstructsreworked:shale_stone_button",
     "undergroundbiomesconstructsreworked:chert_stone_button",
     "undergroundbiomesconstructsreworked:lignite_stone_button",
-    "undergroundbiomesconstructsreworked:dolomit_stone_button",
+    "undergroundbiomesconstructsreworked:dolomite_stone_button",
     "undergroundbiomesconstructsreworked:eclogite_stone_button",
     "undergroundbiomesconstructsreworked:greywacke_stone_button",
     "undergroundbiomesconstructsreworked:komatiite_stone_button",
-    "undergroundbiomesconstructsreworked:dacite_stone_button"
+    "undergroundbiomesconstructsreworked:dacite_stone_button",
+    "undergroundbiomesconstructsreworked:black_granite_stone_button",
+    "undergroundbiomesconstructsreworked:gabbro_stone_button",
+    "undergroundbiomesconstructsreworked:gneiss_stone_button"
   ]
 }

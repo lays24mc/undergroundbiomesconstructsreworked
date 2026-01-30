@@ -169,13 +169,13 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(LigniteBlocks.LIGNITE_REDSTONE_ORE);
         blockWithItem(LigniteBlocks.LIGNITE_LAPIS_ORE);
 
-        blockWithItem(DolomitBlocks.DOLOMIT_BLOCK);
-        blockWithItem(DolomitBlocks.DOLOMIT_COAL_ORE);
-        blockWithItem(DolomitBlocks.DOLOMIT_COPPER_ORE);
-        blockWithItem(DolomitBlocks.DOLOMIT_IRON_ORE);
-        blockWithItem(DolomitBlocks.DOLOMIT_GOLD_ORE);
-        blockWithItem(DolomitBlocks.DOLOMIT_REDSTONE_ORE);
-        blockWithItem(DolomitBlocks.DOLOMIT_LAPIS_ORE);
+        blockWithItem(DolomiteBlocks.DOLOMITE_BLOCK);
+        blockWithItem(DolomiteBlocks.DOLOMITE_COAL_ORE);
+        blockWithItem(DolomiteBlocks.DOLOMITE_COPPER_ORE);
+        blockWithItem(DolomiteBlocks.DOLOMITE_IRON_ORE);
+        blockWithItem(DolomiteBlocks.DOLOMITE_GOLD_ORE);
+        blockWithItem(DolomiteBlocks.DOLOMITE_REDSTONE_ORE);
+        blockWithItem(DolomiteBlocks.DOLOMITE_LAPIS_ORE);
 
         blockWithItem(EclogiteBlocks.ECLOGITE_BLOCK);
         blockWithItem(EclogiteBlocks.ECLOGITE_COAL_ORE);
@@ -213,7 +213,35 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockWithItem(DaciteBlocks.DACITE_REDSTONE_ORE);
         blockWithItem(DaciteBlocks.DACITE_LAPIS_ORE);
 
+        blockWithItem(BlackGraniteBlocks.BLACK_GRANITE_BLOCK);
+        blockWithItem(BlackGraniteBlocks.BLACK_GRANITE_COBBLE_BLOCK);
+        blockWithItem(BlackGraniteBlocks.BLACK_GRANITE_BRICK_BLOCK);
+        blockWithItem(BlackGraniteBlocks.BLACK_GRANITE_IRON_ORE);
+        blockWithItem(BlackGraniteBlocks.BLACK_GRANITE_GOLD_ORE);
+        blockWithItem(BlackGraniteBlocks.BLACK_GRANITE_REDSTONE_ORE);
+        blockWithItem(BlackGraniteBlocks.BLACK_GRANITE_LAPIS_ORE);
+        blockWithItem(BlackGraniteBlocks.BLACK_GRANITE_DIAMOND_ORE);
+        blockWithItem(BlackGraniteBlocks.BLACK_GRANITE_EMERALD_ORE);
 
+        blockWithItem(GabbroBlocks.GABBRO_BLOCK);
+        blockWithItem(GabbroBlocks.GABBRO_COBBLE_BLOCK);
+        blockWithItem(GabbroBlocks.GABBRO_BRICK_BLOCK);
+        blockWithItem(GabbroBlocks.GABBRO_IRON_ORE);
+        blockWithItem(GabbroBlocks.GABBRO_GOLD_ORE);
+        blockWithItem(GabbroBlocks.GABBRO_REDSTONE_ORE);
+        blockWithItem(GabbroBlocks.GABBRO_LAPIS_ORE);
+        blockWithItem(GabbroBlocks.GABBRO_DIAMOND_ORE);
+        blockWithItem(GabbroBlocks.GABBRO_EMERALD_ORE);
+
+        blockWithItem(GneissBlocks.GNEISS_BLOCK);
+        blockWithItem(GneissBlocks.GNEISS_COBBLE_BLOCK);
+        blockWithItem(GneissBlocks.GNEISS_BRICK_BLOCK);
+        blockWithItem(GneissBlocks.GNEISS_IRON_ORE);
+        blockWithItem(GneissBlocks.GNEISS_GOLD_ORE);
+        blockWithItem(GneissBlocks.GNEISS_REDSTONE_ORE);
+        blockWithItem(GneissBlocks.GNEISS_LAPIS_ORE);
+        blockWithItem(GneissBlocks.GNEISS_DIAMOND_ORE);
+        blockWithItem(GneissBlocks.GNEISS_EMERALD_ORE);
 
         // --------------------------
         // Register buttons
@@ -232,13 +260,14 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         buttonWithItem((UBCButtonsBlocks) ShaleBlocks.SHALE_STONE_BUTTON.get(), "shale_stone_button", "shale_block");
         buttonWithItem((UBCButtonsBlocks) ChertBlocks.CHERT_STONE_BUTTON.get(), "chert_stone_button", "chert_block");
         buttonWithItem((UBCButtonsBlocks) LigniteBlocks.LIGNITE_STONE_BUTTON.get(), "lignite_stone_button", "lignite_block");
-        buttonWithItem((UBCButtonsBlocks) DolomitBlocks.DOLOMIT_STONE_BUTTON.get(), "dolomit_stone_button", "dolomit_block");
+        buttonWithItem((UBCButtonsBlocks) DolomiteBlocks.DOLOMITE_STONE_BUTTON.get(), "dolomite_stone_button", "dolomite_block");
         buttonWithItem((UBCButtonsBlocks) EclogiteBlocks.ECLOGITE_STONE_BUTTON.get(), "eclogite_stone_button", "eclogite_block");
         buttonWithItem((UBCButtonsBlocks) GreywackeBlocks.GREYWACKE_STONE_BUTTON.get(), "greywacke_stone_button", "greywacke_block");
         buttonWithItem((UBCButtonsBlocks) KomatiiteBlocks.KOMATIITE_STONE_BUTTON.get(), "komatiite_stone_button", "komatiite_block");
         buttonWithItem((UBCButtonsBlocks) DaciteBlocks.DACITE_STONE_BUTTON.get(), "dacite_stone_button", "dacite_block");
-
-
+        buttonWithItem((UBCButtonsBlocks) BlackGraniteBlocks.BLACK_GRANITE_STONE_BUTTON.get(), "blackgranite_stone_button", "black_granite_block");
+        buttonWithItem((UBCButtonsBlocks) GabbroBlocks.GABBRO_STONE_BUTTON.get(), "gabbro_stone_button", "gabbro_block");
+        buttonWithItem((UBCButtonsBlocks) GneissBlocks.GNEISS_STONE_BUTTON.get(), "gneiss_stone_button", "gneiss_block");
 
         // --------------------------
         // Register stairs, slabs, and walls, blocks multiple
@@ -325,8 +354,8 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockItem(LigniteBlocks.LIGNITE_STAIRS);
         blockItem(LigniteBlocks.LIGNITE_BLOCK_SLAB);
 
-        blockItem(DolomitBlocks.DOLOMIT_STAIRS);
-        blockItem(DolomitBlocks.DOLOMIT_BLOCK_SLAB);
+        blockItem(DolomiteBlocks.DOLOMITE_STAIRS);
+        blockItem(DolomiteBlocks.DOLOMITE_BLOCK_SLAB);
 
         blockItem(EclogiteBlocks.ECLOGITE_STAIRS);
         blockItem(EclogiteBlocks.ECLOGITE_BLOCK_SLAB);
@@ -350,7 +379,29 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         blockItem(DaciteBlocks.DACITE_COBBLE_SLAB);
         blockItem(DaciteBlocks.DACITE_BRICK_SLAB);
 
+        blockItem(BlackGraniteBlocks.BLACK_GRANITE_STAIRS);
+        blockItem(BlackGraniteBlocks.BLACK_GRANITE_COBBLE_STAIRS);
+        blockItem(BlackGraniteBlocks.BLACK_GRANITE_BRICK_STAIRS);
 
+        blockItem(BlackGraniteBlocks.BLACK_GRANITE_BLOCK_SLAB);
+        blockItem(BlackGraniteBlocks.BLACK_GRANITE_COBBLE_SLAB);
+        blockItem(BlackGraniteBlocks.BLACK_GRANITE_BRICK_SLAB);
+
+        blockItem(GabbroBlocks.GABBRO_STAIRS);
+        blockItem(GabbroBlocks.GABBRO_COBBLE_STAIRS);
+        blockItem(GabbroBlocks.GABBRO_BRICK_STAIRS);
+
+        blockItem(GabbroBlocks.GABBRO_BLOCK_SLAB);
+        blockItem(GabbroBlocks.GABBRO_COBBLE_SLAB);
+        blockItem(GabbroBlocks.GABBRO_BRICK_SLAB);
+
+        blockItem(GneissBlocks.GNEISS_STAIRS);
+        blockItem(GneissBlocks.GNEISS_COBBLE_STAIRS);
+        blockItem(GneissBlocks.GNEISS_BRICK_STAIRS);
+
+        blockItem(GneissBlocks.GNEISS_BLOCK_SLAB);
+        blockItem(GneissBlocks.GNEISS_COBBLE_SLAB);
+        blockItem(GneissBlocks.GNEISS_BRICK_SLAB);
 
         //Wall items
         wallItem(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL, SoapstoneBlocks.SOAPSTONE_BLOCK.get());
@@ -398,7 +449,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         wallItem(LigniteBlocks.LIGNITE_BLOCK_WALL, LigniteBlocks.LIGNITE_BLOCK.get());
 
-        wallItem(DolomitBlocks.DOLOMIT_BLOCK_WALL, DolomitBlocks.DOLOMIT_BLOCK.get());
+        wallItem(DolomiteBlocks.DOLOMITE_BLOCK_WALL, DolomiteBlocks.DOLOMITE_BLOCK.get());
 
         wallItem(EclogiteBlocks.ECLOGITE_BLOCK_WALL, EclogiteBlocks.ECLOGITE_BLOCK.get());
 
@@ -412,7 +463,17 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallItem(DaciteBlocks.DACITE_COBBLE_WALL, DaciteBlocks.DACITE_COBBLE_BLOCK.get());
         wallItem(DaciteBlocks.DACITE_BRICK_WALL, DaciteBlocks.DACITE_BRICK_BLOCK.get());
 
+        wallItem(BlackGraniteBlocks.BLACK_GRANITE_BLOCK_WALL, BlackGraniteBlocks.BLACK_GRANITE_BLOCK.get());
+        wallItem(BlackGraniteBlocks.BLACK_GRANITE_COBBLE_WALL, BlackGraniteBlocks.BLACK_GRANITE_COBBLE_BLOCK.get());
+        wallItem(BlackGraniteBlocks.BLACK_GRANITE_BRICK_WALL, BlackGraniteBlocks.BLACK_GRANITE_BRICK_BLOCK.get());
 
+        wallItem(GabbroBlocks.GABBRO_BLOCK_WALL, GabbroBlocks.GABBRO_BLOCK.get());
+        wallItem(GabbroBlocks.GABBRO_COBBLE_WALL, GabbroBlocks.GABBRO_COBBLE_BLOCK.get());
+        wallItem(GabbroBlocks.GABBRO_BRICK_WALL, GabbroBlocks.GABBRO_BRICK_BLOCK.get());
+
+        wallItem(GneissBlocks.GNEISS_BLOCK_WALL, GneissBlocks.GNEISS_BLOCK.get());
+        wallItem(GneissBlocks.GNEISS_COBBLE_WALL, GneissBlocks.GNEISS_COBBLE_BLOCK.get());
+        wallItem(GneissBlocks.GNEISS_BRICK_WALL, GneissBlocks.GNEISS_BRICK_BLOCK.get());
 
         // Stairs
         stairsBlock((UBCStairsBlocks) SoapstoneBlocks.SOAPSTONE_STAIRS.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
@@ -459,7 +520,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         stairsBlock((UBCStairsBlocks) LigniteBlocks.LIGNITE_STAIRS.get(), blockTexture(LigniteBlocks.LIGNITE_BLOCK.get()));
 
-        stairsBlock((UBCStairsBlocks) DolomitBlocks.DOLOMIT_STAIRS.get(), blockTexture(DolomitBlocks.DOLOMIT_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) DolomiteBlocks.DOLOMITE_STAIRS.get(), blockTexture(DolomiteBlocks.DOLOMITE_BLOCK.get()));
 
         stairsBlock((UBCStairsBlocks) EclogiteBlocks.ECLOGITE_STAIRS.get(), blockTexture(EclogiteBlocks.ECLOGITE_BLOCK.get()));
 
@@ -472,6 +533,18 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         stairsBlock((UBCStairsBlocks) DaciteBlocks.DACITE_STAIRS.get(), blockTexture(DaciteBlocks.DACITE_BLOCK.get()));
         stairsBlock((UBCStairsBlocks) DaciteBlocks.DACITE_COBBLE_STAIRS.get(), blockTexture(DaciteBlocks.DACITE_COBBLE_BLOCK.get()));
         stairsBlock((UBCStairsBlocks) DaciteBlocks.DACITE_BRICK_STAIRS.get(), blockTexture(DaciteBlocks.DACITE_BRICK_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) BlackGraniteBlocks.BLACK_GRANITE_STAIRS.get(), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) BlackGraniteBlocks.BLACK_GRANITE_COBBLE_STAIRS.get(), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_COBBLE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) BlackGraniteBlocks.BLACK_GRANITE_BRICK_STAIRS.get(), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_BRICK_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) GabbroBlocks.GABBRO_STAIRS.get(), blockTexture(GabbroBlocks.GABBRO_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) GabbroBlocks.GABBRO_COBBLE_STAIRS.get(), blockTexture(GabbroBlocks.GABBRO_COBBLE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) GabbroBlocks.GABBRO_BRICK_STAIRS.get(), blockTexture(GabbroBlocks.GABBRO_BRICK_BLOCK.get()));
+
+        stairsBlock((UBCStairsBlocks) GneissBlocks.GNEISS_STAIRS.get(), blockTexture(GneissBlocks.GNEISS_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) GneissBlocks.GNEISS_COBBLE_STAIRS.get(), blockTexture(GneissBlocks.GNEISS_COBBLE_BLOCK.get()));
+        stairsBlock((UBCStairsBlocks) GneissBlocks.GNEISS_BRICK_STAIRS.get(), blockTexture(GneissBlocks.GNEISS_BRICK_BLOCK.get()));
 
         // Slabs
         slabBlock((UBCSlabBlocks) SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get(), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()), blockTexture(SoapstoneBlocks.SOAPSTONE_BLOCK.get()));
@@ -518,7 +591,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         slabBlock((UBCSlabBlocks) LigniteBlocks.LIGNITE_BLOCK_SLAB.get(), blockTexture(LigniteBlocks.LIGNITE_BLOCK.get()), blockTexture(LigniteBlocks.LIGNITE_BLOCK.get()));
 
-        slabBlock((UBCSlabBlocks) DolomitBlocks.DOLOMIT_BLOCK_SLAB.get(), blockTexture(DolomitBlocks.DOLOMIT_BLOCK.get()), blockTexture(DolomitBlocks.DOLOMIT_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) DolomiteBlocks.DOLOMITE_BLOCK_SLAB.get(), blockTexture(DolomiteBlocks.DOLOMITE_BLOCK.get()), blockTexture(DolomiteBlocks.DOLOMITE_BLOCK.get()));
 
         slabBlock((UBCSlabBlocks) EclogiteBlocks.ECLOGITE_BLOCK_SLAB.get(), blockTexture(EclogiteBlocks.ECLOGITE_BLOCK.get()), blockTexture(EclogiteBlocks.ECLOGITE_BLOCK.get()));
 
@@ -531,6 +604,18 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         slabBlock((UBCSlabBlocks) DaciteBlocks.DACITE_BLOCK_SLAB.get(), blockTexture(DaciteBlocks.DACITE_BLOCK.get()), blockTexture(DaciteBlocks.DACITE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) DaciteBlocks.DACITE_COBBLE_SLAB.get(), blockTexture(DaciteBlocks.DACITE_COBBLE_BLOCK.get()), blockTexture(DaciteBlocks.DACITE_COBBLE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) DaciteBlocks.DACITE_BRICK_SLAB.get(), blockTexture(DaciteBlocks.DACITE_BRICK_BLOCK.get()), blockTexture(DaciteBlocks.DACITE_BRICK_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) BlackGraniteBlocks.BLACK_GRANITE_BLOCK_SLAB.get(), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_BLOCK.get()), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) BlackGraniteBlocks.BLACK_GRANITE_COBBLE_SLAB.get(), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_COBBLE_BLOCK.get()), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_COBBLE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) BlackGraniteBlocks.BLACK_GRANITE_BRICK_SLAB.get(), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_BRICK_BLOCK.get()), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_BRICK_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) GabbroBlocks.GABBRO_BLOCK_SLAB.get(), blockTexture(GabbroBlocks.GABBRO_BLOCK.get()), blockTexture(GabbroBlocks.GABBRO_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) GabbroBlocks.GABBRO_COBBLE_SLAB.get(), blockTexture(GabbroBlocks.GABBRO_COBBLE_BLOCK.get()), blockTexture(GabbroBlocks.GABBRO_COBBLE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) GabbroBlocks.GABBRO_BRICK_SLAB.get(), blockTexture(GabbroBlocks.GABBRO_BRICK_BLOCK.get()), blockTexture(GabbroBlocks.GABBRO_BRICK_BLOCK.get()));
+
+        slabBlock((UBCSlabBlocks) GneissBlocks.GNEISS_BLOCK_SLAB.get(), blockTexture(GneissBlocks.GNEISS_BLOCK.get()), blockTexture(GneissBlocks.GNEISS_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) GneissBlocks.GNEISS_COBBLE_SLAB.get(), blockTexture(GneissBlocks.GNEISS_COBBLE_BLOCK.get()), blockTexture(GneissBlocks.GNEISS_COBBLE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) GneissBlocks.GNEISS_BRICK_SLAB.get(), blockTexture(GneissBlocks.GNEISS_BRICK_BLOCK.get()), blockTexture(GneissBlocks.GNEISS_BRICK_BLOCK.get()));
 
 
         // Walls
@@ -578,7 +663,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         wallBlock((UBCWallBlocks) LigniteBlocks.LIGNITE_BLOCK_WALL.get(), blockTexture(LigniteBlocks.LIGNITE_BLOCK.get()));
 
-        wallBlock((UBCWallBlocks) DolomitBlocks.DOLOMIT_BLOCK_WALL.get(), blockTexture(DolomitBlocks.DOLOMIT_BLOCK.get()));
+        wallBlock((UBCWallBlocks) DolomiteBlocks.DOLOMITE_BLOCK_WALL.get(), blockTexture(DolomiteBlocks.DOLOMITE_BLOCK.get()));
 
         wallBlock((UBCWallBlocks) EclogiteBlocks.ECLOGITE_BLOCK_WALL.get(), blockTexture(EclogiteBlocks.ECLOGITE_BLOCK.get()));
 
@@ -592,6 +677,17 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         wallBlock((UBCWallBlocks) DaciteBlocks.DACITE_COBBLE_WALL.get(), blockTexture(DaciteBlocks.DACITE_COBBLE_BLOCK.get()));
         wallBlock((UBCWallBlocks) DaciteBlocks.DACITE_BRICK_WALL.get(), blockTexture(DaciteBlocks.DACITE_BRICK_BLOCK.get()));
 
+        wallBlock((UBCWallBlocks) BlackGraniteBlocks.BLACK_GRANITE_BLOCK_WALL.get(), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) BlackGraniteBlocks.BLACK_GRANITE_COBBLE_WALL.get(), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_COBBLE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) BlackGraniteBlocks.BLACK_GRANITE_BRICK_WALL.get(), blockTexture(BlackGraniteBlocks.BLACK_GRANITE_BRICK_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) GabbroBlocks.GABBRO_BLOCK_WALL.get(), blockTexture(GabbroBlocks.GABBRO_BLOCK.get()));
+        wallBlock((UBCWallBlocks) GabbroBlocks.GABBRO_COBBLE_WALL.get(), blockTexture(GabbroBlocks.GABBRO_COBBLE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) GabbroBlocks.GABBRO_BRICK_WALL.get(), blockTexture(GabbroBlocks.GABBRO_BRICK_BLOCK.get()));
+
+        wallBlock((UBCWallBlocks) GneissBlocks.GNEISS_BLOCK_WALL.get(), blockTexture(GneissBlocks.GNEISS_BLOCK.get()));
+        wallBlock((UBCWallBlocks) GneissBlocks.GNEISS_COBBLE_WALL.get(), blockTexture(GneissBlocks.GNEISS_COBBLE_BLOCK.get()));
+        wallBlock((UBCWallBlocks) GneissBlocks.GNEISS_BRICK_WALL.get(), blockTexture(GneissBlocks.GNEISS_BRICK_BLOCK.get()));
 
     }
 

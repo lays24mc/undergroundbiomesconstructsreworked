@@ -30,7 +30,7 @@
     "undergroundbiomesconstructsreworked:shale_stairs",
     "undergroundbiomesconstructsreworked:chert_stairs",
     "undergroundbiomesconstructsreworked:lignite_stairs",
-    "undergroundbiomesconstructsreworked:dolomit_stairs",
+    "undergroundbiomesconstructsreworked:dolomite_stairs",
     "undergroundbiomesconstructsreworked:eclogite_stairs",
     "undergroundbiomesconstructsreworked:greywacke_stairs",
     "undergroundbiomesconstructsreworked:komatiite_stairs",
@@ -38,6 +38,15 @@
     "undergroundbiomesconstructsreworked:komatiite_cobble_stairs",
     "undergroundbiomesconstructsreworked:dacite_stairs",
     "undergroundbiomesconstructsreworked:dacite_brick_stairs",
-    "undergroundbiomesconstructsreworked:dacite_cobble_stairs"
+    "undergroundbiomesconstructsreworked:dacite_cobble_stairs",
+    "undergroundbiomesconstructsreworked:black_granite_stairs",
+    "undergroundbiomesconstructsreworked:black_granite_brick_stairs",
+    "undergroundbiomesconstructsreworked:black_granite_cobble_stairs",
+    "undergroundbiomesconstructsreworked:gabbro_stairs",
+    "undergroundbiomesconstructsreworked:gabbro_brick_stairs",
+    "undergroundbiomesconstructsreworked:gabbro_cobble_stairs",
+    "undergroundbiomesconstructsreworked:gneiss_stairs",
+    "undergroundbiomesconstructsreworked:gneiss_brick_stairs",
+    "undergroundbiomesconstructsreworked:gneiss_cobble_stairs"
   ]
 }

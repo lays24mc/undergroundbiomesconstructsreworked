@@ -48,10 +48,10 @@
     "undergroundbiomesconstructsreworked:lignite_lapis_ore",
     "undergroundbiomesconstructsreworked:lignite_iron_ore",
     "undergroundbiomesconstructsreworked:lignite_copper_ore",
-    "undergroundbiomesconstructsreworked:dolomit_coal_ore",
-    "undergroundbiomesconstructsreworked:dolomit_lapis_ore",
-    "undergroundbiomesconstructsreworked:dolomit_iron_ore",
-    "undergroundbiomesconstructsreworked:dolomit_copper_ore",
+    "undergroundbiomesconstructsreworked:dolomite_coal_ore",
+    "undergroundbiomesconstructsreworked:dolomite_lapis_ore",
+    "undergroundbiomesconstructsreworked:dolomite_iron_ore",
+    "undergroundbiomesconstructsreworked:dolomite_copper_ore",
     "undergroundbiomesconstructsreworked:eclogite_coal_ore",
     "undergroundbiomesconstructsreworked:eclogite_lapis_ore",
     "undergroundbiomesconstructsreworked:eclogite_iron_ore",
@@ -67,6 +67,12 @@
     "undergroundbiomesconstructsreworked:dacite_lapis_ore",
     "undergroundbiomesconstructsreworked:dacite_iron_ore",
     "undergroundbiomesconstructsreworked:dacite_copper_ore",
-    "undergroundbiomesconstructsreworked:dacite_coal_ore"
+    "undergroundbiomesconstructsreworked:dacite_coal_ore",
+    "undergroundbiomesconstructsreworked:black_granite_lapis_ore",
+    "undergroundbiomesconstructsreworked:black_granite_iron_ore",
+    "undergroundbiomesconstructsreworked:gabbro_lapis_ore",
+    "undergroundbiomesconstructsreworked:gabbro_iron_ore",
+    "undergroundbiomesconstructsreworked:gneiss_lapis_ore",
+    "undergroundbiomesconstructsreworked:gneiss_iron_ore"
   ]
 }

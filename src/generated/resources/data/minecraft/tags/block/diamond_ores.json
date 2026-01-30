@@ -3,6 +3,9 @@
     "undergroundbiomesconstructsreworked:red_granite_diamond_ore",
     "undergroundbiomesconstructsreworked:quartzite_diamond_ore",
     "undergroundbiomesconstructsreworked:migmatite_diamond_ore",
-    "undergroundbiomesconstructsreworked:marble_diamond_ore"
+    "undergroundbiomesconstructsreworked:marble_diamond_ore",
+    "undergroundbiomesconstructsreworked:black_granite_diamond_ore",
+    "undergroundbiomesconstructsreworked:gabbro_diamond_ore",
+    "undergroundbiomesconstructsreworked:gneiss_diamond_ore"
   ]
 }

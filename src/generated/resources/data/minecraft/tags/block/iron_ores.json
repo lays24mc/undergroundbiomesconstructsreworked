@@ -14,10 +14,13 @@
     "undergroundbiomesconstructsreworked:shale_iron_ore",
     "undergroundbiomesconstructsreworked:chert_iron_ore",
     "undergroundbiomesconstructsreworked:lignite_iron_ore",
-    "undergroundbiomesconstructsreworked:dolomit_iron_ore",
+    "undergroundbiomesconstructsreworked:dolomite_iron_ore",
     "undergroundbiomesconstructsreworked:eclogite_iron_ore",
     "undergroundbiomesconstructsreworked:greywacke_iron_ore",
     "undergroundbiomesconstructsreworked:komatiite_iron_ore",
-    "undergroundbiomesconstructsreworked:dacite_iron_ore"
+    "undergroundbiomesconstructsreworked:dacite_iron_ore",
+    "undergroundbiomesconstructsreworked:black_granite_iron_ore",
+    "undergroundbiomesconstructsreworked:gabbro_iron_ore",
+    "undergroundbiomesconstructsreworked:gneiss_iron_ore"
   ]
 }

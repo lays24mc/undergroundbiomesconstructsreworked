@@ -14,10 +14,13 @@
     "undergroundbiomesconstructsreworked:shale_lapis_ore",
     "undergroundbiomesconstructsreworked:chert_lapis_ore",
     "undergroundbiomesconstructsreworked:lignite_lapis_ore",
-    "undergroundbiomesconstructsreworked:dolomit_lapis_ore",
+    "undergroundbiomesconstructsreworked:dolomite_lapis_ore",
     "undergroundbiomesconstructsreworked:eclogite_lapis_ore",
     "undergroundbiomesconstructsreworked:greywacke_lapis_ore",
     "undergroundbiomesconstructsreworked:komatiite_lapis_ore",
-    "undergroundbiomesconstructsreworked:dacite_lapis_ore"
+    "undergroundbiomesconstructsreworked:dacite_lapis_ore",
+    "undergroundbiomesconstructsreworked:black_granite_lapis_ore",
+    "undergroundbiomesconstructsreworked:gabbro_lapis_ore",
+    "undergroundbiomesconstructsreworked:gneiss_lapis_ore"
   ]
 }

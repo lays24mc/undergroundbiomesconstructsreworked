@@ -31,8 +31,8 @@
     "undergroundbiomesconstructsreworked:chert_redstone_ore",
     "undergroundbiomesconstructsreworked:lignite_gold_ore",
     "undergroundbiomesconstructsreworked:lignite_redstone_ore",
-    "undergroundbiomesconstructsreworked:dolomit_gold_ore",
-    "undergroundbiomesconstructsreworked:dolomit_redstone_ore",
+    "undergroundbiomesconstructsreworked:dolomite_gold_ore",
+    "undergroundbiomesconstructsreworked:dolomite_redstone_ore",
     "undergroundbiomesconstructsreworked:eclogite_gold_ore",
     "undergroundbiomesconstructsreworked:eclogite_redstone_ore",
     "undergroundbiomesconstructsreworked:greywacke_gold_ore",
@@ -40,6 +40,15 @@
     "undergroundbiomesconstructsreworked:komatiite_gold_ore",
     "undergroundbiomesconstructsreworked:komatiite_redstone_ore",
     "undergroundbiomesconstructsreworked:dacite_gold_ore",
-    "undergroundbiomesconstructsreworked:dacite_redstone_ore"
+    "undergroundbiomesconstructsreworked:dacite_redstone_ore",
+    "undergroundbiomesconstructsreworked:black_granite_diamond_ore",
+    "undergroundbiomesconstructsreworked:black_granite_gold_ore",
+    "undergroundbiomesconstructsreworked:black_granite_redstone_ore",
+    "undergroundbiomesconstructsreworked:gabbro_diamond_ore",
+    "undergroundbiomesconstructsreworked:gabbro_gold_ore",
+    "undergroundbiomesconstructsreworked:gabbro_redstone_ore",
+    "undergroundbiomesconstructsreworked:gneiss_diamond_ore",
+    "undergroundbiomesconstructsreworked:gneiss_gold_ore",
+    "undergroundbiomesconstructsreworked:gneiss_redstone_ore"
   ]
 }

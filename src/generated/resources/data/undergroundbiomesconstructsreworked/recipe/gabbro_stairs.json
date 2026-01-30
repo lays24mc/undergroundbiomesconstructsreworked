@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "gabbro",
+  "key": {
+    "#": {
+      "item": "undergroundbiomesconstructsreworked:gabbro_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "undergroundbiomesconstructsreworked:gabbro_stairs"
+  }
+}

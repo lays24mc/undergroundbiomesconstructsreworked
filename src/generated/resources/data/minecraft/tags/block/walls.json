@@ -30,7 +30,7 @@
     "undergroundbiomesconstructsreworked:shale_block_wall",
     "undergroundbiomesconstructsreworked:chert_block_wall",
     "undergroundbiomesconstructsreworked:lignite_block_wall",
-    "undergroundbiomesconstructsreworked:dolomit_block_wall",
+    "undergroundbiomesconstructsreworked:dolomite_block_wall",
     "undergroundbiomesconstructsreworked:eclogite_block_wall",
     "undergroundbiomesconstructsreworked:greywacke_block_wall",
     "undergroundbiomesconstructsreworked:komatiite_block_wall",
@@ -38,6 +38,15 @@
     "undergroundbiomesconstructsreworked:komatiite_brick_wall",
     "undergroundbiomesconstructsreworked:dacite_block_wall",
     "undergroundbiomesconstructsreworked:dacite_cobble_wall",
-    "undergroundbiomesconstructsreworked:dacite_brick_wall"
+    "undergroundbiomesconstructsreworked:dacite_brick_wall",
+    "undergroundbiomesconstructsreworked:black_granite_block_wall",
+    "undergroundbiomesconstructsreworked:black_granite_cobble_wall",
+    "undergroundbiomesconstructsreworked:black_granite_brick_wall",
+    "undergroundbiomesconstructsreworked:gabbro_block_wall",
+    "undergroundbiomesconstructsreworked:gabbro_cobble_wall",
+    "undergroundbiomesconstructsreworked:gabbro_brick_wall",
+    "undergroundbiomesconstructsreworked:gneiss_block_wall",
+    "undergroundbiomesconstructsreworked:gneiss_cobble_wall",
+    "undergroundbiomesconstructsreworked:gneiss_brick_wall"
   ]
 }
