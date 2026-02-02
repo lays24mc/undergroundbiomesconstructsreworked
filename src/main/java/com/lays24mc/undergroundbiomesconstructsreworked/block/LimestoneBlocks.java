@@ -19,45 +19,45 @@ public class LimestoneBlocks {
     );
 
     // ================================
-    // Register limestone
+    // Register Limestone
     // ================================
 
     // Blocks
     public static final DeferredBlock<Block> LIMESTONE_BLOCK = registerBlock("limestone_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE,0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW,0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIMESTONE_COAL_ORE = registerBlock("limestone_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE,0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW,0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIMESTONE_COPPER_ORE = registerBlock("limestone_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE,0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW,0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIMESTONE_IRON_ORE = registerBlock("limestone_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE,0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW,0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIMESTONE_GOLD_ORE = registerBlock("limestone_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE,0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW,0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIMESTONE_REDSTONE_ORE = registerBlock("limestone_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE,0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW,0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIMESTONE_LAPIS_ORE = registerBlock("limestone_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE,0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW,0.5F, 0.29F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> LIMESTONE_STAIRS = registerBlock("limestone_stairs",
-            () -> new UBCStairsBlocks(LIMESTONE_BLOCK, MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(LIMESTONE_BLOCK, MapColor.TERRACOTTA_YELLOW)
     );
 
     // Slabs
     public static final DeferredBlock<Block> LIMESTONE_BLOCK_SLAB = registerBlock("limestone_block_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_YELLOW)
     );
 
     // Walls
     public static final DeferredBlock<Block> LIMESTONE_BLOCK_WALL = registerBlock("limestone_block_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.TERRACOTTA_YELLOW)
     );
 
     // Buttons

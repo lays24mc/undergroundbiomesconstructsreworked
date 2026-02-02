@@ -18,69 +18,69 @@ public class BlueschistBlocks  {
     );
 
     // ================================
-    // Register blueschist
+    // Register Blueschist
     // ================================
 
     // Blocks
     public static final DeferredBlock<Block> BLUESCHIST_BLOCK = registerBlock("blueschist_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.7F, 0.54F)
+            () -> new UBCBlocks(MapColor.COLOR_BLUE, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> BLUESCHIST_COBBLE_BLOCK = registerBlock("blueschist_cobble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.7F, 0.54F)
+            () -> new UBCBlocks(MapColor.COLOR_BLUE, 0.7F, 0.54F)
     );
     public static  DeferredBlock<Block> BLUESCHIST_BRICK_BLOCK = registerBlock("blueschist_brick_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.7F, 0.54F)
+            () -> new UBCBlocks(MapColor.COLOR_BLUE, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> BLUESCHIST_COAL_ORE = registerBlock("blueschist_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.7F, 0.54F)
+            () -> new UBCBlocks(MapColor.COLOR_BLUE, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> BLUESCHIST_COPPER_ORE = registerBlock("blueschist_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.7F, 0.54F)
+            () -> new UBCBlocks(MapColor.COLOR_BLUE, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> BLUESCHIST_IRON_ORE = registerBlock("blueschist_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.7F, 0.54F)
+            () -> new UBCBlocks(MapColor.COLOR_BLUE, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> BLUESCHIST_GOLD_ORE = registerBlock("blueschist_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.7F, 0.54F)
+            () -> new UBCBlocks(MapColor.COLOR_BLUE, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> BLUESCHIST_REDSTONE_ORE = registerBlock("blueschist_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.7F, 0.54F)
+            () -> new UBCBlocks(MapColor.COLOR_BLUE, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> BLUESCHIST_LAPIS_ORE = registerBlock("blueschist_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.7F, 0.54F)
+            () -> new UBCBlocks(MapColor.COLOR_BLUE, 0.7F, 0.54F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> BLUESCHIST_STAIRS = registerBlock("blueschist_stairs",
-            () -> new UBCStairsBlocks(BLUESCHIST_BLOCK, MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(BLUESCHIST_BLOCK, MapColor.COLOR_BLUE)
     );
     public static final DeferredBlock<Block> BLUESCHIST_BRICK_STAIRS = registerBlock("blueschist_brick_stairs",
-            () -> new UBCStairsBlocks(BLUESCHIST_BRICK_BLOCK, MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(BLUESCHIST_BRICK_BLOCK, MapColor.COLOR_BLUE)
     );
     public static final DeferredBlock<Block> BLUESCHIST_COBBLE_STAIRS = registerBlock("blueschist_cobble_stairs",
-            () -> new UBCStairsBlocks(BLUESCHIST_COBBLE_BLOCK,MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(BLUESCHIST_COBBLE_BLOCK,MapColor.COLOR_BLUE)
     );
 
     // Slabs
     public static final DeferredBlock<Block> BLUESCHIST_BLOCK_SLAB = registerBlock("blueschist_block_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.COLOR_BLUE)
     );
     public static final DeferredBlock<Block> BLUESCHIST_COBBLE_SLAB = registerBlock("blueschist_cobble_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.COLOR_BLUE)
     );
     public static final DeferredBlock<Block> BLUESCHIST_BRICK_SLAB = registerBlock("blueschist_brick_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.COLOR_BLUE)
     );
 
     // Walls
     public static final DeferredBlock<Block> BLUESCHIST_BLOCK_WALL = registerBlock("blueschist_block_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.COLOR_BLUE)
     );
     public static final DeferredBlock<Block> BLUESCHIST_COBBLE_WALL = registerBlock("blueschist_cobble_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.COLOR_BLUE)
     );
     public static final DeferredBlock<Block> BLUESCHIST_BRICK_WALL = registerBlock("blueschist_brick_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.COLOR_BLUE)
     );
 
     // Buttons

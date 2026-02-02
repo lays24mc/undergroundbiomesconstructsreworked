@@ -19,69 +19,69 @@ public class KomatiiteBlocks {
     );
 
     // ================================
-    // Register komatiite
+    // Register Komatiite
     // ================================
 
     // Blocks
     public static final DeferredBlock<Block> KOMATIITE_BLOCK = registerBlock("komatiite_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.5F, 1.3F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW, 1.5F, 1.3F)
     );
     public static  DeferredBlock<Block> KOMATIITE_COBBLE_BLOCK = registerBlock("komatiite_cobble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.5F, 1.3F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW, 1.5F, 1.3F)
     );
     public static  DeferredBlock<Block> KOMATIITE_BRICK_BLOCK = registerBlock("komatiite_brick_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.5F, 1.3F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW, 1.5F, 1.3F)
     );
     public static DeferredBlock<Block> KOMATIITE_COAL_ORE = registerBlock("komatiite_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.5F, 1.3F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW, 1.5F, 1.3F)
     );
     public static DeferredBlock<Block> KOMATIITE_COPPER_ORE = registerBlock("komatiite_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.5F, 1.3F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW, 1.5F, 1.3F)
     );
     public static DeferredBlock<Block> KOMATIITE_IRON_ORE = registerBlock("komatiite_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.5F, 1.3F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW, 1.5F, 1.3F)
     );
     public static DeferredBlock<Block> KOMATIITE_GOLD_ORE = registerBlock("komatiite_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.5F, 1.3F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW, 1.5F, 1.3F)
     );
     public static DeferredBlock<Block> KOMATIITE_REDSTONE_ORE = registerBlock("komatiite_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.5F, 1.3F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW, 1.5F, 1.3F)
     );
     public static DeferredBlock<Block> KOMATIITE_LAPIS_ORE = registerBlock("komatiite_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.5F, 1.3F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_YELLOW, 1.5F, 1.3F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> KOMATIITE_STAIRS = registerBlock("komatiite_stairs",
-            () -> new UBCStairsBlocks(KOMATIITE_BLOCK, MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(KOMATIITE_BLOCK, MapColor.TERRACOTTA_YELLOW)
     );
     public static final DeferredBlock<Block> KOMATIITE_BRICK_STAIRS = registerBlock("komatiite_brick_stairs",
-            () -> new UBCStairsBlocks(KOMATIITE_BRICK_BLOCK, MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(KOMATIITE_BRICK_BLOCK, MapColor.TERRACOTTA_YELLOW)
     );
     public static final DeferredBlock<Block> KOMATIITE_COBBLE_STAIRS = registerBlock("komatiite_cobble_stairs",
-            () -> new UBCStairsBlocks(KOMATIITE_COBBLE_BLOCK,MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(KOMATIITE_COBBLE_BLOCK,MapColor.TERRACOTTA_YELLOW)
     );
 
     // Slabs
     public static final DeferredBlock<Block> KOMATIITE_BLOCK_SLAB = registerBlock("komatiite_block_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_YELLOW)
     );
     public static final DeferredBlock<Block> KOMATIITE_COBBLE_SLAB = registerBlock("komatiite_cobble_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_YELLOW)
     );
     public static final DeferredBlock<Block> KOMATIITE_BRICK_SLAB = registerBlock("komatiite_brick_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_YELLOW)
     );
 
     // Walls
     public static final DeferredBlock<Block> KOMATIITE_BLOCK_WALL = registerBlock("komatiite_block_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.TERRACOTTA_YELLOW)
     );
     public static final DeferredBlock<Block> KOMATIITE_COBBLE_WALL = registerBlock("komatiite_cobble_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.TERRACOTTA_YELLOW)
     );
     public static final DeferredBlock<Block> KOMATIITE_BRICK_WALL = registerBlock("komatiite_brick_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.TERRACOTTA_YELLOW)
     );
 
     // Buttons

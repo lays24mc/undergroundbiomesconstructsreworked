@@ -19,45 +19,45 @@ public class ShaleBlocks {
     );
 
     // ================================
-    // Register shale
+    // Register Shale
     // ================================
 
     // Blocks
     public static final DeferredBlock<Block> SHALE_BLOCK = registerBlock("shale_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> SHALE_COAL_ORE = registerBlock("shale_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> SHALE_COPPER_ORE = registerBlock("shale_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> SHALE_IRON_ORE = registerBlock("shale_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> SHALE_GOLD_ORE = registerBlock("shale_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> SHALE_REDSTONE_ORE = registerBlock("shale_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> SHALE_LAPIS_ORE = registerBlock("shale_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> SHALE_STAIRS = registerBlock("shale_stairs",
-            () -> new UBCStairsBlocks(SHALE_BLOCK, MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(SHALE_BLOCK, MapColor.COLOR_LIGHT_GRAY)
     );
 
     // Slabs
     public static final DeferredBlock<Block> SHALE_BLOCK_SLAB = registerBlock("shale_block_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.COLOR_LIGHT_GRAY)
     );
 
     // Walls
     public static final DeferredBlock<Block> SHALE_BLOCK_WALL = registerBlock("shale_block_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.COLOR_LIGHT_GRAY)
     );
 
     // Buttons

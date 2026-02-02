@@ -19,45 +19,45 @@ public class DolomiteBlocks {
     );
 
     // ================================
-    // Register dolomite
+    // Register Dolomite
     // ================================
 
     // Blocks
     public static final DeferredBlock<Block> DOLOMITE_BLOCK = registerBlock("dolomite_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.92F)
+            () -> new UBCBlocks(MapColor.COLOR_BROWN, 0.5F, 0.92F)
     );
     public static DeferredBlock<Block> DOLOMITE_COAL_ORE = registerBlock("dolomite_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.92F)
+            () -> new UBCBlocks(MapColor.COLOR_BROWN, 0.5F, 0.92F)
     );
     public static DeferredBlock<Block> DOLOMITE_COPPER_ORE = registerBlock("dolomite_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.92F)
+            () -> new UBCBlocks(MapColor.COLOR_BROWN, 0.5F, 0.92F)
     );
     public static DeferredBlock<Block> DOLOMITE_IRON_ORE = registerBlock("dolomite_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.92F)
+            () -> new UBCBlocks(MapColor.COLOR_BROWN, 0.5F, 0.92F)
     );
     public static DeferredBlock<Block> DOLOMITE_GOLD_ORE = registerBlock("dolomite_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.92F)
+            () -> new UBCBlocks(MapColor.COLOR_BROWN, 0.5F, 0.92F)
     );
     public static DeferredBlock<Block> DOLOMITE_REDSTONE_ORE = registerBlock("dolomite_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.92F)
+            () -> new UBCBlocks(MapColor.COLOR_BROWN, 0.5F, 0.92F)
     );
     public static DeferredBlock<Block> DOLOMITE_LAPIS_ORE = registerBlock("dolomite_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.92F)
+            () -> new UBCBlocks(MapColor.COLOR_BROWN, 0.5F, 0.92F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> DOLOMITE_STAIRS = registerBlock("dolomite_stairs",
-            () -> new UBCStairsBlocks(DOLOMITE_BLOCK, MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(DOLOMITE_BLOCK, MapColor.COLOR_BROWN)
     );
 
     // Slabs
     public static final DeferredBlock<Block> DOLOMITE_BLOCK_SLAB = registerBlock("dolomite_block_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.COLOR_BROWN)
     );
 
     // Walls
     public static final DeferredBlock<Block> DOLOMITE_BLOCK_WALL = registerBlock("dolomite_block_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.COLOR_BROWN)
     );
 
     // Buttons

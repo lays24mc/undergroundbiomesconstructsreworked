@@ -23,12 +23,11 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
         // Tags: All blocks that should be mined with a pickaxe
         // ------------------------------------------------------------
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                // --- Lignite ---
+
                 .add(LigniteBlocks.LIGNITE_GOLD_ORE.get())
                 .add(LigniteBlocks.LIGNITE_REDSTONE_ORE.get())
                 .add(LigniteBlocks.LIGNITE_LAPIS_ORE.get())
 
-                // --- Dolomite ---
                 .add(DolomiteBlocks.DOLOMITE_BLOCK.get())
                 .add(DolomiteBlocks.DOLOMITE_COAL_ORE.get())
                 .add(DolomiteBlocks.DOLOMITE_COPPER_ORE.get())
@@ -37,7 +36,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(DolomiteBlocks.DOLOMITE_REDSTONE_ORE.get())
                 .add(DolomiteBlocks.DOLOMITE_LAPIS_ORE.get())
 
-                // --- Eclogite ---
                 .add(EclogiteBlocks.ECLOGITE_BLOCK.get())
                 .add(EclogiteBlocks.ECLOGITE_COAL_ORE.get())
                 .add(EclogiteBlocks.ECLOGITE_COPPER_ORE.get())
@@ -46,7 +44,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(EclogiteBlocks.ECLOGITE_REDSTONE_ORE.get())
                 .add(EclogiteBlocks.ECLOGITE_LAPIS_ORE.get())
 
-                // --- Greywacke ---
                 .add(GreywackeBlocks.GREYWACKE_BLOCK.get())
                 .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get())
                 .add(GreywackeBlocks.GREYWACKE_COPPER_ORE.get())
@@ -55,7 +52,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GreywackeBlocks.GREYWACKE_REDSTONE_ORE.get())
                 .add(GreywackeBlocks.GREYWACKE_LAPIS_ORE.get())
 
-                // --- Komatiite ---
                 .add(KomatiiteBlocks.KOMATIITE_BLOCK.get())
                 .add(KomatiiteBlocks.KOMATIITE_COBBLE_BLOCK.get())
                 .add(KomatiiteBlocks.KOMATIITE_BRICK_BLOCK.get())
@@ -66,7 +62,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(KomatiiteBlocks.KOMATIITE_REDSTONE_ORE.get())
                 .add(KomatiiteBlocks.KOMATIITE_LAPIS_ORE.get())
 
-                // --- Dacite ---
                 .add(DaciteBlocks.DACITE_BLOCK.get())
                 .add(DaciteBlocks.DACITE_COBBLE_BLOCK.get())
                 .add(DaciteBlocks.DACITE_BRICK_BLOCK.get())
@@ -77,7 +72,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(DaciteBlocks.DACITE_REDSTONE_ORE.get())
                 .add(DaciteBlocks.DACITE_LAPIS_ORE.get())
 
-                // --- Black Granite ---
                 .add(BlackGraniteBlocks.BLACK_GRANITE_BLOCK.get())
                 .add(BlackGraniteBlocks.BLACK_GRANITE_COBBLE_BLOCK.get())
                 .add(BlackGraniteBlocks.BLACK_GRANITE_BRICK_BLOCK.get())
@@ -88,7 +82,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(BlackGraniteBlocks.BLACK_GRANITE_DIAMOND_ORE.get())
                 .add(BlackGraniteBlocks.BLACK_GRANITE_EMERALD_ORE.get())
 
-                // --- Gabbro ---
                 .add(GabbroBlocks.GABBRO_BLOCK.get())
                 .add(GabbroBlocks.GABBRO_COBBLE_BLOCK.get())
                 .add(GabbroBlocks.GABBRO_BRICK_BLOCK.get())
@@ -99,7 +92,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GabbroBlocks.GABBRO_DIAMOND_ORE.get())
                 .add(GabbroBlocks.GABBRO_EMERALD_ORE.get())
 
-                // --- Gneiss ---
                 .add(GneissBlocks.GNEISS_BLOCK.get())
                 .add(GneissBlocks.GNEISS_COBBLE_BLOCK.get())
                 .add(GneissBlocks.GNEISS_BRICK_BLOCK.get())
@@ -110,7 +102,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GneissBlocks.GNEISS_DIAMOND_ORE.get())
                 .add(GneissBlocks.GNEISS_EMERALD_ORE.get())
 
-                // --- Slabs ---
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK_SLAB.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COBBLE_SLAB.get())
                 .add(SoapstoneBlocks.SOAPSTONE_BRICK_SLAB.get())
@@ -181,7 +172,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GneissBlocks.GNEISS_COBBLE_SLAB.get())
                 .add(GneissBlocks.GNEISS_BRICK_SLAB.get())
 
-                // --- Stairs ---
                 .add(SoapstoneBlocks.SOAPSTONE_STAIRS.get())
                 .add(SoapstoneBlocks.SOAPSTONE_BRICK_STAIRS.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COBBLE_STAIRS.get())
@@ -252,7 +242,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GneissBlocks.GNEISS_COBBLE_STAIRS.get())
                 .add(GneissBlocks.GNEISS_BRICK_STAIRS.get())
 
-                // --- Walls ---
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK_WALL.get())
                 .add(SoapstoneBlocks.SOAPSTONE_COBBLE_WALL.get())
                 .add(SoapstoneBlocks.SOAPSTONE_BRICK_WALL.get())
@@ -327,10 +316,8 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
         // Tool requirement tags
         // ------------------------------------------------------------
 
-        // Needs diamond tool - no specific blocks added here
         tag(BlockTags.NEEDS_DIAMOND_TOOL);
 
-        // Needs iron tool - listing ores and special blocks
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
@@ -404,7 +391,6 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GneissBlocks.GNEISS_GOLD_ORE.get())
                 .add(GneissBlocks.GNEISS_REDSTONE_ORE.get());
 
-        // Needs stone tool
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(RedGraniteBlocks.RED_GRANITE_LAPIS_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_IRON_ORE.get())
@@ -501,7 +487,7 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GneissBlocks.GNEISS_LAPIS_ORE.get())
                 .add(GneissBlocks.GNEISS_IRON_ORE.get());
 
-        // Incorrect-for tags for various tools (some left empty intentionally)
+        // Tool tags
         tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
                 .add(RedGraniteBlocks.RED_GRANITE_DIAMOND_ORE.get())
                 .add(RedGraniteBlocks.RED_GRANITE_GOLD_ORE.get())
@@ -1242,8 +1228,7 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GneissBlocks.GNEISS_COBBLE_WALL.get())
                 .add(GneissBlocks.GNEISS_BRICK_WALL.get());
 
-        // Buttons: identifies all stone buttons provided by blocks in this mod
-        tag(BlockTags.BUTTONS)
+                tag(BlockTags.BUTTONS)
                 .add(SoapstoneBlocks.SOAPSTONE_STONE_BUTTON.get())
                 .add(RhyoliteBlocks.RHYOLITE_BLOCK_SLAB.get())
                 .add(RedGraniteBlocks.RED_GRANITE_STONE_BUTTON.get())

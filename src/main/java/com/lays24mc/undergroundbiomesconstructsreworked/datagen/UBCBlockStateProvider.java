@@ -16,10 +16,6 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
-/**
- * BlockState and model provider for UndergroundBiomesConstructsReworked mod.
- * Handles generating block models, item models, and blockstates blocks.
- */
 public class UBCBlockStateProvider extends BlockStateProvider {
 
     public UBCBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -573,7 +569,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
         slabBlock((UBCSlabBlocks) LimestoneBlocks.LIMESTONE_BLOCK_SLAB.get(), blockTexture(LimestoneBlocks.LIMESTONE_BLOCK.get()), blockTexture(LimestoneBlocks.LIMESTONE_BLOCK.get()));
 
-        slabBlock((UBCSlabBlocks) SiltstoneBlocks.SILTSTONE_BLOCK_SLAB.get(),blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()), blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) SiltstoneBlocks.SILTSTONE_BLOCK_SLAB.get(), blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()), blockTexture(SiltstoneBlocks.SILTSTONE_BLOCK.get()));
 
         slabBlock((UBCSlabBlocks) BlueschistBlocks.BLUESCHIST_BLOCK_SLAB.get(), blockTexture(BlueschistBlocks.BLUESCHIST_BLOCK.get()), blockTexture(BlueschistBlocks.BLUESCHIST_BLOCK.get()));
         slabBlock((UBCSlabBlocks) BlueschistBlocks.BLUESCHIST_COBBLE_SLAB.get(), blockTexture(BlueschistBlocks.BLUESCHIST_COBBLE_BLOCK.get()), blockTexture(BlueschistBlocks.BLUESCHIST_COBBLE_BLOCK.get()));
@@ -583,7 +579,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         slabBlock((UBCSlabBlocks) GreenschistBlocks.GREENSCHIST_COBBLE_SLAB.get(), blockTexture(GreenschistBlocks.GREENSCHIST_COBBLE_BLOCK.get()), blockTexture(GreenschistBlocks.GREENSCHIST_COBBLE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) GreenschistBlocks.GREENSCHIST_BRICK_SLAB.get(), blockTexture(GreenschistBlocks.GREENSCHIST_BRICK_BLOCK.get()), blockTexture(GreenschistBlocks.GREENSCHIST_BRICK_BLOCK.get()));
 
-        slabBlock((UBCSlabBlocks) ChalkBlocks.CHALK_BLOCK_SLAB.get(),blockTexture(ChalkBlocks.CHALK_BLOCK.get()), blockTexture(ChalkBlocks.CHALK_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) ChalkBlocks.CHALK_BLOCK_SLAB.get(), blockTexture(ChalkBlocks.CHALK_BLOCK.get()), blockTexture(ChalkBlocks.CHALK_BLOCK.get()));
 
         slabBlock((UBCSlabBlocks) ShaleBlocks.SHALE_BLOCK_SLAB.get(), blockTexture(ShaleBlocks.SHALE_BLOCK.get()), blockTexture(ShaleBlocks.SHALE_BLOCK.get()));
 

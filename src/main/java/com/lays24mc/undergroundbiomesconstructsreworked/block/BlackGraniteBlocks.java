@@ -18,69 +18,69 @@ public class BlackGraniteBlocks {
     );
 
     // ================================
-    // Register black_granite
+    // Register Black Granite
     // ================================
 
     // Blocks
     public static final DeferredBlock<Block> BLACK_GRANITE_BLOCK = registerBlock("black_granite_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.6F, 1.4F)
+            () -> new UBCBlocks(MapColor.COLOR_BLACK, 1.6F, 1.4F)
     );
     public static  DeferredBlock<Block> BLACK_GRANITE_COBBLE_BLOCK = registerBlock("black_granite_cobble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.6F, 1.4F)
+            () -> new UBCBlocks(MapColor.COLOR_BLACK, 1.6F, 1.4F)
     );
     public static  DeferredBlock<Block> BLACK_GRANITE_BRICK_BLOCK = registerBlock("black_granite_brick_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.6F, 1.4F)
+            () -> new UBCBlocks(MapColor.COLOR_BLACK, 1.6F, 1.4F)
     );
     public static DeferredBlock<Block> BLACK_GRANITE_IRON_ORE = registerBlock("black_granite_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.6F, 1.4F)
+            () -> new UBCBlocks(MapColor.COLOR_BLACK, 1.6F, 1.4F)
     );
     public static DeferredBlock<Block> BLACK_GRANITE_GOLD_ORE = registerBlock("black_granite_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.6F, 1.4F)
+            () -> new UBCBlocks(MapColor.COLOR_BLACK, 1.6F, 1.4F)
     );
     public static DeferredBlock<Block> BLACK_GRANITE_REDSTONE_ORE = registerBlock("black_granite_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.6F, 1.4F)
+            () -> new UBCBlocks(MapColor.COLOR_BLACK, 1.6F, 1.4F)
     );
     public static DeferredBlock<Block> BLACK_GRANITE_LAPIS_ORE = registerBlock("black_granite_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.6F, 1.4F)
+            () -> new UBCBlocks(MapColor.COLOR_BLACK, 1.6F, 1.4F)
     );
     public static DeferredBlock<Block> BLACK_GRANITE_DIAMOND_ORE = registerBlock("black_granite_diamond_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.6F, 1.4F)
+            () -> new UBCBlocks(MapColor.COLOR_BLACK, 1.6F, 1.4F)
     );
     public static DeferredBlock<Block> BLACK_GRANITE_EMERALD_ORE = registerBlock("black_granite_emerald_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 1.6F, 1.4F)
+            () -> new UBCBlocks(MapColor.COLOR_BLACK, 1.6F, 1.4F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> BLACK_GRANITE_STAIRS = registerBlock("black_granite_stairs",
-            () -> new UBCStairsBlocks(BLACK_GRANITE_BLOCK, MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(BLACK_GRANITE_BLOCK, MapColor.COLOR_BLACK)
     );
     public static final DeferredBlock<Block> BLACK_GRANITE_BRICK_STAIRS = registerBlock("black_granite_brick_stairs",
-            () -> new UBCStairsBlocks(BLACK_GRANITE_BRICK_BLOCK, MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(BLACK_GRANITE_BRICK_BLOCK, MapColor.COLOR_BLACK)
     );
     public static final DeferredBlock<Block> BLACK_GRANITE_COBBLE_STAIRS = registerBlock("black_granite_cobble_stairs",
-            () -> new UBCStairsBlocks(BLACK_GRANITE_COBBLE_BLOCK,MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(BLACK_GRANITE_COBBLE_BLOCK,MapColor.COLOR_BLACK)
     );
 
     // Slabs
     public static final DeferredBlock<Block> BLACK_GRANITE_BLOCK_SLAB = registerBlock("black_granite_block_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.COLOR_BLACK)
     );
     public static final DeferredBlock<Block> BLACK_GRANITE_COBBLE_SLAB = registerBlock("black_granite_cobble_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.COLOR_BLACK)
     );
     public static final DeferredBlock<Block> BLACK_GRANITE_BRICK_SLAB = registerBlock("black_granite_brick_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.COLOR_BLACK)
     );
 
     // Walls
     public static final DeferredBlock<Block> BLACK_GRANITE_BLOCK_WALL = registerBlock("black_granite_block_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.COLOR_BLACK)
     );
     public static final DeferredBlock<Block> BLACK_GRANITE_COBBLE_WALL = registerBlock("black_granite_cobble_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.COLOR_BLACK)
     );
     public static final DeferredBlock<Block> BLACK_GRANITE_BRICK_WALL = registerBlock("black_granite_brick_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.COLOR_BLACK)
     );
 
     // Buttons

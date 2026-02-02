@@ -19,45 +19,45 @@ public class LigniteBlocks {
     );
 
     // ================================
-    // Register lignite
+    // Register Lignite
     // ================================
 
     // Blocks
     public static final DeferredBlock<Block> LIGNITE_BLOCK = registerBlock("lignite_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_BLACK, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIGNITE_COAL_ORE = registerBlock("lignite_coal_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_BLACK, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIGNITE_COPPER_ORE = registerBlock("lignite_copper_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_BLACK, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIGNITE_IRON_ORE = registerBlock("lignite_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_BLACK, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIGNITE_GOLD_ORE = registerBlock("lignite_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_BLACK, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIGNITE_REDSTONE_ORE = registerBlock("lignite_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_BLACK, 0.5F, 0.29F)
     );
     public static DeferredBlock<Block> LIGNITE_LAPIS_ORE = registerBlock("lignite_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_WHITE, 0.5F, 0.29F)
+            () -> new UBCBlocks(MapColor.TERRACOTTA_BLACK, 0.5F, 0.29F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> LIGNITE_STAIRS = registerBlock("lignite_stairs",
-            () -> new UBCStairsBlocks(LIGNITE_BLOCK, MapColor.TERRACOTTA_WHITE)
+            () -> new UBCStairsBlocks(LIGNITE_BLOCK, MapColor.TERRACOTTA_BLACK)
     );
 
     // Slabs
     public static final DeferredBlock<Block> LIGNITE_BLOCK_SLAB = registerBlock("lignite_block_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_BLACK)
     );
 
     // Walls
     public static final DeferredBlock<Block> LIGNITE_BLOCK_WALL = registerBlock("lignite_block_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_WHITE)
+            () -> new UBCWallBlocks(MapColor.TERRACOTTA_BLACK)
     );
 
     // Buttons

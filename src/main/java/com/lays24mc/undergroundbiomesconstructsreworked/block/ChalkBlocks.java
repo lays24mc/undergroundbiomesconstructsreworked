@@ -19,7 +19,7 @@ public class ChalkBlocks {
     );
 
     // ================================
-    // Register chalk
+    // Register Chalk
     // ================================
 
     // Blocks

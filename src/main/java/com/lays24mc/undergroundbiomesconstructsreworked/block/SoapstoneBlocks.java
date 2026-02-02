@@ -19,7 +19,7 @@ public class SoapstoneBlocks {
     );
 
     // ================================
-    // Register soapstone
+    // Register Soapstone
     // ================================
 
     // Blocks

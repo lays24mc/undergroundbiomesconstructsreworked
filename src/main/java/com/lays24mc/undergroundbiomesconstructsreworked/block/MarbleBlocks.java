@@ -18,7 +18,7 @@ public class MarbleBlocks {
     );
 
     // ================================
-    // Register marble
+    // Register Marble
     // ================================
 
     // Blocks

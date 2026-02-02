@@ -18,7 +18,7 @@ public class QuartziteBlocks {
     );
 
     // ================================
-    // Register quartzite
+    // Register Quartzite
     // ================================
 
     // Blocks
