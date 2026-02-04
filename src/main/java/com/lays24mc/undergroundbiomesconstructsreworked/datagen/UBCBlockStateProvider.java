@@ -261,7 +261,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         buttonWithItem((UBCButtonsBlocks) GreywackeBlocks.GREYWACKE_STONE_BUTTON.get(), "greywacke_stone_button", "greywacke_block");
         buttonWithItem((UBCButtonsBlocks) KomatiiteBlocks.KOMATIITE_STONE_BUTTON.get(), "komatiite_stone_button", "komatiite_block");
         buttonWithItem((UBCButtonsBlocks) DaciteBlocks.DACITE_STONE_BUTTON.get(), "dacite_stone_button", "dacite_block");
-        buttonWithItem((UBCButtonsBlocks) BlackGraniteBlocks.BLACK_GRANITE_STONE_BUTTON.get(), "blackgranite_stone_button", "black_granite_block");
+        buttonWithItem((UBCButtonsBlocks) BlackGraniteBlocks.BLACK_GRANITE_STONE_BUTTON.get(), "black_granite_stone_button", "black_granite_block");
         buttonWithItem((UBCButtonsBlocks) GabbroBlocks.GABBRO_STONE_BUTTON.get(), "gabbro_stone_button", "gabbro_block");
         buttonWithItem((UBCButtonsBlocks) GneissBlocks.GNEISS_STONE_BUTTON.get(), "gneiss_stone_button", "gneiss_block");
 

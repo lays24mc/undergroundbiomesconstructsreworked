@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "gabbro",
+  "ingredient": {
+    "item": "undergroundbiomesconstructsreworked:gabbro_emerald_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:emerald"
+  }
+}

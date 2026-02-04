@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gabbro_diamond_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "undergroundbiomesconstructsreworked:gabbro_diamond_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undergroundbiomesconstructsreworked:diamond_from_blasting_gabbro_diamond_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gabbro_diamond_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undergroundbiomesconstructsreworked:diamond_from_blasting_gabbro_diamond_ore"
+    ]
+  }
+}

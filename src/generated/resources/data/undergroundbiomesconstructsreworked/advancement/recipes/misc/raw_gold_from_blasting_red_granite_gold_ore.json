@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_red_granite_gold_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "undergroundbiomesconstructsreworked:red_granite_gold_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undergroundbiomesconstructsreworked:raw_gold_from_blasting_red_granite_gold_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_red_granite_gold_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undergroundbiomesconstructsreworked:raw_gold_from_blasting_red_granite_gold_ore"
+    ]
+  }
+}

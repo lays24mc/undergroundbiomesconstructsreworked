@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-30T11:39:15.8337964	Tags for minecraft:block mod id undergroundbiomesconstructsreworked
+// 1.21.1	2026-02-04T11:27:58.7227387	Tags for minecraft:block mod id undergroundbiomesconstructsreworked
 ff8792c9ebdca3df518d86b1fc1bb449f3a0b438 data/minecraft/tags/block/base_stone_overworld.json
 fb3c04be8e50418cac0312418845dac353e3e738 data/minecraft/tags/block/buttons.json
 8b1b52de85727aad516c23c494d7f55b79a6b3e3 data/minecraft/tags/block/coal_ores.json
@@ -14,7 +14,7 @@ b3d74e6502ab7080fba53d5e9542eeb6aea71397 data/minecraft/tags/block/emerald_ores.
 12aad4941de350f61ab5a044b922279c7d76bca2 data/minecraft/tags/block/incorrect_for_wooden_tool.json
 46af3ad1c8268b027410fefd2618ce7bcbdd78c9 data/minecraft/tags/block/iron_ores.json
 5b9ec93e3d999e5f89fae5ef81bd5a8bdde3ab4f data/minecraft/tags/block/lapis_ores.json
-9b18c131a2a4402a9f913c4bac080375026ebefc data/minecraft/tags/block/mineable/pickaxe.json
+a727d866afb2c911f417e30c21156573680c41a7 data/minecraft/tags/block/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
 786337fa261e280ed152aa01b1f24ddab9d196a0 data/minecraft/tags/block/needs_iron_tool.json
 eef38b2d06fca5b3a616f1af2fa0f5badd352ca7 data/minecraft/tags/block/needs_stone_tool.json
