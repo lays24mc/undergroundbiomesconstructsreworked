@@ -1,6 +1,6 @@
-// 1.21.1	2026-02-04T11:27:58.7227387	Tags for minecraft:block mod id undergroundbiomesconstructsreworked
+// 1.21.1	2026-02-05T13:37:11.2157506	Tags for minecraft:block mod id undergroundbiomesconstructsreworked
 ff8792c9ebdca3df518d86b1fc1bb449f3a0b438 data/minecraft/tags/block/base_stone_overworld.json
-fb3c04be8e50418cac0312418845dac353e3e738 data/minecraft/tags/block/buttons.json
+a3f3965f00df60e7720adef9fdec273c570b0be0 data/minecraft/tags/block/buttons.json
 8b1b52de85727aad516c23c494d7f55b79a6b3e3 data/minecraft/tags/block/coal_ores.json
 f5ffae36ff5e9840eae2fc2f5115d7256d90302c data/minecraft/tags/block/copper_ores.json
 2aea6f1cdb0c90f2d2f8f36347c047fdb781e3d3 data/minecraft/tags/block/diamond_ores.json
@@ -21,4 +21,5 @@ eef38b2d06fca5b3a616f1af2fa0f5badd352ca7 data/minecraft/tags/block/needs_stone_t
 6944fb2e2fd4b903f8b429f605613dceb06248e6 data/minecraft/tags/block/redstone_ores.json
 1caa23409829aa2b51c0d8316c80f624a02efd02 data/minecraft/tags/block/slabs.json
 347af3ac19105f3fb6f9afd14a9612cb7bf7b43b data/minecraft/tags/block/stairs.json
+a3f3965f00df60e7720adef9fdec273c570b0be0 data/minecraft/tags/block/stone_buttons.json
 e5f681f904bb29a1111376895dd560460d26afc4 data/minecraft/tags/block/walls.json

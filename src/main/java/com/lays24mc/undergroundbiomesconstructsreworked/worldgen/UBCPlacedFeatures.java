@@ -1,33 +1,31 @@
 package com.lays24mc.undergroundbiomesconstructsreworked.worldgen;
 
-// Mod main class (used for MODID)
-import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
 
-// Minecraft / Worldgen imports
+import com.electronwill.nightconfig.core.file.FileConfig;
+import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
-import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.*;
+import net.minecraft.world.level.levelgen.placement.CountPlacement;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 
 import java.util.List;
 
 import static com.lays24mc.undergroundbiomesconstructsreworked.worldgen.UBCOrePlacements.commonOrePlacement;
 import static com.lays24mc.undergroundbiomesconstructsreworked.worldgen.UBCOrePlacements.rareOrePlacement;
 
-/**
- * Registers all PlacedFeatures for Underground Biomes Constructs Reworked.
- **/
 public class UBCPlacedFeatures {
 
-    /* ------------------------------------------------------------
+    /**
      * PlacedFeature ResourceKeys
-     * ------------------------------------------------------------ */
+     */
 
     public static final ResourceKey<PlacedFeature> SOAPSTONE_BLOCK_PLACED_KEY = registerKey("soapstone_block_placed");
     public static final ResourceKey<PlacedFeature> SOAPSTONE_COAL_ORE_PLACED_KEY = registerKey("soapstone_coal_ore_placed");
@@ -193,7 +191,6 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SHALE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("shale_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> SHALE_LAPIS_ORE_PLACED_KEY = registerKey("shale_lapis_ore_placed");
 
-    // CHERT
     public static final ResourceKey<PlacedFeature> CHERT_BLOCK_PLACED_KEY = registerKey("chert_block_placed");
     public static final ResourceKey<PlacedFeature> CHERT_COAL_ORE_PLACED_KEY = registerKey("chert_coal_ore_placed");
     public static final ResourceKey<PlacedFeature> CHERT_COPPER_ORE_SMALL_PLACED_KEY = registerKey("chert_copper_ore_small_placed");
@@ -207,7 +204,6 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CHERT_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("chert_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> CHERT_LAPIS_ORE_PLACED_KEY = registerKey("chert_lapis_ore_placed");
 
-    // LIGNITE
     public static final ResourceKey<PlacedFeature> LIGNITE_BLOCK_PLACED_KEY = registerKey("lignite_block_placed");
     public static final ResourceKey<PlacedFeature> LIGNITE_COAL_ORE_PLACED_KEY = registerKey("lignite_coal_ore_placed");
     public static final ResourceKey<PlacedFeature> LIGNITE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("lignite_copper_ore_small_placed");
@@ -221,7 +217,6 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> LIGNITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("lignite_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> LIGNITE_LAPIS_ORE_PLACED_KEY = registerKey("lignite_lapis_ore_placed");
 
-    // DOLOMITE
     public static final ResourceKey<PlacedFeature> DOLOMITE_BLOCK_PLACED_KEY = registerKey("dolomite_block_placed");
     public static final ResourceKey<PlacedFeature> DOLOMITE_COAL_ORE_PLACED_KEY = registerKey("dolomite_coal_ore_placed");
     public static final ResourceKey<PlacedFeature> DOLOMITE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("dolomite_copper_ore_small_placed");
@@ -235,7 +230,6 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> DOLOMITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("dolomite_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> DOLOMITE_LAPIS_ORE_PLACED_KEY = registerKey("dolomite_lapis_ore_placed");
 
-    // ECLOGITE
     public static final ResourceKey<PlacedFeature> ECLOGITE_BLOCK_PLACED_KEY = registerKey("eclogite_block_placed");
     public static final ResourceKey<PlacedFeature> ECLOGITE_COAL_ORE_PLACED_KEY = registerKey("eclogite_coal_ore_placed");
     public static final ResourceKey<PlacedFeature> ECLOGITE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("eclogite_copper_ore_small_placed");
@@ -249,7 +243,6 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ECLOGITE_REDSTONE_ORE_LOWER_PLACED_KEY = registerKey("eclogite_redstone_ore_lower_placed");
     public static final ResourceKey<PlacedFeature> ECLOGITE_LAPIS_ORE_PLACED_KEY = registerKey("eclogite_lapis_ore_placed");
 
-    // GREYWACKE
     public static final ResourceKey<PlacedFeature> GREYWACKE_BLOCK_PLACED_KEY = registerKey("greywacke_block_placed");
     public static final ResourceKey<PlacedFeature> GREYWACKE_COAL_ORE_PLACED_KEY = registerKey("greywacke_coal_ore_placed");
     public static final ResourceKey<PlacedFeature> GREYWACKE_COPPER_ORE_SMALL_PLACED_KEY = registerKey("greywacke_copper_ore_small_placed");
@@ -334,25 +327,21 @@ public class UBCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GNEISS_DIAMOND_ORE_MEDIUM_PLACED_KEY = registerKey("gneiss_diamond_ore_medium_placed");
     public static final ResourceKey<PlacedFeature> GNEISS_EMERALD_ORE_PLACED_KEY = registerKey("gneiss_emerald_ore_placed");
 
-    /**
-     * Bootstrap method.
-     * Called during worldgen setup to register all PlacedFeatures.
-     */
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
 
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+        FileConfig config = FileConfig.of("config/undergroundbiomesconstructsreworked-server.toml");
+        config.load();
 
         // For examples, see vanilla "OrePlacements.java"
 
         /* ------------------------------------------------------------
          * SOAPSTONE – Base stone
          * ------------------------------------------------------------ */
-
-        // Soapstone base rock (rare, spans most of the world height)
         register(context, SOAPSTONE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateSoapstone", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -360,7 +349,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Soapstone coal ore (very common, high Y-levels)
         register(context, SOAPSTONE_COAL_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_COAL_ORE_KEY),
                 commonOrePlacement(
@@ -372,7 +360,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Small copper veins
         register(context, SOAPSTONE_COPPER_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -384,7 +371,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Large copper veins
         register(context, SOAPSTONE_COPPER_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
@@ -396,7 +382,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – upper layer
         register(context, SOAPSTONE_IRON_ORE_UPPER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -408,7 +393,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, SOAPSTONE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -420,7 +404,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, SOAPSTONE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -432,7 +415,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, SOAPSTONE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -444,7 +426,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – extra distribution (badlands-like, higher Y-levels)
         register(context, SOAPSTONE_GOLD_ORE_EXTRA_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -456,7 +437,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – standard distribution
         register(context, SOAPSTONE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -468,7 +448,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, SOAPSTONE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_REDSTONE_ORE_LOWER_KEY),
                 commonOrePlacement(
@@ -480,7 +459,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore
         register(context, SOAPSTONE_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -495,12 +473,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * RHYOLITE – Base stone
          * ------------------------------------------------------------ */
-
-        // Rhyolite base rock (rare, spans most of the world height)
         register(context, RHYOLITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateRyholite", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -508,7 +484,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Rhyolite coal ore (very common, high Y-levels)
         register(context, RHYOLITE_COAL_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_COAL_ORE_KEY),
                 commonOrePlacement(
@@ -520,7 +495,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Small copper veins
         register(context, RHYOLITE_COPPER_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -532,7 +506,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Large copper veins
         register(context, RHYOLITE_COPPER_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
@@ -544,7 +517,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – upper layer
         register(context, RHYOLITE_IRON_ORE_UPPER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -556,7 +528,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, RHYOLITE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -568,7 +539,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, RHYOLITE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -580,7 +550,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, RHYOLITE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -592,7 +561,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – extra distribution (badlands-like, higher Y-levels)
         register(context, RHYOLITE_GOLD_ORE_EXTRA_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -604,7 +572,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – standard distribution
         register(context, RHYOLITE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -616,7 +583,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, RHYOLITE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_REDSTONE_ORE_LOWER_KEY),
                 commonOrePlacement(
@@ -643,11 +609,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * RED GRANITE
          * ------------------------------------------------------------ */
-
         register(context, RED_GRANITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateRedGranite", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -655,7 +620,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, RED_GRANITE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -667,7 +631,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, RED_GRANITE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -679,7 +642,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, RED_GRANITE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -691,7 +653,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – lower distribution (badlands-like, higher Y-levels)
         register(context, RED_GRANITE_GOLD_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_GOLD_ORE_LOWER_KEY),
                 UBCOrePlacements.orePlacement(
@@ -703,7 +664,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore
         register(context, RED_GRANITE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -715,8 +675,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-
-        // Redstone ore – deep distribution
         register(context, RED_GRANITE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_REDSTONE_ORE_LOWER_KEY),
                 commonOrePlacement(
@@ -728,7 +686,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore
         register(context, RED_GRANITE_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -740,7 +697,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore buried
         register(context, RED_GRANITE_LAPIS_ORE_BURIED_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -752,7 +708,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore small
         register(context, RED_GRANITE_DIAMOND_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_DIAMOND_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -764,7 +719,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore large
         register(context, RED_GRANITE_DIAMOND_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_DIAMOND_ORE_LARGE_KEY),
                 rareOrePlacement(
@@ -776,7 +730,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore buried
         register(context, RED_GRANITE_DIAMOND_ORE_BURIED_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_DIAMOND_ORE_BURIED_KEY),
                 commonOrePlacement(
@@ -788,7 +741,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore medium
         register(context, RED_GRANITE_DIAMOND_ORE_MEDIUM_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_DIAMOND_ORE_MEDIUM_KEY),
                 commonOrePlacement(
@@ -800,7 +752,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Emerald ore
         register(context, RED_GRANITE_EMERALD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_EMERALD_ORE_KEY),
                 commonOrePlacement(
@@ -815,11 +766,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * QUARTZITE
          * ------------------------------------------------------------ */
-
         register(context, QUARTZITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateQuartzite", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -827,7 +777,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, QUARTZITE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -839,7 +788,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, QUARTZITE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -851,7 +799,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, QUARTZITE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -863,7 +810,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – lower distribution (badlands-like, higher Y-levels)
         register(context, QUARTZITE_GOLD_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_GOLD_ORE_LOWER_KEY),
                 UBCOrePlacements.orePlacement(
@@ -875,7 +821,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore
         register(context, QUARTZITE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -887,7 +832,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, QUARTZITE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_REDSTONE_ORE_LOWER_KEY),
                 commonOrePlacement(
@@ -899,7 +843,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore
         register(context, QUARTZITE_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -911,7 +854,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore buried
         register(context, QUARTZITE_LAPIS_ORE_BURIED_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -923,7 +865,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore small
         register(context, QUARTZITE_DIAMOND_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_DIAMOND_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -935,7 +876,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore large
         register(context, QUARTZITE_DIAMOND_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_DIAMOND_ORE_LARGE_KEY),
                 rareOrePlacement(
@@ -947,7 +887,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore buried
         register(context, QUARTZITE_DIAMOND_ORE_BURIED_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_DIAMOND_ORE_BURIED_KEY),
                 commonOrePlacement(
@@ -959,7 +898,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore medium
         register(context, QUARTZITE_DIAMOND_ORE_MEDIUM_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_DIAMOND_ORE_MEDIUM_KEY),
                 commonOrePlacement(
@@ -971,7 +909,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Emerald ore
         register(context, QUARTZITE_EMERALD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_EMERALD_ORE_KEY),
                 commonOrePlacement(
@@ -986,11 +923,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * MIGMATITE
          * ------------------------------------------------------------ */
-
         register(context, MIGMATITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateMigmatite", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -998,7 +934,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, MIGMATITE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1010,7 +945,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, MIGMATITE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1022,7 +956,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, MIGMATITE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -1034,7 +967,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – lower distribution (badlands-like, higher Y-levels)
         register(context, MIGMATITE_GOLD_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_GOLD_ORE_LOWER_KEY),
                 UBCOrePlacements.orePlacement(
@@ -1046,7 +978,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore
         register(context, MIGMATITE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -1058,7 +989,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, MIGMATITE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_REDSTONE_ORE_LOWER_KEY),
                 commonOrePlacement(
@@ -1070,7 +1000,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore
         register(context, MIGMATITE_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -1082,7 +1011,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore buried
         register(context, MIGMATITE_LAPIS_ORE_BURIED_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -1094,7 +1022,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore small
         register(context, MIGMATITE_DIAMOND_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_DIAMOND_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1106,7 +1033,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore large
         register(context, MIGMATITE_DIAMOND_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_DIAMOND_ORE_LARGE_KEY),
                 rareOrePlacement(
@@ -1118,7 +1044,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore buried
         register(context, MIGMATITE_DIAMOND_ORE_BURIED_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_DIAMOND_ORE_BURIED_KEY),
                 commonOrePlacement(
@@ -1130,7 +1055,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore medium
         register(context, MIGMATITE_DIAMOND_ORE_MEDIUM_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_DIAMOND_ORE_MEDIUM_KEY),
                 commonOrePlacement(
@@ -1142,7 +1066,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Emerald ore
         register(context, MIGMATITE_EMERALD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_EMERALD_ORE_KEY),
                 commonOrePlacement(
@@ -1157,11 +1080,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * MARBLE – Base stone
          * ------------------------------------------------------------ */
-
         register(context, MARBLE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateMarble", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -1169,7 +1091,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, MARBLE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1181,7 +1102,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, MARBLE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1193,7 +1113,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, MARBLE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -1205,7 +1124,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – lower distribution (badlands-like, higher Y-levels)
         register(context, MARBLE_GOLD_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_GOLD_ORE_LOWER_KEY),
                 UBCOrePlacements.orePlacement(
@@ -1217,7 +1135,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore
         register(context, MARBLE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -1229,7 +1146,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, MARBLE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_REDSTONE_ORE_LOWER_KEY),
                 commonOrePlacement(
@@ -1241,7 +1157,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore
         register(context, MARBLE_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -1253,7 +1168,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore buried
         register(context, MARBLE_LAPIS_ORE_BURIED_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -1265,7 +1179,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore small
         register(context, MARBLE_DIAMOND_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_DIAMOND_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1277,7 +1190,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore large
         register(context, MARBLE_DIAMOND_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_DIAMOND_ORE_LARGE_KEY),
                 rareOrePlacement(
@@ -1289,7 +1201,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore buried
         register(context, MARBLE_DIAMOND_ORE_BURIED_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_DIAMOND_ORE_BURIED_KEY),
                 commonOrePlacement(
@@ -1301,7 +1212,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Diamond ore medium
         register(context, MARBLE_DIAMOND_ORE_MEDIUM_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_DIAMOND_ORE_MEDIUM_KEY),
                 commonOrePlacement(
@@ -1313,7 +1223,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Emerald ore
         register(context, MARBLE_EMERALD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_EMERALD_ORE_KEY),
                 commonOrePlacement(
@@ -1328,12 +1237,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * LIMESTONE – Base stone
          * ------------------------------------------------------------ */
-
-        // Limestone base rock (rare, spans most of the world height)
         register(context, LIMESTONE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateLimestone", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -1341,7 +1248,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Limestone coal ore (very common, high Y-levels)
         register(context, LIMESTONE_COAL_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_COAL_ORE_KEY),
                 commonOrePlacement(
@@ -1353,7 +1259,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Small copper veins
         register(context, LIMESTONE_COPPER_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1365,7 +1270,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Large copper veins
         register(context, LIMESTONE_COPPER_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
@@ -1377,7 +1281,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – upper layer
         register(context, LIMESTONE_IRON_ORE_UPPER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1389,7 +1292,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, LIMESTONE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1401,7 +1303,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, LIMESTONE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1413,7 +1314,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, LIMESTONE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -1425,7 +1325,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – extra distribution (badlands-like, higher Y-levels)
         register(context, LIMESTONE_GOLD_ORE_EXTRA_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -1437,7 +1336,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – standard distribution
         register(context, LIMESTONE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -1449,7 +1347,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, LIMESTONE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -1476,12 +1373,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * SILTSTONE – Base stone
          * ------------------------------------------------------------ */
-
-        // Siltstone base rock (rare, spans most of the world height)
         register(context, SILTSTONE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateSiltstone", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -1489,7 +1384,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Siltstone coal ore (very common, high Y-levels)
         register(context, SILTSTONE_COAL_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_COAL_ORE_KEY),
                 commonOrePlacement(
@@ -1501,7 +1395,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Small copper veins
         register(context, SILTSTONE_COPPER_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1513,7 +1406,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Large copper veins
         register(context, SILTSTONE_COPPER_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
@@ -1525,7 +1417,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – upper layer
         register(context, SILTSTONE_IRON_ORE_UPPER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1537,7 +1428,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, SILTSTONE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1549,7 +1439,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, SILTSTONE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1561,7 +1450,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, SILTSTONE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -1573,7 +1461,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – extra distribution (badlands-like, higher Y-levels)
         register(context, SILTSTONE_GOLD_ORE_EXTRA_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -1585,7 +1472,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – standard distribution
         register(context, SILTSTONE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -1597,7 +1483,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, SILTSTONE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -1609,7 +1494,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore
         register(context, SILTSTONE_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -1624,12 +1508,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * BLUESCHIST – Base stone
          * ------------------------------------------------------------ */
-
-        // Blueschist base rock (rare, spans most of the world height)
         register(context, BLUESCHIST_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateBlueschist", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -1637,7 +1519,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Blueschist coal ore (very common, high Y-levels)
         register(context, BLUESCHIST_COAL_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_COAL_ORE_KEY),
                 commonOrePlacement(
@@ -1649,7 +1530,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Small copper veins
         register(context, BLUESCHIST_COPPER_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1661,7 +1541,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Large copper veins
         register(context, BLUESCHIST_COPPER_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
@@ -1673,7 +1552,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – upper layer
         register(context, BLUESCHIST_IRON_ORE_UPPER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1685,7 +1563,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, BLUESCHIST_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1697,7 +1574,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, BLUESCHIST_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1709,7 +1585,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, BLUESCHIST_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -1721,7 +1596,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – extra distribution (badlands-like, higher Y-levels)
         register(context, BLUESCHIST_GOLD_ORE_EXTRA_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -1733,7 +1607,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – standard distribution
         register(context, BLUESCHIST_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -1745,7 +1618,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, BLUESCHIST_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -1757,7 +1629,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore
         register(context, BLUESCHIST_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -1772,12 +1643,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * GREENSCHIST – Base stone
          * ------------------------------------------------------------ */
-
-        // Greenschist base rock (rare, spans most of the world height)
         register(context, GREENSCHIST_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateGreenschist", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -1785,7 +1654,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Greenschist coal ore (very common, high Y-levels)
         register(context, GREENSCHIST_COAL_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_COAL_ORE_KEY),
                 commonOrePlacement(
@@ -1797,7 +1665,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Small copper veins
         register(context, GREENSCHIST_COPPER_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1809,7 +1676,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Large copper veins
         register(context, GREENSCHIST_COPPER_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
@@ -1821,7 +1687,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – upper layer
         register(context, GREENSCHIST_IRON_ORE_UPPER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1833,7 +1698,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, GREENSCHIST_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1845,7 +1709,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, GREENSCHIST_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1857,7 +1720,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, GREENSCHIST_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -1869,7 +1731,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – extra distribution (badlands-like, higher Y-levels)
         register(context, GREENSCHIST_GOLD_ORE_EXTRA_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -1881,7 +1742,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – standard distribution
         register(context, GREENSCHIST_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -1893,7 +1753,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, GREENSCHIST_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -1905,7 +1764,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore
         register(context, GREENSCHIST_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -1920,12 +1778,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * CHALK – Base stone
          * ------------------------------------------------------------ */
-
-        // Chalk base rock (rare, spans most of the world height)
         register(context, CHALK_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateChalk", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -1933,7 +1789,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Chalk coal ore (very common, high Y-levels)
         register(context, CHALK_COAL_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_COAL_ORE_KEY),
                 commonOrePlacement(
@@ -1945,7 +1800,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Small copper veins
         register(context, CHALK_COPPER_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -1957,7 +1811,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Large copper veins
         register(context, CHALK_COPPER_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
@@ -1969,7 +1822,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – upper layer
         register(context, CHALK_IRON_ORE_UPPER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1981,7 +1833,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, CHALK_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -1993,7 +1844,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, CHALK_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -2005,7 +1855,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, CHALK_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -2017,7 +1866,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – extra distribution (badlands-like, higher Y-levels)
         register(context, CHALK_GOLD_ORE_EXTRA_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -2029,7 +1877,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – standard distribution
         register(context, CHALK_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -2041,7 +1888,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, CHALK_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -2053,7 +1899,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore
         register(context, CHALK_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -2068,12 +1913,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * SHALE – Base stone
          * ------------------------------------------------------------ */
-
-        // Shale base rock (rare, spans most of the world height)
         register(context, SHALE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateShale", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2081,7 +1924,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Shale coal ore (very common, high Y-levels)
         register(context, SHALE_COAL_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_COAL_ORE_KEY),
                 commonOrePlacement(
@@ -2093,7 +1935,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Small copper veins
         register(context, SHALE_COPPER_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -2105,7 +1946,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Large copper veins
         register(context, SHALE_COPPER_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
@@ -2117,7 +1957,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – upper layer
         register(context, SHALE_IRON_ORE_UPPER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -2129,7 +1968,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – middle layer
         register(context, SHALE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -2141,7 +1979,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Iron ore – small veins
         register(context, SHALE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -2153,7 +1990,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – standard distribution
         register(context, SHALE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -2165,7 +2001,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Gold ore – extra distribution (badlands-like, higher Y-levels)
         register(context, SHALE_GOLD_ORE_EXTRA_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -2177,7 +2012,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – standard distribution
         register(context, SHALE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -2189,7 +2023,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Redstone ore – deep distribution
         register(context, SHALE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -2201,7 +2034,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-        // Lapis ore
         register(context, SHALE_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -2218,7 +2050,8 @@ public class UBCPlacedFeatures {
          * ------------------------------------------------------------ */
         register(context, CHERT_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_BLOCK_KEY),
-                commonOrePlacement(2,
+                commonOrePlacement(
+                        config.getIntOrElse("shouldGenerateChert", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2330,7 +2163,8 @@ public class UBCPlacedFeatures {
          * ------------------------------------------------------------ */
         register(context, LIGNITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_BLOCK_KEY),
-                commonOrePlacement(2,
+                commonOrePlacement(
+                        config.getIntOrElse("shouldGenerateLignite", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2442,7 +2276,8 @@ public class UBCPlacedFeatures {
          * ------------------------------------------------------------ */
         register(context, DOLOMITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_BLOCK_KEY),
-                commonOrePlacement(2,
+                commonOrePlacement(
+                        config.getIntOrElse("shouldGenerateDolomite", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2554,7 +2389,8 @@ public class UBCPlacedFeatures {
          * ------------------------------------------------------------ */
         register(context, ECLOGITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_BLOCK_KEY),
-                commonOrePlacement(2,
+                commonOrePlacement(
+                        config.getIntOrElse("shouldGenerateEclogite", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2666,7 +2502,8 @@ public class UBCPlacedFeatures {
          * ------------------------------------------------------------ */
         register(context, GREYWACKE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_BLOCK_KEY),
-                commonOrePlacement(2,
+                commonOrePlacement(
+                        config.getIntOrElse("shouldGenerateGreywacke", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2775,12 +2612,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * KOMATIITE – Base stone
          * ------------------------------------------------------------ */
-
-// Komatiite base rock (rare, spans most of the world height)
         register(context, KOMATIITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateKomatiite", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2788,7 +2623,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Komatiite coal ore (very common, high Y-levels)
         register(context, KOMATIITE_COAL_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_COAL_ORE_KEY),
                 commonOrePlacement(
@@ -2800,7 +2634,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Small copper veins
         register(context, KOMATIITE_COPPER_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -2812,7 +2645,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Large copper veins
         register(context, KOMATIITE_COPPER_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
@@ -2824,7 +2656,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Iron ore – upper layer
         register(context, KOMATIITE_IRON_ORE_UPPER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -2836,7 +2667,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Iron ore – middle layer
         register(context, KOMATIITE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -2848,7 +2678,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Iron ore – small veins
         register(context, KOMATIITE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -2860,7 +2689,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Gold ore – standard distribution
         register(context, KOMATIITE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -2872,7 +2700,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Gold ore – extra distribution (higher Y-levels)
         register(context, KOMATIITE_GOLD_ORE_EXTRA_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -2884,7 +2711,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Redstone ore – standard distribution
         register(context, KOMATIITE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -2896,7 +2722,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Redstone ore – deep distribution
         register(context, KOMATIITE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_REDSTONE_ORE_LOWER_KEY),
                 commonOrePlacement(
@@ -2908,7 +2733,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Lapis ore
         register(context, KOMATIITE_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -2923,12 +2747,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * DACITE – Base stone
          * ------------------------------------------------------------ */
-
-// Dacite base rock (rare, spans most of the world height)
         register(context, DACITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateDacite", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2936,7 +2758,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Dacite coal ore (very common, high Y-levels)
         register(context, DACITE_COAL_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_COAL_ORE_KEY),
                 commonOrePlacement(
@@ -2948,7 +2769,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Small copper veins
         register(context, DACITE_COPPER_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_COPPER_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -2960,7 +2780,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Large copper veins
         register(context, DACITE_COPPER_ORE_LARGE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_COPPER_ORE_LARGE_KEY),
                 commonOrePlacement(
@@ -2972,7 +2791,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Iron ore – upper layer
         register(context, DACITE_IRON_ORE_UPPER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -2984,7 +2802,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Iron ore – middle layer
         register(context, DACITE_IRON_ORE_MIDDLE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_IRON_ORE_KEY),
                 commonOrePlacement(
@@ -2996,7 +2813,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Iron ore – small veins
         register(context, DACITE_IRON_ORE_SMALL_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_IRON_ORE_SMALL_KEY),
                 commonOrePlacement(
@@ -3008,7 +2824,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Gold ore – standard distribution
         register(context, DACITE_GOLD_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_GOLD_ORE_KEY),
                 commonOrePlacement(
@@ -3020,7 +2835,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Gold ore – extra distribution (higher Y-levels)
         register(context, DACITE_GOLD_ORE_EXTRA_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_GOLD_ORE_EXTRA_KEY),
                 commonOrePlacement(
@@ -3032,7 +2846,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Redstone ore – standard distribution
         register(context, DACITE_REDSTONE_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_REDSTONE_ORE_KEY),
                 commonOrePlacement(
@@ -3044,7 +2857,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Redstone ore – deep distribution
         register(context, DACITE_REDSTONE_ORE_LOWER_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_REDSTONE_ORE_LOWER_KEY),
                 commonOrePlacement(
@@ -3056,7 +2868,6 @@ public class UBCPlacedFeatures {
                 )
         );
 
-// Lapis ore
         register(context, DACITE_LAPIS_ORE_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_LAPIS_ORE_KEY),
                 commonOrePlacement(
@@ -3071,11 +2882,10 @@ public class UBCPlacedFeatures {
         /* ------------------------------------------------------------
          * BLACK GRANITE
          * ------------------------------------------------------------ */
-
         register(context, BLACK_GRANITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateBlackGranite", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -3234,7 +3044,7 @@ public class UBCPlacedFeatures {
         register(context, GABBRO_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateGabbro", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -3393,7 +3203,7 @@ public class UBCPlacedFeatures {
         register(context, GNEISS_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_BLOCK_KEY),
                 commonOrePlacement(
-                        2,
+                        config.getIntOrElse("shouldGenerateGneiss", 2),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)

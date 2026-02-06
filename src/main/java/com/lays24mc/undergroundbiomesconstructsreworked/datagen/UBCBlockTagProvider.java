@@ -16,11 +16,15 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
         super(output, lookupProvider, UndergroundBiomesConstructsReworked.MODID, existingFileHelper);
     }
 
+    /**
+     * All tags
+     */
+
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
         // ------------------------------------------------------------
-        // Tags: All blocks that should be mined with a pickaxe
+        // All blocks that should be mined with a pickaxe
         // ------------------------------------------------------------
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(SoapstoneBlocks.SOAPSTONE_BLOCK.get())

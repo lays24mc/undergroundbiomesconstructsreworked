@@ -301,21 +301,9 @@ public class UBCBiomeModifiers {
 
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
-        // CF -> PF -> BM
+
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
-
-        // Example for individual Biomes!
-        // context.register(ADD_BISMUTH_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
-        //         HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS), biomes.getOrThrow(Biomes.SAVANNA)),
-        //         HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.BISMUTH_ORE_PLACED_KEY)),
-        //         GenerationStep.Decoration.UNDERGROUND_ORES));
-
-        //vegetation
-        //context.register(ADD_SOAPSTONE_MOSSY_COBBLE, new BiomeModifiers.AddFeaturesBiomeModifier(
-        //        HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS), biomes.getOrThrow(Biomes.BIRCH_FOREST), biomes.getOrThrow(Biomes.FOREST), biomes.getOrThrow(Biomes.MEADOW)),
-        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SOAPSTONE_MOSSY_COBBLE_PLACED_KEY)),
-        //        GenerationStep.Decoration.VEGETAL_DECORATION));
 
         //soapstone
         context.register(ADD_SOAPSTONE_BLOCK, new BiomeModifiers.AddFeaturesBiomeModifier(

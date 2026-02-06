@@ -29,9 +29,9 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
     }
 
-    // ------------------------------------------------------------
-    // BLOCK MODELS
-    // ------------------------------------------------------------
+    /**
+     * Block Models
+     */
     private void buildAllModels() {
 
         // --------------------------
@@ -687,9 +687,9 @@ public class UBCBlockStateProvider extends BlockStateProvider {
 
     }
 
-    // ------------------------------------------------------------
-    // Helper methods
-    // ------------------------------------------------------------
+    /**
+     * Helper
+     */
 
     private void blockWithItem(DeferredBlock<Block> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));

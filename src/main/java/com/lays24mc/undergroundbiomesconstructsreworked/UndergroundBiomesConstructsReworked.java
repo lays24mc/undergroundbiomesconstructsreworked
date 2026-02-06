@@ -16,6 +16,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
@@ -37,10 +38,10 @@ public class UndergroundBiomesConstructsReworked {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     public UndergroundBiomesConstructsReworked(IEventBus modEventBus, ModContainer modContainer) {
-        LOGGER.info("SETUP More World Constructs");
+        LOGGER.info("SETUP More World Constructs Reworked");
+
         modEventBus.addListener(this::commonSetup);
 
-        //register event
         UBCItems.register(modEventBus);
 
         SoapstoneBlocks.register(modEventBus);
@@ -66,9 +67,13 @@ public class UndergroundBiomesConstructsReworked {
         GabbroBlocks.register(modEventBus);
         GneissBlocks.register(modEventBus);
 
+
+
         CREATIVE_MODE_TABS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
+
+        modContainer.registerConfig(ModConfig.Type.SERVER, Config.SPEC);
     }
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREACTIVE_TAB = CREATIVE_MODE_TABS.register(
@@ -85,7 +90,9 @@ public class UndergroundBiomesConstructsReworked {
                             .build()
     );
 
-    private void commonSetup(final FMLCommonSetupEvent event) {}
+    private void commonSetup(final FMLCommonSetupEvent event) {
+
+    }
 
     private static final Collection<ItemStack> buildCreativeTabList() {
         Collection<ItemStack> tabEntries = new ArrayList<ItemStack>();

@@ -18,9 +18,9 @@ public class UBCRecipeBuilder extends RecipeProvider implements IConditionBuilde
         super(output, registries);
     }
 
-    // ------------------------------------------------------------
-    // GENERIC COOKING HELPERS
-    // ------------------------------------------------------------
+    /**
+     * Helper
+     */
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
     }
