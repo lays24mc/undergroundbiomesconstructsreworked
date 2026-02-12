@@ -67,8 +67,6 @@ public class UndergroundBiomesConstructsReworked {
         GabbroBlocks.register(modEventBus);
         GneissBlocks.register(modEventBus);
 
-
-
         CREATIVE_MODE_TABS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);

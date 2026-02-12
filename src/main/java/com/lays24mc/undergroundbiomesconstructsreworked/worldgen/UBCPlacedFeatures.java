@@ -2,6 +2,7 @@ package com.lays24mc.undergroundbiomesconstructsreworked.worldgen;
 
 
 import com.electronwill.nightconfig.core.file.FileConfig;
+import com.lays24mc.undergroundbiomesconstructsreworked.Config;
 import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
