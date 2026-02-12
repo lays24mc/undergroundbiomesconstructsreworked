@@ -38,7 +38,7 @@ public class UndergroundBiomesConstructsReworked {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     public UndergroundBiomesConstructsReworked(IEventBus modEventBus, ModContainer modContainer) {
-        LOGGER.info("SETUP More World Constructs Reworked");
+        LOGGER.info("SETUP UndergroundBiomesConstructs [Reworked]");
 
         modEventBus.addListener(this::commonSetup);
 
