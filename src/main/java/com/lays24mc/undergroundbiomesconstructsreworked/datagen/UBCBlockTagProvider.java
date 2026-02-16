@@ -70,6 +70,9 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(LigniteBlocks.LIGNITE_GOLD_ORE.get())
                 .add(LigniteBlocks.LIGNITE_REDSTONE_ORE.get())
                 .add(LigniteBlocks.LIGNITE_LAPIS_ORE.get())
+                .add(LigniteBlocks.LIGNITE_IRON_ORE.get())
+                .add(LigniteBlocks.LIGNITE_COPPER_ORE.get())
+                .add(LigniteBlocks.LIGNITE_COAL_ORE.get())
 
                 .add(DolomiteBlocks.DOLOMITE_BLOCK.get())
                 .add(DolomiteBlocks.DOLOMITE_COAL_ORE.get())

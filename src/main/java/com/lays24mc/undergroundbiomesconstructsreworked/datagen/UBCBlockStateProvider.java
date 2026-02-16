@@ -552,7 +552,7 @@ public class UBCBlockStateProvider extends BlockStateProvider {
         slabBlock((UBCSlabBlocks) RhyoliteBlocks.RHYOLITE_BRICK_SLAB.get(), blockTexture(RhyoliteBlocks.RHYOLITE_BRICK_BLOCK.get()), blockTexture(RhyoliteBlocks.RHYOLITE_BRICK_BLOCK.get()));
 
         slabBlock((UBCSlabBlocks) RedGraniteBlocks.RED_GRANITE_BLOCK_SLAB.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_BLOCK.get()), blockTexture(RedGraniteBlocks.RED_GRANITE_BLOCK.get()));
-        slabBlock((UBCSlabBlocks) RedGraniteBlocks.RED_GRANITE_COBBLE_SLAB.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_COBBLE_BLOCK.get()), blockTexture(RedGraniteBlocks.RED_GRANITE_BLOCK.get()));
+        slabBlock((UBCSlabBlocks) RedGraniteBlocks.RED_GRANITE_COBBLE_SLAB.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_COBBLE_BLOCK.get()), blockTexture(RedGraniteBlocks.RED_GRANITE_COBBLE_BLOCK.get()));
         slabBlock((UBCSlabBlocks) RedGraniteBlocks.RED_GRANITE_BRICK_SLAB.get(), blockTexture(RedGraniteBlocks.RED_GRANITE_BRICK_BLOCK.get()), blockTexture(RedGraniteBlocks.RED_GRANITE_BRICK_BLOCK.get()));
 
         slabBlock((UBCSlabBlocks) QuartziteBlocks.QUARTZITE_BLOCK_SLAB.get(), blockTexture(QuartziteBlocks.QUARTZITE_BLOCK.get()), blockTexture(QuartziteBlocks.QUARTZITE_BLOCK.get()));

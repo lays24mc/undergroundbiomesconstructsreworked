@@ -1,6 +1,8 @@
 package com.lays24mc.undergroundbiomesconstructsreworked;
 
 import com.lays24mc.undergroundbiomesconstructsreworked.block.*;
+import com.lays24mc.undergroundbiomesconstructsreworked.block.custom.UBCBlocks;
+import com.lays24mc.undergroundbiomesconstructsreworked.block.custom.UBCSlabBlocks;
 import com.lays24mc.undergroundbiomesconstructsreworked.item.UBCItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
@@ -21,12 +23,15 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
+import java.net.SocketOption;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 @Mod(UndergroundBiomesConstructsReworked.MODID)
 public class UndergroundBiomesConstructsReworked {
@@ -79,7 +84,7 @@ public class UndergroundBiomesConstructsReworked {
             () ->
                     CreativeModeTab
                             .builder()
-                            .withTabsBefore(CreativeModeTabs.COMBAT)
+                            .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
                             .icon(() -> new ItemStack(SoapstoneBlocks.SOAPSTONE_BLOCK.get()))
                             .displayItems((parameters, output) -> {
                                 output.acceptAll(buildCreativeTabList());
@@ -98,6 +103,20 @@ public class UndergroundBiomesConstructsReworked {
                 .getEntries()
                 .forEach(item -> tabEntries.add(new ItemStack(item.get())));
         return tabEntries;
+    }
+
+    //Helper for Creative Tab Blocks
+    private static Collection<ItemStack> collectBlocks(DeferredRegister.Blocks register) {
+        Collection<ItemStack> items = new ArrayList();
+        register.getEntries().forEach(holder -> items.add(new ItemStack(holder.get())));
+        return items;
+    }
+
+    //Helper for Creative Tab Items
+    private static Collection<ItemStack> collectItems(DeferredRegister.Items register) {
+        Collection<ItemStack> items = new ArrayList();
+        register.getEntries().forEach(holder -> items.add(new ItemStack(holder.get())));
+        return items;
     }
 
     @EventBusSubscriber(modid = MODID, value = Dist.CLIENT)

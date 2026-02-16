@@ -10,6 +10,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class SoapstoneBlocks {
@@ -85,11 +86,9 @@ public class SoapstoneBlocks {
     );
 
     // Buttons
-
     public static final DeferredBlock<Block> SOAPSTONE_STONE_BUTTON = registerBlock("soapstone_stone_button",
             () -> new UBCButtonsBlocks(BlockSetType.IRON, MapColor.STONE)
     );
-
 
     private static final <R, T> DeferredBlock<Block> registerBlock(
             String name,

@@ -29,6 +29,8 @@ public class DataGenerators {
         BlockTagsProvider blockTagsProvider = new UBCBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
         generator.addProvider(event.includeServer(), new UBCItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+
         generator.addProvider(event.includeClient(), new UBCBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new UBCItemModelProvider(packOutput, existingFileHelper));
     }
 }
