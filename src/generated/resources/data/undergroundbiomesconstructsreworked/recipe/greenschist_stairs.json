@@ -3,9 +3,7 @@
   "category": "building",
   "group": "greenschist",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:greenschist_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:greenschist_block"
   },
   "pattern": [
     "#  ",

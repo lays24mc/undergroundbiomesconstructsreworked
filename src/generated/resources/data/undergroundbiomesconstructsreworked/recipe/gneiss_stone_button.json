@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "undergroundbiomesconstructsreworked:gneiss_block"
-    }
+    "A": "undergroundbiomesconstructsreworked:gneiss_block"
   },
   "pattern": [
     "A"

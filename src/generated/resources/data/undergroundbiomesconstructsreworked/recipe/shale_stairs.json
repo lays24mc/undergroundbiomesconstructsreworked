@@ -3,9 +3,7 @@
   "category": "building",
   "group": "shale",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:shale_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:shale_block"
   },
   "pattern": [
     "#  ",

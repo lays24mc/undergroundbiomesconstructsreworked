@@ -3,9 +3,7 @@
   "category": "building",
   "group": "komatiite",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:komatiite_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:komatiite_block"
   },
   "pattern": [
     "#  ",

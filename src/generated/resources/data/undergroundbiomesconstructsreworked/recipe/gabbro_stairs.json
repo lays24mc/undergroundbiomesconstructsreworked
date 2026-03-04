@@ -3,9 +3,7 @@
   "category": "building",
   "group": "gabbro",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:gabbro_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:gabbro_block"
   },
   "pattern": [
     "#  ",

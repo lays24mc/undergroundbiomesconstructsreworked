@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "greenschist",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:greenschist_copper_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:greenschist_copper_ore",
   "result": {
     "count": 1,
     "id": "minecraft:raw_copper"

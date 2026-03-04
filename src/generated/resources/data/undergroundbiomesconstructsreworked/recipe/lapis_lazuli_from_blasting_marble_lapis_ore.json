@@ -4,9 +4,7 @@
   "cookingtime": 100,
   "experience": 0.25,
   "group": "marble",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:marble_lapis_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:marble_lapis_ore",
   "result": {
     "count": 1,
     "id": "minecraft:lapis_lazuli"

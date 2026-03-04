@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "gneiss",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:gneiss_emerald_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:gneiss_emerald_ore",
   "result": {
     "count": 1,
     "id": "minecraft:emerald"

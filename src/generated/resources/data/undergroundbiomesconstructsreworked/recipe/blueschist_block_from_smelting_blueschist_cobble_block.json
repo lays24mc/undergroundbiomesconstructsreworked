@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "blueschist",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:blueschist_cobble_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:blueschist_cobble_block",
   "result": {
     "count": 1,
     "id": "undergroundbiomesconstructsreworked:blueschist_block"

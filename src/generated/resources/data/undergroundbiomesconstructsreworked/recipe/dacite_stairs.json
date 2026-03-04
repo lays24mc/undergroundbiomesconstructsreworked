@@ -3,9 +3,7 @@
   "category": "building",
   "group": "dacite",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:dacite_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:dacite_block"
   },
   "pattern": [
     "#  ",

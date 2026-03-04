@@ -4,9 +4,7 @@
   "cookingtime": 100,
   "experience": 0.25,
   "group": "red_granite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:red_granite_emerald_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:red_granite_emerald_ore",
   "result": {
     "count": 1,
     "id": "minecraft:emerald"

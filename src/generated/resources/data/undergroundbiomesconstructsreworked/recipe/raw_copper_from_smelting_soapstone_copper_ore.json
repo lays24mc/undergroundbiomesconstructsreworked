@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "soapstone",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:soapstone_copper_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:soapstone_copper_ore",
   "result": {
     "count": 1,
     "id": "minecraft:raw_copper"

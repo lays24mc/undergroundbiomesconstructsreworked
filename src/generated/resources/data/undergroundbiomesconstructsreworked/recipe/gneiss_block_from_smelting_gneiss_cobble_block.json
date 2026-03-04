@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "gneiss",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:gneiss_cobble_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:gneiss_cobble_block",
   "result": {
     "count": 1,
     "id": "undergroundbiomesconstructsreworked:gneiss_block"

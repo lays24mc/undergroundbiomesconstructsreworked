@@ -3,9 +3,7 @@
   "category": "building",
   "group": "migmatite",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:migmatite_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:migmatite_block"
   },
   "pattern": [
     "#  ",

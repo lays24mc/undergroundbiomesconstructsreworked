@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "rhyolite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:rhyolite_cobble_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:rhyolite_cobble_block",
   "result": {
     "count": 1,
     "id": "undergroundbiomesconstructsreworked:rhyolite_block"

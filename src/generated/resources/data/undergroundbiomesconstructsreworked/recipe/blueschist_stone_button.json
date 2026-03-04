@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "undergroundbiomesconstructsreworked:blueschist_block"
-    }
+    "A": "undergroundbiomesconstructsreworked:blueschist_block"
   },
   "pattern": [
     "A"

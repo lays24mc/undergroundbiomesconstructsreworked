@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "undergroundbiomesconstructsreworked:red_granite_block"
-    }
+    "A": "undergroundbiomesconstructsreworked:red_granite_block"
   },
   "pattern": [
     "A"

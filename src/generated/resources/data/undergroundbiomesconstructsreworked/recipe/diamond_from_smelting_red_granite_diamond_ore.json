@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "red_granite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:red_granite_diamond_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:red_granite_diamond_ore",
   "result": {
     "count": 1,
     "id": "minecraft:diamond"

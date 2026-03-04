@@ -3,9 +3,7 @@
   "category": "building",
   "group": "greywacke",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:greywacke_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:greywacke_block"
   },
   "pattern": [
     "#  ",

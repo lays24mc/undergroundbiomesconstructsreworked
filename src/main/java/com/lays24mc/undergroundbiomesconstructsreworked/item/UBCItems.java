@@ -11,8 +11,8 @@ public class UBCItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(UndergroundBiomesConstructsReworked.MODID);
 
-    public static final DeferredItem<Item> LIGNITE_COAL = ITEMS.register("lignite_coal",
-            () -> new FuelItem(new Item.Properties(), 1600));
+    public static final DeferredItem<Item> LIGNITE_COAL = ITEMS.registerItem("lignite_coal",
+            (properties) -> new FuelItem(properties, 1600));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

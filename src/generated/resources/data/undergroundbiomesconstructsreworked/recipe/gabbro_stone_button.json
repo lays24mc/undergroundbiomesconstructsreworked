@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "undergroundbiomesconstructsreworked:gabbro_block"
-    }
+    "A": "undergroundbiomesconstructsreworked:gabbro_block"
   },
   "pattern": [
     "A"

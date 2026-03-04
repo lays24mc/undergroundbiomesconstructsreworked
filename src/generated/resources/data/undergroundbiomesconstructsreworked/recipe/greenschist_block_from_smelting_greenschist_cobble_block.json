@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "greenschist",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:greenschist_cobble_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:greenschist_cobble_block",
   "result": {
     "count": 1,
     "id": "undergroundbiomesconstructsreworked:greenschist_block"

@@ -4,17 +4,13 @@ import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstru
 import com.lays24mc.undergroundbiomesconstructsreworked.block.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.network.protocol.login.ClientboundHelloPacket;
 import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
-
-import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
 
 public class UBCBlockTagProvider extends BlockTagsProvider {
-    public UBCBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, UndergroundBiomesConstructsReworked.MODID, existingFileHelper);
+    public UBCBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(output, lookupProvider, UndergroundBiomesConstructsReworked.MODID);
     }
 
     /**

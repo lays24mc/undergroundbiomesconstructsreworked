@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "undergroundbiomesconstructsreworked:eclogite_block"
-    }
+    "A": "undergroundbiomesconstructsreworked:eclogite_block"
   },
   "pattern": [
     "A"

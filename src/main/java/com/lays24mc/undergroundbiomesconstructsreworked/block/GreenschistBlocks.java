@@ -23,70 +23,70 @@ public class GreenschistBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> GREENSCHIST_BLOCK = registerBlock("greenschist_block",
-            () -> new UBCBlocks(MapColor.COLOR_GREEN, 0.7F, 0.54F)
+            () -> new UBCBlocks("greenschist_block", MapColor.COLOR_GREEN, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> GREENSCHIST_COBBLE_BLOCK = registerBlock("greenschist_cobble_block",
-            () -> new UBCBlocks(MapColor.COLOR_GREEN, 0.7F, 0.54F)
+            () -> new UBCBlocks("greenschist_cobble_block", MapColor.COLOR_GREEN, 0.7F, 0.54F)
     );
     public static  DeferredBlock<Block> GREENSCHIST_BRICK_BLOCK = registerBlock("greenschist_brick_block",
-            () -> new UBCBlocks(MapColor.COLOR_GREEN, 0.7F, 0.54F)
+            () -> new UBCBlocks("greenschist_brick_block", MapColor.COLOR_GREEN, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> GREENSCHIST_COAL_ORE = registerBlock("greenschist_coal_ore",
-            () -> new UBCBlocks(MapColor.COLOR_GREEN, 0.7F, 0.54F)
+            () -> new UBCBlocks("greenschist_coal_ore", MapColor.COLOR_GREEN, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> GREENSCHIST_COPPER_ORE = registerBlock("greenschist_copper_ore",
-            () -> new UBCBlocks(MapColor.COLOR_GREEN, 0.7F, 0.54F)
+            () -> new UBCBlocks("greenschist_copper_ore", MapColor.COLOR_GREEN, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> GREENSCHIST_IRON_ORE = registerBlock("greenschist_iron_ore",
-            () -> new UBCBlocks(MapColor.COLOR_GREEN, 0.7F, 0.54F)
+            () -> new UBCBlocks("greenschist_iron_ore", MapColor.COLOR_GREEN, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> GREENSCHIST_GOLD_ORE = registerBlock("greenschist_gold_ore",
-            () -> new UBCBlocks(MapColor.COLOR_GREEN, 0.7F, 0.54F)
+            () -> new UBCBlocks("greenschist_gold_ore", MapColor.COLOR_GREEN, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> GREENSCHIST_REDSTONE_ORE = registerBlock("greenschist_redstone_ore",
-            () -> new UBCBlocks(MapColor.COLOR_GREEN, 0.7F, 0.54F)
+            () -> new UBCBlocks("greenschist_redstone_ore", MapColor.COLOR_GREEN, 0.7F, 0.54F)
     );
     public static DeferredBlock<Block> GREENSCHIST_LAPIS_ORE = registerBlock("greenschist_lapis_ore",
-            () -> new UBCBlocks(MapColor.COLOR_GREEN, 0.7F, 0.54F)
+            () -> new UBCBlocks("greenschist_lapis_ore",MapColor.COLOR_GREEN, 0.7F, 0.54F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> GREENSCHIST_STAIRS = registerBlock("greenschist_stairs",
-            () -> new UBCStairsBlocks(GREENSCHIST_BLOCK, MapColor.COLOR_GREEN)
+            () -> new UBCStairsBlocks("greenschist_stairs", GREENSCHIST_BLOCK, MapColor.COLOR_GREEN)
     );
     public static final DeferredBlock<Block> GREENSCHIST_BRICK_STAIRS = registerBlock("greenschist_brick_stairs",
-            () -> new UBCStairsBlocks(GREENSCHIST_BRICK_BLOCK, MapColor.COLOR_GREEN)
+            () -> new UBCStairsBlocks("greenschist_brick_stairs", GREENSCHIST_BRICK_BLOCK, MapColor.COLOR_GREEN)
     );
     public static final DeferredBlock<Block> GREENSCHIST_COBBLE_STAIRS = registerBlock("greenschist_cobble_stairs",
-            () -> new UBCStairsBlocks(GREENSCHIST_COBBLE_BLOCK,MapColor.COLOR_GREEN)
+            () -> new UBCStairsBlocks("greenschist_cobble_stairs", GREENSCHIST_COBBLE_BLOCK,MapColor.COLOR_GREEN)
     );
 
     // Slabs
     public static final DeferredBlock<Block> GREENSCHIST_BLOCK_SLAB = registerBlock("greenschist_block_slab",
-            () -> new UBCSlabBlocks(MapColor.COLOR_GREEN)
+            () -> new UBCSlabBlocks("greenschist_block_slab", MapColor.COLOR_GREEN)
     );
     public static final DeferredBlock<Block> GREENSCHIST_COBBLE_SLAB = registerBlock("greenschist_cobble_slab",
-            () -> new UBCSlabBlocks(MapColor.COLOR_GREEN)
+            () -> new UBCSlabBlocks("greenschist_cobble_slab", MapColor.COLOR_GREEN)
     );
     public static final DeferredBlock<Block> GREENSCHIST_BRICK_SLAB = registerBlock("greenschist_brick_slab",
-            () -> new UBCSlabBlocks(MapColor.COLOR_GREEN)
+            () -> new UBCSlabBlocks("greenschist_brick_slab", MapColor.COLOR_GREEN)
     );
 
     // Walls
     public static final DeferredBlock<Block> GREENSCHIST_BLOCK_WALL = registerBlock("greenschist_block_wall",
-            () -> new UBCWallBlocks(MapColor.COLOR_GREEN)
+            () -> new UBCWallBlocks("greenschist_block_wall", MapColor.COLOR_GREEN)
     );
     public static final DeferredBlock<Block> GREENSCHIST_COBBLE_WALL = registerBlock("greenschist_cobble_wall",
-            () -> new UBCWallBlocks(MapColor.COLOR_GREEN)
+            () -> new UBCWallBlocks("greenschist_cobble_wall", MapColor.COLOR_GREEN)
     );
     public static final DeferredBlock<Block> GREENSCHIST_BRICK_WALL = registerBlock("greenschist_brick_wall",
-            () -> new UBCWallBlocks(MapColor.COLOR_GREEN)
+            () -> new UBCWallBlocks("greenschist_brick_wall", MapColor.COLOR_GREEN)
     );
 
     // Buttons
 
     public static final DeferredBlock<Block> GREENSCHIST_STONE_BUTTON = registerBlock("greenschist_stone_button",
-            () -> new UBCButtonsBlocks(BlockSetType.IRON, MapColor.STONE)
+            () -> new UBCButtonsBlocks("greenschist_stone_button", BlockSetType.IRON, MapColor.STONE)
     );
 
 

@@ -4,9 +4,7 @@
   "cookingtime": 100,
   "experience": 0.25,
   "group": "rhyolite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:rhyolite_iron_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:rhyolite_iron_ore",
   "result": {
     "count": 1,
     "id": "minecraft:raw_iron"

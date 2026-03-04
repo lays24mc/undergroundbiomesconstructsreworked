@@ -3,9 +3,7 @@
   "category": "building",
   "group": "dolomite",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:dolomite_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:dolomite_block"
   },
   "pattern": [
     "#  ",

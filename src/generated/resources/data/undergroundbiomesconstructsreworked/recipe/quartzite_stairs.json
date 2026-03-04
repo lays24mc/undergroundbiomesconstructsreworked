@@ -3,9 +3,7 @@
   "category": "building",
   "group": "quartzite",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:quartzite_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:quartzite_block"
   },
   "pattern": [
     "#  ",

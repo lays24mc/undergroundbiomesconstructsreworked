@@ -24,46 +24,46 @@ public class EclogiteBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> ECLOGITE_BLOCK = registerBlock("eclogite_block",
-            () -> new UBCBlocks(MapColor.COLOR_BROWN, 1.0F, 1.0F)
+            () -> new UBCBlocks("eclogite_block", MapColor.COLOR_BROWN, 1.0F, 1.0F)
     );
     public static DeferredBlock<Block> ECLOGITE_COAL_ORE = registerBlock("eclogite_coal_ore",
-            () -> new UBCBlocks(MapColor.COLOR_BROWN, 1.0F, 1.0F)
+            () -> new UBCBlocks("eclogite_coal_ore", MapColor.COLOR_BROWN, 1.0F, 1.0F)
     );
     public static DeferredBlock<Block> ECLOGITE_COPPER_ORE = registerBlock("eclogite_copper_ore",
-            () -> new UBCBlocks(MapColor.COLOR_BROWN, 1.0F, 1.0F)
+            () -> new UBCBlocks("eclogite_copper_ore", MapColor.COLOR_BROWN, 1.0F, 1.0F)
     );
     public static DeferredBlock<Block> ECLOGITE_IRON_ORE = registerBlock("eclogite_iron_ore",
-            () -> new UBCBlocks(MapColor.COLOR_BROWN, 1.0F, 1.0F)
+            () -> new UBCBlocks("eclogite_iron_ore", MapColor.COLOR_BROWN, 1.0F, 1.0F)
     );
     public static DeferredBlock<Block> ECLOGITE_GOLD_ORE = registerBlock("eclogite_gold_ore",
-            () -> new UBCBlocks(MapColor.COLOR_BROWN, 1.0F, 1.0F)
+            () -> new UBCBlocks("eclogite_gold_ore", MapColor.COLOR_BROWN, 1.0F, 1.0F)
     );
     public static DeferredBlock<Block> ECLOGITE_REDSTONE_ORE = registerBlock("eclogite_redstone_ore",
-            () -> new UBCBlocks(MapColor.COLOR_BROWN, 1.0F, 1.0F)
+            () -> new UBCBlocks("eclogite_redstone_ore", MapColor.COLOR_BROWN, 1.0F, 1.0F)
     );
     public static DeferredBlock<Block> ECLOGITE_LAPIS_ORE = registerBlock("eclogite_lapis_ore",
-            () -> new UBCBlocks(MapColor.COLOR_BROWN, 1.0F, 1.0F)
+            () -> new UBCBlocks("eclogite_lapis_ore", MapColor.COLOR_BROWN, 1.0F, 1.0F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> ECLOGITE_STAIRS = registerBlock("eclogite_stairs",
-            () -> new UBCStairsBlocks(ECLOGITE_BLOCK, MapColor.COLOR_BROWN)
+            () -> new UBCStairsBlocks("eclogite_stairs", ECLOGITE_BLOCK, MapColor.COLOR_BROWN)
     );
 
     // Slabs
     public static final DeferredBlock<Block> ECLOGITE_BLOCK_SLAB = registerBlock("eclogite_block_slab",
-            () -> new UBCSlabBlocks(MapColor.COLOR_BROWN)
+            () -> new UBCSlabBlocks("eclogite_block_slab", MapColor.COLOR_BROWN)
     );
 
     // Walls
     public static final DeferredBlock<Block> ECLOGITE_BLOCK_WALL = registerBlock("eclogite_block_wall",
-            () -> new UBCWallBlocks(MapColor.COLOR_BROWN)
+            () -> new UBCWallBlocks("eclogite_block_wall", MapColor.COLOR_BROWN)
     );
 
     // Buttons
 
     public static final DeferredBlock<Block> ECLOGITE_STONE_BUTTON = registerBlock("eclogite_stone_button",
-            () -> new UBCButtonsBlocks(BlockSetType.IRON, MapColor.STONE)
+            () -> new UBCButtonsBlocks("eclogite_stone_button", BlockSetType.IRON, MapColor.STONE)
     );
 
 

@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "migmatite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:migmatite_gold_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:migmatite_gold_ore",
   "result": {
     "count": 1,
     "id": "minecraft:raw_gold"

@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "rhyolite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:rhyolite_lapis_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:rhyolite_lapis_ore",
   "result": {
     "count": 1,
     "id": "minecraft:lapis_lazuli"

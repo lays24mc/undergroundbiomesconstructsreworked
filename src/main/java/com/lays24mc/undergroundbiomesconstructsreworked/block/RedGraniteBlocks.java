@@ -23,71 +23,71 @@ public class RedGraniteBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> RED_GRANITE_BLOCK = registerBlock("red_granite_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
+            () -> new UBCBlocks("red_granite_block", MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
     );
     public static  DeferredBlock<Block> RED_GRANITE_COBBLE_BLOCK = registerBlock("red_granite_cobble_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
+            () -> new UBCBlocks("red_granite_cobble_block", MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
     );
     public static  DeferredBlock<Block> RED_GRANITE_BRICK_BLOCK = registerBlock("red_granite_brick_block",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
+            () -> new UBCBlocks("red_granite_brick_block", MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
     );
     public static DeferredBlock<Block> RED_GRANITE_IRON_ORE = registerBlock("red_granite_iron_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
+            () -> new UBCBlocks("red_granite_iron_ore", MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
     );
     public static DeferredBlock<Block> RED_GRANITE_GOLD_ORE = registerBlock("red_granite_gold_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
+            () -> new UBCBlocks("red_granite_gold_ore", MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
     );
     public static DeferredBlock<Block> RED_GRANITE_REDSTONE_ORE = registerBlock("red_granite_redstone_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
+            () -> new UBCBlocks("red_granite_redstone_ore", MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
     );
     public static DeferredBlock<Block> RED_GRANITE_LAPIS_ORE = registerBlock("red_granite_lapis_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
+            () -> new UBCBlocks("red_granite_lapis_ore", MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
     );
     public static DeferredBlock<Block> RED_GRANITE_DIAMOND_ORE = registerBlock("red_granite_diamond_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
+            () -> new UBCBlocks("red_granite_diamond_ore", MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
     );
     public static DeferredBlock<Block> RED_GRANITE_EMERALD_ORE = registerBlock("red_granite_emerald_ore",
-            () -> new UBCBlocks(MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
+            () -> new UBCBlocks("red_granite_emerald_ore", MapColor.TERRACOTTA_RED, 1.7F, 1.42F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> RED_GRANITE_STAIRS = registerBlock("red_granite_stairs",
-            () -> new UBCStairsBlocks(RED_GRANITE_BLOCK, MapColor.TERRACOTTA_RED)
+            () -> new UBCStairsBlocks("red_granite_stairs", RED_GRANITE_BLOCK, MapColor.TERRACOTTA_RED)
     );
     public static final DeferredBlock<Block> RED_GRANITE_BRICK_STAIRS = registerBlock("red_granite_brick_stairs",
-            () -> new UBCStairsBlocks(RED_GRANITE_BRICK_BLOCK, MapColor.TERRACOTTA_RED)
+            () -> new UBCStairsBlocks("red_granite_brick_stairs", RED_GRANITE_BRICK_BLOCK, MapColor.TERRACOTTA_RED)
     );
     public static final DeferredBlock<Block> RED_GRANITE_COBBLE_STAIRS = registerBlock("red_granite_cobble_stairs",
-            () -> new UBCStairsBlocks(RED_GRANITE_COBBLE_BLOCK,MapColor.TERRACOTTA_RED)
+            () -> new UBCStairsBlocks("red_granite_cobble_stairs", RED_GRANITE_COBBLE_BLOCK,MapColor.TERRACOTTA_RED)
     );
 
 
     // Slabs
     public static final DeferredBlock<Block> RED_GRANITE_BLOCK_SLAB = registerBlock("red_granite_block_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_RED)
+            () -> new UBCSlabBlocks("red_granite_block_slab", MapColor.TERRACOTTA_RED)
     );
     public static final DeferredBlock<Block> RED_GRANITE_COBBLE_SLAB = registerBlock("red_granite_cobble_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_RED)
+            () -> new UBCSlabBlocks("red_granite_cobble_slab", MapColor.TERRACOTTA_RED)
     );
     public static final DeferredBlock<Block> RED_GRANITE_BRICK_SLAB = registerBlock("red_granite_brick_slab",
-            () -> new UBCSlabBlocks(MapColor.TERRACOTTA_RED)
+            () -> new UBCSlabBlocks("red_granite_brick_slab", MapColor.TERRACOTTA_RED)
     );
 
     // Walls
     public static final DeferredBlock<Block> RED_GRANITE_BLOCK_WALL = registerBlock("red_granite_block_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_RED)
+            () -> new UBCWallBlocks("red_granite_block_wall", MapColor.TERRACOTTA_RED)
     );
     public static final DeferredBlock<Block> RED_GRANITE_COBBLE_WALL = registerBlock("red_granite_cobble_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_RED)
+            () -> new UBCWallBlocks("red_granite_cobble_wall", MapColor.TERRACOTTA_RED)
     );
     public static final DeferredBlock<Block> RED_GRANITE_BRICK_WALL = registerBlock("red_granite_brick_wall",
-            () -> new UBCWallBlocks(MapColor.TERRACOTTA_RED)
+            () -> new UBCWallBlocks("red_granite_brick_wall", MapColor.TERRACOTTA_RED)
     );
 
     // Buttons
 
     public static final DeferredBlock<Block> RED_GRANITE_STONE_BUTTON = registerBlock("red_granite_stone_button",
-            () -> new UBCButtonsBlocks(BlockSetType.IRON, MapColor.STONE)
+            () -> new UBCButtonsBlocks("red_granite_stone_button", BlockSetType.IRON, MapColor.STONE)
     );
 
 

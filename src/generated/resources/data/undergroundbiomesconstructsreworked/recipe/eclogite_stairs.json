@@ -3,9 +3,7 @@
   "category": "building",
   "group": "eclogite",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:eclogite_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:eclogite_block"
   },
   "pattern": [
     "#  ",

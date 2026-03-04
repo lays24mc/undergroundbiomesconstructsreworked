@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:shale_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:shale_block"
   },
   "pattern": [
     "###",

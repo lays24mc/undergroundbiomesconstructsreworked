@@ -3,9 +3,7 @@
   "category": "building",
   "group": "chert",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:chert_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:chert_block"
   },
   "pattern": [
     "#  ",

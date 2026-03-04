@@ -4,9 +4,7 @@
   "cookingtime": 100,
   "experience": 0.25,
   "group": "rhyolite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:rhyolite_coal_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:rhyolite_coal_ore",
   "result": {
     "count": 1,
     "id": "minecraft:coal"

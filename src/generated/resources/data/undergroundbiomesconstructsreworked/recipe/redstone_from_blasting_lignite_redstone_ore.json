@@ -4,9 +4,7 @@
   "cookingtime": 100,
   "experience": 0.25,
   "group": "lignite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:lignite_redstone_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:lignite_redstone_ore",
   "result": {
     "count": 1,
     "id": "minecraft:redstone"

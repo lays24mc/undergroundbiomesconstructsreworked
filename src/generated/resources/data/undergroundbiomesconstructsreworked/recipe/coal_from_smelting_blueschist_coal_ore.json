@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "blueschist",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:blueschist_coal_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:blueschist_coal_ore",
   "result": {
     "count": 1,
     "id": "minecraft:coal"

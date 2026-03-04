@@ -3,9 +3,7 @@
   "category": "building",
   "group": "lignite",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:lignite_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:lignite_block"
   },
   "pattern": [
     "#  ",

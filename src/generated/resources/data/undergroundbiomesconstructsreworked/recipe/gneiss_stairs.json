@@ -3,9 +3,7 @@
   "category": "building",
   "group": "gneiss",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:gneiss_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:gneiss_block"
   },
   "pattern": [
     "#  ",

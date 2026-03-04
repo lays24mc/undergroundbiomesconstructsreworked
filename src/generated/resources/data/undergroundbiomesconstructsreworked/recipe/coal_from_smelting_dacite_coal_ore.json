@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "dacite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:dacite_coal_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:dacite_coal_ore",
   "result": {
     "count": 1,
     "id": "minecraft:coal"

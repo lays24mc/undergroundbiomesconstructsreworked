@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:siltstone_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:siltstone_block",
   "result": {
     "count": 2,
     "id": "undergroundbiomesconstructsreworked:siltstone_block_slab"

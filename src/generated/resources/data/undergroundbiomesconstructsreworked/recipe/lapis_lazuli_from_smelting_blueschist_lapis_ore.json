@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "blueschist",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:blueschist_lapis_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:blueschist_lapis_ore",
   "result": {
     "count": 1,
     "id": "minecraft:lapis_lazuli"

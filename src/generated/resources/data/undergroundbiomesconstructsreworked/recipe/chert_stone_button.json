@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "undergroundbiomesconstructsreworked:chert_block"
-    }
+    "A": "undergroundbiomesconstructsreworked:chert_block"
   },
   "pattern": [
     "A"

@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "migmatite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:migmatite_cobble_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:migmatite_cobble_block",
   "result": {
     "count": 1,
     "id": "undergroundbiomesconstructsreworked:migmatite_block"

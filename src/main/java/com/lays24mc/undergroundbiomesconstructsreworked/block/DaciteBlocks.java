@@ -24,70 +24,70 @@ public class DaciteBlocks {
 
     // Blocks
     public static final DeferredBlock<Block> DACITE_BLOCK = registerBlock("dacite_block",
-            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
+            () -> new UBCBlocks("dacite_block", MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
     );
     public static  DeferredBlock<Block> DACITE_COBBLE_BLOCK = registerBlock("dacite_cobble_block",
-            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
+            () -> new UBCBlocks("dacite_cobble_block", MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
     );
     public static  DeferredBlock<Block> DACITE_BRICK_BLOCK = registerBlock("dacite_brick_block",
-            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
+            () -> new UBCBlocks("dacite_brick_block", MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
     );
     public static DeferredBlock<Block> DACITE_COAL_ORE = registerBlock("dacite_coal_ore",
-            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
+            () -> new UBCBlocks("dacite_coal_ore", MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
     );
     public static DeferredBlock<Block> DACITE_COPPER_ORE = registerBlock("dacite_copper_ore",
-            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
+            () -> new UBCBlocks("dacite_copper_ore", MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
     );
     public static DeferredBlock<Block> DACITE_IRON_ORE = registerBlock("dacite_iron_ore",
-            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
+            () -> new UBCBlocks("dacite_iron_ore", MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
     );
     public static DeferredBlock<Block> DACITE_GOLD_ORE = registerBlock("dacite_gold_ore",
-            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
+            () -> new UBCBlocks("dacite_gold_ore", MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
     );
     public static DeferredBlock<Block> DACITE_REDSTONE_ORE = registerBlock("dacite_redstone_ore",
-            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
+            () -> new UBCBlocks("dacite_redstone_ore", MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
     );
     public static DeferredBlock<Block> DACITE_LAPIS_ORE = registerBlock("dacite_lapis_ore",
-            () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
+            () -> new UBCBlocks("dacite_lapis_ore", MapColor.COLOR_LIGHT_GRAY, 1.2F, 1.0F)
     );
 
     // Stairs
     public static final DeferredBlock<Block> DACITE_STAIRS = registerBlock("dacite_stairs",
-            () -> new UBCStairsBlocks(DACITE_BLOCK, MapColor.COLOR_LIGHT_GRAY)
+            () -> new UBCStairsBlocks("dacite_stairs", DACITE_BLOCK, MapColor.COLOR_LIGHT_GRAY)
     );
     public static final DeferredBlock<Block> DACITE_BRICK_STAIRS = registerBlock("dacite_brick_stairs",
-            () -> new UBCStairsBlocks(DACITE_BRICK_BLOCK, MapColor.COLOR_LIGHT_GRAY)
+            () -> new UBCStairsBlocks("dacite_brick_stairs", DACITE_BRICK_BLOCK, MapColor.COLOR_LIGHT_GRAY)
     );
     public static final DeferredBlock<Block> DACITE_COBBLE_STAIRS = registerBlock("dacite_cobble_stairs",
-            () -> new UBCStairsBlocks(DACITE_COBBLE_BLOCK,MapColor.COLOR_LIGHT_GRAY)
+            () -> new UBCStairsBlocks("dacite_cobble_stairs", DACITE_COBBLE_BLOCK,MapColor.COLOR_LIGHT_GRAY)
     );
 
     // Slabs
     public static final DeferredBlock<Block> DACITE_BLOCK_SLAB = registerBlock("dacite_block_slab",
-            () -> new UBCSlabBlocks(MapColor.COLOR_LIGHT_GRAY)
+            () -> new UBCSlabBlocks("dacite_block_slab", MapColor.COLOR_LIGHT_GRAY)
     );
     public static final DeferredBlock<Block> DACITE_COBBLE_SLAB = registerBlock("dacite_cobble_slab",
-            () -> new UBCSlabBlocks(MapColor.COLOR_LIGHT_GRAY)
+            () -> new UBCSlabBlocks("dacite_cobble_slab", MapColor.COLOR_LIGHT_GRAY)
     );
     public static final DeferredBlock<Block> DACITE_BRICK_SLAB = registerBlock("dacite_brick_slab",
-            () -> new UBCSlabBlocks(MapColor.COLOR_LIGHT_GRAY)
+            () -> new UBCSlabBlocks("dacite_brick_slab", MapColor.COLOR_LIGHT_GRAY)
     );
 
     // Walls
     public static final DeferredBlock<Block> DACITE_BLOCK_WALL = registerBlock("dacite_block_wall",
-            () -> new UBCWallBlocks(MapColor.COLOR_LIGHT_GRAY)
+            () -> new UBCWallBlocks("dacite_block_wall", MapColor.COLOR_LIGHT_GRAY)
     );
     public static final DeferredBlock<Block> DACITE_COBBLE_WALL = registerBlock("dacite_cobble_wall",
-            () -> new UBCWallBlocks(MapColor.COLOR_LIGHT_GRAY)
+            () -> new UBCWallBlocks("dacite_cobble_wall", MapColor.COLOR_LIGHT_GRAY)
     );
     public static final DeferredBlock<Block> DACITE_BRICK_WALL = registerBlock("dacite_brick_wall",
-            () -> new UBCWallBlocks(MapColor.COLOR_LIGHT_GRAY)
+            () -> new UBCWallBlocks("dacite_brick_wall", MapColor.COLOR_LIGHT_GRAY)
     );
 
     // Buttons
 
     public static final DeferredBlock<Block> DACITE_STONE_BUTTON = registerBlock("dacite_stone_button",
-            () -> new UBCButtonsBlocks(BlockSetType.IRON, MapColor.STONE)
+            () -> new UBCButtonsBlocks("dacite_stone_button", BlockSetType.IRON, MapColor.STONE)
     );
 
 

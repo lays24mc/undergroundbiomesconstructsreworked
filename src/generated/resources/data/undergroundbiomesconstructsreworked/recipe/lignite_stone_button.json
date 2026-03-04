@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "undergroundbiomesconstructsreworked:lignite_block"
-    }
+    "A": "undergroundbiomesconstructsreworked:lignite_block"
   },
   "pattern": [
     "A"

@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "gabbro",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:gabbro_cobble_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:gabbro_cobble_block",
   "result": {
     "count": 1,
     "id": "undergroundbiomesconstructsreworked:gabbro_block"

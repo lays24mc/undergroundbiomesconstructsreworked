@@ -3,9 +3,7 @@
   "category": "building",
   "group": "red_granite",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:red_granite_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:red_granite_block"
   },
   "pattern": [
     "#  ",

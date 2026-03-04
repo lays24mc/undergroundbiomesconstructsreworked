@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "quartzite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:quartzite_cobble_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:quartzite_cobble_block",
   "result": {
     "count": 1,
     "id": "undergroundbiomesconstructsreworked:quartzite_block"

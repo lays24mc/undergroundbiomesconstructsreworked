@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "dacite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:dacite_cobble_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:dacite_cobble_block",
   "result": {
     "count": 1,
     "id": "undergroundbiomesconstructsreworked:dacite_block"

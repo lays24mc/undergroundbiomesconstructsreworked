@@ -4,9 +4,7 @@
   "cookingtime": 100,
   "experience": 0.25,
   "group": "quartzite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:quartzite_diamond_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:quartzite_diamond_ore",
   "result": {
     "count": 1,
     "id": "minecraft:diamond"

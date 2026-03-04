@@ -3,9 +3,7 @@
   "category": "building",
   "group": "blueschist",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:blueschist_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:blueschist_block"
   },
   "pattern": [
     "#  ",

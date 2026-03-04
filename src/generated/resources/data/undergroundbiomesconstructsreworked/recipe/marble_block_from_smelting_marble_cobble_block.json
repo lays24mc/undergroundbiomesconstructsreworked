@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "marble",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:marble_cobble_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:marble_cobble_block",
   "result": {
     "count": 1,
     "id": "undergroundbiomesconstructsreworked:marble_block"

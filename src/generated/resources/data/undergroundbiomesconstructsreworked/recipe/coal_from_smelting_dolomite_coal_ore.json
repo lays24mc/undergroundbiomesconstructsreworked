@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "dolomite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:dolomite_coal_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:dolomite_coal_ore",
   "result": {
     "count": 1,
     "id": "minecraft:coal"

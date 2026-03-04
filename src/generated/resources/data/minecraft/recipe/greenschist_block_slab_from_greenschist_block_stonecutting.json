@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:greenschist_block"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:greenschist_block",
   "result": {
     "count": 2,
     "id": "undergroundbiomesconstructsreworked:greenschist_block_slab"

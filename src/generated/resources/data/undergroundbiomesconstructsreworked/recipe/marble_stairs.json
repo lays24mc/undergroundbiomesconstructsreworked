@@ -3,9 +3,7 @@
   "category": "building",
   "group": "marble",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:marble_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:marble_block"
   },
   "pattern": [
     "#  ",

@@ -3,9 +3,7 @@
   "category": "building",
   "group": "rhyolite",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:rhyolite_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:rhyolite_block"
   },
   "pattern": [
     "#  ",

@@ -3,9 +3,7 @@
   "category": "building",
   "group": "black_granite",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:black_granite_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:black_granite_block"
   },
   "pattern": [
     "#  ",

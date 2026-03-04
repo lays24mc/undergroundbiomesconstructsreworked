@@ -3,9 +3,7 @@
   "category": "building",
   "group": "soapstone",
   "key": {
-    "#": {
-      "item": "undergroundbiomesconstructsreworked:soapstone_block"
-    }
+    "#": "undergroundbiomesconstructsreworked:soapstone_block"
   },
   "pattern": [
     "#  ",

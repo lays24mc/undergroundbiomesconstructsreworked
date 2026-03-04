@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "marble",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:marble_iron_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:marble_iron_ore",
   "result": {
     "count": 1,
     "id": "minecraft:raw_iron"

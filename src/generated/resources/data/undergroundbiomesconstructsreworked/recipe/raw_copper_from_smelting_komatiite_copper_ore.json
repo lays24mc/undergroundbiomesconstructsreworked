@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "komatiite",
-  "ingredient": {
-    "item": "undergroundbiomesconstructsreworked:komatiite_copper_ore"
-  },
+  "ingredient": "undergroundbiomesconstructsreworked:komatiite_copper_ore",
   "result": {
     "count": 1,
     "id": "minecraft:raw_copper"
