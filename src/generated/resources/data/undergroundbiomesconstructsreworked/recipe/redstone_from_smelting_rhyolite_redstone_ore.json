@@ -6,7 +6,6 @@
   "group": "rhyolite",
   "ingredient": "undergroundbiomesconstructsreworked:rhyolite_redstone_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:redstone"
   }
 }

@@ -1,12 +1,11 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
+  "category": "blocks",
   "cookingtime": 200,
   "experience": 0.25,
   "group": "chalk",
   "ingredient": "undergroundbiomesconstructsreworked:chalk_iron_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:raw_iron"
   }
 }

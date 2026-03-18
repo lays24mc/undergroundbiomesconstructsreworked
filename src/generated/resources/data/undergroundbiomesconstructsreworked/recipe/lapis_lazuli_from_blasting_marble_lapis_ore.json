@@ -1,12 +1,11 @@
 {
   "type": "minecraft:blasting",
-  "category": "misc",
+  "category": "blocks",
   "cookingtime": 100,
   "experience": 0.25,
   "group": "marble",
   "ingredient": "undergroundbiomesconstructsreworked:marble_lapis_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:lapis_lazuli"
   }
 }

@@ -6,7 +6,6 @@
   "group": "marble",
   "ingredient": "undergroundbiomesconstructsreworked:marble_redstone_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:redstone"
   }
 }

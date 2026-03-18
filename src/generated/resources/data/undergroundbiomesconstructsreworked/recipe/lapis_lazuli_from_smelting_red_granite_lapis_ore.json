@@ -1,12 +1,11 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
+  "category": "blocks",
   "cookingtime": 200,
   "experience": 0.25,
   "group": "red_granite",
   "ingredient": "undergroundbiomesconstructsreworked:red_granite_lapis_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:lapis_lazuli"
   }
 }

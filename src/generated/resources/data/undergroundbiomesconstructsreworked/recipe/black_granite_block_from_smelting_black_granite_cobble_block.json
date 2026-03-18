@@ -6,7 +6,6 @@
   "group": "black_granite",
   "ingredient": "undergroundbiomesconstructsreworked:black_granite_cobble_block",
   "result": {
-    "count": 1,
     "id": "undergroundbiomesconstructsreworked:black_granite_block"
   }
 }

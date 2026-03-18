@@ -6,7 +6,6 @@
   "group": "soapstone",
   "ingredient": "undergroundbiomesconstructsreworked:soapstone_cobble_block",
   "result": {
-    "count": 1,
     "id": "undergroundbiomesconstructsreworked:soapstone_block"
   }
 }

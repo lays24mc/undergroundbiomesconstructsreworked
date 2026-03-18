@@ -6,7 +6,6 @@
   "group": "gneiss",
   "ingredient": "undergroundbiomesconstructsreworked:gneiss_cobble_block",
   "result": {
-    "count": 1,
     "id": "undergroundbiomesconstructsreworked:gneiss_block"
   }
 }

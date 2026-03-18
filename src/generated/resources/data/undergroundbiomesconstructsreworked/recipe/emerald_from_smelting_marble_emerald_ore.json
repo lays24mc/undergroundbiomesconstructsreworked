@@ -1,12 +1,11 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
+  "category": "blocks",
   "cookingtime": 200,
   "experience": 0.25,
   "group": "marble",
   "ingredient": "undergroundbiomesconstructsreworked:marble_emerald_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:emerald"
   }
 }

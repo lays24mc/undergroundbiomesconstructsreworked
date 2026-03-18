@@ -6,7 +6,6 @@
   "group": "black_granite",
   "ingredient": "undergroundbiomesconstructsreworked:black_granite_redstone_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:redstone"
   }
 }

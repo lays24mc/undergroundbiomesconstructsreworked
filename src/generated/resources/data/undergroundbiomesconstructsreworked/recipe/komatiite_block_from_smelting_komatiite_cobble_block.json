@@ -6,7 +6,6 @@
   "group": "komatiite",
   "ingredient": "undergroundbiomesconstructsreworked:komatiite_cobble_block",
   "result": {
-    "count": 1,
     "id": "undergroundbiomesconstructsreworked:komatiite_block"
   }
 }

@@ -6,7 +6,6 @@
   "group": "dacite",
   "ingredient": "undergroundbiomesconstructsreworked:dacite_cobble_block",
   "result": {
-    "count": 1,
     "id": "undergroundbiomesconstructsreworked:dacite_block"
   }
 }

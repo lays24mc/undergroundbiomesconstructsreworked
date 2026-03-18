@@ -6,7 +6,6 @@
   "group": "dolomite",
   "ingredient": "undergroundbiomesconstructsreworked:dolomite_redstone_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:redstone"
   }
 }

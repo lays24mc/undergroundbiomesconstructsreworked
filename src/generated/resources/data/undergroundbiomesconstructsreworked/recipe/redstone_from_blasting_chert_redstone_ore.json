@@ -6,7 +6,6 @@
   "group": "chert",
   "ingredient": "undergroundbiomesconstructsreworked:chert_redstone_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:redstone"
   }
 }

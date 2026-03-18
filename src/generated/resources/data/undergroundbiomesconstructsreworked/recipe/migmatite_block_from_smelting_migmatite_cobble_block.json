@@ -6,7 +6,6 @@
   "group": "migmatite",
   "ingredient": "undergroundbiomesconstructsreworked:migmatite_cobble_block",
   "result": {
-    "count": 1,
     "id": "undergroundbiomesconstructsreworked:migmatite_block"
   }
 }

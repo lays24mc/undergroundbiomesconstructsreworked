@@ -6,7 +6,6 @@
   "group": "blueschist",
   "ingredient": "undergroundbiomesconstructsreworked:blueschist_cobble_block",
   "result": {
-    "count": 1,
     "id": "undergroundbiomesconstructsreworked:blueschist_block"
   }
 }

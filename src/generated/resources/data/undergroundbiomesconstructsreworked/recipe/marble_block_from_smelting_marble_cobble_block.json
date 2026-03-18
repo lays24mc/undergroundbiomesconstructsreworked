@@ -6,7 +6,6 @@
   "group": "marble",
   "ingredient": "undergroundbiomesconstructsreworked:marble_cobble_block",
   "result": {
-    "count": 1,
     "id": "undergroundbiomesconstructsreworked:marble_block"
   }
 }

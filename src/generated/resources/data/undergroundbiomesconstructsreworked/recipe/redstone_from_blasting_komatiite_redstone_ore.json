@@ -6,7 +6,6 @@
   "group": "komatiite",
   "ingredient": "undergroundbiomesconstructsreworked:komatiite_redstone_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:redstone"
   }
 }

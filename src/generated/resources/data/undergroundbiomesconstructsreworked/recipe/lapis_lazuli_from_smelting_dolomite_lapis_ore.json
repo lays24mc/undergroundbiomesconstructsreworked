@@ -1,12 +1,11 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
+  "category": "blocks",
   "cookingtime": 200,
   "experience": 0.25,
   "group": "dolomite",
   "ingredient": "undergroundbiomesconstructsreworked:dolomite_lapis_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:lapis_lazuli"
   }
 }

@@ -6,7 +6,6 @@
   "group": "greenschist",
   "ingredient": "undergroundbiomesconstructsreworked:greenschist_redstone_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:redstone"
   }
 }

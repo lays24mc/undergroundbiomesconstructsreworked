@@ -6,7 +6,6 @@
   "group": "gabbro",
   "ingredient": "undergroundbiomesconstructsreworked:gabbro_cobble_block",
   "result": {
-    "count": 1,
     "id": "undergroundbiomesconstructsreworked:gabbro_block"
   }
 }

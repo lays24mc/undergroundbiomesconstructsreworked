@@ -6,7 +6,6 @@
   "group": "dacite",
   "ingredient": "undergroundbiomesconstructsreworked:dacite_redstone_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:redstone"
   }
 }

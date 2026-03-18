@@ -6,7 +6,6 @@
   "group": "blueschist",
   "ingredient": "undergroundbiomesconstructsreworked:blueschist_redstone_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:redstone"
   }
 }
