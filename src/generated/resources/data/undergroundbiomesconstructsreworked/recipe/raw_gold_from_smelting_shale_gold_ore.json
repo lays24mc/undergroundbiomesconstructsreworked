@@ -1,7 +1,6 @@
 {
   "type": "minecraft:smelting",
   "category": "blocks",
-  "cookingtime": 200,
   "experience": 0.25,
   "group": "shale",
   "ingredient": "undergroundbiomesconstructsreworked:shale_gold_ore",

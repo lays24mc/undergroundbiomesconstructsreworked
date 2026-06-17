@@ -1,5 +1,6 @@
 package com.lays24mc.undergroundbiomesconstructsreworked.worldgen;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
@@ -14,5 +15,9 @@ public class UBCOrePlacements {
 
     public static List<PlacementModifier> rareOrePlacement(int pChance, PlacementModifier pHeightRange) {
         return orePlacement(RarityFilter.onAverageOnceEvery(pChance), pHeightRange);
+    }
+
+    public static List<PlacementModifier> variedOrePlacement(int pMinCount, int pMaxCount, PlacementModifier pHeightRange) {
+        return orePlacement(CountPlacement.of(UniformInt.of(pMinCount, pMaxCount)), pHeightRange);
     }
 }

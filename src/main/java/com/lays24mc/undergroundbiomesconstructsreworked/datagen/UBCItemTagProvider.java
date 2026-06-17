@@ -19,7 +19,7 @@ public class UBCItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ItemTags.COALS)
-                .add(UBCItems.LIGNITE_COAL.get());
+                .add(UBCItems.LIGNITE_COAL.getKey());
 
     }
 }

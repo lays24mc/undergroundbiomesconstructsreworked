@@ -1,7 +1,6 @@
 {
   "type": "minecraft:blasting",
   "category": "blocks",
-  "cookingtime": 100,
   "experience": 0.25,
   "group": "dacite",
   "ingredient": "undergroundbiomesconstructsreworked:dacite_gold_ore",

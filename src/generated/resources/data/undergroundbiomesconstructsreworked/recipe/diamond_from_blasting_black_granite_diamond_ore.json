@@ -1,7 +1,6 @@
 {
   "type": "minecraft:blasting",
   "category": "blocks",
-  "cookingtime": 100,
   "experience": 0.25,
   "group": "black_granite",
   "ingredient": "undergroundbiomesconstructsreworked:black_granite_diamond_ore",

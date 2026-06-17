@@ -1,7 +1,6 @@
 {
   "type": "minecraft:blasting",
   "category": "blocks",
-  "cookingtime": 100,
   "experience": 0.25,
   "group": "greenschist",
   "ingredient": "undergroundbiomesconstructsreworked:greenschist_lapis_ore",

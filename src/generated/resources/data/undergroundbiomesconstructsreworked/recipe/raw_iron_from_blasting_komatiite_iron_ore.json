@@ -1,7 +1,6 @@
 {
   "type": "minecraft:blasting",
   "category": "blocks",
-  "cookingtime": 100,
   "experience": 0.25,
   "group": "komatiite",
   "ingredient": "undergroundbiomesconstructsreworked:komatiite_iron_ore",

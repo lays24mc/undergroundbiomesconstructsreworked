@@ -342,7 +342,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(SoapstoneBlocks.SOAPSTONE_BLOCK.get()),
                         SoapstoneBlocks.SOAPSTONE_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_SOAPSTONE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldSoapstoneBlock, 64));
+        register(context, OVERWORLD_SOAPSTONE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldSoapstoneBlock, 48));
         register(context, OVERWORLD_SOAPSTONE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(soapstoneCoalTargets, 17));
         register(context, OVERWORLD_SOAPSTONE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(soapstoneCopperTargets, 10));
         register(context, OVERWORLD_SOAPSTONE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(soapstoneCopperTargets, 20));
@@ -442,7 +442,7 @@ public class UBCConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldQuartziteBlock = List.of(
                 OreConfiguration.target(deepslateReplaceables, QuartziteBlocks.QUARTZITE_BLOCK.get().defaultBlockState()));
 
-        register(context, OVERWORLD_QUARTZITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldQuartziteBlock, 64));
+        register(context, OVERWORLD_QUARTZITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldQuartziteBlock, 48));
 
         List<OreConfiguration.TargetBlockState> quartziteIronTargets = List.of(
                 OreConfiguration.target(new BlockMatchTest(QuartziteBlocks.QUARTZITE_BLOCK.get()),
@@ -486,7 +486,7 @@ public class UBCConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldMigmatiteBlock = List.of(
                 OreConfiguration.target(deepslateReplaceables, MigmatiteBlocks.MIGMATITE_BLOCK.get().defaultBlockState()));
 
-        register(context, OVERWORLD_MIGMATITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldMigmatiteBlock, 64));
+        register(context, OVERWORLD_MIGMATITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldMigmatiteBlock, 40));
 
         List<OreConfiguration.TargetBlockState> migmatiteIronTargets = List.of(
                 OreConfiguration.target(new BlockMatchTest(MigmatiteBlocks.MIGMATITE_BLOCK.get()),
@@ -529,7 +529,7 @@ public class UBCConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldMarbleBlock = List.of(
                 OreConfiguration.target(deepslateReplaceables, MarbleBlocks.MARBLE_BLOCK.get().defaultBlockState()));
 
-        register(context, OVERWORLD_MARBLE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldMarbleBlock, 64));
+        register(context, OVERWORLD_MARBLE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldMarbleBlock, 56));
 
         List<OreConfiguration.TargetBlockState> marbleIronTargets = List.of(
                 OreConfiguration.target(new BlockMatchTest(MarbleBlocks.MARBLE_BLOCK.get()),
@@ -639,7 +639,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(SiltstoneBlocks.SILTSTONE_BLOCK.get()),
                         SiltstoneBlocks.SILTSTONE_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_SILTSTONE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldSiltstoneBlock, 64));
+        register(context, OVERWORLD_SILTSTONE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldSiltstoneBlock, 40));
         register(context, OVERWORLD_SILTSTONE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(siltstoneCoalTargets, 17));
         register(context, OVERWORLD_SILTSTONE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(siltstoneCopperTargets, 10));
         register(context, OVERWORLD_SILTSTONE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(siltstoneCopperTargets, 20));
@@ -680,7 +680,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(BlueschistBlocks.BLUESCHIST_BLOCK.get()),
                         BlueschistBlocks.BLUESCHIST_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_BLUESCHIST_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldBlueschistBlock, 64));
+        register(context, OVERWORLD_BLUESCHIST_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldBlueschistBlock, 32));
         register(context, OVERWORLD_BLUESCHIST_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(blueschistCoalTargets, 17));
         register(context, OVERWORLD_BLUESCHIST_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(blueschistCopperTargets, 10));
         register(context, OVERWORLD_BLUESCHIST_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(blueschistCopperTargets, 20));
@@ -721,7 +721,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(GreenschistBlocks.GREENSCHIST_BLOCK.get()),
                         GreenschistBlocks.GREENSCHIST_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_GREENSCHIST_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldGreenschistBlock, 64));
+        register(context, OVERWORLD_GREENSCHIST_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldGreenschistBlock, 48));
         register(context, OVERWORLD_GREENSCHIST_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(greenschistCoalTargets, 17));
         register(context, OVERWORLD_GREENSCHIST_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(greenschistCopperTargets, 10));
         register(context, OVERWORLD_GREENSCHIST_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(greenschistCopperTargets, 20));
@@ -762,7 +762,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(ChalkBlocks.CHALK_BLOCK.get()),
                         ChalkBlocks.CHALK_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_CHALK_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldChalkBlock, 64));
+        register(context, OVERWORLD_CHALK_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldChalkBlock, 56));
         register(context, OVERWORLD_CHALK_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(chalkCoalTargets, 17));
         register(context, OVERWORLD_CHALK_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(chalkCopperTargets, 10));
         register(context, OVERWORLD_CHALK_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(chalkCopperTargets, 20));
@@ -803,7 +803,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(ShaleBlocks.SHALE_BLOCK.get()),
                         ShaleBlocks.SHALE_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_SHALE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldShaleBlock, 64));
+        register(context, OVERWORLD_SHALE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldShaleBlock, 48));
         register(context, OVERWORLD_SHALE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(shaleCoalTargets, 17));
         register(context, OVERWORLD_SHALE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(shaleCopperTargets, 10));
         register(context, OVERWORLD_SHALE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(shaleCopperTargets, 20));
@@ -844,7 +844,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(ChertBlocks.CHERT_BLOCK.get()),
                         ChertBlocks.CHERT_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_CHERT_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldChertBlock, 64));
+        register(context, OVERWORLD_CHERT_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldChertBlock, 32));
         register(context, OVERWORLD_CHERT_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(chertCoalTargets, 17));
         register(context, OVERWORLD_CHERT_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(chertCopperTargets, 10));
         register(context, OVERWORLD_CHERT_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(chertCopperTargets, 20));
@@ -885,7 +885,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(LigniteBlocks.LIGNITE_BLOCK.get()),
                         LigniteBlocks.LIGNITE_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_LIGNITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldLigniteBlock, 64));
+        register(context, OVERWORLD_LIGNITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldLigniteBlock, 40));
         register(context, OVERWORLD_LIGNITE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(ligniteCoalTargets, 17));
         register(context, OVERWORLD_LIGNITE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(ligniteCopperTargets, 10));
         register(context, OVERWORLD_LIGNITE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(ligniteCopperTargets, 20));
@@ -926,7 +926,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(DolomiteBlocks.DOLOMITE_BLOCK.get()),
                         DolomiteBlocks.DOLOMITE_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_DOLOMITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldDolomiteBlock, 64));
+        register(context, OVERWORLD_DOLOMITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldDolomiteBlock, 56));
         register(context, OVERWORLD_DOLOMITE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(dolomiteCoalTargets, 17));
         register(context, OVERWORLD_DOLOMITE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(dolomiteCopperTargets, 10));
         register(context, OVERWORLD_DOLOMITE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(dolomiteCopperTargets, 20));
@@ -967,7 +967,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(EclogiteBlocks.ECLOGITE_BLOCK.get()),
                         EclogiteBlocks.ECLOGITE_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_ECLOGITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldEclogiteBlock, 64));
+        register(context, OVERWORLD_ECLOGITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldEclogiteBlock, 32));
         register(context, OVERWORLD_ECLOGITE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(eclogiteCoalTargets, 17));
         register(context, OVERWORLD_ECLOGITE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(eclogiteCopperTargets, 10));
         register(context, OVERWORLD_ECLOGITE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(eclogiteCopperTargets, 20));
@@ -1008,7 +1008,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(GreywackeBlocks.GREYWACKE_BLOCK.get()),
                         GreywackeBlocks.GREYWACKE_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_GREYWACKE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldGreywackeBlock, 64));
+        register(context, OVERWORLD_GREYWACKE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldGreywackeBlock, 48));
         register(context, OVERWORLD_GREYWACKE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(greywackeCoalTargets, 17));
         register(context, OVERWORLD_GREYWACKE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(greywackeCopperTargets, 10));
         register(context, OVERWORLD_GREYWACKE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(greywackeCopperTargets, 20));
@@ -1049,7 +1049,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(KomatiiteBlocks.KOMATIITE_BLOCK.get()),
                         KomatiiteBlocks.KOMATIITE_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_KOMATIITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldKomatiiteBlock, 64));
+        register(context, OVERWORLD_KOMATIITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldKomatiiteBlock, 40));
         register(context, OVERWORLD_KOMATIITE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(komatiiteCoalTargets, 17));
         register(context, OVERWORLD_KOMATIITE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(komatiiteCopperTargets, 10));
         register(context, OVERWORLD_KOMATIITE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(komatiiteCopperTargets, 20));
@@ -1090,7 +1090,7 @@ public class UBCConfiguredFeatures {
                 OreConfiguration.target(new BlockMatchTest(DaciteBlocks.DACITE_BLOCK.get()),
                         DaciteBlocks.DACITE_LAPIS_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_DACITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldDaciteBlock, 64));
+        register(context, OVERWORLD_DACITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldDaciteBlock, 56));
         register(context, OVERWORLD_DACITE_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(daciteCoalTargets, 17));
         register(context, OVERWORLD_DACITE_COPPER_ORE_SMALL_KEY, Feature.ORE, new OreConfiguration(daciteCopperTargets, 10));
         register(context, OVERWORLD_DACITE_COPPER_ORE_LARGE_KEY, Feature.ORE, new OreConfiguration(daciteCopperTargets, 20));
@@ -1148,7 +1148,7 @@ public class UBCConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldGabbroBlock = List.of(
                 OreConfiguration.target(deepslateReplaceables, GabbroBlocks.GABBRO_BLOCK.get().defaultBlockState()));
 
-        register(context, OVERWORLD_GABBRO_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldGabbroBlock, 64));
+        register(context, OVERWORLD_GABBRO_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldGabbroBlock, 56));
 
         List<OreConfiguration.TargetBlockState> gabbroIronTargets = List.of(
                 OreConfiguration.target(new BlockMatchTest(GabbroBlocks.GABBRO_BLOCK.get()),
@@ -1191,7 +1191,7 @@ public class UBCConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldGneissBlock = List.of(
                 OreConfiguration.target(deepslateReplaceables, GneissBlocks.GNEISS_BLOCK.get().defaultBlockState()));
 
-        register(context, OVERWORLD_GNEISS_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldGneissBlock, 64));
+        register(context, OVERWORLD_GNEISS_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldGneissBlock, 48));
 
         List<OreConfiguration.TargetBlockState> gneissIronTargets = List.of(
                 OreConfiguration.target(new BlockMatchTest(GneissBlocks.GNEISS_BLOCK.get()),
