@@ -1,17 +1,14 @@
 package com.lays24mc.undergroundbiomesconstructsreworked;
 
 import com.lays24mc.undergroundbiomesconstructsreworked.block.*;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.custom.UBCBlocks;
-import com.lays24mc.undergroundbiomesconstructsreworked.block.custom.UBCSlabBlocks;
+import com.lays24mc.undergroundbiomesconstructsreworked.compat.terrainslabs.TerrainSlabsCompat;
 import com.lays24mc.undergroundbiomesconstructsreworked.item.UBCItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -23,23 +20,18 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
-import java.net.SocketOption;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 @Mod(UndergroundBiomesConstructsReworked.MODID)
 public class UndergroundBiomesConstructsReworked {
     public static final String MODID = "undergroundbiomesconstructsreworked";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.createBlocks(MODID);
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.createItems(MODID);
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     public UndergroundBiomesConstructsReworked(IEventBus modEventBus, ModContainer modContainer) {
@@ -94,7 +86,7 @@ public class UndergroundBiomesConstructsReworked {
     );
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        TerrainSlabsCompat.init();
     }
 
     private static final Collection<ItemStack> buildCreativeTabList() {
@@ -103,20 +95,6 @@ public class UndergroundBiomesConstructsReworked {
                 .getEntries()
                 .forEach(item -> tabEntries.add(new ItemStack(item.get())));
         return tabEntries;
-    }
-
-    //Helper for Creative Tab Blocks
-    private static Collection<ItemStack> collectBlocks(DeferredRegister.Blocks register) {
-        Collection<ItemStack> items = new ArrayList();
-        register.getEntries().forEach(holder -> items.add(new ItemStack(holder.get())));
-        return items;
-    }
-
-    //Helper for Creative Tab Items
-    private static Collection<ItemStack> collectItems(DeferredRegister.Items register) {
-        Collection<ItemStack> items = new ArrayList();
-        register.getEntries().forEach(holder -> items.add(new ItemStack(holder.get())));
-        return items;
     }
 
     @EventBusSubscriber(modid = MODID, value = Dist.CLIENT)

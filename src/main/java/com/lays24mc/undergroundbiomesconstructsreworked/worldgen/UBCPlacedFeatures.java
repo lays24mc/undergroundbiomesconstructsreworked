@@ -1,7 +1,6 @@
 package com.lays24mc.undergroundbiomesconstructsreworked.worldgen;
 
 
-import com.electronwill.nightconfig.core.file.FileConfig;
 import com.lays24mc.undergroundbiomesconstructsreworked.Config;
 import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
 import net.minecraft.core.Holder;
@@ -331,8 +330,6 @@ public class UBCPlacedFeatures {
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
 
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
-        FileConfig config = FileConfig.of("config/undergroundbiomesconstructsreworked-server.toml");
-        config.load();
 
         // For examples, see vanilla "OrePlacements.java"
 
@@ -342,7 +339,7 @@ public class UBCPlacedFeatures {
         register(context, SOAPSTONE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SOAPSTONE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateSoapstone", 2),
+                        Config.getOrDefault(Config.PLACED_SOAPSTONE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -477,7 +474,7 @@ public class UBCPlacedFeatures {
         register(context, RHYOLITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RHYOLITE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateRyholite", 2),
+                        Config.getOrDefault(Config.PLACED_RHYOLITE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -613,7 +610,7 @@ public class UBCPlacedFeatures {
         register(context, RED_GRANITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_RED_GRANITE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateRedGranite", 2),
+                        Config.getOrDefault(Config.PLACED_RED_GRANITE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -770,7 +767,7 @@ public class UBCPlacedFeatures {
         register(context, QUARTZITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_QUARTZITE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateQuartzite", 2),
+                        Config.getOrDefault(Config.PLACED_QUARTZITE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -927,7 +924,7 @@ public class UBCPlacedFeatures {
         register(context, MIGMATITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MIGMATITE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateMigmatite", 2),
+                        Config.getOrDefault(Config.PLACED_MIGMATITE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -1084,7 +1081,7 @@ public class UBCPlacedFeatures {
         register(context, MARBLE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_MARBLE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateMarble", 2),
+                        Config.getOrDefault(Config.PLACED_MARBLE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -1241,7 +1238,7 @@ public class UBCPlacedFeatures {
         register(context, LIMESTONE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIMESTONE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateLimestone", 2),
+                        Config.getOrDefault(Config.PLACED_LIMESTONE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -1377,7 +1374,7 @@ public class UBCPlacedFeatures {
         register(context, SILTSTONE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SILTSTONE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateSiltstone", 2),
+                        Config.getOrDefault(Config.PLACED_SILTSTONE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -1512,7 +1509,7 @@ public class UBCPlacedFeatures {
         register(context, BLUESCHIST_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLUESCHIST_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateBlueschist", 2),
+                        Config.getOrDefault(Config.PLACED_BLUESCHIST_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -1647,7 +1644,7 @@ public class UBCPlacedFeatures {
         register(context, GREENSCHIST_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREENSCHIST_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateGreenschist", 2),
+                        Config.getOrDefault(Config.PLACED_GREENSCHIST_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -1782,7 +1779,7 @@ public class UBCPlacedFeatures {
         register(context, CHALK_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHALK_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateChalk", 2),
+                        Config.getOrDefault(Config.PLACED_CHALK_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -1917,7 +1914,7 @@ public class UBCPlacedFeatures {
         register(context, SHALE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_SHALE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateShale", 2),
+                        Config.getOrDefault(Config.PLACED_SHALE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2052,7 +2049,7 @@ public class UBCPlacedFeatures {
         register(context, CHERT_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_CHERT_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateChert", 2),
+                        Config.getOrDefault(Config.PLACED_CHERT_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2165,7 +2162,7 @@ public class UBCPlacedFeatures {
         register(context, LIGNITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_LIGNITE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateLignite", 2),
+                        Config.getOrDefault(Config.PLACED_LIGNITE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2278,7 +2275,7 @@ public class UBCPlacedFeatures {
         register(context, DOLOMITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DOLOMITE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateDolomite", 2),
+                        Config.getOrDefault(Config.PLACED_DOLOMITE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2391,7 +2388,7 @@ public class UBCPlacedFeatures {
         register(context, ECLOGITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_ECLOGITE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateEclogite", 2),
+                        Config.getOrDefault(Config.PLACED_ECLOGITE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2504,7 +2501,7 @@ public class UBCPlacedFeatures {
         register(context, GREYWACKE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GREYWACKE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateGreywacke", 2),
+                        Config.getOrDefault(Config.PLACED_GREYWACKE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2616,7 +2613,7 @@ public class UBCPlacedFeatures {
         register(context, KOMATIITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_KOMATIITE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateKomatiite", 2),
+                        Config.getOrDefault(Config.PLACED_KOMATIITE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2751,7 +2748,7 @@ public class UBCPlacedFeatures {
         register(context, DACITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_DACITE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateDacite", 2),
+                        Config.getOrDefault(Config.PLACED_DACITE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-17),
                                 VerticalAnchor.absolute(384)
@@ -2886,7 +2883,7 @@ public class UBCPlacedFeatures {
         register(context, BLACK_GRANITE_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_BLACK_GRANITE_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateBlackGranite", 2),
+                        Config.getOrDefault(Config.PLACED_BLACK_GRANITE_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -3045,7 +3042,7 @@ public class UBCPlacedFeatures {
         register(context, GABBRO_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GABBRO_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateGabbro", 2),
+                        Config.getOrDefault(Config.PLACED_GABBRO_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)
@@ -3204,7 +3201,7 @@ public class UBCPlacedFeatures {
         register(context, GNEISS_BLOCK_PLACED_KEY,
                 configuredFeatures.getOrThrow(UBCConfiguredFeatures.OVERWORLD_GNEISS_BLOCK_KEY),
                 commonOrePlacement(
-                        config.getIntOrElse("shouldGenerateGneiss", 2),
+                        Config.getOrDefault(Config.PLACED_GNEISS_BLOCK),
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0)

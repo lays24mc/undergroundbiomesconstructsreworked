@@ -41,6 +41,12 @@ public class Config {
             .comment(" 0 = Disables Soapstone and all dependent blocks")
             .defineInRange("shouldGenerateSoapstone", 2, 0, Integer.MAX_VALUE);
 
+    public static final ModConfigSpec.IntValue PLACED_QUARTZITE_BLOCK = BUILDER
+            .comment(" Quartzite Generation Settings ")
+            .comment(" Determines if Quartzite should be added to world generation and which chance of generation in a chunk")
+            .comment(" 0 = Disables Quartzite and all dependent blocks")
+            .defineInRange("shouldGenerateQuartzite", 2, 0, Integer.MAX_VALUE);
+
     public static final ModConfigSpec.IntValue PLACED_MIGMATITE_BLOCK = BUILDER
             .comment(" Migmatite Generation Settings ")
             .comment(" Determines if Migmatite should be added to world generation and which chance of generation in a chunk")
@@ -132,5 +138,13 @@ public class Config {
             .defineInRange("shouldGenerateDacite", 2, 0, Integer.MAX_VALUE);
 
     static final ModConfigSpec SPEC = BUILDER.build();
+
+    /**
+     * Reads a config value, falling back to its default when the config isn't loaded yet
+     * (e.g. during {@code runData}, which never starts a server and so never loads it).
+     */
+    public static int getOrDefault(ModConfigSpec.IntValue value) {
+        return SPEC.isLoaded() ? value.get() : value.getDefault();
+    }
 
 }

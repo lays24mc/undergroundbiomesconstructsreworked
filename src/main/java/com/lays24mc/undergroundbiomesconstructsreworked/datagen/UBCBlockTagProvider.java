@@ -112,16 +112,14 @@ public class UBCBlockTagProvider extends BlockTagsProvider {
                 .add(GneissBlocks.GNEISS_EMERALD_ORE.get())
 
                 .add(GreenschistBlocks.GREENSCHIST_BLOCK.get())
+                .add(GreenschistBlocks.GREENSCHIST_COBBLE_BLOCK.get())
+                .add(GreenschistBlocks.GREENSCHIST_BRICK_BLOCK.get())
                 .add(GreenschistBlocks.GREENSCHIST_COAL_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_COPPER_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_IRON_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_GOLD_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_REDSTONE_ORE.get())
                 .add(GreenschistBlocks.GREENSCHIST_LAPIS_ORE.get())
-                .add(GreenschistBlocks.GREENSCHIST_COPPER_ORE.get())
-                .add(GreenschistBlocks.GREENSCHIST_IRON_ORE.get())
-                .add(GreenschistBlocks.GREENSCHIST_BRICK_BLOCK.get())
-                .add(GreenschistBlocks.GREENSCHIST_COBBLE_BLOCK.get())
 
                 .add(GreywackeBlocks.GREYWACKE_BLOCK.get())
                 .add(GreywackeBlocks.GREYWACKE_COAL_ORE.get())

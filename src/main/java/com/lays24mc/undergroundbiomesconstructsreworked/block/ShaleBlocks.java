@@ -2,84 +2,64 @@ package com.lays24mc.undergroundbiomesconstructsreworked.block;
 
 import com.lays24mc.undergroundbiomesconstructsreworked.UndergroundBiomesConstructsReworked;
 import com.lays24mc.undergroundbiomesconstructsreworked.block.custom.*;
-import com.lays24mc.undergroundbiomesconstructsreworked.item.UBCItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.function.Supplier;
 
 public class ShaleBlocks {
 
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(
-            UndergroundBiomesConstructsReworked.MODID
-    );
+    private static final StoneBlockRegistrar REGISTRAR = new StoneBlockRegistrar(UndergroundBiomesConstructsReworked.MODID);
 
     // ================================
     // Register Shale
     // ================================
 
     // Blocks
-    public static final DeferredBlock<Block> SHALE_BLOCK = registerBlock("shale_block",
+    public static final DeferredBlock<Block> SHALE_BLOCK = REGISTRAR.registerBlock("shale_block",
             () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
-    public static DeferredBlock<Block> SHALE_COAL_ORE = registerBlock("shale_coal_ore",
+    public static DeferredBlock<Block> SHALE_COAL_ORE = REGISTRAR.registerBlock("shale_coal_ore",
             () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
-    public static DeferredBlock<Block> SHALE_COPPER_ORE = registerBlock("shale_copper_ore",
+    public static DeferredBlock<Block> SHALE_COPPER_ORE = REGISTRAR.registerBlock("shale_copper_ore",
             () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
-    public static DeferredBlock<Block> SHALE_IRON_ORE = registerBlock("shale_iron_ore",
+    public static DeferredBlock<Block> SHALE_IRON_ORE = REGISTRAR.registerBlock("shale_iron_ore",
             () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
-    public static DeferredBlock<Block> SHALE_GOLD_ORE = registerBlock("shale_gold_ore",
+    public static DeferredBlock<Block> SHALE_GOLD_ORE = REGISTRAR.registerBlock("shale_gold_ore",
             () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
-    public static DeferredBlock<Block> SHALE_REDSTONE_ORE = registerBlock("shale_redstone_ore",
+    public static DeferredBlock<Block> SHALE_REDSTONE_ORE = REGISTRAR.registerBlock("shale_redstone_ore",
             () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
-    public static DeferredBlock<Block> SHALE_LAPIS_ORE = registerBlock("shale_lapis_ore",
+    public static DeferredBlock<Block> SHALE_LAPIS_ORE = REGISTRAR.registerBlock("shale_lapis_ore",
             () -> new UBCBlocks(MapColor.COLOR_LIGHT_GRAY, 0.5F, 0.29F)
     );
 
     // Stairs
-    public static final DeferredBlock<Block> SHALE_STAIRS = registerBlock("shale_stairs",
-            () -> new UBCStairsBlocks(SHALE_BLOCK, MapColor.COLOR_LIGHT_GRAY)
+    public static final DeferredBlock<Block> SHALE_STAIRS = REGISTRAR.registerBlock("shale_stairs",
+            () -> new UBCStairsBlocks(SHALE_BLOCK)
     );
 
     // Slabs
-    public static final DeferredBlock<Block> SHALE_BLOCK_SLAB = registerBlock("shale_block_slab",
-            () -> new UBCSlabBlocks(MapColor.COLOR_LIGHT_GRAY)
+    public static final DeferredBlock<Block> SHALE_BLOCK_SLAB = REGISTRAR.registerBlock("shale_block_slab",
+            () -> new UBCSlabBlocks(SHALE_BLOCK)
     );
 
     // Walls
-    public static final DeferredBlock<Block> SHALE_BLOCK_WALL = registerBlock("shale_block_wall",
-            () -> new UBCWallBlocks(MapColor.COLOR_LIGHT_GRAY)
+    public static final DeferredBlock<Block> SHALE_BLOCK_WALL = REGISTRAR.registerBlock("shale_block_wall",
+            () -> new UBCWallBlocks(SHALE_BLOCK)
     );
 
     // Buttons
 
-    public static final DeferredBlock<Block> SHALE_STONE_BUTTON = registerBlock("shale_stone_button",
+    public static final DeferredBlock<Block> SHALE_STONE_BUTTON = REGISTRAR.registerBlock("shale_stone_button",
             () -> new UBCButtonsBlocks(BlockSetType.IRON, MapColor.STONE)
     );
-
-
-    private static final <R, T> DeferredBlock<Block> registerBlock(
-            String name,
-            Supplier<Block> block
-    ) {
-        DeferredBlock<Block> toReturn = BLOCKS.register(
-                name,
-                block
-        );
-        UBCItems.ITEMS.registerSimpleBlockItem(toReturn);
-        return toReturn;
-    }
-
     public static void register(IEventBus eventBus) {
-        BLOCKS.register(eventBus);
+        REGISTRAR.register(eventBus);
     }
 }

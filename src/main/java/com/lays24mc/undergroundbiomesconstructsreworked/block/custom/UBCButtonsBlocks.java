@@ -4,11 +4,8 @@ import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-public class UBCButtonsBlocks extends ButtonBlock{
-    private static final Logger log = LogManager.getLogger(UBCButtonsBlocks.class);
+public class UBCButtonsBlocks extends ButtonBlock {
 
     public UBCButtonsBlocks(BlockSetType blockSetType, MapColor color) {
         super(
